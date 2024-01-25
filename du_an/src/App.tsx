@@ -2,20 +2,13 @@ import React from "react";
 import "./App.css";
 import Log from "./login/Log";
 
+import { Routes, Route } from "react-router-dom";
+import Forget from "./login/Foget";
+import DaMK from "./login/DatlaiMK";
+import Navbar from "./quanly/Navbar";
+
 function App() {
   return (
-    // <div
-    //   className="App"
-    //   style={{
-    //     position: "absolute",
-    //     width: "100%",
-    //     height: "100%",
-    //     backgroundColor: "#1E1E2E",
-    //   }}
-    // >
-    //   <Log></Log>
-    // </div>
-
     <div style={{ position: "absolute", width: "100%", height: "100%" }}>
       <div
         style={{
@@ -26,7 +19,13 @@ function App() {
           backgroundColor: "#1E1E2E",
         }}
       >
-        <Log></Log>
+        <Routes>
+          <Route path="/" element={<Log />}></Route>
+          <Route path="/login" element={<Log></Log>}></Route>
+          <Route path="/foget" element={<Forget />}></Route>
+          <Route path="/Datlaimatkhau" element={<DaMK />}></Route>
+          <Route path="/navbar" element={<Navbar />}></Route>
+        </Routes>
       </div>
     </div>
   );

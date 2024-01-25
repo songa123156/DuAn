@@ -1,62 +1,8 @@
 import { useState } from "react";
-import styled from "styled-components";
-import { Link } from "react-router-dom";
-import { createBrowserHistory } from "history";
-import firebase from "firebase/compat/app";
-import "firebase/compat/auth";
-import { getAuth } from "firebase/auth";
-import { signInWithEmailAndPassword } from "firebase/auth";
-import { useNavigate } from "react-router-dom";
-// import { BrowserRouter as Router } from 'react-router-dom';
-export const Square = styled.div`
-  width: 240px;
-  height: 240px;
-  position: absolute;
-  top: 116px;
-  left: 50%;
-  transform: translateX(-50%);
-  overflow: "hidden";
-`;
+import { Square } from "./Log";
 
-// Configure Firebase.
-const config = {
-  apiKey: "AIzaSyCsUfykyE1L-VyuIFX_89jYEEPG1MYFLi4",
-  authDomain: "duan-ede31.firebaseapp.com",
-};
-firebase.initializeApp(config);
-
-const Log = () => {
-  // const history = useHistory();
-  const navigate = useNavigate();
+const DaMK = () => {
   const [errorMessage, setErrorMessage] = useState("");
-  const history = createBrowserHistory();
-  const dangnhap = (event: any) => {
-    setErrorMessage("");
-    event.preventDefault(); // Ngăn chặn hành vi mặc định của form
-    const emailInput = document.getElementById("email") as HTMLInputElement;
-    const passwordInput = document.getElementById(
-      "password"
-    ) as HTMLInputElement;
-    const email = emailInput.value;
-    const password = passwordInput.value;
-    const auth = getAuth();
-
-    signInWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
-        // Signed in
-        const user = userCredential.user;
-
-        console.log("thành công");
-        // history.push("/navbar", { user: user }); // Chuyển hướng và truyền thông tin user
-        // navigate("/navbar", { state: { user: user } });
-        history.push("/navbar", { user: user });
-      })
-      .catch((error) => {
-        // const errorCode = error.code;
-        setErrorMessage("Sai tên tài khoản hoặc mật khẩu.");
-        console.log("thất bại");
-      });
-  };
 
   const validateForm = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault(); // Ngăn chặn form submit tự động
@@ -88,6 +34,11 @@ const Log = () => {
 
   const handleTogglePassword = () => {
     setShowPassword(!showPassword);
+  };
+  const [showPasswordcomfirm, setShowPasswordcomfirm] = useState(false);
+
+  const handleTogglePasswordcomfirm = () => {
+    setShowPasswordcomfirm(!showPasswordcomfirm);
   };
   return (
     <>
@@ -133,12 +84,9 @@ const Log = () => {
           alt="Logo"
           style={{
             width: "100%",
-            paddingTop: -100,
-            position: "absolute",
+            height: "100%",
             borderRadius: "122px",
             border: "1px solid black",
-            left: 0,
-            height: "100%",
             objectFit: "cover", // Đảm bảo hình ảnh điền đầy khung mà không bị biến dạng
           }}
         />
@@ -147,7 +95,7 @@ const Log = () => {
         <div
           style={{
             position: "absolute",
-            width: "210px",
+            width: "313px",
             height: "48px",
             top: "396px",
             fontFamily: "Montserrat",
@@ -164,57 +112,75 @@ const Log = () => {
             transform: "translateX(-50%)",
           }}
         >
-          Đăng Nhập
+          Đặt lại mật khẩu
         </div>
         <div
           style={{
             position: "absolute",
             width: 471,
             height: 80,
-            top: 472,
+            top: 492,
             left: "50%",
             transform: "translateX(-50%)",
           }}
         >
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            <div
-              style={{
-                textAlign: "left",
-                marginLeft: 18,
-                color: "#FFFFFF",
-                fontFamily: "Montserrat",
-                fontSize: 16,
-                fontWeight: 600,
-                letterSpacing: "-0.002em",
-              }}
-            >
-              Tên đăng nhập
-            </div>
-            <div
-              style={{
-                width: 471,
-                height: 48,
-                padding: "11px 24px 13px 16px",
-                display: "flex",
-              }}
-            >
-              <input
-                name="username"
-                id="email"
-                type="text"
+          <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+            <div>
+              <div
                 style={{
-                  backgroundColor: "#2B2B3F",
-                  flex: 1,
-                  width: "100%",
-                  height: "100%",
-                  borderRadius: 8,
+                  textAlign: "left",
+                  marginLeft: 18,
+                  color: "#FFFFFF",
+                  fontFamily: "Montserrat",
+                  fontSize: 16,
+                  fontWeight: 600,
+                  letterSpacing: "-0.002em",
                 }}
-              />
+              >
+                Password
+              </div>
+              <div
+                style={{
+                  width: 471,
+                  height: 48,
+                  padding: "11px 24px 13px 16px",
+                  display: "flex",
+                  alignItems: "center",
+                  position: "relative",
+                }}
+              >
+                <input
+                  type={showPassword ? "text" : "password"}
+                  name="password"
+                  style={{
+                    backgroundColor: "#2B2B3F",
+                    flex: 1,
+                    width: "100%",
+                    height: "100%",
+                    borderRadius: 8,
+                  }}
+                />
+                <div
+                  style={{
+                    marginRight: 20,
+                    cursor: "pointer",
+                    position: "absolute",
+                    right: 10,
+                  }}
+                  onClick={handleTogglePassword}
+                >
+                  {showPassword ? (
+                    <i className="far fa-eye-slash"></i>
+                  ) : (
+                    <i className="far fa-eye"></i>
+                  )}
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        {/* password */}
+        {/* comfirm password */}
 
         <div
           style={{
@@ -252,8 +218,7 @@ const Log = () => {
                 }}
               >
                 <input
-                  id="password"
-                  type={showPassword ? "text" : "password"}
+                  type={showPasswordcomfirm ? "text" : "password"}
                   name="password"
                   style={{
                     backgroundColor: "#2B2B3F",
@@ -268,55 +233,17 @@ const Log = () => {
                     marginRight: 20,
                     cursor: "pointer",
                     position: "absolute",
-                    // top: "50%",
                     right: 10,
                   }}
-                  onClick={handleTogglePassword}
+                  onClick={handleTogglePasswordcomfirm}
                 >
-                  {showPassword ? (
+                  {showPasswordcomfirm ? (
                     <i className="far fa-eye-slash"></i>
                   ) : (
                     <i className="far fa-eye"></i>
                   )}
                 </div>
               </div>
-            </div>
-            <div
-              style={{
-                color: "#FF0000",
-                fontFamily: "Montserrat",
-                fontSize: 16,
-                fontWeight: 400,
-                marginLeft: 18,
-                letterSpacing: "-0.002em",
-                textAlign: "left",
-              }}
-              id="error-message"
-            >
-              {errorMessage}
-            </div>
-            <div
-              style={{
-                textAlign: "left",
-                marginLeft: 18,
-                color: "#FFFFFF",
-                fontFamily: "Montserrat",
-                fontSize: 16,
-                fontWeight: 400,
-                letterSpacing: "-0.002em",
-              }}
-            >
-              <input type="checkbox" name="GhiNhoMatKhau" id="GhiNhoMKID" />
-              <span
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: 16,
-                  fontWeight: 400,
-                  letterSpacing: "-0.002em",
-                }}
-              >
-                Ghi nhớ mật khẩu
-              </span>
             </div>
             <div
               style={{
@@ -344,43 +271,16 @@ const Log = () => {
                   letterSpacing: "-0.002em",
                   color: "#FFFFFF",
                 }}
-                onClick={(event) => dangnhap(event)}
                 type="submit"
               >
-                Đăng nhập
+                Lưu mật khẩu
               </button>
             </div>
           </div>
         </div>
       </form>
-      <div
-        style={{
-          position: "absolute",
-          width: 139,
-          height: 24,
-          top: 1005,
-          left: "50%",
-          textAlign: "center",
-          transform: "translateX(-50%)",
-        }}
-      >
-        <Link
-          to="/Foget"
-          style={{
-            fontFamily: "Montserrat",
-            fontSize: 16,
-            fontWeight: 600,
-            letterSpacing: "0em",
-            textAlign: "center",
-            textDecoration: "underline",
-            color: "#FF7506",
-          }}
-        >
-          Quên mật khẩu
-        </Link>
-      </div>
     </>
   );
 };
 
-export default Log;
+export default DaMK;
