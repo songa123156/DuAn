@@ -6,7 +6,7 @@ import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 import { getAuth } from "firebase/auth";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 // import { BrowserRouter as Router } from 'react-router-dom';
 export const Square = styled.div`
   width: 240px;
@@ -27,10 +27,10 @@ firebase.initializeApp(config);
 
 const Log = () => {
   // const history = useHistory();
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const [errorMessage, setErrorMessage] = useState("");
   const history = createBrowserHistory();
-  const dangnhap = (event: any) => {
+  const dangnhap = async (event: any) => {
     setErrorMessage("");
     event.preventDefault(); // Ngăn chặn hành vi mặc định của form
     const emailInput = document.getElementById("email") as HTMLInputElement;
@@ -41,15 +41,17 @@ const Log = () => {
     const password = passwordInput.value;
     const auth = getAuth();
 
-    signInWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
+    await signInWithEmailAndPassword(auth, email, password)
+      .then(async (userCredential) => {
         // Signed in
-        const user = userCredential.user;
+        const user = await userCredential.user;
 
-        console.log("thành công");
+        console.log("thành công", user.providerData[0].email);
         // history.push("/navbar", { user: user }); // Chuyển hướng và truyền thông tin user
         // navigate("/navbar", { state: { user: user } });
-        history.push("/navbar", { user: user });
+
+        await history.push("/navbar", { user: user.providerData[0].email });
+        window.location.reload();
       })
       .catch((error) => {
         // const errorCode = error.code;

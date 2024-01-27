@@ -6,6 +6,7 @@ import { Routes, Route } from "react-router-dom";
 import Forget from "./login/Foget";
 import DaMK from "./login/DatlaiMK";
 import Navbar from "./quanly/Navbar";
+import { styled } from "styled-components";
 
 function App() {
   return (

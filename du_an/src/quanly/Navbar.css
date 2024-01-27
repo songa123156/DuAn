@@ -1,127 +1,3 @@
-/* .navbar {
-  height: 100vh;
-  width: 170px;
-  background-color: #f1f1f1;
-  padding: 20px;
-}
-
-.navbar ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.navbar li {
-  margin-bottom: 10px;
-}
-
-.navbar a {
-  display: block;
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-}
-
-.navbar a:hover {
-  color: #000;
-} */
-
-/* .navbar {
-  height: 100vh;
-  width: 170px;
-  background-color: #f1f1f1;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.navbar ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.navbar li {
-  margin-bottom: 10px;
-}
-
-.navbar a {
-  display: block;
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  width: 100%;
-  text-align: center;
-}
-
-.navbar a:hover {
-  color: #000;
-} */
-
-/* img {
-  height: 96px;
-  width: 96px;
-  display: block;
-  margin-top: 39px;
-  margin-bottom: 110px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.navbar {
-  height: 100vh;
-  width: 200px;
-  background-color: #f1f1f1;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.navbar ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.navbar li {
-  margin-bottom: 24px;
-}
-
-.navbar a {
-  display: block;
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  width: 100%;
-  height: 72px;
-  text-align: center;
-}
-
-.navbar a:hover {
-  color: #000;
-}
-
-.navbar1 {
-  width: 100%;
-  height: 80px;
-  background-color: #f2f2f2;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-}
-
-.logo img {
-  height: 40px;
-  width: 40px;
-}
-
-.login span {
-  font-size: 16px;
-  font-weight: bold;
-} */
-
 img {
   height: 96px;
   width: 96px;
@@ -131,16 +7,6 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-
-/* .sidebar {
-  
-  width: 170px;
-  height: 100vh;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
 
 .sidebar {
   width: 170px;
@@ -158,8 +24,6 @@ img {
 }
 
 .sidebar ul {
-  /* list-style-type: none;
-  margin-top: 20px; */
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -193,4 +57,43 @@ img {
 .navbar .login span {
   font-size: 16px;
   font-weight: bold;
+}
+
+.form-container {
+  display: flex;
+}
+
+.form-image {
+  width: 50%;
+}
+
+.form-fields {
+  width: 50%;
+  padding: 20px;
+}
+
+.form-row {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.form-row label {
+  width: 150px;
+}
+
+.form-row input[type="text"],
+.form-row input[type="date"],
+.form-row input[type="tel"],
+.form-row input[type="email"],
+.form-row select {
+  width: 274px;
+}
+
+.form-row:last-child input[type="text"],
+.form-row:last-child select {
+  width: 571px;
+}
+
+.form-row:last-child label {
+  margin-left: 24px;
 }
