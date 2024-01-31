@@ -1,10 +1,15 @@
+import { useState } from "react";
+
+// const DoiMK = () => {
+//   return <></>;
+// };
+
 import "./Navbar.css"; // Import file CSS cho navbar
 import { useLocation } from "react-router-dom";
 import { useNavigate, Link } from "react-router-dom";
 import { useEffect } from "react";
-import DoiMK from "./DoiMK";
 
-const Navbar = () => {
+const DoiMK = () => {
   const location = useLocation();
   const navigate = useNavigate();
   let user = location.state && location.state.user;
@@ -13,9 +18,54 @@ const Navbar = () => {
     navigate("/");
   };
 
-  useEffect(() => {
-    if (user === null) navigate("/");
-  }, []);
+  //   useEffect(() => {
+  //     if (user === null) navigate("/");
+  //   }, []);
+
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const validateForm = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault(); // Ngăn chặn form submit tự động
+
+    const form = event.currentTarget as HTMLFormElement; // Ép kiểu currentTarget thành HTMLFormElement
+
+    // Ép kiểu các phần tử thành các phần tử đầu vào cụ thể
+    const usernameInput = form.elements.namedItem(
+      "username"
+    ) as HTMLInputElement;
+    const passwordInput = form.elements.namedItem(
+      "password"
+    ) as HTMLInputElement;
+
+    // Lấy giá trị của các trường đầu vào
+    const username = usernameInput.value;
+    const password = passwordInput.value;
+
+    // Kiểm tra xem tên đăng nhập và mật khẩu đã được nhập hay chưa
+    if (username === "" || password === "") {
+      setErrorMessage("Hãy nhập tài khoản và mật khẩu.");
+    } else {
+      // Nếu đã nhập đầy đủ, tiến hành submit form
+      form.submit();
+    }
+  };
+  // Show password
+  const [showPasswordnew, setShowPasswordnew] = useState(false);
+
+  const handleToggleNewPassword = () => {
+    setShowPasswordnew(!showPasswordnew);
+  };
+  const [showPasswordcomfirm, setShowPasswordcomfirm] = useState(false);
+
+  const handleTogglePasswordcomfirm = () => {
+    setShowPasswordcomfirm(!showPasswordcomfirm);
+  };
+
+  const [showPasswordOldComfirm, setShowPasswordOldComfirm] = useState(false);
+
+  const handleTogglePasswordOldComfirm = () => {
+    setShowPasswordOldComfirm(!showPasswordOldComfirm);
+  };
 
   return (
     <>
@@ -164,7 +214,7 @@ const Navbar = () => {
               />
             </div>
             <div className="login" style={{ color: "white" }}>
-              <span>Welcome, {user}</span>
+              {/* <span>Welcome, {user}</span> */}
             </div>
           </nav>
           <div
@@ -183,7 +233,7 @@ const Navbar = () => {
             Thông tin cơ bản
           </div>
 
-          <div
+          {/* <div
             className="form-container"
             style={{
               width: "1018px",
@@ -463,7 +513,284 @@ const Navbar = () => {
                 <input type="submit" defaultValue="Submit" />
               </form>
             </div>
-          </div>
+          </div> */}
+          <form action="" onSubmit={validateForm}>
+            <div
+              style={{
+                position: "absolute",
+                width: "313px",
+                height: "48px",
+                top: "200px",
+                fontFamily: "Montserrat",
+                fontSize: "36px",
+                fontWeight: "700",
+                lineHeight: "48px",
+                letterSpacing: "-0.002em",
+                textAlign: "center",
+                color: "#FFFFFF",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                left: "50%",
+                transform: "translateX(-50%)",
+              }}
+            >
+              Thay đổi mật khẩu
+            </div>
+            <div
+              style={{
+                position: "absolute",
+                width: 471,
+                height: 80,
+                top: 270,
+                left: "50%",
+                transform: "translateX(-50%)",
+              }}
+            >
+              <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+                <div>
+                  <div
+                    style={{
+                      textAlign: "left",
+                      marginLeft: 18,
+                      color: "#FFFFFF",
+                      fontFamily: "Montserrat",
+                      fontSize: 16,
+                      fontWeight: 600,
+                      letterSpacing: "-0.002em",
+                    }}
+                  >
+                    Mật khẩu hiện tại:
+                  </div>
+                  <div
+                    style={{
+                      width: 471,
+                      height: 48,
+                      padding: "11px 24px 13px 16px",
+                      display: "flex",
+                      alignItems: "center",
+                      position: "relative",
+                    }}
+                  >
+                    <input
+                      type={showPasswordOldComfirm ? "text" : "password"}
+                      name="password"
+                      style={{
+                        backgroundColor: "#2B2B3F",
+                        flex: 1,
+                        width: "100%",
+                        height: "100%",
+                        borderRadius: 8,
+                      }}
+                    />
+                    <div
+                      style={{
+                        marginRight: 20,
+                        cursor: "pointer",
+                        position: "absolute",
+                        right: 10,
+                      }}
+                      onClick={handleTogglePasswordOldComfirm}
+                    >
+                      {showPasswordOldComfirm ? (
+                        <i className="far fa-eye-slash"></i>
+                      ) : (
+                        <i className="far fa-eye"></i>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* MK moi */}
+
+            <div
+              style={{
+                position: "absolute",
+                width: 471,
+                height: 80,
+                top: 366,
+                left: "50%",
+                transform: "translateX(-50%)",
+              }}
+            >
+              <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+                <div>
+                  <div
+                    style={{
+                      textAlign: "left",
+                      marginLeft: 18,
+                      color: "#FFFFFF",
+                      fontFamily: "Montserrat",
+                      fontSize: 16,
+                      fontWeight: 600,
+                      letterSpacing: "-0.002em",
+                    }}
+                  >
+                    Mật khẩu mới:
+                  </div>
+                  <div
+                    style={{
+                      width: 471,
+                      height: 48,
+                      padding: "11px 24px 13px 16px",
+                      display: "flex",
+                      alignItems: "center",
+                      position: "relative",
+                    }}
+                  >
+                    <input
+                      type={showPasswordnew ? "text" : "password"}
+                      name="password"
+                      style={{
+                        backgroundColor: "#2B2B3F",
+                        flex: 1,
+                        width: "100%",
+                        height: "100%",
+                        borderRadius: 8,
+                      }}
+                    />
+                    <div
+                      style={{
+                        marginRight: 20,
+                        cursor: "pointer",
+                        position: "absolute",
+                        right: 10,
+                      }}
+                      onClick={handleToggleNewPassword}
+                    >
+                      {showPasswordnew ? (
+                        <i className="far fa-eye-slash"></i>
+                      ) : (
+                        <i className="far fa-eye"></i>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* comfirm password */}
+
+            <div
+              style={{
+                position: "absolute",
+                width: 471,
+                height: 80,
+                top: 466,
+                left: "50%",
+                transform: "translateX(-50%)",
+              }}
+            >
+              <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+                <div>
+                  <div
+                    style={{
+                      textAlign: "left",
+                      marginLeft: 18,
+                      color: "#FFFFFF",
+                      fontFamily: "Montserrat",
+                      fontSize: 16,
+                      fontWeight: 600,
+                      letterSpacing: "-0.002em",
+                    }}
+                  >
+                    Nhập lại mật khẩu mới:
+                  </div>
+                  <div
+                    style={{
+                      width: 471,
+                      height: 48,
+                      padding: "11px 24px 13px 16px",
+                      display: "flex",
+                      alignItems: "center",
+                      position: "relative",
+                    }}
+                  >
+                    <input
+                      type={showPasswordcomfirm ? "text" : "password"}
+                      name="password"
+                      style={{
+                        backgroundColor: "#2B2B3F",
+                        flex: 1,
+                        width: "100%",
+                        height: "100%",
+                        borderRadius: 8,
+                      }}
+                    />
+                    <div
+                      style={{
+                        marginRight: 20,
+                        cursor: "pointer",
+                        position: "absolute",
+                        right: 10,
+                      }}
+                      onClick={handleTogglePasswordcomfirm}
+                    >
+                      {showPasswordcomfirm ? (
+                        <i className="far fa-eye-slash"></i>
+                      ) : (
+                        <i className="far fa-eye"></i>
+                      )}
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style={{
+                    color: "#FFFFFF",
+                    fontFamily: "Montserrat",
+                    fontSize: 16,
+                    fontWeight: 400,
+                    letterSpacing: "-0.002em",
+                    textAlign: "center",
+                  }}
+                >
+                  <button
+                    style={{
+                      backgroundColor: "transparent",
+                      width: 168,
+                      height: 56,
+                      top: 744,
+                      left: 856,
+                      marginRight: 50,
+                      padding: "16px 24px",
+                      borderRadius: 8,
+                      gap: 8,
+                      fontFamily: "Montserrat",
+                      fontSize: 18,
+                      fontWeight: 500,
+                      letterSpacing: "-0.002em",
+                      color: "#FFFFFF",
+                    }}
+                    type="submit"
+                  >
+                    <Link to="/navbar">Hủy</Link>
+                  </button>
+                  <button
+                    style={{
+                      backgroundColor: "#FF7506",
+                      width: 168,
+                      height: 56,
+                      top: 744,
+                      left: 856,
+                      padding: "16px 24px",
+                      borderRadius: 8,
+                      gap: 8,
+                      fontFamily: "Montserrat",
+                      fontSize: 18,
+                      fontWeight: 500,
+                      letterSpacing: "-0.002em",
+                      color: "#FFFFFF",
+                    }}
+                    type="submit"
+                  >
+                    Lưu
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
 
           <div
             style={{
@@ -643,7 +970,7 @@ const Navbar = () => {
                 marginBottom: 10,
               }}
             >
-              <Link to="/navbar/DoiMK">Đổi mật khẩu</Link>
+              <Link to="/DoiMK">Đổi mật khẩu</Link>
             </div>
             <div
               style={{
@@ -666,4 +993,4 @@ const Navbar = () => {
   );
 };
 //bỏ cài đặt bootstrap
-export default Navbar;
+export default DoiMK;

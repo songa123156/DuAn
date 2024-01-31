@@ -6,11 +6,17 @@ import { Routes, Route } from "react-router-dom";
 import Forget from "./login/Foget";
 import DaMK from "./login/DatlaiMK";
 import Navbar from "./quanly/Navbar";
-import { styled } from "styled-components";
+import DoiMK from "./quanly/DoiMK";
 
 function App() {
   return (
-    <div style={{ position: "absolute", width: "100%", height: "100%" }}>
+    <div
+      style={{
+        position: "absolute",
+        width: "100%",
+        height: "100%",
+      }}
+    >
       <div
         style={{
           position: "relative",
@@ -26,6 +32,7 @@ function App() {
           <Route path="/foget" element={<Forget />}></Route>
           <Route path="/Datlaimatkhau" element={<DaMK />}></Route>
           <Route path="/navbar" element={<Navbar />}></Route>
+          <Route path="/navbar/DoiMK" element={<DoiMK />}></Route>
         </Routes>
       </div>
     </div>
