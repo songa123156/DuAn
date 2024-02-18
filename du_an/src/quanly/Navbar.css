@@ -97,3 +97,12 @@ img {
 .form-row:last-child label {
   margin-left: 24px;
 }
+
+.container {
+  display: flex;
+  /* align-items: center; */
+}
+
+.separator {
+  margin: 0 5px;
+}

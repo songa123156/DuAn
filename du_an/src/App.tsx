@@ -7,6 +7,7 @@ import Forget from "./login/Foget";
 import DaMK from "./login/DatlaiMK";
 import Navbar from "./quanly/Navbar";
 import DoiMK from "./quanly/DoiMK";
+import DanhSachHopDong from "./p3/DanhSachHopDong";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path="/Datlaimatkhau" element={<DaMK />}></Route>
           <Route path="/navbar" element={<Navbar />}></Route>
           <Route path="/navbar/DoiMK" element={<DoiMK />}></Route>
+          <Route path="/DShopdong" element={<DanhSachHopDong />}></Route>
         </Routes>
       </div>
     </div>
