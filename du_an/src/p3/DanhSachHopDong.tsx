@@ -299,6 +299,232 @@ const DanhSachHopDong = () => {
             </div>
           </div>
 
+          {/* bảng */}
+          <div
+            style={{
+              width: 1533,
+              height: "fit-content",
+              position: "absolute",
+              top: 322,
+              left: 229,
+              padding: "16px 24px",
+              borderRadius: 16,
+              gap: 56,
+              backgroundColor: "#2F2F41B2",
+            }}
+          >
+            {/* Nội dung thẻ div */}
+            <table style={{ height: "fit-content" }}>
+              <thead style={{ color: "#FFAC69" }}>
+                <tr style={{ textAlign: "left", height: 48 }}>
+                  <th style={{ width: "99px" }}>STT</th>
+                  <th style={{ width: "158px" }}>Số hợp đồng</th>
+                  <th style={{ width: "309px" }}>Tên hợp đồng</th>
+                  <th style={{ width: "219px" }}>Người ủy quyền</th>
+                  <th style={{ width: "207px" }}>Quyền sở hữu</th>
+                  <th style={{ width: "159px" }}>Hiệu lực hợp đồng</th>
+                  <th style={{ width: "152px" }}>Ngày tạo</th>
+                  <th style={{ width: "182px" }}></th>
+                </tr>
+              </thead>
+              <tbody style={{ color: "#FFFFFF" }}>
+                <tr style={{ height: 47 }}>
+                  <td style={{ width: "99px" }}>1</td>
+                  <td style={{ width: "158px" }}>HD123</td>
+                  <td style={{ width: "309px" }}>Hợp đồng ủy quyền bài hát</td>
+                  <td style={{ width: "219px" }}>Vương Anh Tú</td>
+                  <td style={{ width: "207px" }}>Người biểu diễn</td>
+                  <td style={{ width: "159px" }}>Còn thời hạn</td>
+                  <td style={{ width: "152px" }}>01/04/2021 15:53:13</td>
+                  <td style={{ width: "182px" }}>
+                    <a style={{ color: "#FF7506" }} href="/#">
+                      Xem chi tiết
+                    </a>
+                  </td>
+                </tr>
+                <tr style={{ height: 47 }}>
+                  <td style={{ width: "99px" }}>2</td>
+                  <td style={{ width: "158px" }}>VQ14145145</td>
+                  <td style={{ width: "309px" }}>Hợp đồng ủy quyền bài hát</td>
+                  <td style={{ width: "219px" }}>Khắc Hưng</td>
+                  <td style={{ width: "207px" }}>Người biểu diễn</td>
+                  <td style={{ width: "159px" }}>Còn thời hạn</td>
+                  <td style={{ width: "152px" }}>12/03/2021 15:53:13</td>
+                  <td style={{ width: "182px" }}>
+                    <a style={{ color: "#FF7506" }} href="/#">
+                      Xem chi tiết
+                    </a>
+                  </td>
+                </tr>
+                <tr style={{ height: 47 }}>
+                  <td style={{ width: "99px" }}>3</td>
+                  <td style={{ width: "158px" }}>UH1563167</td>
+                  <td style={{ width: "309px" }}>Hợp đồng ủy quyền bài hát</td>
+                  <td style={{ width: "219px" }}>Châu Đăng Khoa</td>
+                  <td style={{ width: "207px" }}>Người biểu diễn</td>
+                  <td style={{ width: "159px" }}>Còn thời hạn</td>
+                  <td style={{ width: "152px" }}>14/03/2021 15:53:13</td>
+                  <td style={{ width: "182px" }}>
+                    <a style={{ color: "#FF7506" }} href="/#">
+                      Xem chi tiết
+                    </a>
+                  </td>
+                </tr>
+
+                <tr style={{ height: 47 }}>
+                  <td style={{ width: "99px" }}>4</td>
+                  <td style={{ width: "158px" }}>TH2156355</td>
+                  <td style={{ width: "309px" }}>Hợp đồng ủy quyền bài hát</td>
+                  <td style={{ width: "219px" }}>Phan Mạnh Quỳnh</td>
+                  <td style={{ width: "207px" }}>Nhà Sản Xuất</td>
+                  <td style={{ width: "159px" }}>Còn thời hạn</td>
+                  <td style={{ width: "152px" }}>01/03/2021 15:51:05</td>
+                  <td style={{ width: "182px" }}>
+                    <a style={{ color: "#FF7506" }} href="/#">
+                      Xem chi tiết
+                    </a>
+                  </td>
+                </tr>
+                <tr style={{ height: 47 }}>
+                  <td style={{ width: "99px" }}>5</td>
+                  <td style={{ width: "158px" }}>DG639148</td>
+                  <td style={{ width: "309px" }}>Hợp đồng ủy quyền bài hát</td>
+                  <td style={{ width: "219px" }}>Karik</td>
+                  <td style={{ width: "207px" }}>Người biểu diễn</td>
+                  <td style={{ width: "159px" }}>Còn thời hạn</td>
+                  <td style={{ width: "152px" }}>01/02/2021 13:13:13</td>
+                  <td style={{ width: "182px" }}>
+                    <a style={{ color: "#FF7506" }} href="/#">
+                      Xem chi tiết
+                    </a>
+                  </td>
+                </tr>
+                <tr style={{ height: 47 }}>
+                  <td style={{ width: "99px" }}>6</td>
+                  <td style={{ width: "158px" }}>FG638149</td>
+                  <td style={{ width: "309px" }}>Hợp đồng ủy quyền bài hát</td>
+                  <td style={{ width: "219px" }}>Binz</td>
+                  <td style={{ width: "207px" }}>Người biểu diễn</td>
+                  <td style={{ width: "159px" }}>Còn thời hạn</td>
+                  <td style={{ width: "152px" }}>01/01/2021 15:53:13</td>
+                  <td style={{ width: "182px" }}>
+                    <a style={{ color: "#FF7506" }} href="/#">
+                      Xem chi tiết
+                    </a>
+                  </td>
+                </tr>
+                <tr style={{ height: 47 }}>
+                  <td style={{ width: "99px" }}>7</td>
+                  <td style={{ width: "158px" }}>HJ256203</td>
+                  <td style={{ width: "309px" }}>Hợp đồng ủy quyền bài hát</td>
+                  <td style={{ width: "219px" }}>JustaTee</td>
+                  <td style={{ width: "207px" }}>Người biểu diễn</td>
+                  <td style={{ width: "159px" }}>Còn thời hạn</td>
+                  <td style={{ width: "152px" }}>01/12/2020 15:53:13</td>
+                  <td style={{ width: "182px" }}>
+                    <a style={{ color: "#FF7506" }} href="/#">
+                      Xem chi tiết
+                    </a>
+                  </td>
+                </tr>
+                <tr style={{ height: 47 }}>
+                  <td style={{ width: "99px" }}>8</td>
+                  <td style={{ width: "158px" }}>DG253321</td>
+                  <td style={{ width: "309px" }}>Hợp đồng ủy quyền bài hát</td>
+                  <td style={{ width: "219px" }}>Đen Vâu</td>
+                  <td style={{ width: "207px" }}>Nhà sản xuất</td>
+                  <td style={{ width: "159px" }}>Còn thời hạn</td>
+                  <td style={{ width: "152px" }}>01/11/2020 15:53:13</td>
+                  <td style={{ width: "182px" }}>
+                    <a style={{ color: "#FF7506" }} href="/#">
+                      Xem chi tiết
+                    </a>
+                  </td>
+                </tr>
+                <tr style={{ height: 47 }}>
+                  <td style={{ width: "99px" }}>9</td>
+                  <td style={{ width: "158px" }}>HH141654</td>
+                  <td style={{ width: "309px" }}>Hợp đồng ủy quyền bài hát</td>
+                  <td style={{ width: "219px" }}>RPT MCK</td>
+                  <td style={{ width: "207px" }}>
+                    Người biểu diễn <br />
+                    Nhà sản xuất
+                  </td>
+                  <td style={{ width: "159px" }}>Còn thời hạn</td>
+                  <td style={{ width: "152px" }}>16/10/2020 15:53:13</td>
+                  <td style={{ width: "182px" }}>
+                    <a style={{ color: "#FF7506" }} href="/#">
+                      Xem chi tiết
+                    </a>
+                  </td>
+                </tr>
+                <tr style={{ height: 47 }}>
+                  <td style={{ width: "99px" }}>10</td>
+                  <td style={{ width: "158px" }}>JD1466521</td>
+                  <td style={{ width: "309px" }}>Hợp đồng ủy quyền bài hát</td>
+                  <td style={{ width: "219px" }}>Chillies</td>
+                  <td style={{ width: "207px" }}>Người biểu diễn</td>
+                  <td style={{ width: "159px" }}>Đã hủy</td>
+                  <td style={{ width: "152px" }}>30/09/2020 15:53:13</td>
+                  <td style={{ width: "182px" }}>
+                    <a style={{ color: "#FF7506" }} href="/#">
+                      Xem chi tiết
+                    </a>
+                    <a style={{ color: "#FF7506" }} href="/#">
+                      Lý do hủy
+                    </a>
+                  </td>
+                </tr>
+                <tr style={{ height: 47 }}>
+                  <td style={{ width: "99px" }}>11</td>
+                  <td style={{ width: "158px" }}>JH1567587</td>
+                  <td style={{ width: "309px" }}>Hợp đồng ủy quyền bài hát</td>
+                  <td style={{ width: "219px" }}>Cá Hồi Hoang</td>
+                  <td style={{ width: "207px" }}>Người biểu diễn</td>
+                  <td style={{ width: "159px" }}>Đã hủy</td>
+                  <td style={{ width: "152px" }}>20/09/2020 15:53:13</td>
+                  <td style={{ width: "182px" }}>
+                    <a style={{ color: "#FF7506" }} href="/#">
+                      Xem chi tiết
+                    </a>
+                    <a style={{ color: "#FF7506" }} href="/#">
+                      Lý do hủy
+                    </a>
+                  </td>
+                </tr>
+                <tr style={{ height: 47 }}>
+                  <td style={{ width: "99px" }}>13</td>
+                  <td style={{ width: "158px" }}>SG1562100</td>
+                  <td style={{ width: "309px" }}>Hợp đồng ủy quyền bài hát</td>
+                  <td style={{ width: "219px" }}>Mai Deadline</td>
+                  <td style={{ width: "207px" }}>Người biểu diễn</td>
+                  <td style={{ width: "159px" }}>Đã hủy</td>
+                  <td style={{ width: "152px" }}>01/02/2020 15:53:13</td>
+                  <td style={{ width: "182px" }}>
+                    <a style={{ color: "#FF7506" }} href="/#">
+                      Xem chi tiết
+                    </a>
+                    <a style={{ color: "#FF7506" }} href="/#">
+                      Lý do hủy
+                    </a>
+                  </td>
+                </tr>
+                {/* <tr style={{ height: 47 }}>
+                  <td style={{ width: "99px" }}>13</td>
+                  <td style={{ width: "158px" }}>Số hợp đồng 3</td>
+                  <td style={{ width: "309px" }}>Hợp đồng ủy quyền bài hát</td>
+                  <td style={{ width: "219px" }}>Người ủy quyền 3</td>
+                  <td style={{ width: "207px" }}>Quyền sở hữu 3</td>
+                  <td style={{ width: "159px" }}>Hiệu lực hợp đồng 3</td>
+                  <td style={{ width: "152px" }}>Ngày tạo 3</td>
+                  <td style={{ width: "182px" }}>
+                    <a href="/#">Xem chi tiết</a>
+                  </td>
+                </tr> */}
+              </tbody>
+            </table>
+          </div>
+
           <div
             style={{
               position: "fixed",
@@ -320,17 +546,6 @@ const DanhSachHopDong = () => {
                 position: "relative",
               }}
             >
-              <i
-                className="far fa-eye-slash"
-                style={{
-                  width: "100%",
-                  textAlign: "center",
-                  position: "absolute",
-                  top: 15,
-                  left: 0,
-                  height: "50%",
-                }}
-              ></i>
               <div
                 style={{
                   display: "flex",
@@ -340,71 +555,8 @@ const DanhSachHopDong = () => {
                   height: "50%",
                 }}
               >
-                Sửa thông tin
+                Thêm hợp đồng
               </div>
-            </div>
-
-            {/* <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                width: "100%",
-                height: 130,
-                marginBottom: 10,
-                backgroundColor: "white",
-                position: "relative",
-              }}
-            >
-              <i
-                className="icon-class-name"
-                style={{
-                  position: "absolute",
-                  top: 0,
-                  left: 0,
-                  height: "50%",
-                  transform: "translateY(-50%)",
-                }}
-              ></i>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  width: "100%",
-                  height: "50%",
-                }}
-              >
-                Sửa thông tin
-              </div>
-            </div> */}
-
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                backgroundColor: "white",
-                justifyContent: "center",
-                width: "100%",
-                height: 130,
-                marginBottom: 10,
-              }}
-            >
-              <Link to="/navbar/DoiMK">Đổi mật khẩu</Link>
-            </div>
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                backgroundColor: "white",
-                justifyContent: "center",
-                width: "100%",
-                height: 130,
-                marginBottom: 10,
-              }}
-              onClick={handleDangXuat}
-            >
-              Đăng xuất
             </div>
           </div>
         </div>
