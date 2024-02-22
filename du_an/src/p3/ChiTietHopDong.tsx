@@ -2,9 +2,9 @@ import "../quanly/Navbar.css"; // Import file CSS cho navbar
 import { useLocation } from "react-router-dom";
 import { useNavigate, Link } from "react-router-dom";
 import { useEffect } from "react";
-import "./style.css";
+import "./style2.css";
 
-const DanhSachHopDong = () => {
+const ChiTietHopDong = () => {
   const location = useLocation();
   const navigate = useNavigate();
   let user = location.state && location.state.user;
@@ -20,8 +20,8 @@ const DanhSachHopDong = () => {
   return (
     <>
       <div style={{ width: "100%", display: "flex" }}>
-        <div className="sidebar">
-          <div className="logo">
+        <div className="sidebar" style={{ width: 40 }}>
+          {/* <div className="logo">
             <img src="/img/logo.png" alt="Logo navbar" />
           </div>
           <ul>
@@ -116,6 +116,20 @@ const DanhSachHopDong = () => {
               </a>
             </li>
           </ul>
+          <div className="toggle-arrow">&gt;</div> */}
+          <div
+            style={{
+              width: "40px",
+              height: "1080px",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              color: "#B65100",
+              fontSize: 24,
+            }}
+          >
+            &gt;
+          </div>
         </div>
 
         <div>
@@ -129,7 +143,6 @@ const DanhSachHopDong = () => {
               marginTop: "24px",
 
               height: "80px",
-              // backgroundColor: "#1e1e2e",
               display: "inline-flex",
               alignItems: "center",
               padding: "0 20px",
@@ -179,7 +192,9 @@ const DanhSachHopDong = () => {
             >
               Quản lý
             </a>
-            <span className="separator">&gt;</span>
+            <span className="separator" style={{ color: "#FFAC69" }}>
+              &gt;
+            </span>
             <br />
             <a
               className="child-link"
@@ -188,12 +203,24 @@ const DanhSachHopDong = () => {
             >
               Quản lý hợp đồng
             </a>
+            <span className="separator" style={{ color: "#FFAC69" }}>
+              &gt;
+            </span>
+            <br />
+            <a
+              className="child-link"
+              style={{ color: "#F5F5FF", textDecoration: "none" }}
+              href="/#"
+            >
+              Chi Tiết
+            </a>
           </div>
 
           <div
             style={{
-              width: 392,
+              width: 800,
               height: 48,
+
               top: 114,
               left: 229,
               position: "absolute",
@@ -209,10 +236,9 @@ const DanhSachHopDong = () => {
                 textAlign: "left",
               }}
             >
-              Danh sách hợp đồng
+              Chi tiết hợp đồng uỷ quyền bài hát - BH123
             </p>
           </div>
-
           <div
             style={{
               width: "fit-content",
@@ -230,7 +256,6 @@ const DanhSachHopDong = () => {
               style={{
                 width: 211,
                 height: 40,
-                // padding: "8px 24px",
                 borderRadius: 24,
                 gap: 10,
                 backgroundColor: "#B65100",
@@ -249,17 +274,15 @@ const DanhSachHopDong = () => {
                   textAlign: "center",
                 }}
               >
-                Hợp đồng ủy quyền
+                Thông tin hợp đồng
               </p>
             </div>
             <div
               style={{
                 width: 207,
                 height: 40,
-                // padding: "8px 24px",
                 borderRadius: 24,
                 gap: 10,
-                // backgroundColor: "#B65100",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
@@ -275,97 +298,10 @@ const DanhSachHopDong = () => {
                   textAlign: "center",
                 }}
               >
-                Hợp đồng khai thác
+                Tác phẩm ủy quyền
               </p>
             </div>
           </div>
-
-          <div
-            style={{
-              width: "118px",
-              height: "24px",
-              position: "absolute",
-              top: "266px",
-              left: "229px",
-              fontFamily: "Montserrat",
-              fontSize: "16px",
-              fontWeight: "600",
-              lineHeight: "24px",
-              letterSpacing: "-0.002em",
-              textAlign: "left",
-              background: "#FFFFFF",
-            }}
-          >
-            Quyền sở hữu:
-          </div>
-          <select
-            style={{
-              width: "160px",
-              height: "40px",
-              position: "absolute",
-              top: "258px",
-              left: "363px",
-              padding: "12px 12px 12px 16px",
-              borderRadius: "8px",
-              border: "1px solid #FF7506",
-              justifyContent: "space-between",
-              background: "#1E1E2E",
-              color: "#FFFFFF",
-              fontFamily: "Montserrat",
-              fontSize: "16px",
-              fontWeight: "600",
-              letterSpacing: "-0.002em",
-            }}
-          >
-            <option value="all">Tất cả</option>
-            <option value="performer">Người biểu diễn</option>
-            <option value="manufacturer">Nhà sản xuất</option>
-          </select>
-
-          <div
-            style={{
-              width: "156px",
-              height: "24px",
-              position: "absolute",
-              top: "266px",
-              left: "500",
-              fontFamily: "Montserrat",
-              fontSize: "16px",
-              fontWeight: "600",
-              lineHeight: "24px",
-              letterSpacing: "-0.002em",
-              textAlign: "left",
-              background: "#FFFFFF",
-            }}
-          >
-            Hiệu lực hợp đồng:
-          </div>
-          <select
-            style={{
-              width: "135px",
-              height: "40px",
-              position: "absolute",
-              top: "258px",
-              left: 800,
-              padding: "12px 12px 12px 16px",
-              borderRadius: "8px",
-              border: "1px solid #FF7506",
-              display: "flex",
-              justifyContent: "space-between",
-              background: "#1E1E2E",
-              color: "#FFFFFF",
-              fontFamily: "Montserrat",
-              fontSize: "16px",
-              fontWeight: "600",
-              letterSpacing: "-0.002em",
-            }}
-          >
-            <option value="all">Tất cả</option>
-            <option value="1">Mới</option>
-            <option value="2">Còn thời hạn</option>
-            <option value="3">Hết hạn</option>
-            <option value="4">Hủy</option>
-          </select>
 
           {/* bảng */}
           <div
@@ -577,21 +513,8 @@ const DanhSachHopDong = () => {
                     </a>
                   </td>
                 </tr>
-                {/* <tr style={{ height: 47 }}>
-                  <td style={{ width: "99px" }}>13</td>
-                  <td style={{ width: "158px" }}>Số hợp đồng 3</td>
-                  <td style={{ width: "309px" }}>Hợp đồng ủy quyền bài hát</td>
-                  <td style={{ width: "219px" }}>Người ủy quyền 3</td>
-                  <td style={{ width: "207px" }}>Quyền sở hữu 3</td>
-                  <td style={{ width: "159px" }}>Hiệu lực hợp đồng 3</td>
-                  <td style={{ width: "152px" }}>Ngày tạo 3</td>
-                  <td style={{ width: "182px" }}>
-                    <a href="/#">Xem chi tiết</a>
-                  </td>
-                </tr> */}
               </tbody>
             </table>
-
             <div
               style={{
                 width: "fit-content",
@@ -620,6 +543,7 @@ const DanhSachHopDong = () => {
                 style={{
                   width: "203px",
                   height: "26px",
+                  // justifySelf: "flex-start",
                   position: "absolute",
                   right: 50,
                   color: "#F5F5FF",
@@ -691,4 +615,4 @@ const DanhSachHopDong = () => {
   );
 };
 //bỏ cài đặt bootstrap
-export default DanhSachHopDong;
+export default ChiTietHopDong;

@@ -1,0 +1,19 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.page-link {
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #f5f5ff;
+  /* background-color: #f5f5f5; */
+  /* border: 1px solid #ddd; */
+  /* border-radius: 4px; */
+}
+
+.page-link.active {
+  background-color: #ff7506;
+  border-radius: 50%;
+}
