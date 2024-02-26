@@ -133,7 +133,7 @@ const ChiTietHopDong = () => {
         </div>
 
         <div>
-          <nav
+          {/* <nav
             className="navbar"
             style={{
               width: "100%",
@@ -179,11 +179,15 @@ const ChiTietHopDong = () => {
             <div className="login" style={{ color: "white" }}>
               <span>Welcome, {user}</span>
             </div>
-          </nav>
+          </nav> */}
 
           <div
-            className="container"
-            style={{ marginTop: "10px", left: 229, position: "absolute" }}
+            style={{
+              top: 86,
+              // marginTop: "10px",
+              left: 78,
+              position: "absolute",
+            }}
           >
             <a
               className="parent-link"
@@ -195,7 +199,6 @@ const ChiTietHopDong = () => {
             <span className="separator" style={{ color: "#FFAC69" }}>
               &gt;
             </span>
-            <br />
             <a
               className="child-link"
               style={{ color: "#F5F5FF", textDecoration: "none" }}
@@ -206,7 +209,6 @@ const ChiTietHopDong = () => {
             <span className="separator" style={{ color: "#FFAC69" }}>
               &gt;
             </span>
-            <br />
             <a
               className="child-link"
               style={{ color: "#F5F5FF", textDecoration: "none" }}
@@ -222,7 +224,7 @@ const ChiTietHopDong = () => {
               height: 48,
 
               top: 114,
-              left: 229,
+              left: 78,
               position: "absolute",
               color: "#FFFFFF",
             }}
@@ -246,7 +248,7 @@ const ChiTietHopDong = () => {
               position: "absolute",
               top: 186,
               marginTop: 10,
-              left: 229,
+              left: 78,
               borderRadius: 24,
               border: "1px solid #B65100",
               display: "flex",
@@ -272,6 +274,7 @@ const ChiTietHopDong = () => {
                   fontWeight: 700,
                   letterSpacing: "-0.002em",
                   textAlign: "center",
+                  marginTop: 13,
                 }}
               >
                 Thông tin hợp đồng
@@ -296,6 +299,7 @@ const ChiTietHopDong = () => {
                   fontWeight: 700,
                   letterSpacing: "-0.002em",
                   textAlign: "center",
+                  marginTop: 13,
                 }}
               >
                 Tác phẩm ủy quyền
@@ -309,270 +313,149 @@ const ChiTietHopDong = () => {
               width: 1533,
               height: "fit-content",
               position: "absolute",
-              top: 322,
-              left: 229,
-              padding: "16px 24px",
-              borderRadius: 16,
-              gap: 56,
-              backgroundColor: "#2F2F41B2",
+              top: 250,
+              left: 81,
             }}
           >
             {/* Nội dung thẻ div */}
-            <table style={{ height: "fit-content" }}>
-              <thead style={{ color: "#FFAC69" }}>
-                <tr style={{ textAlign: "left", height: 48 }}>
-                  <th style={{ width: "99px" }}>STT</th>
-                  <th style={{ width: "158px" }}>Số hợp đồng</th>
-                  <th style={{ width: "309px" }}>Tên hợp đồng</th>
-                  <th style={{ width: "219px" }}>Người ủy quyền</th>
-                  <th style={{ width: "207px" }}>Quyền sở hữu</th>
-                  <th style={{ width: "159px" }}>Hiệu lực hợp đồng</th>
-                  <th style={{ width: "152px" }}>Ngày tạo</th>
-                  <th style={{ width: "182px" }}></th>
+            <table style={{ height: "fit-content", width: "100%" }}>
+              <thead style={{ color: "#FFFFFF" }}>
+                <tr style={{ height: 48 }}>
+                  <th style={{ width: "30%", textAlign: "left" }}>
+                    Số hợp đồng:&nbsp;&nbsp;BH123
+                  </th>
+                  <th style={{ width: "50%" }}>
+                    <td style={{ width: "50%" }}> Đính kèm tệp:</td>
+                    <td style={{ width: "50%" }}>
+                      {" "}
+                      <span
+                        style={{
+                          opacity: 0.5,
+                          fontFamily: "Montserrat",
+                          fontSize: "16px",
+                          fontWeight: 400,
+                          lineHeight: "24px",
+                          letterSpacing: "-0.002em",
+                          textAlign: "left",
+                        }}
+                      >
+                        <i
+                          style={{ marginRight: 8 }}
+                          className="fa-solid fa-file-word"
+                        ></i>
+                        hetthuongcannho.doc
+                      </span>
+                    </td>
+                  </th>
+                  <th
+                    style={{
+                      width: "20%",
+                      color: "#FFAC69",
+                      textAlign: "left",
+                    }}
+                  >
+                    {/* <i
+                      style={{ marginRight: 8 }}
+                      className="fa-solid fa-circle-info"
+                    ></i>
+                    Mức nhuận bút */}
+                  </th>
                 </tr>
               </thead>
               <tbody style={{ color: "#FFFFFF" }}>
                 <tr style={{ height: 47 }}>
-                  <td style={{ width: "99px" }}>1</td>
-                  <td style={{ width: "158px" }}>HD123</td>
-                  <td style={{ width: "309px" }}>Hợp đồng ủy quyền bài hát</td>
-                  <td style={{ width: "219px" }}>Vương Anh Tú</td>
-                  <td style={{ width: "207px" }}>Người biểu diễn</td>
-                  <td style={{ width: "159px" }}>Còn thời hạn</td>
-                  <td style={{ width: "152px" }}>01/04/2021 15:53:13</td>
-                  <td style={{ width: "182px" }}>
-                    <a style={{ color: "#FF7506" }} href="/#">
-                      Xem chi tiết
-                    </a>
+                  <td style={{ width: "30%", textAlign: "left" }}>
+                    Tên hợp đồng:&nbsp;&nbsp;Hợp đồng uỷ quyền tác phẩm âm nhạc
                   </td>
+                  <td style={{ width: "50%" }}>
+                    <td style={{ width: "50%" }}></td>
+                    <td style={{ width: "50%" }}>
+                      <span
+                        style={{
+                          opacity: 0.5,
+                          fontFamily: "Montserrat",
+                          fontSize: "16px",
+                          fontWeight: 400,
+                          lineHeight: "24px",
+                          letterSpacing: "-0.002em",
+                          textAlign: "left",
+                        }}
+                      >
+                        <i
+                          style={{ marginRight: 8 }}
+                          className="fa-solid fa-file-word"
+                        ></i>
+                        hetthuongcannho.doc
+                      </span>
+                    </td>
+                  </td>
+                  <td style={{ textAlign: "left", width: "20%" }}></td>
                 </tr>
-                <tr style={{ height: 47 }}>
-                  <td style={{ width: "99px" }}>2</td>
-                  <td style={{ width: "158px" }}>VQ14145145</td>
-                  <td style={{ width: "309px" }}>Hợp đồng ủy quyền bài hát</td>
-                  <td style={{ width: "219px" }}>Khắc Hưng</td>
-                  <td style={{ width: "207px" }}>Người biểu diễn</td>
-                  <td style={{ width: "159px" }}>Còn thời hạn</td>
-                  <td style={{ width: "152px" }}>12/03/2021 15:53:13</td>
-                  <td style={{ width: "182px" }}>
-                    <a style={{ color: "#FF7506" }} href="/#">
-                      Xem chi tiết
-                    </a>
+                <tr style={{ textAlign: "center", height: 47 }}>
+                  <td style={{ width: "33.33%", textAlign: "left" }}>
+                    Ngày hiệu lực:&nbsp;&nbsp;01/05/2021
                   </td>
+                  <td style={{ width: "33.33%" }}></td>
+                  <td style={{ width: "33.33%" }}></td>
                 </tr>
-                <tr style={{ height: 47 }}>
-                  <td style={{ width: "99px" }}>3</td>
-                  <td style={{ width: "158px" }}>UH1563167</td>
-                  <td style={{ width: "309px" }}>Hợp đồng ủy quyền bài hát</td>
-                  <td style={{ width: "219px" }}>Châu Đăng Khoa</td>
-                  <td style={{ width: "207px" }}>Người biểu diễn</td>
-                  <td style={{ width: "159px" }}>Còn thời hạn</td>
-                  <td style={{ width: "152px" }}>14/03/2021 15:53:13</td>
-                  <td style={{ width: "182px" }}>
-                    <a style={{ color: "#FF7506" }} href="/#">
-                      Xem chi tiết
-                    </a>
+                <tr style={{ textAlign: "center", height: 47 }}>
+                  <td style={{ width: "30%", textAlign: "left" }}>
+                    Ngày hết hạn:&nbsp;&nbsp;01/12/2021
                   </td>
+                  <td style={{ width: "45%" }}></td>
+                  <td style={{ width: "25%" }}></td>
+                </tr>
+                <tr style={{ textAlign: "center", height: 47 }}>
+                  <td style={{ width: "33.33%", textAlign: "left" }}>
+                    <div style={{ display: "flex", alignItems: "center" }}>
+                      Tình trạng:&nbsp;&nbsp;
+                      <div
+                        style={{
+                          width: "8px",
+                          height: "8px",
+                          borderRadius: "50%",
+                          background: "#347AFF",
+                          marginRight: "5px",
+                        }}
+                      ></div>
+                      Còn thời hạn
+                    </div>
+                  </td>
+                  <td style={{ width: "33.33%" }}></td>
+                  <td style={{ width: "33.33%" }}></td>
                 </tr>
 
-                <tr style={{ height: 47 }}>
+                {/* <tr style={{ height: 47 }}>
                   <td style={{ width: "99px" }}>4</td>
                   <td style={{ width: "158px" }}>TH2156355</td>
                   <td style={{ width: "309px" }}>Hợp đồng ủy quyền bài hát</td>
-                  <td style={{ width: "219px" }}>Phan Mạnh Quỳnh</td>
-                  <td style={{ width: "207px" }}>Nhà Sản Xuất</td>
-                  <td style={{ width: "159px" }}>Còn thời hạn</td>
-                  <td style={{ width: "152px" }}>01/03/2021 15:51:05</td>
-                  <td style={{ width: "182px" }}>
-                    <a style={{ color: "#FF7506" }} href="/#">
-                      Xem chi tiết
-                    </a>
-                  </td>
                 </tr>
                 <tr style={{ height: 47 }}>
                   <td style={{ width: "99px" }}>5</td>
                   <td style={{ width: "158px" }}>DG639148</td>
                   <td style={{ width: "309px" }}>Hợp đồng ủy quyền bài hát</td>
-                  <td style={{ width: "219px" }}>Karik</td>
-                  <td style={{ width: "207px" }}>Người biểu diễn</td>
-                  <td style={{ width: "159px" }}>Còn thời hạn</td>
-                  <td style={{ width: "152px" }}>01/02/2021 13:13:13</td>
-                  <td style={{ width: "182px" }}>
-                    <a style={{ color: "#FF7506" }} href="/#">
-                      Xem chi tiết
-                    </a>
-                  </td>
-                </tr>
-                <tr style={{ height: 47 }}>
-                  <td style={{ width: "99px" }}>6</td>
-                  <td style={{ width: "158px" }}>FG638149</td>
-                  <td style={{ width: "309px" }}>Hợp đồng ủy quyền bài hát</td>
-                  <td style={{ width: "219px" }}>Binz</td>
-                  <td style={{ width: "207px" }}>Người biểu diễn</td>
-                  <td style={{ width: "159px" }}>Còn thời hạn</td>
-                  <td style={{ width: "152px" }}>01/01/2021 15:53:13</td>
-                  <td style={{ width: "182px" }}>
-                    <a style={{ color: "#FF7506" }} href="/#">
-                      Xem chi tiết
-                    </a>
-                  </td>
-                </tr>
-                <tr style={{ height: 47 }}>
-                  <td style={{ width: "99px" }}>7</td>
-                  <td style={{ width: "158px" }}>HJ256203</td>
-                  <td style={{ width: "309px" }}>Hợp đồng ủy quyền bài hát</td>
-                  <td style={{ width: "219px" }}>JustaTee</td>
-                  <td style={{ width: "207px" }}>Người biểu diễn</td>
-                  <td style={{ width: "159px" }}>Còn thời hạn</td>
-                  <td style={{ width: "152px" }}>01/12/2020 15:53:13</td>
-                  <td style={{ width: "182px" }}>
-                    <a style={{ color: "#FF7506" }} href="/#">
-                      Xem chi tiết
-                    </a>
-                  </td>
-                </tr>
-                <tr style={{ height: 47 }}>
-                  <td style={{ width: "99px" }}>8</td>
-                  <td style={{ width: "158px" }}>DG253321</td>
-                  <td style={{ width: "309px" }}>Hợp đồng ủy quyền bài hát</td>
-                  <td style={{ width: "219px" }}>Đen Vâu</td>
-                  <td style={{ width: "207px" }}>Nhà sản xuất</td>
-                  <td style={{ width: "159px" }}>Còn thời hạn</td>
-                  <td style={{ width: "152px" }}>01/11/2020 15:53:13</td>
-                  <td style={{ width: "182px" }}>
-                    <a style={{ color: "#FF7506" }} href="/#">
-                      Xem chi tiết
-                    </a>
-                  </td>
-                </tr>
-                <tr style={{ height: 47 }}>
-                  <td style={{ width: "99px" }}>9</td>
-                  <td style={{ width: "158px" }}>HH141654</td>
-                  <td style={{ width: "309px" }}>Hợp đồng ủy quyền bài hát</td>
-                  <td style={{ width: "219px" }}>RPT MCK</td>
-                  <td style={{ width: "207px" }}>
-                    Người biểu diễn <br />
-                    Nhà sản xuất
-                  </td>
-                  <td style={{ width: "159px" }}>Còn thời hạn</td>
-                  <td style={{ width: "152px" }}>16/10/2020 15:53:13</td>
-                  <td style={{ width: "182px" }}>
-                    <a style={{ color: "#FF7506" }} href="/#">
-                      Xem chi tiết
-                    </a>
-                  </td>
-                </tr>
-                <tr style={{ height: 47 }}>
-                  <td style={{ width: "99px" }}>10</td>
-                  <td style={{ width: "158px" }}>JD1466521</td>
-                  <td style={{ width: "309px" }}>Hợp đồng ủy quyền bài hát</td>
-                  <td style={{ width: "219px" }}>Chillies</td>
-                  <td style={{ width: "207px" }}>Người biểu diễn</td>
-                  <td style={{ width: "159px" }}>Đã hủy</td>
-                  <td style={{ width: "152px" }}>30/09/2020 15:53:13</td>
-                  <td style={{ width: "182px" }}>
-                    <a style={{ color: "#FF7506" }} href="/#">
-                      Xem chi tiết
-                    </a>
-                    <a style={{ color: "#FF7506" }} href="/#">
-                      Lý do hủy
-                    </a>
-                  </td>
-                </tr>
-                <tr style={{ height: 47 }}>
-                  <td style={{ width: "99px" }}>11</td>
-                  <td style={{ width: "158px" }}>JH1567587</td>
-                  <td style={{ width: "309px" }}>Hợp đồng ủy quyền bài hát</td>
-                  <td style={{ width: "219px" }}>Cá Hồi Hoang</td>
-                  <td style={{ width: "207px" }}>Người biểu diễn</td>
-                  <td style={{ width: "159px" }}>Đã hủy</td>
-                  <td style={{ width: "152px" }}>20/09/2020 15:53:13</td>
-                  <td style={{ width: "182px" }}>
-                    <a style={{ color: "#FF7506" }} href="/#">
-                      Xem chi tiết
-                    </a>
-                    <a style={{ color: "#FF7506" }} href="/#">
-                      Lý do hủy
-                    </a>
-                  </td>
-                </tr>
-                <tr style={{ height: 47 }}>
-                  <td style={{ width: "99px" }}>13</td>
-                  <td style={{ width: "158px" }}>SG1562100</td>
-                  <td style={{ width: "309px" }}>Hợp đồng ủy quyền bài hát</td>
-                  <td style={{ width: "219px" }}>Mai Deadline</td>
-                  <td style={{ width: "207px" }}>Người biểu diễn</td>
-                  <td style={{ width: "159px" }}>Đã hủy</td>
-                  <td style={{ width: "152px" }}>01/02/2020 15:53:13</td>
-                  <td style={{ width: "182px" }}>
-                    <a style={{ color: "#FF7506" }} href="/#">
-                      Xem chi tiết
-                    </a>
-                    <a style={{ color: "#FF7506" }} href="/#">
-                      Lý do hủy
-                    </a>
-                  </td>
-                </tr>
+                </tr> */}
               </tbody>
             </table>
-            <div
-              style={{
-                width: "fit-content",
-                maxWidth: "1485px",
-                height: "fit-content",
-                minHeight: "32px",
-                display: "flex",
-                justifyContent: "space-between",
-                gap: "8px",
-                marginTop: 62,
-              }}
-            >
-              <div
-                style={{
-                  width: "max-content",
-                  maxWidth: "279.82px",
-                  height: "fit-content",
-                  minHeight: "32px",
-                  color: "#F5F5FF",
-                }}
-              >
-                Hiển thị 13 hàng trong mỗi trang
-              </div>
+          </div>
 
-              <div
-                style={{
-                  width: "203px",
-                  height: "26px",
-                  // justifySelf: "flex-start",
-                  position: "absolute",
-                  right: 50,
-                  color: "#F5F5FF",
-                }}
-                className="pagination"
-              >
-                <a href="/#" className="page-link">
-                  &lt;
-                </a>
-                <a href="/#" className="page-link ">
-                  1
-                </a>
-                <a href="/#" className="page-link active">
-                  2
-                </a>
-                <a href="/#" className="page-link">
-                  3
-                </a>
-                <a href="/#" className="page-link">
-                  ...
-                </a>
-                <a href="/#" className="page-link">
-                  100
-                </a>
-                <a href="/#" className="page-link">
-                  &gt;
-                </a>
-              </div>
-            </div>
+          <div
+            style={{
+              width: "290px",
+              height: "24px",
+              position: "absolute",
+              top: 521,
+              left: "78px",
+              fontFamily: "Montserrat",
+              fontSize: "18px",
+              fontWeight: 700,
+              lineHeight: "24px",
+              letterSpacing: "-0.002em",
+              textAlign: "left",
+              color: "#FFAC69",
+            }}
+          >
+            Thông tin pháp nhân uỷ quyền
           </div>
 
           <div

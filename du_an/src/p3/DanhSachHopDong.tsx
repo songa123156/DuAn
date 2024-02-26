@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import { useNavigate, Link } from "react-router-dom";
 import { useEffect } from "react";
 import "./style.css";
+import Navbar from "../BackGround/navbar";
 
 const DanhSachHopDong = () => {
   const location = useLocation();
@@ -20,7 +21,7 @@ const DanhSachHopDong = () => {
   return (
     <>
       <div style={{ width: "100%", display: "flex" }}>
-        <div className="sidebar">
+        {/* <div className="sidebar">
           <div className="logo">
             <img src="/img/logo.png" alt="Logo navbar" />
           </div>
@@ -116,10 +117,11 @@ const DanhSachHopDong = () => {
               </a>
             </li>
           </ul>
-        </div>
+        </div> */}
+        <Navbar></Navbar>
 
         <div>
-          <nav
+          {/* <nav
             className="navbar"
             style={{
               width: "100%",
@@ -166,11 +168,16 @@ const DanhSachHopDong = () => {
             <div className="login" style={{ color: "white" }}>
               <span>Welcome, {user}</span>
             </div>
-          </nav>
+          </nav> */}
 
           <div
-            className="container"
-            style={{ marginTop: "10px", left: 229, position: "absolute" }}
+            // className="container"
+            style={{
+              top: 86,
+              marginTop: "10px",
+              left: 229,
+              position: "absolute",
+            }}
           >
             <a
               className="parent-link"
@@ -179,8 +186,9 @@ const DanhSachHopDong = () => {
             >
               Quản lý
             </a>
-            <span className="separator">&gt;</span>
-            <br />
+            <span style={{ color: "#F5F5FF" }} className="separator">
+              &gt;
+            </span>
             <a
               className="child-link"
               style={{ color: "#F5F5FF", textDecoration: "none" }}
@@ -247,6 +255,7 @@ const DanhSachHopDong = () => {
                   fontWeight: 700,
                   letterSpacing: "-0.002em",
                   textAlign: "center",
+                  marginTop: 12,
                 }}
               >
                 Hợp đồng ủy quyền
@@ -273,6 +282,7 @@ const DanhSachHopDong = () => {
                   fontWeight: 700,
                   letterSpacing: "-0.002em",
                   textAlign: "center",
+                  marginTop: 12,
                 }}
               >
                 Hợp đồng khai thác
@@ -293,7 +303,7 @@ const DanhSachHopDong = () => {
               lineHeight: "24px",
               letterSpacing: "-0.002em",
               textAlign: "left",
-              background: "#FFFFFF",
+              color: "#FFFFFF",
             }}
           >
             Quyền sở hữu:
@@ -305,7 +315,7 @@ const DanhSachHopDong = () => {
               position: "absolute",
               top: "258px",
               left: "363px",
-              padding: "12px 12px 12px 16px",
+              padding: "8px 12px 8px 16px",
               borderRadius: "8px",
               border: "1px solid #FF7506",
               justifyContent: "space-between",
@@ -313,7 +323,7 @@ const DanhSachHopDong = () => {
               color: "#FFFFFF",
               fontFamily: "Montserrat",
               fontSize: "16px",
-              fontWeight: "600",
+              fontWeight: "400",
               letterSpacing: "-0.002em",
             }}
           >
@@ -328,14 +338,14 @@ const DanhSachHopDong = () => {
               height: "24px",
               position: "absolute",
               top: "266px",
-              left: "500",
+              left: 650,
               fontFamily: "Montserrat",
               fontSize: "16px",
               fontWeight: "600",
               lineHeight: "24px",
               letterSpacing: "-0.002em",
               textAlign: "left",
-              background: "#FFFFFF",
+              color: "#FFFFFF",
             }}
           >
             Hiệu lực hợp đồng:
@@ -347,7 +357,7 @@ const DanhSachHopDong = () => {
               position: "absolute",
               top: "258px",
               left: 800,
-              padding: "12px 12px 12px 16px",
+              padding: "8px 12px 8px 16px",
               borderRadius: "8px",
               border: "1px solid #FF7506",
               display: "flex",
@@ -366,6 +376,57 @@ const DanhSachHopDong = () => {
             <option value="3">Hết hạn</option>
             <option value="4">Hủy</option>
           </select>
+
+          <div
+            style={{
+              width: "501px",
+              height: "48px",
+              position: "absolute",
+              top: "250px",
+              left: "1261px",
+              // padding: "12px 24px 12px 24px",
+              borderRadius: "8px",
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+              background: "#2B2B3F",
+            }}
+          >
+            <input
+              type="text"
+              style={{
+                width: "100%",
+                height: "100%",
+                background: "transparent",
+                border: "none",
+                color: "#FFFFFF",
+                fontFamily: "Montserrat",
+                fontSize: "16px",
+                fontWeight: "600",
+                letterSpacing: "-0.002em",
+                outline: "none",
+                paddingLeft: 24,
+                paddingRight: 67,
+              }}
+              placeholder="Tên hợp đồng, số hợp đồng, người uỷ quyền..."
+            />
+            <div
+              style={{
+                marginLeft: "12px",
+                width: "24px",
+                height: "24px",
+                marginTop: 11,
+                marginRight: 10,
+              }}
+            >
+              <a href="/anhson">
+                <i
+                  style={{ color: "white" }}
+                  className="fa-solid fa-magnifying-glass"
+                ></i>
+              </a>
+            </div>
+          </div>
 
           {/* bảng */}
           <div
@@ -402,7 +463,31 @@ const DanhSachHopDong = () => {
                   <td style={{ width: "309px" }}>Hợp đồng ủy quyền bài hát</td>
                   <td style={{ width: "219px" }}>Vương Anh Tú</td>
                   <td style={{ width: "207px" }}>Người biểu diễn</td>
-                  <td style={{ width: "159px" }}>Còn thời hạn</td>
+                  <td style={{ width: "159px" }}>
+                    <div style={{ display: "flex", alignItems: "center" }}>
+                      <div
+                        style={{
+                          width: "8px",
+                          height: "8px",
+                          borderRadius: "50%",
+                          background: "#347AFF",
+                          marginRight: "5px",
+                        }}
+                      ></div>
+                      <div style={{ display: "flex", alignItems: "center" }}>
+                        <div
+                          style={{
+                            width: "8px",
+                            height: "8px",
+                            borderRadius: "50%",
+                            background: "#347AFF",
+                            marginRight: "5px",
+                          }}
+                        ></div>
+                        Còn thời hạn
+                      </div>
+                    </div>
+                  </td>
                   <td style={{ width: "152px" }}>01/04/2021 15:53:13</td>
                   <td style={{ width: "182px" }}>
                     <a style={{ color: "#FF7506" }} href="/#">
@@ -416,7 +501,20 @@ const DanhSachHopDong = () => {
                   <td style={{ width: "309px" }}>Hợp đồng ủy quyền bài hát</td>
                   <td style={{ width: "219px" }}>Khắc Hưng</td>
                   <td style={{ width: "207px" }}>Người biểu diễn</td>
-                  <td style={{ width: "159px" }}>Còn thời hạn</td>
+                  <td style={{ width: "159px" }}>
+                    <div style={{ display: "flex", alignItems: "center" }}>
+                      <div
+                        style={{
+                          width: "8px",
+                          height: "8px",
+                          borderRadius: "50%",
+                          background: "#347AFF",
+                          marginRight: "5px",
+                        }}
+                      ></div>
+                      Còn thời hạn
+                    </div>
+                  </td>
                   <td style={{ width: "152px" }}>12/03/2021 15:53:13</td>
                   <td style={{ width: "182px" }}>
                     <a style={{ color: "#FF7506" }} href="/#">
@@ -430,7 +528,20 @@ const DanhSachHopDong = () => {
                   <td style={{ width: "309px" }}>Hợp đồng ủy quyền bài hát</td>
                   <td style={{ width: "219px" }}>Châu Đăng Khoa</td>
                   <td style={{ width: "207px" }}>Người biểu diễn</td>
-                  <td style={{ width: "159px" }}>Còn thời hạn</td>
+                  <td style={{ width: "159px" }}>
+                    <div style={{ display: "flex", alignItems: "center" }}>
+                      <div
+                        style={{
+                          width: "8px",
+                          height: "8px",
+                          borderRadius: "50%",
+                          background: "#347AFF",
+                          marginRight: "5px",
+                        }}
+                      ></div>
+                      Còn thời hạn
+                    </div>
+                  </td>
                   <td style={{ width: "152px" }}>14/03/2021 15:53:13</td>
                   <td style={{ width: "182px" }}>
                     <a style={{ color: "#FF7506" }} href="/#">
@@ -445,7 +556,20 @@ const DanhSachHopDong = () => {
                   <td style={{ width: "309px" }}>Hợp đồng ủy quyền bài hát</td>
                   <td style={{ width: "219px" }}>Phan Mạnh Quỳnh</td>
                   <td style={{ width: "207px" }}>Nhà Sản Xuất</td>
-                  <td style={{ width: "159px" }}>Còn thời hạn</td>
+                  <td style={{ width: "159px" }}>
+                    <div style={{ display: "flex", alignItems: "center" }}>
+                      <div
+                        style={{
+                          width: "8px",
+                          height: "8px",
+                          borderRadius: "50%",
+                          background: "#347AFF",
+                          marginRight: "5px",
+                        }}
+                      ></div>
+                      Còn thời hạn
+                    </div>
+                  </td>
                   <td style={{ width: "152px" }}>01/03/2021 15:51:05</td>
                   <td style={{ width: "182px" }}>
                     <a style={{ color: "#FF7506" }} href="/#">
@@ -459,7 +583,20 @@ const DanhSachHopDong = () => {
                   <td style={{ width: "309px" }}>Hợp đồng ủy quyền bài hát</td>
                   <td style={{ width: "219px" }}>Karik</td>
                   <td style={{ width: "207px" }}>Người biểu diễn</td>
-                  <td style={{ width: "159px" }}>Còn thời hạn</td>
+                  <td style={{ width: "159px" }}>
+                    <div style={{ display: "flex", alignItems: "center" }}>
+                      <div
+                        style={{
+                          width: "8px",
+                          height: "8px",
+                          borderRadius: "50%",
+                          background: "#347AFF",
+                          marginRight: "5px",
+                        }}
+                      ></div>
+                      Còn thời hạn
+                    </div>
+                  </td>
                   <td style={{ width: "152px" }}>01/02/2021 13:13:13</td>
                   <td style={{ width: "182px" }}>
                     <a style={{ color: "#FF7506" }} href="/#">
@@ -473,7 +610,20 @@ const DanhSachHopDong = () => {
                   <td style={{ width: "309px" }}>Hợp đồng ủy quyền bài hát</td>
                   <td style={{ width: "219px" }}>Binz</td>
                   <td style={{ width: "207px" }}>Người biểu diễn</td>
-                  <td style={{ width: "159px" }}>Còn thời hạn</td>
+                  <td style={{ width: "159px" }}>
+                    <div style={{ display: "flex", alignItems: "center" }}>
+                      <div
+                        style={{
+                          width: "8px",
+                          height: "8px",
+                          borderRadius: "50%",
+                          background: "#347AFF",
+                          marginRight: "5px",
+                        }}
+                      ></div>
+                      Còn thời hạn
+                    </div>
+                  </td>
                   <td style={{ width: "152px" }}>01/01/2021 15:53:13</td>
                   <td style={{ width: "182px" }}>
                     <a style={{ color: "#FF7506" }} href="/#">
@@ -487,7 +637,20 @@ const DanhSachHopDong = () => {
                   <td style={{ width: "309px" }}>Hợp đồng ủy quyền bài hát</td>
                   <td style={{ width: "219px" }}>JustaTee</td>
                   <td style={{ width: "207px" }}>Người biểu diễn</td>
-                  <td style={{ width: "159px" }}>Còn thời hạn</td>
+                  <td style={{ width: "159px" }}>
+                    <div style={{ display: "flex", alignItems: "center" }}>
+                      <div
+                        style={{
+                          width: "8px",
+                          height: "8px",
+                          borderRadius: "50%",
+                          background: "#347AFF",
+                          marginRight: "5px",
+                        }}
+                      ></div>
+                      Còn thời hạn
+                    </div>
+                  </td>
                   <td style={{ width: "152px" }}>01/12/2020 15:53:13</td>
                   <td style={{ width: "182px" }}>
                     <a style={{ color: "#FF7506" }} href="/#">
@@ -501,7 +664,20 @@ const DanhSachHopDong = () => {
                   <td style={{ width: "309px" }}>Hợp đồng ủy quyền bài hát</td>
                   <td style={{ width: "219px" }}>Đen Vâu</td>
                   <td style={{ width: "207px" }}>Nhà sản xuất</td>
-                  <td style={{ width: "159px" }}>Còn thời hạn</td>
+                  <td style={{ width: "159px" }}>
+                    <div style={{ display: "flex", alignItems: "center" }}>
+                      <div
+                        style={{
+                          width: "8px",
+                          height: "8px",
+                          borderRadius: "50%",
+                          background: "#347AFF",
+                          marginRight: "5px",
+                        }}
+                      ></div>
+                      Còn thời hạn
+                    </div>
+                  </td>
                   <td style={{ width: "152px" }}>01/11/2020 15:53:13</td>
                   <td style={{ width: "182px" }}>
                     <a style={{ color: "#FF7506" }} href="/#">
@@ -518,7 +694,20 @@ const DanhSachHopDong = () => {
                     Người biểu diễn <br />
                     Nhà sản xuất
                   </td>
-                  <td style={{ width: "159px" }}>Còn thời hạn</td>
+                  <td style={{ width: "159px" }}>
+                    <div style={{ display: "flex", alignItems: "center" }}>
+                      <div
+                        style={{
+                          width: "8px",
+                          height: "8px",
+                          borderRadius: "50%",
+                          background: "#347AFF",
+                          marginRight: "5px",
+                        }}
+                      ></div>
+                      Còn thời hạn
+                    </div>
+                  </td>
                   <td style={{ width: "152px" }}>16/10/2020 15:53:13</td>
                   <td style={{ width: "182px" }}>
                     <a style={{ color: "#FF7506" }} href="/#">
@@ -532,15 +721,31 @@ const DanhSachHopDong = () => {
                   <td style={{ width: "309px" }}>Hợp đồng ủy quyền bài hát</td>
                   <td style={{ width: "219px" }}>Chillies</td>
                   <td style={{ width: "207px" }}>Người biểu diễn</td>
-                  <td style={{ width: "159px" }}>Đã hủy</td>
+                  <td style={{ width: "159px" }}>
+                    <div style={{ display: "flex", alignItems: "center" }}>
+                      <div
+                        style={{
+                          width: "8px",
+                          height: "8px",
+                          borderRadius: "50%",
+                          background: "#FF4747",
+                          marginRight: "5px",
+                        }}
+                      ></div>
+                      Đã hủy
+                    </div>
+                  </td>
                   <td style={{ width: "152px" }}>30/09/2020 15:53:13</td>
                   <td style={{ width: "182px" }}>
-                    <a style={{ color: "#FF7506" }} href="/#">
-                      Xem chi tiết
-                    </a>
-                    <a style={{ color: "#FF7506" }} href="/#">
-                      Lý do hủy
-                    </a>
+                    <div>
+                      <a style={{ color: "#FF7506" }} href="/#">
+                        Xem chi tiết
+                      </a>
+                      &nbsp;&nbsp;&nbsp;
+                      <a style={{ color: "#FF7506" }} href="/#">
+                        Lý do hủy
+                      </a>
+                    </div>
                   </td>
                 </tr>
                 <tr style={{ height: 47 }}>
@@ -549,12 +754,26 @@ const DanhSachHopDong = () => {
                   <td style={{ width: "309px" }}>Hợp đồng ủy quyền bài hát</td>
                   <td style={{ width: "219px" }}>Cá Hồi Hoang</td>
                   <td style={{ width: "207px" }}>Người biểu diễn</td>
-                  <td style={{ width: "159px" }}>Đã hủy</td>
+                  <td style={{ width: "159px" }}>
+                    <div style={{ display: "flex", alignItems: "center" }}>
+                      <div
+                        style={{
+                          width: "8px",
+                          height: "8px",
+                          borderRadius: "50%",
+                          background: "#FF4747",
+                          marginRight: "5px",
+                        }}
+                      ></div>
+                      Đã hủy
+                    </div>
+                  </td>
                   <td style={{ width: "152px" }}>20/09/2020 15:53:13</td>
                   <td style={{ width: "182px" }}>
                     <a style={{ color: "#FF7506" }} href="/#">
                       Xem chi tiết
                     </a>
+                    &nbsp;&nbsp;&nbsp;
                     <a style={{ color: "#FF7506" }} href="/#">
                       Lý do hủy
                     </a>
@@ -566,12 +785,26 @@ const DanhSachHopDong = () => {
                   <td style={{ width: "309px" }}>Hợp đồng ủy quyền bài hát</td>
                   <td style={{ width: "219px" }}>Mai Deadline</td>
                   <td style={{ width: "207px" }}>Người biểu diễn</td>
-                  <td style={{ width: "159px" }}>Đã hủy</td>
+                  <td style={{ width: "159px" }}>
+                    <div style={{ display: "flex", alignItems: "center" }}>
+                      <div
+                        style={{
+                          width: "8px",
+                          height: "8px",
+                          borderRadius: "50%",
+                          background: "#FF4747",
+                          marginRight: "5px",
+                        }}
+                      ></div>
+                      Đã hủy
+                    </div>
+                  </td>
                   <td style={{ width: "152px" }}>01/02/2020 15:53:13</td>
                   <td style={{ width: "182px" }}>
                     <a style={{ color: "#FF7506" }} href="/#">
                       Xem chi tiết
                     </a>
+                    &nbsp;&nbsp;&nbsp;
                     <a style={{ color: "#FF7506" }} href="/#">
                       Lý do hủy
                     </a>
@@ -592,7 +825,7 @@ const DanhSachHopDong = () => {
               </tbody>
             </table>
 
-            <div
+            {/* <div
               style={{
                 width: "fit-content",
                 maxWidth: "1485px",
@@ -613,7 +846,29 @@ const DanhSachHopDong = () => {
                   color: "#F5F5FF",
                 }}
               >
-                Hiển thị 13 hàng trong mỗi trang
+                Hiển thị
+                {/* 13  
+                <div
+                  style={{
+                    width: "48.37px",
+                    height: "32px",
+                    // padding: "6px 16.19px 5px 16.19px",
+                    borderRadius: "4px",
+                    border: "1px solid #FF7506",
+                    background: "#2B2B3F",
+                    color: "#FFFFFF",
+                    fontFamily: "Montserrat",
+                    fontSize: "16px",
+                    fontWeight: "600",
+                    letterSpacing: "-0.002em",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  13
+                </div>
+                hàng trong mỗi trang
               </div>
 
               <div
@@ -648,10 +903,91 @@ const DanhSachHopDong = () => {
                   &gt;
                 </a>
               </div>
+            </div> */}
+            <div
+              style={{
+                width: "fit-content",
+                maxWidth: "1485px",
+                height: "fit-content",
+                minHeight: "32px",
+                display: "flex",
+                justifyContent: "space-between",
+                gap: "8px",
+                marginTop: 62,
+              }}
+            >
+              <div
+                style={{
+                  width: "max-content",
+                  maxWidth: "279.82px",
+                  height: "fit-content",
+                  minHeight: "32px",
+                  color: "#F5F5FF",
+                }}
+              >
+                Hiển thị
+                <div style={{ display: "inline-flex" }}>
+                  <div
+                    style={{
+                      width: "48.37px",
+                      height: "32px",
+                      borderRadius: "4px",
+                      margin: "0px 8px 0px 8px",
+                      border: "1px solid #FF7506",
+                      background: "#2B2B3F",
+                      color: "#FFFFFF",
+                      fontFamily: "Montserrat",
+                      fontSize: "16px",
+                      fontWeight: "600",
+                      letterSpacing: "-0.002em",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                  >
+                    13
+                  </div>
+                </div>
+                hàng trong mỗi trang
+              </div>
+
+              <div
+                style={{
+                  width: "203px",
+                  height: "26px",
+                  position: "absolute",
+                  right: 50,
+                  color: "#F5F5FF",
+                  marginBottom: 10,
+                }}
+                className="pagination"
+              >
+                <a href="/#" className="page-link1">
+                  &lt;
+                </a>
+                <a href="/#" className="page-link1 ">
+                  1
+                </a>
+                <a href="/#" className="page-link1 active">
+                  2
+                </a>
+                <a href="/#" className="page-link1">
+                  3
+                </a>
+                <a href="/#" className="page-link1">
+                  ...
+                </a>
+                <a href="/#" className="page-link1">
+                  100
+                </a>
+                <a href="/#" className="page-link1">
+                  &gt;
+                </a>
+              </div>
             </div>
           </div>
 
-          <div
+          {/* <div
             style={{
               position: "fixed",
               top: 188,
@@ -684,11 +1020,26 @@ const DanhSachHopDong = () => {
                 Thêm hợp đồng
               </div>
             </div>
+          </div> */}
+          <div className="khung2" style={{ height: 130 }}>
+            <div className="khung1">
+              <a href="/suathongtin" style={{ textDecoration: "none" }}>
+                <img
+                  style={{ height: 52, width: 52, padding: 0 }}
+                  src="images/cong.png"
+                  alt="cong"
+                  className="icon"
+                />
+                <div className="textt">
+                  Thêm <br /> hợp đồng
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </>
   );
 };
-//bỏ cài đặt bootstrap
+
 export default DanhSachHopDong;
