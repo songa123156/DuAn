@@ -35,3 +35,13 @@ ul {
 .toggle-arrow.open {
   transform: rotate(180deg);
 }
+
+.circle {
+  display: inline-block;
+  margin-top: 8px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  margin-right: 4px;
+}

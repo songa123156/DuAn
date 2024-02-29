@@ -987,40 +987,6 @@ const DanhSachHopDong = () => {
             </div>
           </div>
 
-          {/* <div
-            style={{
-              position: "fixed",
-              top: 188,
-              right: 0,
-              height: 372,
-              width: 110,
-            }}
-          >
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                width: "100%",
-                height: 130,
-                marginBottom: 10,
-                backgroundColor: "white",
-                position: "relative",
-              }}
-            >
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  width: "100%",
-                  height: "50%",
-                }}
-              >
-                Thêm hợp đồng
-              </div>
-            </div>
-          </div> */}
           <div className="khung2" style={{ height: 130 }}>
             <div className="khung1">
               <a href="/suathongtin" style={{ textDecoration: "none" }}>

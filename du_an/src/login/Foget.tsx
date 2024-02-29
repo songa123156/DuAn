@@ -153,12 +153,21 @@ const Forget = () => {
               <input
                 name="username"
                 type="text"
+                // style={{
+                //   backgroundColor: "#2B2B3F",
+                //   flex: 1,
+                //   width: "100%",
+                //   height: "100%",
+                //   borderRadius: 8,
+                // }}
                 style={{
+                  width: "598px",
+                  height: "48px",
+                  padding: "11px 24px 13px 16px",
+                  borderRadius: "8px",
+                  border: "1px solid #727288",
                   backgroundColor: "#2B2B3F",
-                  flex: 1,
-                  width: "100%",
-                  height: "100%",
-                  borderRadius: 8,
+                  color: "#FFFFFF",
                 }}
               />
             </div>

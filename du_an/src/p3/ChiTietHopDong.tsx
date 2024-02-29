@@ -1,17 +1,26 @@
 import "../quanly/Navbar.css"; // Import file CSS cho navbar
 import { useLocation } from "react-router-dom";
-import { useNavigate, Link } from "react-router-dom";
-import { useEffect } from "react";
+// import { useNavigate, Link } from "react-router-dom";
+// import { useEffect, useState } from "react";
 import "./style2.css";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 
 const ChiTietHopDong = () => {
+  // const [password, setPassword] = useState("");
+  // const [confirmPassword, setConfirmPassword] = useState("");
+  // const [showPassword, setShowPassword] = useState(false);
+  // const toggleShowPassword = () => {
+  //   setShowPassword(!showPassword);
+  // };
+
   const location = useLocation();
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   let user = location.state && location.state.user;
 
-  const handleDangXuat = () => {
-    navigate("/");
-  };
+  // const handleDangXuat = () => {
+  //   navigate("/");
+  // };
 
   //   useEffect(() => {
   //     if (user === null) navigate("/");
@@ -20,7 +29,109 @@ const ChiTietHopDong = () => {
   return (
     <>
       <div style={{ width: "100%", display: "flex" }}>
-        <div className="sidebar" style={{ width: 40 }}>
+        <div
+          style={{
+            width: 1749,
+            height: 80,
+            left: 171,
+            position: "fixed",
+            top: 10,
+            right: 10,
+            zIndex: 9999,
+          }}
+        >
+          <div>
+            <select
+              id="language"
+              style={{
+                width: 143,
+                height: 40,
+                top: 24,
+                left: 1375,
+                padding: "8px 4px 8px 8px",
+                borderRadius: 4,
+                border: "1px solid rgb(200, 200, 219)",
+                gap: 8,
+                color: "rgb(200, 200, 219)",
+                background: "rgb(30, 30, 46)",
+                position: "relative",
+              }}
+            >
+              <option value="vi" style={{ background: "rgb(30, 30, 46)" }}>
+                Tiếng Việt
+              </option>
+              <option value="en" style={{ background: "rgb(30, 30, 46)" }}>
+                English
+              </option>
+              <option value="fr" style={{ background: "rgb(30, 30, 46)" }}>
+                French
+              </option>
+            </select>
+          </div>
+          <div
+            style={{
+              width: 132,
+              height: 40,
+              top: 24,
+              left: 1542,
+              gap: 8,
+              marginRight: 24,
+              position: "absolute",
+            }}
+          >
+            <a href="/trang1" style={{ textDecoration: "none" }}>
+              <img
+                src="images/admin.jpg"
+                alt="mdo"
+                style={{
+                  width: 40,
+                  height: "40.58px",
+                  borderRadius: 200,
+                  position: "absolute",
+                }}
+              />
+              <div
+                style={{
+                  width: 74,
+                  height: 24,
+                  left: 5,
+                  fontFamily: "Montserrat",
+                  fontSize: 16,
+                  fontWeight: 600,
+                  letterSpacing: "-0.002em",
+                  textAlign: "center",
+                  color: "rgb(245, 245, 255)",
+                  marginLeft: 35,
+                  position: "relative",
+                  textDecoration: "none",
+                }}
+              />
+              <div
+                style={{
+                  width: 49,
+                  height: 17,
+                  left: 6,
+                  fontFamily: "Montserrat",
+                  fontSize: 14,
+                  fontWeight: 500,
+                  letterSpacing: "0.015em",
+                  textAlign: "center",
+                  color: "rgb(182, 81, 0)",
+                  marginLeft: 35,
+                  position: "relative",
+                  textDecoration: "none",
+                }}
+              >
+                Admin
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div
+          className="sidebar"
+          style={{ width: 40, borderRadius: "0px 24px 24px 0px" }}
+        >
           {/* <div className="logo">
             <img src="/img/logo.png" alt="Logo navbar" />
           </div>
@@ -133,58 +244,10 @@ const ChiTietHopDong = () => {
         </div>
 
         <div>
-          {/* <nav
-            className="navbar"
-            style={{
-              width: "100%",
-              justifyContent: "flex-end",
-              marginRight: "75px",
-              marginBottom: "16px",
-              marginTop: "24px",
-
-              height: "80px",
-              display: "inline-flex",
-              alignItems: "center",
-              padding: "0 20px",
-            }}
-          >
-            <select
-              style={{
-                backgroundColor: "transparent",
-                border: 0,
-                color: "white",
-                marginRight: 24,
-              }}
-            >
-              <option value="vi" data-icon="VN">
-                Tiếng Việt
-              </option>
-              <option value="en" data-icon="🇺🇸">
-                English
-              </option>
-              <option value="ja" data-icon="🇯🇵">
-                日本語
-              </option>
-              <option value="ko" data-icon="🇰🇷">
-                한국어
-              </option>
-            </select>
-            <div className="logo">
-              <img
-                src="/img/logo.png"
-                alt="Icon"
-                style={{ marginTop: "300%" }}
-              />
-            </div>
-            <div className="login" style={{ color: "white" }}>
-              <span>Welcome, {user}</span>
-            </div>
-          </nav> */}
-
           <div
             style={{
               top: 86,
-              // marginTop: "10px",
+
               left: 78,
               position: "absolute",
             }}
@@ -217,7 +280,6 @@ const ChiTietHopDong = () => {
               Chi Tiết
             </a>
           </div>
-
           <div
             style={{
               width: 800,
@@ -306,139 +368,119 @@ const ChiTietHopDong = () => {
               </p>
             </div>
           </div>
-
-          {/* bảng */}
           <div
             style={{
-              width: 1533,
-              height: "fit-content",
               position: "absolute",
-              top: 250,
-              left: 81,
+              top: "250px",
+              left: "81px",
+              width: "120px",
+              height: "24px",
+              color: "white",
             }}
           >
-            {/* Nội dung thẻ div */}
-            <table style={{ height: "fit-content", width: "100%" }}>
-              <thead style={{ color: "#FFFFFF" }}>
-                <tr style={{ height: 48 }}>
-                  <th style={{ width: "30%", textAlign: "left" }}>
-                    Số hợp đồng:&nbsp;&nbsp;BH123
-                  </th>
-                  <th style={{ width: "50%" }}>
-                    <td style={{ width: "50%" }}> Đính kèm tệp:</td>
-                    <td style={{ width: "50%" }}>
-                      {" "}
-                      <span
-                        style={{
-                          opacity: 0.5,
-                          fontFamily: "Montserrat",
-                          fontSize: "16px",
-                          fontWeight: 400,
-                          lineHeight: "24px",
-                          letterSpacing: "-0.002em",
-                          textAlign: "left",
-                        }}
-                      >
-                        <i
-                          style={{ marginRight: 8 }}
-                          className="fa-solid fa-file-word"
-                        ></i>
-                        hetthuongcannho.doc
-                      </span>
-                    </td>
-                  </th>
-                  <th
-                    style={{
-                      width: "20%",
-                      color: "#FFAC69",
-                      textAlign: "left",
-                    }}
-                  >
-                    {/* <i
-                      style={{ marginRight: 8 }}
-                      className="fa-solid fa-circle-info"
-                    ></i>
-                    Mức nhuận bút */}
-                  </th>
-                </tr>
-              </thead>
-              <tbody style={{ color: "#FFFFFF" }}>
-                <tr style={{ height: 47 }}>
-                  <td style={{ width: "30%", textAlign: "left" }}>
-                    Tên hợp đồng:&nbsp;&nbsp;Hợp đồng uỷ quyền tác phẩm âm nhạc
-                  </td>
-                  <td style={{ width: "50%" }}>
-                    <td style={{ width: "50%" }}></td>
-                    <td style={{ width: "50%" }}>
-                      <span
-                        style={{
-                          opacity: 0.5,
-                          fontFamily: "Montserrat",
-                          fontSize: "16px",
-                          fontWeight: 400,
-                          lineHeight: "24px",
-                          letterSpacing: "-0.002em",
-                          textAlign: "left",
-                        }}
-                      >
-                        <i
-                          style={{ marginRight: 8 }}
-                          className="fa-solid fa-file-word"
-                        ></i>
-                        hetthuongcannho.doc
-                      </span>
-                    </td>
-                  </td>
-                  <td style={{ textAlign: "left", width: "20%" }}></td>
-                </tr>
-                <tr style={{ textAlign: "center", height: 47 }}>
-                  <td style={{ width: "33.33%", textAlign: "left" }}>
-                    Ngày hiệu lực:&nbsp;&nbsp;01/05/2021
-                  </td>
-                  <td style={{ width: "33.33%" }}></td>
-                  <td style={{ width: "33.33%" }}></td>
-                </tr>
-                <tr style={{ textAlign: "center", height: 47 }}>
-                  <td style={{ width: "30%", textAlign: "left" }}>
-                    Ngày hết hạn:&nbsp;&nbsp;01/12/2021
-                  </td>
-                  <td style={{ width: "45%" }}></td>
-                  <td style={{ width: "25%" }}></td>
-                </tr>
-                <tr style={{ textAlign: "center", height: 47 }}>
-                  <td style={{ width: "33.33%", textAlign: "left" }}>
-                    <div style={{ display: "flex", alignItems: "center" }}>
-                      Tình trạng:&nbsp;&nbsp;
-                      <div
-                        style={{
-                          width: "8px",
-                          height: "8px",
-                          borderRadius: "50%",
-                          background: "#347AFF",
-                          marginRight: "5px",
-                        }}
-                      ></div>
-                      Còn thời hạn
-                    </div>
-                  </td>
-                  <td style={{ width: "33.33%" }}></td>
-                  <td style={{ width: "33.33%" }}></td>
-                </tr>
-
-                {/* <tr style={{ height: 47 }}>
-                  <td style={{ width: "99px" }}>4</td>
-                  <td style={{ width: "158px" }}>TH2156355</td>
-                  <td style={{ width: "309px" }}>Hợp đồng ủy quyền bài hát</td>
-                </tr>
-                <tr style={{ height: 47 }}>
-                  <td style={{ width: "99px" }}>5</td>
-                  <td style={{ width: "158px" }}>DG639148</td>
-                  <td style={{ width: "309px" }}>Hợp đồng ủy quyền bài hát</td>
-                </tr> */}
-              </tbody>
-            </table>
+            Số hợp đồng:
+            <br />
+            Tên hợp đồng:
+            <br />
+            Ngày hiệu lực:
+            <br />
+            Ngày hết hạn:
+            <br />
+            Tình trạng:
           </div>
 
+          <div
+            style={{
+              position: "absolute",
+              top: "250px",
+              left: "220px",
+              width: "315px",
+              height: "24px",
+              opacity: 0.7,
+              color: "white",
+            }}
+          >
+            BH123
+            <br />
+            Hợp đồng uỷ quyền tác phẩm âm nhạc
+            <br />
+            01/05/2021
+            <br />
+            01/12/2021
+            <br />
+            <div
+              style={{
+                width: "8px",
+                height: "8px",
+                borderRadius: "50%",
+                background: "#347AFF",
+                marginRight: "5px",
+                display: "inline-block",
+                marginBottom: "1.5px",
+              }}
+            ></div>
+            Còn thời hạn
+          </div>
+
+          <div
+            style={{
+              position: "absolute",
+              top: "250px",
+              left: "721px",
+              width: "119px",
+              height: "24px",
+              color: "white",
+            }}
+          >
+            Đính kèm tệp:
+          </div>
+
+          <div
+            style={{
+              width: 208,
+              height: 24,
+              top: 250,
+              left: 868,
+              position: "absolute",
+              color: "white",
+            }}
+          >
+            <i style={{ marginRight: 8 }} className="fa-solid fa-file-word"></i>
+            hetthuongcannho.doc
+            <br />
+            <i style={{ marginRight: 8 }} className="fa-solid fa-file-word"></i>
+            hetthuongcannho.doc
+          </div>
+          <div
+            style={{
+              position: "absolute",
+              color: "white",
+              width: 273,
+              height: 184,
+              top: 250,
+              left: 1321,
+            }}
+          >
+            <span style={{ color: "#FFAC69" }}>
+              <i
+                style={{ marginRight: 8 }}
+                className="fa-solid fa-circle-info"
+              ></i>
+              Mức nhuận bút
+            </span>
+            <br />
+            Quyền tác giả:
+            <span style={{ left: 240, position: "absolute" }}>0%</span>
+            <br />
+            Quyền liên quan: <br />
+            Quyền của người biểu diễn:
+            <span style={{ left: 240, position: "absolute" }}>50%</span>
+            <br />
+            Quyền của nhà sản xuất:
+            <span style={{ left: 240, position: "absolute" }}>50%</span>
+            <br />
+            (Bản ghi/video)
+          </div>
           <div
             style={{
               width: "290px",
@@ -457,38 +499,347 @@ const ChiTietHopDong = () => {
           >
             Thông tin pháp nhân uỷ quyền
           </div>
-
           <div
             style={{
-              position: "fixed",
-              top: 188,
-              right: 0,
-              height: 372,
-              width: 110,
+              height: 24,
+              top: 565,
+              left: 81,
+              position: "absolute",
+              color: "#FFFFFF",
             }}
           >
-            <div
+            Pháp nhân uỷ quyền:
+            <span style={{ left: 267, position: "absolute", width: 114 }}>
+              Cá nhân
+            </span>
+            <br />
+            Tên người uỷ quyền:
+            <span style={{ left: 267, position: "absolute", width: 114 }}>
+              Nguyễn Văn A
+            </span>
+            <br />
+            Ngày sinh:
+            <span style={{ left: 267, position: "absolute", width: 114 }}>
+              10/01/1984
+            </span>
+            <br />
+            Giới tính:
+            <span style={{ left: 267, position: "absolute", width: 114 }}>
+              Nam
+            </span>
+            <br />
+            Quốc tịch:
+            <span style={{ left: 267, position: "absolute", width: 114 }}>
+              Việt Nam
+            </span>
+            <br />
+            Số điện thoại:
+            <span style={{ left: 267, position: "absolute", width: 137 }}>
+              (+84) 345 678 901
+            </span>
+          </div>
+          <div
+            style={{
+              height: 24,
+              top: 565,
+              left: 721,
+              position: "absolute",
+              color: "#FFFFFF",
+            }}
+          >
+            Số CMND/ CCCD:
+            <br />
+            Ngày cấp:
+            <br />
+            Nơi cấp:
+            <br />
+            Mã số thuế:
+            <br />
+            Nơi cư trú:
+          </div>
+          <div
+            style={{
+              height: 24,
+              top: 565,
+              color: "#FFFFFF",
+              left: 870,
+              position: "absolute",
+              width: 293,
+            }}
+          >
+            123456789012
+            <br />
+            10/07/2011
+            <br />
+            Tp.HCM, Việt Nam
+            <br />
+            92387489
+            <br />
+            69/53, Nguyễn Gia Trí, Phường 25,
+            <br />
+            Quận Bình Thạnh, Thành phố Hồ
+            <br />
+            Chí Minh
+          </div>
+          <div
+            style={{
+              height: 24,
+              top: 565,
+              color: "#FFFFFF",
+              left: 1321,
+              position: "absolute",
+              width: 181,
+            }}
+          >
+            Email:
+            <br />
+            Tài khoản đăng nhập:
+            <br />
+            Mật khẩu:
+            <br />
+            Số tài khoản:
+            <br />
+            Ngân hàng:
+          </div>
+          <div
+            style={{
+              height: 24,
+              top: 565,
+              color: "#FFFFFF",
+              left: 1511,
+              position: "absolute",
+              width: 181,
+            }}
+          >
+            nguyenvana@gmail.com
+            <br />
+            nguyenvana@gmail.com
+            <br />
+            <div className="circle" />
+            <div className="circle" />
+            <div className="circle" />
+            <div className="circle" />
+            <div className="circle" />
+            <div className="circle" />
+            <div className="circle" />
+            <div className="circle" />
+            <br />
+            1231123312211223
+            <br />
+            ACB - Ngân hàng Á Châu
+          </div>
+
+          <div className="khung2">
+            <div className="khung1">
+              <a href="/suathongtin" style={{ textDecoration: "none" }}>
+                <img src="images/sua.png" alt="sua" className="icon" />
+                <div className="textt">
+                  Chỉnh sửa <br /> hợp đồng
+                </div>
+              </a>
+            </div>
+            <div className="khung1">
+              <div
+              // data-bs-toggle="modal" data-bs-target="#exampleModal"
+              >
+                <img src="images/giahan.png" alt="doimk" className="icon" />
+                <div className="textt">
+                  Gia hạn <br /> hợp đồng
+                </div>
+              </div>
+            </div>
+            <div className="khung1">
+              <div data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img src="images/huy2.png" alt="doimk" className="icon" />
+                <div className="textt">
+                  Hủy hợp <br />
+                  đồng
+                </div>
+              </div>
+            </div>
+            {/* <div
               style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                width: "100%",
-                height: 130,
-                marginBottom: 10,
-                backgroundColor: "white",
-                position: "relative",
+                width: "110px",
+                height: "112px",
+                padding: "16px",
+                gap: "10px",
+              }}
+            >
+              <a href="/">
+                {" "}
+                <img
+                  src="images/huy.png"
+                  alt="dangxuat"
+                  className="icon"
+                  style={{ marginLeft: "15px" }}
+                />
+                <div className="dangxuat">
+                  Hủy hợp <br />
+                  đồng
+                </div>
+              </a>
+            </div> */}
+          </div>
+          {/* showModal     */}
+          <div
+            className="modal fade"
+            id="exampleModal"
+            tabIndex={-1}
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div
+              className="modal-dialog"
+              style={{
+                // display: "flex",
+                width: "720px",
+                height: "432px",
               }}
             >
               <div
+                className="modal-content"
                 style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  width: "100%",
-                  height: "50%",
+                  backgroundColor: "#3E3E5B",
+                  width: "720px",
+                  height: "432px",
+                  borderRadius: "16px",
                 }}
               >
-                Thêm hợp đồng
+                <div className="modal-body">
+                  <h5
+                    className="modal-title m-0"
+                    id="exampleModalLabel"
+                    style={{
+                      width: "100%",
+                      height: "24px",
+                      top: "32px",
+                      left: "159px",
+                      fontFamily: "Montserrat",
+                      fontSize: "24px",
+                      fontWeight: 700,
+                      lineHeight: "24px",
+                      letterSpacing: "-0.002em",
+                      textAlign: "center",
+                      color: "#F5F5FF",
+                    }}
+                  >
+                    Hủy hợp đồng uỷ quyền
+                  </h5>
+                  {/* <div>
+                    <div className="matkhau">Mật khẩu hiện tại:</div>
+                    <div
+                      className="password-input-wrapper"
+                      style={{ position: "relative" }}
+                    >
+                      <input
+                        className="inputmk"
+                        type={showPassword ? "text" : "password"}
+                        id="password"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                      />
+
+                      <FontAwesomeIcon
+                        className="faEyee"
+                        icon={showPassword ? faEyeSlash : faEye}
+                        onClick={toggleShowPassword}
+                      />
+                    </div>
+                  </div>
+
+                  <div>
+                    <div className="matkhau">Mật khẩu mới:</div>
+                    <div
+                      className="password-input-wrapper"
+                      style={{ position: "relative" }}
+                    >
+                      <input
+                        className="inputmk"
+                        type={showPassword ? "text" : "password"}
+                        id="password"
+                        value={confirmPassword}
+                        onChange={(e) => setConfirmPassword(e.target.value)}
+                      />
+
+                      <FontAwesomeIcon
+                        className="faEyee"
+                        icon={showPassword ? faEyeSlash : faEye}
+                        onClick={toggleShowPassword}
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div className="matkhau">Nhập lại mật khẩu mới:</div>
+                    <div
+                      className="password-input-wrapper"
+                      style={{ position: "relative" }}
+                    >
+                      <input
+                        className="inputmk"
+                        type={showPassword ? "text" : "password"}
+                        id="password"
+                        value={confirmPassword}
+                        onChange={(e) => setConfirmPassword(e.target.value)}
+                      />
+
+                      <FontAwesomeIcon
+                        className="faEyee"
+                        icon={showPassword ? faEyeSlash : faEye}
+                        onClick={toggleShowPassword}
+                      />
+                    </div>
+                  </div> */}
+
+                  <textarea
+                    placeholder="Cho chúng tôi biết lý do bạn muốn huỷ hợp đồng uỷ quyền này..."
+                    style={{
+                      position: "absolute",
+                      top: "96px",
+                      left: "40px",
+                      width: "640px",
+                      height: "208px",
+                      padding: "12px 24px 12px 16px",
+                      borderRadius: "8px",
+                      border: " 1px solid #727288",
+                      backgroundColor: "#2B2B3F",
+                    }}
+                  />
+
+                  <div>
+                    <div
+                      style={{
+                        width: "368px",
+                        height: "48px",
+                        top: "344px",
+                        left: "176px",
+                        gap: "32px",
+                        position: "absolute",
+                      }}
+                    >
+                      <button
+                        className="butoon"
+                        style={{
+                          color: "#FF7506",
+                          backgroundColor: "transparent",
+                        }}
+                        data-bs-dismiss="modal"
+                      >
+                        Quay lại
+                      </button>
+                      <button
+                        className="butoon"
+                        style={{
+                          color: "white",
+                          background: "#FF7506",
+                          marginLeft: "32px",
+                        }}
+                        data-bs-dismiss="modal"
+                      >
+                        Hủy hợp đồng
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -497,5 +848,5 @@ const ChiTietHopDong = () => {
     </>
   );
 };
-//bỏ cài đặt bootstrap
+
 export default ChiTietHopDong;

@@ -6,8 +6,7 @@ import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 import { getAuth } from "firebase/auth";
 import { signInWithEmailAndPassword } from "firebase/auth";
-// import { useNavigate } from "react-router-dom";
-// import { BrowserRouter as Router } from 'react-router-dom';
+
 export const Square = styled.div`
   width: 240px;
   height: 240px;
@@ -204,12 +203,26 @@ const Log = () => {
                 name="username"
                 id="email"
                 type="text"
+                // style={{
+                //   backgroundColor: "#2B2B3F",
+                //   flex: 1,
+                //   width: "100%",
+                //   height: "100%",
+                //   borderRadius: 8,
+                // }}
                 style={{
-                  backgroundColor: "#2B2B3F",
-                  flex: 1,
-                  width: "100%",
-                  height: "100%",
-                  borderRadius: 8,
+                  width: "471px",
+                  height: "48px",
+                  padding: "11px 24px 13px 16px",
+                  borderRadius: "8px",
+                  background: "#2B2B3F",
+                  fontFamily: "Arial",
+                  fontSize: "16px",
+                  fontWeight: "400",
+                  lineHeight: "24px",
+                  letterSpacing: "normal",
+                  textAlign: "left",
+                  color: "#FFFFFF",
                 }}
               />
             </div>
@@ -257,12 +270,26 @@ const Log = () => {
                   id="password"
                   type={showPassword ? "text" : "password"}
                   name="password"
+                  // style={{
+                  //   backgroundColor: "#2B2B3F",
+                  //   flex: 1,
+                  //   width: "100%",
+                  //   height: "100%",
+                  //   borderRadius: 8,
+                  // }}
                   style={{
-                    backgroundColor: "#2B2B3F",
-                    flex: 1,
-                    width: "100%",
-                    height: "100%",
-                    borderRadius: 8,
+                    width: "471px",
+                    height: "48px",
+                    padding: "11px 24px 13px 16px",
+                    borderRadius: "8px",
+                    background: "#2B2B3F",
+                    fontFamily: "Arial",
+                    fontSize: "16px",
+                    fontWeight: "400",
+                    lineHeight: "24px",
+                    letterSpacing: "normal",
+                    textAlign: "left",
+                    color: "#FFFFFF",
                   }}
                 />
                 <div

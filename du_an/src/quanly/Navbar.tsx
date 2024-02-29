@@ -1,663 +1,333 @@
-import "./Navbar.css"; // Import file CSS cho navbar
-import { useLocation } from "react-router-dom";
-import { useNavigate, Link } from "react-router-dom";
-import { useEffect } from "react";
-import DoiMK from "./DoiMK";
+import React, { useState } from "react";
+import Navbar from "../BackGround/navbar";
+import "../cssne/Trang1.css";
+import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Navbar = () => {
-  const location = useLocation();
-  const navigate = useNavigate();
-  let user = location.state && location.state.user;
-
-  const handleDangXuat = () => {
-    navigate("/");
+const Trang1: React.FC = () => {
+  // const [showModal, setShowModal] = useState(false);
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
+  const toggleShowPassword = () => {
+    setShowPassword(!showPassword);
   };
-
-  useEffect(() => {
-    if (user === null) navigate("/");
-  }, []);
 
   return (
     <>
-      <div style={{ width: "100%", display: "flex" }}>
-        <div className="sidebar">
-          <div className="logo">
-            <img src="/img/logo.png" alt="Logo navbar" />
-          </div>
-          <ul>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Kho bản ghi
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Playlist
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Lập lịch phát
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Quản lý doanh thu
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Cài đặt
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Hỗ trợ
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <nav
-            className="navbar"
+      <div className="thedau">
+        <Navbar />
+        <div className="ttcb">Thông tin cơ bản</div>
+        <div className="khung">
+          <div
             style={{
-              width: "100%",
-              justifyContent: "flex-end",
-              marginRight: "75px",
-              marginBottom: "16px",
-              marginTop: "24px",
-
-              height: "80px",
-              // backgroundColor: "#1e1e2e",
-              display: "inline-flex",
-              alignItems: "center",
-              padding: "0 20px",
+              width: "280px",
+              height: "351px",
             }}
           >
-            <select
+            <img
+              src="images/admin.jpg"
+              alt=""
               style={{
-                backgroundColor: "transparent",
-                border: 0,
-                color: "white",
-                marginRight: 24,
+                width: "273px",
+                height: "280px",
+                left: "2px",
+                borderRadius: "200px",
               }}
-            >
-              <option value="vi" data-icon="VN">
-                Tiếng Việt
-              </option>
-              <option value="en" data-icon="🇺🇸">
-                English
-              </option>
-              <option value="ja" data-icon="🇯🇵">
-                日本語
-              </option>
-              <option value="ko" data-icon="🇰🇷">
-                한국어
-              </option>
-            </select>
-            <div className="logo">
-              <img
-                src="/img/logo.png"
-                alt="Icon"
-                style={{ marginTop: "300%" }}
-              />
-            </div>
-            <div className="login" style={{ color: "white" }}>
-              <span>Welcome, {user}</span>
-            </div>
-          </nav>
+            />
+            <img src="images/camera.png" alt="" className="avt" />
+            <p className="ten">Tuyết Nguyễn</p>
+          </div>
           <div
+            style={{
+              width: "274px",
+              height: "80px",
+              left: "447px",
+              gap: "8px",
+              top: "0PX",
+              position: "absolute",
+            }}
+          >
+            <div className="lablee">Họ:</div>
+            <input type="text" defaultValue="Nguyễn" className="inputt" />
+          </div>
+          <div
+            style={{
+              width: "274px",
+              height: "80px",
+              left: "745px",
+              gap: "8px",
+              top: "0PX",
+
+              position: "absolute",
+            }}
+          >
+            <div className="lablee">Tên:</div>
+            <input type="text" defaultValue="Tuyết" className="inputt" />
+          </div>
+          <div
+            style={{
+              width: "274px",
+              height: "80px",
+              left: "447px",
+              gap: "8px",
+              top: "112px",
+              position: "absolute",
+            }}
+          >
+            <div className="lablee">Ngày sinh:</div>
+            <input type="date" defaultValue="1998-02-02" className="inputt" />
+          </div>
+          <div
+            style={{
+              width: "274px",
+              height: "80px",
+              left: "745px",
+              gap: "8px",
+              top: "112px",
+              position: "absolute",
+            }}
+          >
+            <div className="lablee">Số điện thoại:</div>
+            <input
+              type="tel"
+              defaultValue="+84 250 123 151"
+              className="inputt"
+            />
+          </div>
+          <div
+            style={{
+              width: "571px",
+              height: "80px",
+              left: "447px",
+              gap: "8px",
+              top: "224px",
+              position: "absolute",
+            }}
+          >
+            <div className="lablee">Email:</div>
+            <input
+              type="text"
+              placeholder="tuyetnguyenngoc@alta.com.vn"
+              className="input1"
+              readOnly
+            />
+          </div>
+          <div
+            style={{
+              width: "571px",
+              height: "80px",
+              left: "447px",
+              gap: "8px",
+              top: "336px",
+              position: "absolute",
+            }}
+          >
+            <div className="lablee">Tên đăng nhập:</div>
+            <input
+              type="text"
+              placeholder="tuyetnguyenngoc@alta.com.vn"
+              className="input1"
+              readOnly
+            />
+          </div>
+          <div
+            style={{
+              width: "274px",
+              height: "80px",
+              left: "447px",
+              gap: "8px",
+              top: "448px",
+              position: "absolute",
+            }}
+          >
+            <div className="lablee">Phân quyền:</div>
+            <input
+              type="text"
+              placeholder="admin"
+              className="inputt"
+              readOnly
+            />
+          </div>
+        </div>
+        <div className="khung2">
+          <div className="khung1">
+            <a href="/suathongtin" style={{ textDecoration: "none" }}>
+              <img src="images/sua.png" alt="sua" className="icon" />
+              <div className="textt">
+                Sửa thông <br /> tin
+              </div>
+            </a>
+          </div>
+          <div className="khung1">
+            <div data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <img src="images/doimk.png" alt="doimk" className="icon" />
+              <div className="textt">
+                Đổi <br /> mật khẩu
+              </div>
+            </div>
+          </div>
+          <div
+            style={{
+              width: "110px",
+              height: "112px",
+              padding: "16px",
+              gap: "10px",
+            }}
+          >
+            <a href="/">
+              {" "}
+              <img
+                src="images/dangxuat.png"
+                alt="dangxuat"
+                className="icon"
+                style={{ marginLeft: "15px" }}
+              />
+              <div className="dangxuat">Đăng xuất</div>
+            </a>
+          </div>
+        </div>
+        {/* showModal     */}
+        <div
+          className="modal fade"
+          id="exampleModal"
+          tabIndex={-1}
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div
+            className="modal-dialog"
             style={{
               display: "flex",
-              fontFamily: "Montserrat",
-              fontSize: 36,
-              fontWeight: 700,
-              width: 319,
-              height: 54,
-              letterSpacing: "-0.002em",
-              marginLeft: 38,
-              color: "white",
-            }}
-          >
-            Thông tin cơ bản
-          </div>
-
-          <div
-            className="form-container"
-            style={{
-              width: "1018px",
-              height: "528px",
-              top: "188px",
-              left: "229px",
-              marginLeft: "59px",
             }}
           >
             <div
-              className="form-image"
+              className="modal-content"
               style={{
-                width: 280,
-                height: 351,
-                marginRight: 167,
+                backgroundColor: "#3E3E5B",
+                width: "552px",
+                height: "512px",
+                borderRadius: "16px",
               }}
             >
-              <img
-                style={{ width: 273, height: 280 }}
-                src="/img/logo.png"
-                alt=""
-              />
-            </div>
-            <div className="form-fields">
-              <form>
-                <div className="form-row">
-                  <div style={{ display: "flex", flexDirection: "column" }}>
-                    <div
-                      style={{
-                        textAlign: "left",
-                        marginLeft: 18,
-                        color: "#FFFFFF",
-                        fontFamily: "Montserrat",
-                        fontSize: 16,
-                        fontWeight: 600,
-                        lineHeight: "24px",
-                        letterSpacing: "-0.002em",
-                      }}
-                    >
-                      Họ
-                    </div>
-                    <div style={{ padding: "11px 24px 13px 16px" }}>
-                      <input
-                        type="text"
-                        id="ho"
-                        name="ho"
-                        required
-                        defaultValue="Nguyễn"
-                        style={{
-                          color: "white",
-                          backgroundColor: "#2B2B3F",
-                          width: "274px",
-                          padding: 0,
-                          border: 0,
-                          height: 48,
-                          borderRadius: "8px",
-                        }}
-                      />
-                    </div>
-                  </div>
-                  <div style={{ display: "flex", flexDirection: "column" }}>
-                    <div
-                      style={{
-                        textAlign: "left",
-                        marginLeft: 18,
-                        color: "#FFFFFF",
-                        fontFamily: "Montserrat",
-                        fontSize: 16,
-                        fontWeight: 600,
-                        lineHeight: "24px",
-                        letterSpacing: "-0.002em",
-                      }}
-                    >
-                      Tên:
-                    </div>
-                    <div style={{ padding: "11px 24px 13px 16px" }}>
-                      <input
-                        type="text"
-                        id="ten"
-                        name="ten"
-                        defaultValue="Tuyết"
-                        required
-                        style={{
-                          color: "white",
-                          backgroundColor: "#2B2B3F",
-
-                          width: "274px",
-                          padding: 0,
-                          border: 0,
-                          height: 48,
-                          borderRadius: "8px",
-                        }}
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="form-row">
-                  <div style={{ display: "flex", flexDirection: "column" }}>
-                    <div
-                      style={{
-                        textAlign: "left",
-                        marginLeft: 18,
-                        color: "#FFFFFF",
-                        fontFamily: "Montserrat",
-                        fontSize: 16,
-                        fontWeight: 600,
-                        lineHeight: "24px",
-                        letterSpacing: "-0.002em",
-                      }}
-                    >
-                      Ngày sinh:
-                    </div>
-                    <div style={{ padding: "11px 24px 13px 16px" }}>
-                      <input
-                        type="date"
-                        id="ngaySinh"
-                        name="ngaySinh"
-                        defaultValue="1998-02-02"
-                        required
-                        style={{
-                          color: "white",
-                          backgroundColor: "#2B2B3F",
-                          width: "274px",
-                          padding: 0,
-                          border: 0,
-                          height: 48,
-                          borderRadius: "8px",
-                        }}
-                      />
-                    </div>
-                  </div>
-                  <div style={{ display: "flex", flexDirection: "column" }}>
-                    <div
-                      style={{
-                        textAlign: "left",
-                        marginLeft: 18,
-                        color: "#FFFFFF",
-                        fontFamily: "Montserrat",
-                        fontSize: 16,
-                        fontWeight: 600,
-                        lineHeight: "24px",
-                        letterSpacing: "-0.002em",
-                      }}
-                    >
-                      Số điện thoại:
-                    </div>
-                    <div style={{ padding: "11px 24px 13px 16px" }}>
-                      <input
-                        type="tel"
-                        id="soDienThoai"
-                        name="soDienThoai"
-                        defaultValue="+84 250 123 151"
-                        required
-                        style={{
-                          color: "white",
-                          backgroundColor: "#2B2B3F",
-                          width: "274px",
-                          padding: 0,
-                          border: 0,
-                          height: 48,
-                          borderRadius: "8px",
-                        }}
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="form-row">
-                  <div style={{ display: "flex", flexDirection: "column" }}>
-                    <div
-                      style={{
-                        textAlign: "left",
-                        marginLeft: 18,
-                        color: "#FFFFFF",
-                        fontFamily: "Montserrat",
-                        fontSize: 16,
-                        fontWeight: 600,
-                        lineHeight: "24px",
-                        letterSpacing: "-0.002em",
-                      }}
-                    >
-                      Email:
-                    </div>
-                    <div style={{ padding: "11px 24px 13px 16px" }}>
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        value="tuyetnguyenngoc@alta.com.vn"
-                        disabled
-                        required
-                        style={{
-                          backgroundColor: "#2B2B3F",
-                          width: "571px",
-                          padding: 0,
-                          border: 0,
-                          height: 48,
-                          borderRadius: "8px",
-                        }}
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="form-row">
-                  <div style={{ display: "flex", flexDirection: "column" }}>
-                    <div
-                      style={{
-                        textAlign: "left",
-                        marginLeft: 18,
-                        color: "#FFFFFF",
-                        fontFamily: "Montserrat",
-                        fontSize: 16,
-                        fontWeight: 600,
-                        lineHeight: "24px",
-                        letterSpacing: "-0.002em",
-                      }}
-                    >
-                      Tên đăng nhập:
-                    </div>
-                    <div style={{ padding: "11px 24px 13px 16px" }}>
-                      <input
-                        type="text"
-                        id="tenDangNhap"
-                        name="tenDangNhap"
-                        value="tuyetnguyenngoc@alta.com.vn"
-                        disabled
-                        required
-                        style={{
-                          backgroundColor: "#2B2B3F",
-                          width: "571px",
-                          padding: 0,
-                          border: 0,
-                          height: 48,
-                          borderRadius: "8px",
-                        }}
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="form-row">
-                  <div style={{ display: "flex", flexDirection: "column" }}>
-                    <div
-                      style={{
-                        textAlign: "left",
-                        marginLeft: 18,
-                        color: "#FFFFFF",
-                        fontFamily: "Montserrat",
-                        fontSize: 16,
-                        fontWeight: 600,
-                        lineHeight: "24px",
-                        letterSpacing: "-0.002em",
-                      }}
-                    >
-                      Phân quyền:
-                    </div>
-                    <div style={{ padding: "11px 24px 13px 16px" }}>
-                      <input
-                        disabled
-                        type="text"
-                        id="phanQuyen"
-                        name="phanQuyen"
-                        required
-                        defaultValue="admin"
-                        style={{
-                          backgroundColor: "#2B2B3F",
-                          width: "274px",
-                          padding: 0,
-                          border: 0,
-                          height: 48,
-                          borderRadius: "8px",
-                        }}
-                      />
-                    </div>
-                  </div>
-
-                  <label htmlFor="phanQuyen"></label>
-                </div>
-                <input type="submit" defaultValue="Submit" />
-              </form>
-            </div>
-          </div>
-
-          <div
-            style={{
-              position: "fixed",
-              top: 188,
-              right: 0,
-              height: 372,
-              width: 110,
-            }}
-          >
-            {/* <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                backgroundColor: "white",
-                justifyContent: "center",
-                width: "100%",
-                height: 130,
-                marginBottom: 10,
-              }}
-            >
-              Sửa thông tin
-            </div> */}
-
-            {/* <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                backgroundColor: "white",
-                justifyContent: "center",
-                width: "100%",
-                height: 130,
-                marginBottom: 10,
-              }}
-            >
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                <i className="far fa-eye-slash" style={{ marginBottom: 8 }}></i>
-                <div
+              <div className="modal-body">
+                <h5
+                  className="modal-title m-0"
+                  id="exampleModalLabel"
                   style={{
+                    width: "100%",
+                    height: "24px",
+                    top: "32px",
+                    left: "159px",
                     fontFamily: "Montserrat",
-                    fontSize: 12,
-                    fontWeight: 500,
-                    lineHeight: 18,
-                    letterSpacing: "0.005em",
+                    fontSize: "24px",
+                    fontWeight: 700,
+                    lineHeight: "24px",
+                    letterSpacing: "-0.002em",
                     textAlign: "center",
+                    color: "#F5F5FF",
                   }}
                 >
-                  Sửa thông tin
+                  Thay đổi mật khẩu
+                </h5>
+                <div>
+                  <div className="matkhau">Mật khẩu hiện tại:</div>
+                  <div
+                    className="password-input-wrapper"
+                    style={{ position: "relative" }}
+                  >
+                    <input
+                      className="inputmk"
+                      type={showPassword ? "text" : "password"}
+                      id="password"
+                      value={password}
+                      onChange={(e) => setPassword(e.target.value)}
+                    />
+
+                    <FontAwesomeIcon
+                      className="faEyee"
+                      icon={showPassword ? faEyeSlash : faEye}
+                      onClick={toggleShowPassword}
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <div className="matkhau">Mật khẩu mới:</div>
+                  <div
+                    className="password-input-wrapper"
+                    style={{ position: "relative" }}
+                  >
+                    <input
+                      className="inputmk"
+                      type={showPassword ? "text" : "password"}
+                      id="password"
+                      value={confirmPassword}
+                      onChange={(e) => setConfirmPassword(e.target.value)}
+                    />
+
+                    <FontAwesomeIcon
+                      className="faEyee"
+                      icon={showPassword ? faEyeSlash : faEye}
+                      onClick={toggleShowPassword}
+                    />
+                  </div>
+                </div>
+                <div>
+                  <div className="matkhau">Nhập lại mật khẩu mới:</div>
+                  <div
+                    className="password-input-wrapper"
+                    style={{ position: "relative" }}
+                  >
+                    <input
+                      className="inputmk"
+                      type={showPassword ? "text" : "password"}
+                      id="password"
+                      value={confirmPassword}
+                      onChange={(e) => setConfirmPassword(e.target.value)}
+                    />
+
+                    <FontAwesomeIcon
+                      className="faEyee"
+                      icon={showPassword ? faEyeSlash : faEye}
+                      onClick={toggleShowPassword}
+                    />
+                  </div>
+                </div>
+                <div>
+                  <div
+                    style={{
+                      width: "368px",
+                      height: "48px",
+                      top: "424px",
+                      left: "92px",
+                      gap: "32px",
+                      position: "absolute",
+                    }}
+                  >
+                    <button
+                      className="butoon"
+                      style={{
+                        color: "#FF7506",
+                      }}
+                      data-bs-dismiss="modal"
+                    >
+                      Hủy
+                    </button>
+                    <button
+                      className="butoon"
+                      style={{
+                        color: "white",
+                        background: "#FF7506",
+                        marginLeft: "32px",
+                      }}
+                      data-bs-dismiss="modal"
+                    >
+                      Lưu
+                    </button>
+                  </div>
                 </div>
               </div>
-            </div> */}
-
-            {/* <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                backgroundColor: "white",
-                justifyContent: "center",
-                width: "100%",
-                height: 130,
-                marginBottom: 10,
-              }}
-            >
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                <i
-                  className="far fa-eye-slash"
-                  style={{ position: "absolute", top: 10 }}
-                ></i>
-                <div
-                  style={{
-                    fontFamily: "Montserrat",
-                    fontSize: 12,
-                    fontWeight: 500,
-                    lineHeight: 18,
-                    letterSpacing: "0.005em",
-                    textAlign: "center",
-                  }}
-                >
-                  Sửa thông tin
-                </div>
-              </div>
-            </div> */}
-
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                width: "100%",
-                height: 130,
-                marginBottom: 10,
-                backgroundColor: "white",
-                position: "relative",
-              }}
-            >
-              <i
-                className="far fa-eye-slash"
-                style={{
-                  width: "100%",
-                  textAlign: "center",
-                  position: "absolute",
-                  top: 15,
-                  left: 0,
-                  height: "50%",
-                }}
-              ></i>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  width: "100%",
-                  height: "50%",
-                }}
-              >
-                Sửa thông tin
-              </div>
-            </div>
-
-            {/* <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                width: "100%",
-                height: 130,
-                marginBottom: 10,
-                backgroundColor: "white",
-                position: "relative",
-              }}
-            >
-              <i
-                className="icon-class-name"
-                style={{
-                  position: "absolute",
-                  top: 0,
-                  left: 0,
-                  height: "50%",
-                  transform: "translateY(-50%)",
-                }}
-              ></i>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  width: "100%",
-                  height: "50%",
-                }}
-              >
-                Sửa thông tin
-              </div>
-            </div> */}
-
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                backgroundColor: "white",
-                justifyContent: "center",
-                width: "100%",
-                height: 130,
-                marginBottom: 10,
-              }}
-            >
-              <Link to="/navbar/DoiMK">Đổi mật khẩu</Link>
-            </div>
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                backgroundColor: "white",
-                justifyContent: "center",
-                width: "100%",
-                height: 130,
-                marginBottom: 10,
-              }}
-              onClick={handleDangXuat}
-            >
-              Đăng xuất
             </div>
           </div>
         </div>
@@ -665,5 +335,5 @@ const Navbar = () => {
     </>
   );
 };
-//bỏ cài đặt bootstrap
-export default Navbar;
+
+export default Trang1;
