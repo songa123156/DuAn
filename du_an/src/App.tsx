@@ -15,6 +15,10 @@ import LoiLink from "./login/loilink";
 import KhoiPhucMK from "./login/khoiphucmk";
 import TacPhamUyQuyen from "./p3/TacPhamUyQuyen";
 import ChinhSuaTacPham from "./p3/ChinhSuaTacPham";
+import ChinhSuaThongTin from "./p3/ChinhSuaThongTin";
+import ChiTietHopDong2 from "./p3/ChiTietHopDong2";
+import ThemHopDongUyQuyen from "./p3/ThemHopDongUyQuyen";
+import ThemHopDongUyQuyen2 from "./p3/ThemHopDongUyQuyen2";
 
 function App() {
   return (
@@ -48,6 +52,19 @@ function App() {
           <Route path="/ChiTietHopDong" element={<ChiTietHopDong />}></Route>
           <Route path="/TacPhamUyQuyen" element={<TacPhamUyQuyen />}></Route>
           <Route path="/ChinhSuaTacPham" element={<ChinhSuaTacPham />}></Route>
+          <Route
+            path="/ChinhSuaThongTin"
+            element={<ChinhSuaThongTin></ChinhSuaThongTin>}
+          ></Route>
+          <Route path="/ChiTietHopDong2" element={<ChiTietHopDong2 />}></Route>
+          <Route
+            path="/ThemHopDongUyQuyen"
+            element={<ThemHopDongUyQuyen />}
+          ></Route>
+          <Route
+            path="/ThemHopDongUyQuyen2"
+            element={<ThemHopDongUyQuyen2 />}
+          ></Route>
         </Routes>
       </div>
     </div>
