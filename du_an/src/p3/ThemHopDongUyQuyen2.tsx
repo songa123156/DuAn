@@ -558,22 +558,9 @@ const ThemHopDongUyQuyen2 = () => {
             color: "white",
           }}
         >
-          <div style={{ marginBottom: 36 }}>Pháp nhân ủy quyền:</div>
-          <div style={{ marginBottom: 40 }}>
-            Tên người uỷ quyền:
-            <span
-              style={{
-                color: "#FF4747",
-                marginTop: 4,
-                marginLeft: 3,
-                position: "absolute",
-              }}
-            >
-              *
-            </span>
-          </div>
+          <div style={{ marginBottom: 30 }}>Pháp nhân ủy quyền:</div>
           <div style={{ marginBottom: 36 }}>
-            Ngày sinh:
+            Tên tổ chức
             <span
               style={{
                 color: "#FF4747",
@@ -585,45 +572,10 @@ const ThemHopDongUyQuyen2 = () => {
               *
             </span>
           </div>
-          <div style={{ marginBottom: 36 }}>
-            Giới tính:
-            <span
-              style={{
-                color: "#FF4747",
-                marginTop: 4,
-                marginLeft: 3,
-                position: "absolute",
-              }}
-            >
-              *
-            </span>
-          </div>
-          <div style={{ marginBottom: 40 }}>
-            Quốc tịch:
-            <span
-              style={{
-                color: "#FF4747",
-                marginTop: 4,
-                marginLeft: 3,
-                position: "absolute",
-              }}
-            >
-              *
-            </span>
-          </div>
-          <div style={{ marginBottom: 36 }}>
-            Số điện thoại:{" "}
-            <span
-              style={{
-                color: "#FF4747",
-                marginTop: 4,
-                marginLeft: 3,
-                position: "absolute",
-              }}
-            >
-              *
-            </span>
-          </div>
+          <div style={{ marginBottom: 36 }}>Mã số thuế:</div>
+          <div style={{ marginBottom: 36 }}>Số tài khoản:</div>
+          <div style={{ marginBottom: 24 }}>Ngân hàng:</div>
+          <div style={{ height: 144, marginBottom: 24 }}>Địa chỉ:</div>
           <div
             style={{
               fontFamily: "Montserrat",
@@ -656,7 +608,7 @@ const ThemHopDongUyQuyen2 = () => {
             color: "white",
           }}
         >
-          <div style={{ marginBottom: 24 }}>
+          <div style={{ marginBottom: 12 }}>
             <div
               style={{
                 width: "99px",
@@ -681,7 +633,7 @@ const ThemHopDongUyQuyen2 = () => {
               <input type="radio" name="uyquyen" /> Tổ chức
             </div>
           </div>
-          <div style={{ marginBottom: 16 }}>
+          <div style={{ marginBottom: 12 }}>
             <input
               type="text"
               style={{
@@ -696,9 +648,8 @@ const ThemHopDongUyQuyen2 = () => {
               }}
             />
           </div>
-          <div style={{ marginBottom: 24 }}>
+          <div style={{ marginBottom: 12 }}>
             <input
-              type="date"
               style={{
                 width: "325px",
                 height: "48px",
@@ -713,22 +664,226 @@ const ThemHopDongUyQuyen2 = () => {
               }}
             />
           </div>
+          <div style={{ marginBottom: 12 }}>
+            <input
+              style={{
+                width: "325px",
+                height: "48px",
+                opacity: "50%",
+                padding: "11px 16px 13px 16px",
+                borderRadius: "8px",
+                border: "1px solid #727288",
+                background: "#2B2B3F",
+                color: "#FFFFFF",
+                justifyContent: "space-between",
+                paddingRight: "24px",
+              }}
+            />
+          </div>
+          <div style={{ marginBottom: 12 }}>
+            <input
+              style={{
+                width: "325px",
+                height: "48px",
+                opacity: "50%",
+                padding: "11px 16px 13px 16px",
+                borderRadius: "8px",
+                border: "1px solid #727288",
+                background: "#2B2B3F",
+                color: "#FFFFFF",
+                justifyContent: "space-between",
+                paddingRight: "24px",
+              }}
+            />
+          </div>
+          <div>
+            <textarea
+              style={{
+                width: "325px",
+                height: "144px",
+                top: "842px",
+                left: "279px",
+                padding: "12px 24px 12px 16px",
+                borderRadius: "8px",
+                border: "1px solid #727288",
+                background: "#2B2B3F",
+                color: "#FFFFFF",
+              }}
+            ></textarea>
+          </div>
+        </div>
+
+        <div
+          style={{
+            width: "126px",
+            position: "absolute",
+            top: "554px",
+            left: "750px",
+            color: "white",
+          }}
+        >
+          <div style={{ marginBottom: 36 }}>
+            Người đại diện:{" "}
+            <span
+              style={{
+                color: "#FF4747",
+                marginTop: 4,
+                marginLeft: 3,
+                position: "absolute",
+              }}
+            >
+              *
+            </span>
+          </div>
+          <div style={{ marginBottom: 36 }}>Chức vụ:</div>
           <div style={{ marginBottom: 24 }}>
+            Ngày sinh:
+            <span
+              style={{
+                color: "#FF4747",
+                marginTop: 4,
+                marginLeft: 3,
+                position: "absolute",
+              }}
+            >
+              *
+            </span>
+          </div>
+          <div style={{ marginBottom: 24 }}>
+            Giới tính:{" "}
+            <span
+              style={{
+                color: "#FF4747",
+                marginTop: 4,
+                marginLeft: 3,
+                position: "absolute",
+              }}
+            >
+              *
+            </span>
+          </div>
+          <div style={{ marginBottom: 36 }}>
+            CMND/ CCCD:{" "}
+            <span
+              style={{
+                color: "#FF4747",
+                marginTop: 4,
+                marginLeft: 3,
+                position: "absolute",
+              }}
+            >
+              *
+            </span>
+          </div>
+          <div style={{ marginBottom: 36 }}>
+            Ngày cấp:{" "}
+            <span
+              style={{
+                color: "#FF4747",
+                marginTop: 4,
+                marginLeft: 3,
+                position: "absolute",
+              }}
+            >
+              *
+            </span>
+          </div>
+          <div style={{ marginBottom: 36 }}>
+            Nơi cấp:{" "}
+            <span
+              style={{
+                color: "#FF4747",
+                marginTop: 4,
+                marginLeft: 3,
+                position: "absolute",
+              }}
+            >
+              *
+            </span>
+          </div>
+          <div style={{ marginBottom: 24 }}>
+            Quốc tịch:{" "}
+            <span
+              style={{
+                color: "#FF4747",
+                marginTop: 4,
+                marginLeft: 3,
+                position: "absolute",
+              }}
+            >
+              *
+            </span>
+          </div>
+        </div>
+
+        <div
+          style={{
+            width: "311px",
+            position: "absolute",
+            top: "542px",
+            left: "900px",
+            color: "white",
+          }}
+        >
+          <div style={{ marginBottom: 12 }}>
+            <input
+              style={{
+                width: "311px",
+                height: "48px",
+
+                padding: "11px 24px 13px 16px",
+                borderRadius: "8px",
+                border: "1px solid #727288",
+                background: "#2B2B3F",
+                color: "#FFFFFF",
+              }}
+            />
+          </div>
+          <div style={{ marginBottom: 12 }}>
+            <input
+              style={{
+                width: "311px",
+                height: "48px",
+                padding: "11px 16px 13px 16px",
+                borderRadius: "8px",
+                border: "1px solid #727288",
+                background: "#2B2B3F",
+                color: "#FFFFFF",
+                justifyContent: "space-between",
+                paddingRight: "24px",
+              }}
+            />
+          </div>
+          <div style={{ marginBottom: 12 }}>
+            <input
+              type="date"
+              style={{
+                opacity: "50%",
+                width: "311px",
+                height: "48px",
+                padding: "11px 24px 13px 16px",
+                borderRadius: "8px",
+                border: "1px solid #727288",
+                background: "#2B2B3F",
+                color: "#FFFFFF",
+              }}
+            />
+          </div>
+          <div style={{ marginBottom: 12 }}>
             <div
               style={{
-                width: "72px",
+                width: "99px",
                 height: "24px",
-
                 marginRight: "8px",
                 display: "inline-block",
               }}
             >
               {" "}
-              <input type="radio" name="gioitinh" /> Nam
+              <input type="radio" name="uyquyen" /> Nam
             </div>
             <div
               style={{
-                width: "72px",
+                width: "99px",
                 height: "24px",
                 left: "147px",
                 position: "absolute",
@@ -736,13 +891,54 @@ const ThemHopDongUyQuyen2 = () => {
                 display: "inline-block",
               }}
             >
-              <input type="radio" name="gioitinh" /> Nữ
+              <input type="radio" name="uyquyen" /> Nữ
             </div>
           </div>
-          <div style={{ marginBottom: 16 }}>
+          <div style={{ marginBottom: 12 }}>
+            <input
+              style={{
+                width: "311px",
+                height: "48px",
+                padding: "11px 24px 13px 16px",
+                borderRadius: "8px",
+                border: "1px solid #727288",
+                background: "#2B2B3F",
+                color: "#FFFFFF",
+              }}
+            />
+          </div>
+          <div style={{ marginBottom: 12 }}>
+            <input
+              type="date"
+              style={{
+                opacity: "50%",
+                width: "311px",
+                height: "48px",
+                padding: "11px 24px 13px 16px",
+                borderRadius: "8px",
+                border: "1px solid #727288",
+                background: "#2B2B3F",
+                color: "#FFFFFF",
+              }}
+            />
+          </div>
+          <div style={{ marginBottom: 12 }}>
+            <input
+              style={{
+                width: "311px",
+                height: "48px",
+                padding: "11px 24px 13px 16px",
+                borderRadius: "8px",
+                border: "1px solid #727288",
+                background: "#2B2B3F",
+                color: "#FFFFFF",
+              }}
+            />
+          </div>
+          <div style={{ marginBottom: 12 }}>
             <select
               style={{
-                width: "325px",
+                width: "311px",
                 height: "48px",
                 opacity: "50%",
                 padding: "11px 16px 13px 16px",
@@ -761,168 +957,6 @@ const ThemHopDongUyQuyen2 = () => {
               <option value="option3">Nhật Bản</option>
             </select>
           </div>
-          <div>
-            <input
-              type="tel"
-              style={{
-                width: "325px",
-                height: "48px",
-
-                padding: "11px 24px 13px 16px",
-                borderRadius: "8px",
-                border: "1px solid #727288",
-                background: "#2B2B3F",
-                color: "#FFFFFF",
-              }}
-            />
-          </div>
-        </div>
-
-        <div
-          style={{
-            width: "126px",
-            position: "absolute",
-            top: "554px",
-            left: "750px",
-            color: "white",
-          }}
-        >
-          <div style={{ marginBottom: 40 }}>
-            CMND/ CCCD:{" "}
-            <span
-              style={{
-                color: "#FF4747",
-                marginTop: 4,
-                marginLeft: 3,
-                position: "absolute",
-              }}
-            >
-              *
-            </span>
-          </div>
-          <div style={{ marginBottom: 40 }}>
-            Ngày cấp:
-            <span
-              style={{
-                color: "#FF4747",
-                marginTop: 4,
-                marginLeft: 3,
-                position: "absolute",
-              }}
-            >
-              *
-            </span>
-          </div>
-          <div style={{ marginBottom: 39 }}>
-            Nơi cấp:
-            <span
-              style={{
-                color: "#FF4747",
-                marginTop: 4,
-                marginLeft: 3,
-                position: "absolute",
-              }}
-            >
-              *
-            </span>
-          </div>
-          <div style={{ marginBottom: 29 }}>Mã số thuế:</div>
-          <div>Nơi cư trú:</div>
-        </div>
-
-        <div
-          style={{
-            width: "311px",
-            position: "absolute",
-            top: "542px",
-            left: "900px",
-            color: "white",
-          }}
-        >
-          <div style={{ marginBottom: 16 }}>
-            <input
-              style={{
-                width: "311px",
-                height: "48px",
-                // position: "absolute",
-                // top: "618px",
-                // left: "900px",
-                padding: "11px 24px 13px 16px",
-                borderRadius: "8px",
-                border: "1px solid #727288",
-                background: "#2B2B3F",
-                color: "#FFFFFF",
-              }}
-            />
-          </div>
-          <div style={{ marginBottom: 16 }}>
-            <input
-              type="date"
-              style={{
-                opacity: "50%",
-                width: "311px",
-                height: "48px",
-                // position: "absolute",
-                // top: "682px",
-                // left: "900px",
-                padding: "11px 16px 13px 16px",
-                borderRadius: "8px",
-                border: "1px solid #727288",
-                background: "#2B2B3F",
-                color: "#FFFFFF",
-                justifyContent: "space-between",
-                paddingRight: "24px",
-              }}
-            />
-          </div>
-          <div style={{ marginBottom: 16 }}>
-            <input
-              style={{
-                width: "311px",
-                height: "48px",
-                // position: "absolute",
-                // top: "746px",
-                // left: "900px",
-                padding: "11px 24px 13px 16px",
-                borderRadius: "8px",
-                border: "1px solid #727288",
-                background: "#2B2B3F",
-                color: "#FFFFFF",
-              }}
-            />
-          </div>
-          <div style={{ marginBottom: 16 }}>
-            <input
-              style={{
-                width: "311px",
-                height: "48px",
-                // position: "absolute",
-                // top: "810px",
-                // left: "900px",
-                padding: "11px 24px 13px 16px",
-                borderRadius: "8px",
-                border: "1px solid #727288",
-                background: "#2B2B3F",
-                color: "#FFFFFF",
-              }}
-            />
-          </div>
-          <div>
-            <textarea
-              style={{
-                width: "311px",
-                height: "96px",
-                // position: "absolute",
-                // top: "874px",
-                // left: "900px",
-                padding: "11px 24px 13px 16px",
-                borderRadius: "8px",
-                border: "1px solid #727288",
-                background: "#2B2B3F",
-                color: "#FFFFFF",
-              }}
-            />
-          </div>
         </div>
 
         <div
@@ -934,9 +968,35 @@ const ThemHopDongUyQuyen2 = () => {
             color: "white",
           }}
         >
-          <div style={{ marginBottom: 40 }}>Email:</div>
-          <div style={{ marginBottom: 40 }}>Tên đăng nhập:</div>
+          <div style={{ marginBottom: 100 }}>Nơi cư trú:</div>
+          <div style={{ marginBottom: 40 }}>Số điện thoại:</div>
           <div style={{ marginBottom: 39 }}>
+            Email:
+            <span
+              style={{
+                color: "#FF4747",
+                marginTop: 4,
+                marginLeft: 3,
+                position: "absolute",
+              }}
+            >
+              *
+            </span>
+          </div>
+          <div style={{ marginBottom: 36 }}>
+            Tên đăng nhập:
+            <span
+              style={{
+                color: "#FF4747",
+                marginTop: 4,
+                marginLeft: 3,
+                position: "absolute",
+              }}
+            >
+              *
+            </span>
+          </div>
+          <div>
             Mật khẩu:
             <span
               style={{
@@ -949,8 +1009,6 @@ const ThemHopDongUyQuyen2 = () => {
               *
             </span>
           </div>
-          <div style={{ marginBottom: 41 }}>Số tài khoản:</div>
-          <div>Ngân hàng:</div>
         </div>
 
         <div
@@ -962,14 +1020,26 @@ const ThemHopDongUyQuyen2 = () => {
             color: "white",
           }}
         >
-          <div style={{ marginBottom: 16 }}>
+          <div style={{ marginBottom: 12 }}>
+            <textarea
+              style={{
+                width: "325px",
+                height: "108px",
+                top: "542px",
+                left: "1509px",
+                padding: "12px 24px 12px 16px",
+                borderRadius: "8px",
+                border: "1px solid #727288",
+
+                background: "#2B2B3F",
+              }}
+            ></textarea>
+          </div>
+          <div style={{ marginBottom: 12 }}>
             <input
               style={{
                 width: "325px",
                 height: "48px",
-                // position: "absolute",
-                // top: "618px",
-                // left: "1515px",
                 padding: "11px 24px 13px 16px",
                 borderRadius: "8px",
                 border: "1px solid #727288",
@@ -978,14 +1048,11 @@ const ThemHopDongUyQuyen2 = () => {
               }}
             />
           </div>
-          <div style={{ marginBottom: 16 }}>
+          <div style={{ marginBottom: 12 }}>
             <input
               style={{
                 width: "325px",
                 height: "48px",
-                // position: "absolute",
-                // top: "618px",
-                // left: "1515px",
                 padding: "11px 24px 13px 16px",
                 borderRadius: "8px",
                 border: "1px solid #727288",
@@ -994,15 +1061,25 @@ const ThemHopDongUyQuyen2 = () => {
               }}
             />
           </div>
-          <div style={{ marginBottom: 16 }}>
+          <div style={{ marginBottom: 12 }}>
+            <input
+              style={{
+                width: "325px",
+                height: "48px",
+                padding: "11px 24px 13px 16px",
+                borderRadius: "8px",
+                border: "1px solid #727288",
+                background: "#2B2B3F",
+                color: "#FFFFFF",
+              }}
+            />
+          </div>
+          <div>
             <input
               type={showPassword ? "text" : "password"}
               style={{
                 width: "325px",
                 height: "48px",
-                // position: "absolute",
-                // top: "618px",
-                // left: "1515px",
                 padding: "11px 24px 13px 16px",
                 borderRadius: "8px",
                 border: "1px solid #727288",
@@ -1018,7 +1095,6 @@ const ThemHopDongUyQuyen2 = () => {
                 position: "absolute",
                 marginTop: 10,
                 color: "#FF7506",
-                // top: "50%",
                 right: 10,
               }}
               onClick={handleTogglePassword}
@@ -1030,44 +1106,12 @@ const ThemHopDongUyQuyen2 = () => {
               )}
             </div>
           </div>
-          <div style={{ marginBottom: 16 }}>
-            <input
-              style={{
-                width: "325px",
-                height: "48px",
-                // position: "absolute",
-                // top: "618px",
-                // left: "1515px",
-                padding: "11px 24px 13px 16px",
-                borderRadius: "8px",
-                border: "1px solid #727288",
-                background: "#2B2B3F",
-                color: "#FFFFFF",
-              }}
-            />
-          </div>
-          <div>
-            <input
-              style={{
-                width: "325px",
-                height: "48px",
-                // position: "absolute",
-                // top: "618px",
-                // left: "1515px",
-                padding: "11px 24px 13px 16px",
-                borderRadius: "8px",
-                border: "1px solid #727288",
-                background: "#2B2B3F",
-                color: "#FFFFFF",
-              }}
-            />
-          </div>
         </div>
 
         <div
           style={{
             position: "absolute",
-            top: "972px",
+            top: "1084px",
             left: "772px",
             width: "376px",
             height: "48px",

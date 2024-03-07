@@ -1,11 +1,8 @@
 import "../quanly/Navbar.css"; // Import file CSS cho navbar
 import { useLocation } from "react-router-dom";
-// import { useNavigate, Link } from "react-router-dom";
-// import { useEffect, useState } from "react";
 import "./style2.css";
 import "./ChinhSua.css";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
 
 const ChinhSuaTacPham = () => {
   // const [password, setPassword] = useState("");
@@ -18,7 +15,39 @@ const ChinhSuaTacPham = () => {
   const location = useLocation();
   // const navigate = useNavigate();
   let user = location.state && location.state.user;
+  const [selectAll, setSelectAll] = useState(false);
+  const [checkbox1, setCheckbox1] = useState(false);
+  const [checkbox2, setCheckbox2] = useState(false);
+  const [checkbox3, setCheckbox3] = useState(false);
+  const [checkbox4, setCheckbox4] = useState(false);
+  const [checkbox5, setCheckbox5] = useState(false);
 
+  const [checkbox6, setCheckbox6] = useState(false);
+  const [checkbox7, setCheckbox7] = useState(false);
+  const [checkbox8, setCheckbox8] = useState(false);
+  const [checkbox9, setCheckbox9] = useState(false);
+  const [checkbox10, setCheckbox10] = useState(false);
+  const [checkbox11, setCheckbox11] = useState(false);
+  const [checkbox12, setCheckbox12] = useState(false);
+
+  const handleSelectAllChange = (event: any) => {
+    const checked = event.target.checked;
+    setSelectAll(checked);
+    setCheckbox1(checked);
+    setCheckbox2(checked);
+    setCheckbox3(checked);
+    setCheckbox4(checked);
+    setCheckbox5(checked);
+    setCheckbox6(checked);
+    setCheckbox7(checked);
+    setCheckbox8(checked);
+    setCheckbox9(checked);
+    setCheckbox10(checked);
+    setCheckbox11(checked);
+    setCheckbox12(checked);
+
+    // Update other checkboxes as needed
+  };
   // const handleDangXuat = () => {
   //   navigate("/");
   // };
@@ -383,6 +412,8 @@ const ChinhSuaTacPham = () => {
                   <th style={{ width: "51px" }}>
                     {" "}
                     <input
+                      checked={selectAll}
+                      onChange={handleSelectAllChange}
                       type="checkbox"
                       style={{
                         width: "24px",
@@ -417,6 +448,8 @@ const ChinhSuaTacPham = () => {
                   <td>
                     {" "}
                     <input
+                      checked={checkbox1}
+                      onChange={(event) => setCheckbox1(event.target.checked)}
                       type="checkbox"
                       style={{
                         width: "24px",
@@ -491,6 +524,8 @@ const ChinhSuaTacPham = () => {
                   <td>
                     {" "}
                     <input
+                      checked={checkbox2}
+                      onChange={(event) => setCheckbox2(event.target.checked)}
                       type="checkbox"
                       style={{
                         width: "24px",
@@ -565,6 +600,8 @@ const ChinhSuaTacPham = () => {
                   <td>
                     {" "}
                     <input
+                      checked={checkbox3}
+                      onChange={(event) => setCheckbox3(event.target.checked)}
                       type="checkbox"
                       style={{
                         width: "24px",
@@ -639,6 +676,8 @@ const ChinhSuaTacPham = () => {
                   <td>
                     {" "}
                     <input
+                      checked={checkbox4}
+                      onChange={(event) => setCheckbox4(event.target.checked)}
                       type="checkbox"
                       style={{
                         width: "24px",
@@ -713,6 +752,8 @@ const ChinhSuaTacPham = () => {
                   <td>
                     {" "}
                     <input
+                      checked={checkbox5}
+                      onChange={(event) => setCheckbox5(event.target.checked)}
                       type="checkbox"
                       style={{
                         width: "24px",
@@ -787,6 +828,8 @@ const ChinhSuaTacPham = () => {
                   <td>
                     {" "}
                     <input
+                      checked={checkbox6}
+                      onChange={(event) => setCheckbox6(event.target.checked)}
                       type="checkbox"
                       style={{
                         width: "24px",
@@ -861,6 +904,8 @@ const ChinhSuaTacPham = () => {
                   <td>
                     {" "}
                     <input
+                      checked={checkbox7}
+                      onChange={(event) => setCheckbox7(event.target.checked)}
                       type="checkbox"
                       style={{
                         width: "24px",
@@ -935,6 +980,8 @@ const ChinhSuaTacPham = () => {
                   <td>
                     {" "}
                     <input
+                      checked={checkbox8}
+                      onChange={(event) => setCheckbox8(event.target.checked)}
                       type="checkbox"
                       style={{
                         width: "24px",
@@ -1009,6 +1056,8 @@ const ChinhSuaTacPham = () => {
                   <td>
                     {" "}
                     <input
+                      checked={checkbox9}
+                      onChange={(event) => setCheckbox9(event.target.checked)}
                       type="checkbox"
                       style={{
                         width: "24px",
@@ -1083,6 +1132,8 @@ const ChinhSuaTacPham = () => {
                   <td>
                     {" "}
                     <input
+                      checked={checkbox10}
+                      onChange={(event) => setCheckbox10(event.target.checked)}
                       type="checkbox"
                       style={{
                         width: "24px",
@@ -1157,6 +1208,8 @@ const ChinhSuaTacPham = () => {
                   <td>
                     {" "}
                     <input
+                      checked={checkbox11}
+                      onChange={(event) => setCheckbox11(event.target.checked)}
                       type="checkbox"
                       style={{
                         width: "24px",
@@ -1231,6 +1284,8 @@ const ChinhSuaTacPham = () => {
                   <td>
                     {" "}
                     <input
+                      checked={checkbox12}
+                      onChange={(event) => setCheckbox12(event.target.checked)}
                       type="checkbox"
                       style={{
                         width: "24px",
@@ -1300,80 +1355,6 @@ const ChinhSuaTacPham = () => {
                     </a>
                   </td>
                 </tr>
-                {/* <tr style={{ height: 47 }}>
-                  <td>
-                    {" "}
-                    <input
-                      type="checkbox"
-                      style={{
-                        width: "24px",
-                        height: "24px",
-                      }}
-                    />
-                  </td>
-                  <td>13</td>
-                  <td>
-                    Anh của ngày hôm qua
-                    <br /> Electronic{" "}
-                    <div
-                      style={{
-                        width: 4,
-                        height: 4,
-                        opacity: "70%",
-                        background: "#347AFF",
-                        borderRadius: "50%",
-                        display: "inline-block",
-                        position: "absolute",
-                        marginTop: 11,
-                      }}
-                    ></div>
-                    <span style={{ marginRight: 5 }}></span> Audio{" "}
-                    <div
-                      style={{
-                        width: 4,
-                        height: 4,
-                        opacity: "70%",
-                        background: "#347AFF",
-                        borderRadius: "50%",
-                        display: "inline-block",
-                        position: "absolute",
-                        marginTop: 11,
-                      }}
-                    ></div>
-                    <span style={{ marginRight: 5 }}></span>
-                    3:12
-                  </td>
-                  <td>VNA2547569</td>
-                  <td>Mai Deadline</td>
-                  <td>Đét Lai</td>
-                  <td>01/02/2020 15:53:13</td>
-                  <td style={{ width: "152px" }}>
-                    <div style={{ display: "flex", alignItems: "center" }}>
-                      <div
-                        style={{
-                          width: "8px",
-                          height: "8px",
-                          borderRadius: "50%",
-                          background: "#347AFF",
-                          marginRight: "5px",
-                        }}
-                      ></div>
-                      Đã phê duyệt
-                    </div>
-                  </td>
-                  <td style={{ width: "182px" }}>
-                    <a
-                      style={{
-                        display: "block",
-                        color: "#FF7506",
-                        textAlign: "center",
-                      }}
-                      href="/#"
-                    >
-                      Nghe
-                    </a>
-                  </td>
-                </tr> */}
               </tbody>
             </table>
 
@@ -1504,7 +1485,7 @@ const ChinhSuaTacPham = () => {
             style={{ height: 130, borderRadius: "16px 0px 0px 16px" }}
             className="khung2"
           >
-            <div className="khung1">
+            {/* <div className="khung1">
               <a href="/suathongtin" style={{ textDecoration: "none" }}>
                 <img
                   src="images/huy2.png"
@@ -1516,6 +1497,109 @@ const ChinhSuaTacPham = () => {
                   Từ chối <br /> bản ghi
                 </div>
               </a>
+            </div> */}
+
+            <div className="khung1">
+              <div data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img src="images/huy2.png" alt="huy2" className="icon" />
+                <div className="textt">
+                  Từ chối <br /> bản ghi
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            className="modal fade"
+            id="exampleModal"
+            tabIndex={-1}
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div
+              className="modal-dialog"
+              style={{
+                display: "flex",
+              }}
+            >
+              <div
+                className="modal-content"
+                style={{
+                  backgroundColor: "#3E3E5B",
+                  width: "720px",
+                  height: "432px",
+                  borderRadius: "16px",
+                }}
+              >
+                <div className="modal-body">
+                  <h5
+                    className="modal-title m-0"
+                    id="exampleModalLabel"
+                    style={{
+                      width: "100%",
+                      height: "24px",
+                      top: "32px",
+                      left: "159px",
+                      fontFamily: "Montserrat",
+                      fontSize: "24px",
+                      fontWeight: 700,
+                      lineHeight: "24px",
+                      letterSpacing: "-0.002em",
+                      textAlign: "center",
+                      color: "#F5F5FF",
+                    }}
+                  >
+                    Từ chối bản ghi
+                  </h5>
+                  <textarea
+                    placeholder="Cho chúng tôi biết lý do bạn muốn từ chối bản ghi này..."
+                    style={{
+                      width: "639px",
+                      height: "208px",
+                      marginTop: 40,
+                      padding: "12px 24px 12px 16px",
+                      borderRadius: "8px",
+                      border: "1px solid #727288",
+                      background: "#2B2B3F",
+                      color: "#FFFFFF",
+                    }}
+                  />
+
+                  <div>
+                    <div
+                      style={{
+                        width: "368px",
+                        height: "48px",
+                        top: "344px",
+                        left: "176px",
+                        gap: "32px",
+                        position: "absolute",
+                      }}
+                    >
+                      <button
+                        className="butoon"
+                        style={{
+                          color: "#FF7506",
+                        }}
+                        data-bs-dismiss="modal"
+                      >
+                        Hủy
+                      </button>
+                      <button
+                        className="butoon"
+                        style={{
+                          color: "white",
+                          background: "#FF7506",
+                          marginLeft: "32px",
+                        }}
+                        data-bs-dismiss="modal"
+                      >
+                        Lưu
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
