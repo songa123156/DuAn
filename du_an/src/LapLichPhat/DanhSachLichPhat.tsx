@@ -281,7 +281,7 @@ const DanhSachLichPhat: React.FC = () => {
         </div>
         <div className="khung2" style={{ height: 110 }}>
           <div className="khung1">
-            <a href="/suathongtin" style={{ textDecoration: "none" }}>
+            <a href="/ThemLichPhatMoi" style={{ textDecoration: "none" }}>
               <img
                 src="images/ThemLichPhat.png"
                 alt="ThemLichPhat"

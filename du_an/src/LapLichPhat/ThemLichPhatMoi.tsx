@@ -7,7 +7,7 @@ import "./LichPhat.css";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 
-const ChinhSuaLichPhat = () => {
+const ThemLichPhatMoi = () => {
   // const [password, setPassword] = useState("");
   // const [confirmPassword, setConfirmPassword] = useState("");
   // const [showPassword, setShowPassword] = useState(false);
@@ -271,17 +271,7 @@ const ChinhSuaLichPhat = () => {
               style={{ color: "#F5F5FF", textDecoration: "none" }}
               href="/#"
             >
-              Chi Tiết
-            </a>
-            <span className="separator" style={{ color: "#FFAC69" }}>
-              &gt;
-            </span>
-            <a
-              className="child-link"
-              style={{ color: "#F5F5FF", textDecoration: "none" }}
-              href="/#"
-            >
-              Chỉnh sửa lịch phát
+              Thêm lịch phát mới
             </a>
           </div>
           <div
@@ -304,7 +294,7 @@ const ChinhSuaLichPhat = () => {
                 textAlign: "left",
               }}
             >
-              Lịch phát số 1
+              Lập lịch phát
             </p>
           </div>
 
@@ -351,7 +341,6 @@ const ChinhSuaLichPhat = () => {
             >
               <label htmlFor="">Tên lịch phát:</label>
               <input
-                defaultValue={"Lịch phát số 1"}
                 style={{
                   width: "241px",
                   color: "#727288",
@@ -1108,44 +1097,6 @@ const ChinhSuaLichPhat = () => {
           >
             {/* Nội dung thẻ div */}
             <table style={{ height: "fit-content" }}>
-              <colgroup>
-                <col />
-                <col />
-                <col
-                  style={{
-                    borderTop: "1px solid #347AFF",
-                    borderLeft: "1px solid #347AFF",
-                    borderRight: "1px solid #347AFF",
-                    background: "#33334D",
-                  }}
-                />
-                <col />
-                <col
-                  style={{
-                    borderTop: "1px solid #347AFF",
-                    borderLeft: "1px solid #347AFF",
-                    borderRight: "1px solid #347AFF",
-                    background: "#33334D",
-                  }}
-                />
-                <col
-                  style={{
-                    borderTop: "1px solid #347AFF",
-                    borderLeft: "1px solid #347AFF",
-                    borderRight: "1px solid #347AFF",
-                    background: "#33334D",
-                  }}
-                />
-                <col
-                  style={{
-                    borderTop: "1px solid #347AFF",
-                    borderLeft: "1px solid #347AFF",
-                    borderRight: "1px solid #347AFF",
-                    background: "#33334D",
-                  }}
-                />
-                <col />
-              </colgroup>
               <thead style={{ color: "#FFAC69" }}>
                 <tr
                   style={{ textAlign: "center", height: 48, color: "#FFAC69" }}
@@ -1308,6 +1259,7 @@ const ChinhSuaLichPhat = () => {
                     style={{
                       width: 85,
                       position: "absolute",
+
                       marginTop: 33,
                       paddingRight: 20,
                     }}
@@ -1315,190 +1267,10 @@ const ChinhSuaLichPhat = () => {
                     07:00
                   </td>
                   <td className="thanh" style={{ width: "180px" }}></td>
-                  <td
-                    className="thanh"
-                    rowSpan={2}
-                    style={{ width: "180px", border: "1px solid #aeaeae" }}
-                    data-bs-toggle="modal"
-                    data-bs-target="#laplichphatModal"
-                  >
-                    <div
-                      style={{
-                        position: "relative",
-                        top: -10,
-                        left: 0,
-                        marginRight: 5,
-                      }}
-                    >
-                      <img
-                        onPointerMove={(event) => {
-                          const imgElement = event.currentTarget;
-                          if (imgElement) {
-                            imgElement.style.cursor = "pointer";
-                          }
-                        }}
-                        data-bs-toggle="modal"
-                        data-bs-target="#exampleModal"
-                        src="/images/exit.png"
-                        alt="exit"
-                      />
-                    </div>
-                    <div
-                      style={{
-                        width: "108px",
-                        height: "20px",
-                        fontFamily: "Montserrat",
-                        fontSize: "14px",
-                        fontWeight: "700",
-                        lineHeight: "20px",
-                        letterSpacing: "-0.002em",
-                        color: "#FFAC69",
-                        marginLeft: 9,
-                        textAlign: "left",
-                      }}
-                    >
-                      Top USUK 2021
-                    </div>
-                    <div
-                      style={{
-                        width: "139px",
-                        height: "20px",
-                        fontFamily: "Montserrat",
-                        fontSize: "14px",
-                        fontWeight: "400",
-                        lineHeight: "20px",
-                        letterSpacing: "0.015em",
-                        textAlign: "left",
-                        color: "#AEAEAE",
-                        marginLeft: 9,
-                      }}
-                    >
-                      06:00:00 - 08:00:00
-                    </div>
-                  </td>
                   <td className="thanh" style={{ width: "180px" }}></td>
-                  <td
-                    className="thanh"
-                    rowSpan={2}
-                    style={{ width: "180px", border: "1px solid #aeaeae" }}
-                    data-bs-toggle="modal"
-                    data-bs-target="#laplichphatModal"
-                  >
-                    <div
-                      style={{
-                        position: "relative",
-                        top: -10,
-                        left: 0,
-                        marginRight: 5,
-                      }}
-                    >
-                      <img
-                        onPointerMove={(event) => {
-                          const imgElement = event.currentTarget;
-                          if (imgElement) {
-                            imgElement.style.cursor = "pointer";
-                          }
-                        }}
-                        data-bs-toggle="modal"
-                        data-bs-target="#exampleModal"
-                        src="/images/exit.png"
-                        alt="exit"
-                      />
-                    </div>
-                    <div
-                      style={{
-                        width: "108px",
-                        height: "20px",
-                        fontFamily: "Montserrat",
-                        fontSize: "14px",
-                        fontWeight: "700",
-                        lineHeight: "20px",
-                        letterSpacing: "-0.002em",
-                        color: "#FFAC69",
-                        marginLeft: 9,
-                        textAlign: "left",
-                      }}
-                    >
-                      Love songs
-                    </div>
-                    <div
-                      style={{
-                        width: "139px",
-                        height: "20px",
-                        fontFamily: "Montserrat",
-                        fontSize: "14px",
-                        fontWeight: "400",
-                        lineHeight: "20px",
-                        letterSpacing: "0.015em",
-                        textAlign: "left",
-                        color: "#AEAEAE",
-                        marginLeft: 9,
-                      }}
-                    >
-                      06:00:00 - 08:00:00
-                    </div>
-                  </td>
-                  <td
-                    className="thanh"
-                    rowSpan={2}
-                    style={{ width: "180px", border: "1px solid #aeaeae" }}
-                    data-bs-toggle="modal"
-                    data-bs-target="#laplichphatModal"
-                  >
-                    <div
-                      style={{
-                        position: "relative",
-                        top: -10,
-                        left: 0,
-                        marginRight: 5,
-                      }}
-                    >
-                      <img
-                        onPointerMove={(event) => {
-                          const imgElement = event.currentTarget;
-                          if (imgElement) {
-                            imgElement.style.cursor = "pointer";
-                          }
-                        }}
-                        data-bs-toggle="modal"
-                        data-bs-target="#exampleModal"
-                        src="/images/exit.png"
-                        alt="exit"
-                      />
-                    </div>
-                    <div
-                      style={{
-                        width: "108px",
-                        height: "20px",
-                        fontFamily: "Montserrat",
-                        fontSize: "14px",
-                        fontWeight: "700",
-                        lineHeight: "20px",
-                        letterSpacing: "-0.002em",
-                        color: "#FFAC69",
-                        marginLeft: 9,
-                        textAlign: "left",
-                      }}
-                    >
-                      Top USUK 2021
-                    </div>
-                    <div
-                      style={{
-                        width: "139px",
-                        height: "20px",
-                        fontFamily: "Montserrat",
-                        fontSize: "14px",
-                        fontWeight: "400",
-                        lineHeight: "20px",
-                        letterSpacing: "0.015em",
-                        textAlign: "left",
-                        color: "#AEAEAE",
-                        marginLeft: 9,
-                      }}
-                    >
-                      06:00:00 - 08:00:00
-                    </div>
-                  </td>
+                  <td className="thanh" style={{ width: "180px" }}></td>
+                  <td className="thanh" style={{ width: "180px" }}></td>
+                  <td className="thanh" style={{ width: "180px" }}></td>
                   <td className="thanh" style={{ width: "180px" }}></td>
                   <td className="thanh" style={{ width: "180px" }}></td>
                 </tr>
@@ -1513,7 +1285,9 @@ const ChinhSuaLichPhat = () => {
                   >
                     08:00
                   </td>
-
+                  <td className="thanh" style={{ width: "180px" }}></td>{" "}
+                  <td className="thanh" style={{ width: "180px" }}></td>{" "}
+                  <td className="thanh" style={{ width: "180px" }}></td>
                   <td className="thanh" style={{ width: "180px" }}></td>
                   <td className="thanh" style={{ width: "180px" }}></td>
                   <td className="thanh" style={{ width: "180px" }}></td>
@@ -1626,130 +1400,10 @@ const ChinhSuaLichPhat = () => {
                     14:00
                   </td>
                   <td className="thanh" style={{ width: "180px" }}></td>
-                  <td
-                    className="thanh"
-                    rowSpan={2}
-                    style={{ width: "180px", border: "1px solid #aeaeae" }}
-                    data-bs-toggle="modal"
-                    data-bs-target="#laplichphatModal"
-                  >
-                    <div
-                      style={{
-                        position: "relative",
-                        top: -10,
-                        left: 0,
-                        marginRight: 5,
-                      }}
-                    >
-                      <img
-                        onPointerMove={(event) => {
-                          const imgElement = event.currentTarget;
-                          if (imgElement) {
-                            imgElement.style.cursor = "pointer";
-                          }
-                        }}
-                        data-bs-toggle="modal"
-                        data-bs-target="#exampleModal"
-                        src="/images/exit.png"
-                        alt="exit"
-                      />
-                    </div>
-                    <div
-                      style={{
-                        width: "108px",
-                        height: "20px",
-                        fontFamily: "Montserrat",
-                        fontSize: "14px",
-                        fontWeight: "700",
-                        lineHeight: "20px",
-                        letterSpacing: "-0.002em",
-                        color: "#FFAC69",
-                        marginLeft: 9,
-                        textAlign: "left",
-                      }}
-                    >
-                      Top USUK 2021
-                    </div>
-                    <div
-                      style={{
-                        width: "139px",
-                        height: "20px",
-                        fontFamily: "Montserrat",
-                        fontSize: "14px",
-                        fontWeight: "400",
-                        lineHeight: "20px",
-                        letterSpacing: "0.015em",
-                        textAlign: "left",
-                        color: "#AEAEAE",
-                        marginLeft: 9,
-                      }}
-                    >
-                      11:00:00 - 13:00:00
-                    </div>
-                  </td>
                   <td className="thanh" style={{ width: "180px" }}></td>
                   <td className="thanh" style={{ width: "180px" }}></td>
-                  <td
-                    className="thanh"
-                    rowSpan={2}
-                    style={{ width: "180px", border: "1px solid #aeaeae" }}
-                    data-bs-toggle="modal"
-                    data-bs-target="#laplichphatModal"
-                  >
-                    <div
-                      style={{
-                        position: "relative",
-                        top: -10,
-                        left: 0,
-                        marginRight: 5,
-                      }}
-                    >
-                      <img
-                        onPointerMove={(event) => {
-                          const imgElement = event.currentTarget;
-                          if (imgElement) {
-                            imgElement.style.cursor = "pointer";
-                          }
-                        }}
-                        data-bs-toggle="modal"
-                        data-bs-target="#exampleModal"
-                        src="/images/exit.png"
-                        alt="exit"
-                      />
-                    </div>
-                    <div
-                      style={{
-                        width: "108px",
-                        height: "20px",
-                        fontFamily: "Montserrat",
-                        fontSize: "14px",
-                        fontWeight: "700",
-                        lineHeight: "20px",
-                        letterSpacing: "-0.002em",
-                        color: "#FFAC69",
-                        marginLeft: 9,
-                        textAlign: "left",
-                      }}
-                    >
-                      Top USUK 2021
-                    </div>
-                    <div
-                      style={{
-                        width: "139px",
-                        height: "20px",
-                        fontFamily: "Montserrat",
-                        fontSize: "14px",
-                        fontWeight: "400",
-                        lineHeight: "20px",
-                        letterSpacing: "0.015em",
-                        textAlign: "left",
-                        color: "#AEAEAE",
-                        marginLeft: 9,
-                      }}
-                    >
-                      11:00:00 - 13:00:00
-                    </div>
-                  </td>
+                  <td className="thanh" style={{ width: "180px" }}></td>
+                  <td className="thanh" style={{ width: "180px" }}></td>
                   <td className="thanh" style={{ width: "180px" }}></td>
                   <td className="thanh" style={{ width: "180px" }}></td>
                 </tr>
@@ -1768,67 +1422,9 @@ const ChinhSuaLichPhat = () => {
                   <td className="thanh" style={{ width: "180px" }}></td>
                   <td className="thanh" style={{ width: "180px" }}></td>
                   <td className="thanh" style={{ width: "180px" }}></td>
-                  <td
-                    className="thanh"
-                    rowSpan={2}
-                    style={{ width: "180px", border: "1px solid #aeaeae" }}
-                    data-bs-toggle="modal"
-                    data-bs-target="#laplichphatModal"
-                  >
-                    <div
-                      style={{
-                        position: "relative",
-                        top: -10,
-                        left: 0,
-                        marginRight: 5,
-                      }}
-                    >
-                      <img
-                        onPointerMove={(event) => {
-                          const imgElement = event.currentTarget;
-                          if (imgElement) {
-                            imgElement.style.cursor = "pointer";
-                          }
-                        }}
-                        data-bs-toggle="modal"
-                        data-bs-target="#exampleModal"
-                        src="/images/exit.png"
-                        alt="exit"
-                      />
-                    </div>
-                    <div
-                      style={{
-                        width: "108px",
-                        height: "20px",
-                        fontFamily: "Montserrat",
-                        fontSize: "14px",
-                        fontWeight: "700",
-                        lineHeight: "20px",
-                        letterSpacing: "-0.002em",
-                        color: "#FFAC69",
-                        marginLeft: 9,
-                        textAlign: "left",
-                      }}
-                    >
-                      Loving you
-                    </div>
-                    <div
-                      style={{
-                        width: "139px",
-                        height: "20px",
-                        fontFamily: "Montserrat",
-                        fontSize: "14px",
-                        fontWeight: "400",
-                        lineHeight: "20px",
-                        letterSpacing: "0.015em",
-                        textAlign: "left",
-                        color: "#AEAEAE",
-                        marginLeft: 9,
-                      }}
-                    >
-                      14:00:00 - 16:00:00
-                    </div>
-                  </td>
+                  <td className="thanh" style={{ width: "180px" }}></td>
+                  <td className="thanh" style={{ width: "180px" }}></td>
+                  <td className="thanh" style={{ width: "180px" }}></td>
                 </tr>
                 <tr style={{ height: 47, textAlign: "right" }}>
                   <td
@@ -1841,6 +1437,7 @@ const ChinhSuaLichPhat = () => {
                   >
                     16:00
                   </td>
+                  <td className="thanh" style={{ width: "180px" }}></td>
                   <td className="thanh" style={{ width: "180px" }}></td>
                   <td className="thanh" style={{ width: "180px" }}></td>
                   <td className="thanh" style={{ width: "180px" }}></td>
@@ -1877,7 +1474,6 @@ const ChinhSuaLichPhat = () => {
             </div>
           </div>
           {/* showModal     */}
-
           <div
             className="modal fade"
             id="exampleModal"
@@ -1889,16 +1485,16 @@ const ChinhSuaLichPhat = () => {
               className="modal-dialog"
               style={{
                 // display: "flex",
-                width: "416px",
-                height: "305px",
+                width: "720px",
+                height: "432px",
               }}
             >
               <div
                 className="modal-content"
                 style={{
                   backgroundColor: "#3E3E5B",
-                  width: "416px",
-                  height: "305px",
+                  width: "720px",
+                  height: "432px",
                   borderRadius: "16px",
                 }}
               >
@@ -1920,95 +1516,30 @@ const ChinhSuaLichPhat = () => {
                       color: "#F5F5FF",
                     }}
                   >
-                    Xóa lịch phát
+                    Hủy hợp đồng uỷ quyền
                   </h5>
-
-                  <div
+                  <textarea
+                    placeholder="Cho chúng tôi biết lý do bạn muốn huỷ hợp đồng uỷ quyền này..."
                     style={{
-                      width: "225px",
-                      height: "17px",
-                      top: "80px",
-                      left: "110px",
-                      fontFamily: "Montserrat",
-                      fontSize: "14px",
-                      fontWeight: "500",
-                      lineHeight: "17px",
-                      letterSpacing: "0.015em",
-                      textAlign: "left",
-                      color: "#FFFFFF",
                       position: "absolute",
+                      top: "96px",
+                      left: "40px",
+                      width: "640px",
+                      height: "208px",
+                      padding: "12px 24px 12px 16px",
+                      borderRadius: "8px",
+                      border: " 1px solid #727288",
+                      backgroundColor: "#2B2B3F",
                     }}
-                  >
-                    Xóa tất cả lịch phát trong ngày
-                  </div>
-
-                  <div
-                    style={{
-                      width: "88px",
-                      height: "24px",
-                      top: "121px",
-                      left: "32px",
-                      gap: "8px",
-                      position: "absolute",
-                    }}
-                  >
-                    {/* Nội dung của thẻ div */}
-                    <input
-                      type="checkbox"
-                      style={{
-                        width: "24px",
-                        height: "24px",
-                      }}
-                    />
-                    <span
-                      style={{
-                        marginBottom: 10,
-                        color: "white",
-                        marginLeft: 8,
-                        position: "absolute",
-                      }}
-                    >
-                      Thứ ba
-                    </span>
-                  </div>
-
-                  <div
-                    style={{
-                      width: "88px",
-                      height: "24px",
-                      top: "161px",
-                      left: "32px",
-                      gap: "8px",
-                      position: "absolute",
-                    }}
-                  >
-                    {/* Nội dung của thẻ div */}
-                    <input
-                      type="checkbox"
-                      style={{
-                        width: "24px",
-                        height: "24px",
-                      }}
-                    />
-                    <span
-                      style={{
-                        marginBottom: 10,
-                        color: "white",
-                        marginLeft: 8,
-                        position: "absolute",
-                      }}
-                    >
-                      Thứ sáu
-                    </span>
-                  </div>
+                  />
 
                   <div>
                     <div
                       style={{
-                        width: "352px",
+                        width: "368px",
                         height: "48px",
-                        top: "225px",
-                        left: "32px",
+                        top: "344px",
+                        left: "176px",
                         gap: "32px",
                         position: "absolute",
                       }}
@@ -2021,488 +1552,7 @@ const ChinhSuaLichPhat = () => {
                         }}
                         data-bs-dismiss="modal"
                       >
-                        Hủy
-                      </button>
-                      <button
-                        className="butoon"
-                        style={{
-                          color: "white",
-                          background: "#FF7506",
-                          marginLeft: "16px",
-                        }}
-                        data-bs-dismiss="modal"
-                      >
-                        Xóa
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Lập lịch Phát Modal */}
-          <div
-            className="modal fade"
-            id="laplichphatModal"
-            tabIndex={-1}
-            aria-labelledby="laplichphatModalLabel"
-            aria-hidden="true"
-          >
-            <div
-              className="modal-dialog"
-              style={{
-                display: "flex",
-              }}
-            >
-              <div
-                className="modal-content"
-                style={{
-                  backgroundColor: "#3E3E5B",
-                  width: "600px",
-                  height: "420px",
-                  borderRadius: "16px",
-                }}
-              >
-                <div className="modal-body">
-                  <h5
-                    className="modal-title m-0"
-                    id="exampleModalLabel"
-                    style={{
-                      width: "100%",
-                      height: "24px",
-                      top: "32px",
-                      left: "32px",
-                      position: "absolute",
-                      fontFamily: "Montserrat",
-                      fontSize: "24px",
-                      fontWeight: 700,
-                      lineHeight: "24px",
-                      letterSpacing: "-0.002em",
-                      color: "#F5F5FF",
-                    }}
-                  >
-                    Top USUK 2021
-                  </h5>
-
-                  <div
-                    style={{
-                      width: "130px",
-                      height: "17px",
-                      top: "80px",
-                      left: "32px",
-                      fontFamily: "Montserrat",
-                      fontSize: "14px",
-                      fontWeight: "500",
-                      lineHeight: "17px",
-                      letterSpacing: "0.015em",
-                      textAlign: "left",
-                      color: "#FFFFFF",
-                      position: "absolute",
-                    }}
-                  >
-                    Lặp lại trong tuần
-                  </div>
-
-                  <div
-                    style={{
-                      width: "88px",
-                      height: "24px",
-                      top: "121px",
-                      left: "32px",
-                      gap: "8px",
-                      position: "absolute",
-                    }}
-                  >
-                    {/* Nội dung của thẻ div */}
-                    <input
-                      type="checkbox"
-                      style={{
-                        width: "24px",
-                        height: "24px",
-                      }}
-                    />
-                    <span
-                      style={{
-                        marginBottom: 10,
-                        color: "white",
-                        marginLeft: 8,
-                        position: "absolute",
-                      }}
-                    >
-                      Thứ hai
-                    </span>
-                  </div>
-
-                  <div
-                    style={{
-                      width: "88px",
-                      height: "24px",
-                      top: "121px",
-                      left: "156px",
-                      gap: "8px",
-                      position: "absolute",
-                    }}
-                  >
-                    {/* Nội dung của thẻ div */}
-                    <input
-                      type="checkbox"
-                      style={{
-                        width: "24px",
-                        height: "24px",
-                      }}
-                    />
-                    <span
-                      style={{
-                        marginBottom: 10,
-                        color: "white",
-                        marginLeft: 8,
-                        position: "absolute",
-                      }}
-                    >
-                      Thứ ba
-                    </span>
-                  </div>
-
-                  <div
-                    style={{
-                      width: "88px",
-                      height: "24px",
-                      top: "121px",
-                      left: "276px",
-                      gap: "8px",
-                      position: "absolute",
-                    }}
-                  >
-                    {/* Nội dung của thẻ div */}
-                    <input
-                      type="checkbox"
-                      style={{
-                        width: "24px",
-                        height: "24px",
-                      }}
-                    />
-                    <span
-                      style={{
-                        marginBottom: 10,
-                        color: "white",
-                        marginLeft: 8,
-                        position: "absolute",
-                      }}
-                    >
-                      Thứ tư
-                    </span>
-                  </div>
-
-                  <div
-                    style={{
-                      width: "88px",
-                      height: "24px",
-                      top: "121px",
-                      left: "393px",
-                      gap: "8px",
-                      position: "absolute",
-                    }}
-                  >
-                    {/* Nội dung của thẻ div */}
-                    <input
-                      type="checkbox"
-                      style={{
-                        width: "24px",
-                        height: "24px",
-                      }}
-                    />
-                    <span
-                      style={{
-                        marginBottom: 10,
-                        color: "white",
-                        marginLeft: 8,
-                        whiteSpace: "nowrap",
-                        position: "absolute",
-                      }}
-                    >
-                      Thứ năm
-                    </span>
-                  </div>
-
-                  <div
-                    style={{
-                      width: "88px",
-                      height: "24px",
-                      top: "161px",
-                      left: "32px",
-                      gap: "8px",
-                      position: "absolute",
-                    }}
-                  >
-                    {/* Nội dung của thẻ div */}
-                    <input
-                      type="checkbox"
-                      style={{
-                        width: "24px",
-                        height: "24px",
-                      }}
-                    />
-                    <span
-                      style={{
-                        marginBottom: 10,
-                        color: "white",
-                        marginLeft: 8,
-                        position: "absolute",
-                      }}
-                    >
-                      Thứ sáu
-                    </span>
-                  </div>
-
-                  <div
-                    style={{
-                      width: "88px",
-                      height: "24px",
-                      top: "161px",
-                      left: "156px",
-                      gap: "8px",
-                      position: "absolute",
-                    }}
-                  >
-                    {/* Nội dung của thẻ div */}
-                    <input
-                      type="checkbox"
-                      style={{
-                        width: "24px",
-                        height: "24px",
-                      }}
-                    />
-                    <span
-                      style={{
-                        marginBottom: 10,
-                        color: "white",
-                        marginLeft: 8,
-                        whiteSpace: "nowrap",
-                        position: "absolute",
-                      }}
-                    >
-                      Thứ bảy
-                    </span>
-                  </div>
-
-                  <div
-                    style={{
-                      width: "88px",
-                      height: "24px",
-                      top: "161px",
-                      left: "276px",
-                      gap: "8px",
-                      position: "absolute",
-                    }}
-                  >
-                    {/* Nội dung của thẻ div */}
-                    <input
-                      type="checkbox"
-                      style={{
-                        width: "24px",
-                        height: "24px",
-                      }}
-                    />
-                    <span
-                      style={{
-                        marginBottom: 10,
-                        color: "white",
-                        marginLeft: 8,
-                        whiteSpace: "nowrap",
-                        position: "absolute",
-                      }}
-                    >
-                      Chủ nhật
-                    </span>
-                  </div>
-
-                  <hr
-                    style={{
-                      width: "474px",
-                      top: "208px",
-                      left: "32px",
-                      border: "1px solid #C8C8DB",
-                      position: "absolute",
-                    }}
-                  />
-
-                  <div
-                    style={{
-                      width: "400px",
-                      height: "68px",
-                      top: "247px",
-                      left: "32px",
-                      position: "absolute",
-                      color: "white",
-                    }}
-                  >
-                    {/* Nội dung của thẻ div */}
-                    <div style={{ marginBottom: 6 }}>Thứ hai</div>
-                    <div
-                      style={{
-                        width: "48px",
-                        height: "40px",
-                        top: "28px",
-                        borderRadius: "8px",
-                        border: "1px solid #727288",
-                        background: "#2B2B3F",
-                        textAlign: "center",
-                        verticalAlign: "center",
-                        display: "inline-block",
-                        paddingTop: 7,
-                      }}
-                    >
-                      06
-                    </div>
-                    <div
-                      style={{
-                        display: "inline-block",
-                        marginLeft: 4,
-                        marginRight: 4,
-                      }}
-                    >
-                      :
-                    </div>
-                    <div
-                      style={{
-                        width: "48px",
-                        height: "40px",
-                        top: "28px",
-                        borderRadius: "8px",
-                        border: "1px solid #727288",
-                        background: "#2B2B3F",
-                        textAlign: "center",
-                        verticalAlign: "center",
-                        display: "inline-block",
-                        paddingTop: 7,
-                      }}
-                    >
-                      00
-                    </div>
-                    <div
-                      style={{
-                        display: "inline-block",
-                        marginLeft: 4,
-                        marginRight: 4,
-                      }}
-                    >
-                      :
-                    </div>
-                    <div
-                      style={{
-                        width: "48px",
-                        height: "40px",
-                        top: "28px",
-                        borderRadius: "8px",
-                        border: "1px solid #727288",
-                        background: "#2B2B3F",
-                        textAlign: "center",
-                        verticalAlign: "center",
-                        display: "inline-block",
-                        paddingTop: 7,
-                      }}
-                    >
-                      00
-                    </div>
-                    <div
-                      style={{
-                        display: "inline-block",
-                        marginLeft: 12,
-                        marginRight: 12,
-                      }}
-                    >
-                      -
-                    </div>
-
-                    <div
-                      style={{
-                        width: "48px",
-                        height: "40px",
-                        top: "28px",
-                        borderRadius: "8px",
-                        border: "1px solid #727288",
-                        background: "#2B2B3F",
-                        textAlign: "center",
-                        verticalAlign: "center",
-                        display: "inline-block",
-                        paddingTop: 7,
-                      }}
-                    >
-                      08
-                    </div>
-                    <div
-                      style={{
-                        display: "inline-block",
-                        marginLeft: 4,
-                        marginRight: 4,
-                      }}
-                    >
-                      :
-                    </div>
-                    <div
-                      style={{
-                        width: "48px",
-                        height: "40px",
-                        top: "28px",
-                        borderRadius: "8px",
-                        border: "1px solid #727288",
-                        background: "#2B2B3F",
-                        textAlign: "center",
-                        verticalAlign: "center",
-                        display: "inline-block",
-                        paddingTop: 7,
-                      }}
-                    >
-                      00
-                    </div>
-                    <div
-                      style={{
-                        display: "inline-block",
-                        marginLeft: 4,
-                        marginRight: 4,
-                      }}
-                    >
-                      :
-                    </div>
-                    <div
-                      style={{
-                        width: "48px",
-                        height: "40px",
-                        top: "28px",
-                        borderRadius: "8px",
-                        border: "1px solid #727288",
-                        background: "#2B2B3F",
-                        textAlign: "center",
-                        verticalAlign: "center",
-                        display: "inline-block",
-                        paddingTop: 7,
-                      }}
-                    >
-                      00
-                    </div>
-                  </div>
-
-                  <div>
-                    <div
-                      style={{
-                        width: "368px",
-                        height: "48px",
-                        top: "340px",
-                        left: "60px",
-                        gap: "32px",
-                        position: "absolute",
-                      }}
-                    >
-                      <button
-                        className="butoon"
-                        style={{
-                          color: "#FF7506",
-                          background: "transparent",
-                        }}
-                        data-bs-dismiss="modal"
-                      >
-                        Hủy
+                        Quay lại
                       </button>
                       <button
                         className="butoon"
@@ -2513,7 +1563,7 @@ const ChinhSuaLichPhat = () => {
                         }}
                         data-bs-dismiss="modal"
                       >
-                        Lưu
+                        Hủy hợp đồng
                       </button>
                     </div>
                   </div>
@@ -2569,4 +1619,4 @@ const ChinhSuaLichPhat = () => {
   );
 };
 
-export default ChinhSuaLichPhat;
+export default ThemLichPhatMoi;

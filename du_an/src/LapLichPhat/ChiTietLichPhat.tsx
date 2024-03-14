@@ -388,10 +388,10 @@ const ChiTietLichPhat = () => {
 
           <div className="khung2" style={{ height: 110 }}>
             <div className="khung1">
-              <a href="/ChinhSuaThongTin" style={{ textDecoration: "none" }}>
+              <a href="/ChinhSuaLichPhat" style={{ textDecoration: "none" }}>
                 <img src="images/sua.png" alt="sua" className="icon" />
                 <div className="textt">
-                  Chỉnh sửa <br /> hợp đồng
+                  Chỉnh sửa <br /> lịch phát
                 </div>
               </a>
             </div>

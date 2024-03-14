@@ -49,7 +49,9 @@ const Log = () => {
         // history.push("/navbar", { user: user }); // Chuyển hướng và truyền thông tin user
         // navigate("/navbar", { state: { user: user } });
 
-        await history.push("/navbar", { user: user.providerData[0].email });
+        await history.push("/ChiTietHopDong", {
+          user: user.providerData[0].email,
+        });
         window.location.reload();
       })
       .catch((error) => {

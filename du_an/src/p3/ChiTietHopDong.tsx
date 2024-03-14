@@ -633,7 +633,7 @@ const ChiTietHopDong = () => {
 
           <div className="khung2">
             <div className="khung1">
-              <a href="/suathongtin" style={{ textDecoration: "none" }}>
+              <a href="/ChinhSuaThongTin" style={{ textDecoration: "none" }}>
                 <img src="images/sua.png" alt="sua" className="icon" />
                 <div className="textt">
                   Chỉnh sửa <br /> hợp đồng
@@ -823,7 +823,6 @@ const ChiTietHopDong = () => {
                   >
                     Gia hạn uỷ quyền tác phẩm
                   </h5>
-
                   <div
                     style={{
                       width: "fit-content",
@@ -841,7 +840,6 @@ const ChiTietHopDong = () => {
                   >
                     Thời gian gia hạn <span style={{ color: "red" }}>*</span>
                   </div>
-
                   <div
                     style={{
                       width: "157px",
@@ -863,7 +861,6 @@ const ChiTietHopDong = () => {
                   >
                     Từ ngày: 02/08/2021
                   </div>
-
                   <div
                     style={{
                       width: "245px",
@@ -902,7 +899,6 @@ const ChiTietHopDong = () => {
                       }}
                     />
                   </div>
-
                   <div
                     style={{
                       width: "383px",
@@ -1063,7 +1059,6 @@ const ChiTietHopDong = () => {
                       <span style={{ marginTop: 10 }}> % </span>
                     </div>
                   </div>
-
                   <div
                     style={{
                       width: "119px",
@@ -1090,7 +1085,6 @@ const ChiTietHopDong = () => {
                       style={{
                         position: "relative",
                         display: "inline-block",
-                        marginBottom: 16,
                       }}
                     >
                       <input
@@ -1139,13 +1133,24 @@ const ChiTietHopDong = () => {
                         </span>
                       </div>
                     </div>
-                    <div style={{ display: "inline" }}>
-                      <i
-                        style={{ marginRight: 8 }}
-                        className="fa-solid fa-file-word"
-                      />
-                      hetthuongcannho.doc
-                    </div>
+                  </div>
+                  <div
+                    style={{
+                      width: "208px",
+                      height: "24px",
+                      top: "435px",
+                      left: "171px",
+                      gap: "4px",
+                      color: "white",
+                      position: "absolute",
+                    }}
+                  >
+                    {/* Nội dung của div */}
+                    <i
+                      style={{ marginRight: 8 }}
+                      className="fa-solid fa-file-word"
+                    />
+                    hetthuongcannho.doc
                     <br />
                     <i
                       style={{ marginRight: 8, marginTop: 12 }}
@@ -1159,8 +1164,8 @@ const ChiTietHopDong = () => {
                       style={{
                         width: "368px",
                         height: "48px",
-                        top: "344px",
-                        left: "176px",
+                        top: "535px",
+                        left: "270px",
                         gap: "32px",
                         position: "absolute",
                       }}
@@ -1173,7 +1178,7 @@ const ChiTietHopDong = () => {
                         }}
                         data-bs-dismiss="modal"
                       >
-                        Quay lại
+                        Hủy
                       </button>
                       <button
                         className="butoon"
@@ -1184,7 +1189,7 @@ const ChiTietHopDong = () => {
                         }}
                         data-bs-dismiss="modal"
                       >
-                        Hủy hợp đồng
+                        Lưu
                       </button>
                     </div>
                   </div>
