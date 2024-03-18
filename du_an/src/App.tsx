@@ -35,6 +35,20 @@ import ChiTietP6 from "./p6/ChiTietP6";
 import ThemNguoiDung from "./p6/ThemNguoiDung";
 import ThongTinNguoiDung from "./p6/ThongTinNguoiDung";
 import ChinhSuaTTNguoiDung from "./p6/ChinhSuaTTNguoiDung";
+import DanhSachThietBi from "./p8/DanhSachThietBi";
+import P8ThemThietBiMoi from "./p8/P8ThemThietBiMoi";
+import ChiTietThieBiP8 from "./p8/ChiTietThieBiP8";
+import DanhSachDoiTacUyQuyen from "./p7/DanhSachDoiTacUyQuyen";
+import CapNhatThongTin from "./p7/CapNhatThongTin";
+import QuanLyPhanPhoiDoanhThu from "./p10/QuanLyPhanPhoiDoanhThu";
+import ChiTietDoanhThu from "./p10/ChiTietDoanhThu";
+import LichSuDoiSoatDoanhThu from "./P11/LichSuDoiSoatDoanhThu";
+import P11ChiTietDoanhThu from "./P11/P11ChiTietDoanhThu";
+import DaChotDoiSoat from "./P11/DaChotDoiSoat";
+import DoanhThuHopDongKhaiThac from "./P11.1/DoanhThuHopDongKhaiThac";
+import BaoCaoChiTiet from "./P11.1/BaoCaoChiTiet";
+import Thang3BaoCao from "./P11.1/Thang3BaoCao";
+import LichSuDongBoThietBi from "./P11.1/LichSuDongBoThietBi";
 
 function App() {
   return (
@@ -117,6 +131,41 @@ function App() {
           <Route
             path="/ChinhSuaTTNguoiDung"
             element={<ChinhSuaTTNguoiDung />}
+          ></Route>
+          <Route path="/DanhSachThietBi" element={<DanhSachThietBi />}></Route>
+          <Route
+            path="/P8ThemThietBiMoi"
+            element={<P8ThemThietBiMoi />}
+          ></Route>
+          <Route path="/ChiTietThieBiP8" element={<ChiTietThieBiP8 />}></Route>
+          <Route
+            path="/DanhSachDoiTacUyQuyen"
+            element={<DanhSachDoiTacUyQuyen />}
+          ></Route>
+          <Route path="/CapNhatThongTin" element={<CapNhatThongTin />}></Route>
+          <Route
+            path="/QuanLyPhanPhoiDoanhThu"
+            element={<QuanLyPhanPhoiDoanhThu />}
+          ></Route>
+          <Route path="/ChiTietDoanhThu" element={<ChiTietDoanhThu />}></Route>
+          <Route
+            path="/LichSuDoiSoatDoanhThu"
+            element={<LichSuDoiSoatDoanhThu />}
+          ></Route>
+          <Route
+            path="/P11ChiTietDoanhThu"
+            element={<P11ChiTietDoanhThu />}
+          ></Route>
+          <Route path="/DaChotDoiSoat" element={<DaChotDoiSoat />}></Route>
+          <Route
+            path="/DoanhThuHopDongKhaiThac"
+            element={<DoanhThuHopDongKhaiThac />}
+          ></Route>
+          <Route path="/BaoCaoChiTiet" element={<BaoCaoChiTiet />}></Route>
+          <Route path="/Thang3BaoCao" element={<Thang3BaoCao />}></Route>
+          <Route
+            path="/LichSuDongBoThietBi"
+            element={<LichSuDongBoThietBi />}
           ></Route>
         </Routes>
       </div>
