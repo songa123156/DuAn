@@ -476,7 +476,7 @@ const DoanhThuHopDongKhaiThac = () => {
                       color: "#FF7506",
                       textAlign: "center",
                     }}
-                    href="/#"
+                    href="/BaoCaoChiTiet"
                   >
                     Chi tiết doanh thu
                   </a>
@@ -488,7 +488,7 @@ const DoanhThuHopDongKhaiThac = () => {
                       color: "#FF7506",
                       textAlign: "center",
                     }}
-                    href="/#"
+                    href="/LichSuDongBoThietBi"
                   >
                     Lịch sử đồng bộ trên thiết bị
                   </a>
@@ -511,7 +511,7 @@ const DoanhThuHopDongKhaiThac = () => {
                       color: "#FF7506",
                       textAlign: "center",
                     }}
-                    href="/#"
+                    href="/BaoCaoChiTiet"
                   >
                     Chi tiết doanh thu
                   </a>
@@ -523,7 +523,7 @@ const DoanhThuHopDongKhaiThac = () => {
                       color: "#FF7506",
                       textAlign: "center",
                     }}
-                    href="/#"
+                    href="/LichSuDongBoThietBi"
                   >
                     Lịch sử đồng bộ trên thiết bị
                   </a>
@@ -546,7 +546,7 @@ const DoanhThuHopDongKhaiThac = () => {
                       color: "#FF7506",
                       textAlign: "center",
                     }}
-                    href="/#"
+                    href="/BaoCaoChiTiet"
                   >
                     Chi tiết doanh thu
                   </a>
@@ -558,7 +558,7 @@ const DoanhThuHopDongKhaiThac = () => {
                       color: "#FF7506",
                       textAlign: "center",
                     }}
-                    href="/#"
+                    href="/LichSuDongBoThietBi"
                   >
                     Lịch sử đồng bộ trên thiết bị
                   </a>
@@ -581,7 +581,7 @@ const DoanhThuHopDongKhaiThac = () => {
                       color: "#FF7506",
                       textAlign: "center",
                     }}
-                    href="/#"
+                    href="/BaoCaoChiTiet"
                   >
                     Chi tiết doanh thu
                   </a>
@@ -593,7 +593,7 @@ const DoanhThuHopDongKhaiThac = () => {
                       color: "#FF7506",
                       textAlign: "center",
                     }}
-                    href="/#"
+                    href="/LichSuDongBoThietBi"
                   >
                     Lịch sử đồng bộ trên thiết bị
                   </a>
@@ -616,7 +616,7 @@ const DoanhThuHopDongKhaiThac = () => {
                       color: "#FF7506",
                       textAlign: "center",
                     }}
-                    href="/#"
+                    href="/BaoCaoChiTiet"
                   >
                     Chi tiết doanh thu
                   </a>
@@ -628,7 +628,7 @@ const DoanhThuHopDongKhaiThac = () => {
                       color: "#FF7506",
                       textAlign: "center",
                     }}
-                    href="/#"
+                    href="/LichSuDongBoThietBi"
                   >
                     Lịch sử đồng bộ trên thiết bị
                   </a>
@@ -651,7 +651,7 @@ const DoanhThuHopDongKhaiThac = () => {
                       color: "#FF7506",
                       textAlign: "center",
                     }}
-                    href="/#"
+                    href="/BaoCaoChiTiet"
                   >
                     Chi tiết doanh thu
                   </a>
@@ -663,7 +663,7 @@ const DoanhThuHopDongKhaiThac = () => {
                       color: "#FF7506",
                       textAlign: "center",
                     }}
-                    href="/#"
+                    href="/LichSuDongBoThietBi"
                   >
                     Lịch sử đồng bộ trên thiết bị
                   </a>
@@ -686,7 +686,7 @@ const DoanhThuHopDongKhaiThac = () => {
                       color: "#FF7506",
                       textAlign: "center",
                     }}
-                    href="/#"
+                    href="/BaoCaoChiTiet"
                   >
                     Chi tiết doanh thu
                   </a>
@@ -698,7 +698,7 @@ const DoanhThuHopDongKhaiThac = () => {
                       color: "#FF7506",
                       textAlign: "center",
                     }}
-                    href="/#"
+                    href="/LichSuDongBoThietBi"
                   >
                     Lịch sử đồng bộ trên thiết bị
                   </a>
@@ -721,7 +721,7 @@ const DoanhThuHopDongKhaiThac = () => {
                       color: "#FF7506",
                       textAlign: "center",
                     }}
-                    href="/#"
+                    href="/BaoCaoChiTiet"
                   >
                     Chi tiết doanh thu
                   </a>
@@ -733,7 +733,7 @@ const DoanhThuHopDongKhaiThac = () => {
                       color: "#FF7506",
                       textAlign: "center",
                     }}
-                    href="/#"
+                    href="/LichSuDongBoThietBi"
                   >
                     Lịch sử đồng bộ trên thiết bị
                   </a>
@@ -756,7 +756,7 @@ const DoanhThuHopDongKhaiThac = () => {
                       color: "#FF7506",
                       textAlign: "center",
                     }}
-                    href="/#"
+                    href="/BaoCaoChiTiet"
                   >
                     Chi tiết doanh thu
                   </a>
@@ -768,7 +768,7 @@ const DoanhThuHopDongKhaiThac = () => {
                       color: "#FF7506",
                       textAlign: "center",
                     }}
-                    href="/#"
+                    href="/LichSuDongBoThietBi"
                   >
                     Lịch sử đồng bộ trên thiết bị
                   </a>
@@ -791,7 +791,7 @@ const DoanhThuHopDongKhaiThac = () => {
                       color: "#FF7506",
                       textAlign: "center",
                     }}
-                    href="/#"
+                    href="/BaoCaoChiTiet"
                   >
                     Chi tiết doanh thu
                   </a>
@@ -803,7 +803,7 @@ const DoanhThuHopDongKhaiThac = () => {
                       color: "#FF7506",
                       textAlign: "center",
                     }}
-                    href="/#"
+                    href="/LichSuDongBoThietBi"
                   >
                     Lịch sử đồng bộ trên thiết bị
                   </a>
@@ -826,7 +826,7 @@ const DoanhThuHopDongKhaiThac = () => {
                       color: "#FF7506",
                       textAlign: "center",
                     }}
-                    href="/#"
+                    href="/BaoCaoChiTiet"
                   >
                     Chi tiết doanh thu
                   </a>
@@ -838,7 +838,7 @@ const DoanhThuHopDongKhaiThac = () => {
                       color: "#FF7506",
                       textAlign: "center",
                     }}
-                    href="/#"
+                    href="/LichSuDongBoThietBi"
                   >
                     Lịch sử đồng bộ trên thiết bị
                   </a>
@@ -861,7 +861,7 @@ const DoanhThuHopDongKhaiThac = () => {
                       color: "#FF7506",
                       textAlign: "center",
                     }}
-                    href="/#"
+                    href="/BaoCaoChiTiet"
                   >
                     Chi tiết doanh thu
                   </a>
@@ -873,7 +873,7 @@ const DoanhThuHopDongKhaiThac = () => {
                       color: "#FF7506",
                       textAlign: "center",
                     }}
-                    href="/#"
+                    href="/LichSuDongBoThietBi"
                   >
                     Lịch sử đồng bộ trên thiết bị
                   </a>
@@ -896,7 +896,7 @@ const DoanhThuHopDongKhaiThac = () => {
                       color: "#FF7506",
                       textAlign: "center",
                     }}
-                    href="/#"
+                    href="/BaoCaoChiTiet"
                   >
                     Chi tiết doanh thu
                   </a>
@@ -908,7 +908,7 @@ const DoanhThuHopDongKhaiThac = () => {
                       color: "#FF7506",
                       textAlign: "center",
                     }}
-                    href="/#"
+                    href="/LichSuDongBoThietBi"
                   >
                     Lịch sử đồng bộ trên thiết bị
                   </a>
@@ -1020,7 +1020,11 @@ const DoanhThuHopDongKhaiThac = () => {
               Chốt doanh <br /> thu
             </div>
           </div>
-          <div className="khung1">
+          <div
+            className="khung1"
+            data-bs-toggle="modal"
+            data-bs-target="#BaGiaModal"
+          >
             <img
               src="images/xuatdulieu.png"
               alt="xuatdulieu"
@@ -1030,21 +1034,14 @@ const DoanhThuHopDongKhaiThac = () => {
           </div>
         </div>
 
-        <div
-          className="modal fade"
-          id="exampleModal"
-          tabIndex={-1}
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-        >
-          <div
-            className="modal-dialog"
-            style={
-              {
-                //   display: "flex",
-              }
-            }
-          >
+        <div className="modal" id="BaGiaModal">
+          <div className="modal-dialog">
+            <h3>Hellp bà già</h3>
+          </div>
+        </div>
+
+        <div className="modal fade" id="exampleModal">
+          <div className="modal-dialog">
             <div
               className="modal-content"
               style={{

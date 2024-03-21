@@ -49,6 +49,22 @@ import DoanhThuHopDongKhaiThac from "./P11.1/DoanhThuHopDongKhaiThac";
 import BaoCaoChiTiet from "./P11.1/BaoCaoChiTiet";
 import Thang3BaoCao from "./P11.1/Thang3BaoCao";
 import LichSuDongBoThietBi from "./P11.1/LichSuDongBoThietBi";
+import ChartBaoCaoDoanhThu from "./P11.1/ChartBaoCaoDoanhThu";
+import PhanQuyenNguoiDung from "./p12/PhanQuyenNguoiDung";
+import PhanQuyenCapNhatTTNguoiDung from "./p12/PhanQuyenCapNhatTTNguoiDung";
+import P12ThemNguoiDungMoi from "./p12/P12ThemNguoiDungMoi";
+import VaiTroNguoiDungTrenHeThong from "./p12/VaiTroNguoiDungTrenHeThong";
+import PhanQuyenNguoiDungCapNhat from "./p12/PhanQuyenNguoiDungCapNhat";
+import ThemVaiTroNguoiDung from "./p12/ThemVaiTroNguoiDung";
+import CaiDatCauHinh from "./P13/CaiDatCauHinh";
+import CaiDatCauHinhThongTinTacPham from "./P13/CaiDatCauHinhThongTinTacPham";
+import ChinhSuaThongTinTacPhamP13 from "./P13/ChinhSuaThongTinTacPhamP13";
+import QuanLyLoaiHopDong from "./P13/QuanLyLoaiHopDong";
+import CanhBaoHetHanTacPham from "./P13/CanhBaoHetHanTacPham";
+import LoaiHopDong3 from "./P13/LoaiHopDong3";
+import DoiSoatTheoThang from "./P13/DoiSoatTheoThang";
+import P13ThongTinTacPham from "./P13/P13ThongTinTacPham";
+import TaiApp from "./P14/TaiApp";
 
 function App() {
   return (
@@ -167,6 +183,61 @@ function App() {
             path="/LichSuDongBoThietBi"
             element={<LichSuDongBoThietBi />}
           ></Route>
+          <Route
+            path="/ChartBaoCaoDoanhThu"
+            element={<ChartBaoCaoDoanhThu />}
+          ></Route>
+          <Route
+            path="/PhanQuyenNguoiDung"
+            element={<PhanQuyenNguoiDung />}
+          ></Route>
+          <Route
+            path="/PhanQuyenCapNhatTTNguoiDung"
+            element={<PhanQuyenCapNhatTTNguoiDung />}
+          ></Route>
+          <Route
+            path="/P12ThemNguoiDungMoi"
+            element={<P12ThemNguoiDungMoi />}
+          ></Route>
+          <Route
+            path="/VaiTroNguoiDungTrenHeThong"
+            element={<VaiTroNguoiDungTrenHeThong />}
+          ></Route>
+          <Route
+            path="/PhanQuyenNguoiDungCapNhat"
+            element={<PhanQuyenNguoiDungCapNhat />}
+          ></Route>
+          <Route
+            path="/ThemVaiTroNguoiDung"
+            element={<ThemVaiTroNguoiDung />}
+          ></Route>
+          <Route path="/CaiDatCauHinh" element={<CaiDatCauHinh />}></Route>
+          <Route
+            path="/CaiDatCauHinhThongTinTacPham"
+            element={<CaiDatCauHinhThongTinTacPham />}
+          ></Route>
+          <Route
+            path="/ChinhSuaThongTinTacPhamP13"
+            element={<ChinhSuaThongTinTacPhamP13 />}
+          ></Route>
+          <Route
+            path="/QuanLyLoaiHopDong"
+            element={<QuanLyLoaiHopDong />}
+          ></Route>
+          <Route
+            path="/CanhBaoHetHanTacPham"
+            element={<CanhBaoHetHanTacPham />}
+          ></Route>
+          <Route path="/LoaiHopDong3" element={<LoaiHopDong3 />}></Route>
+          <Route
+            path="/DoiSoatTheoThang"
+            element={<DoiSoatTheoThang />}
+          ></Route>
+          <Route
+            path="/P13ThongTinTacPham"
+            element={<P13ThongTinTacPham />}
+          ></Route>
+          <Route path="/TaiApp" element={<TaiApp />}></Route>
         </Routes>
       </div>
     </div>
