@@ -65,6 +65,13 @@ import LoaiHopDong3 from "./P13/LoaiHopDong3";
 import DoiSoatTheoThang from "./P13/DoiSoatTheoThang";
 import P13ThongTinTacPham from "./P13/P13ThongTinTacPham";
 import TaiApp from "./P14/TaiApp";
+import Feedback from "./P14/Feedback";
+import FeedbackAdmin from "./P14/FeedbackAdmin";
+import FeedbackThu from "./P14/FeedbackThu";
+import HuongDanSuDung from "./P14/HuongDanSuDung";
+import ThemBanGhiPlayList from "./P5/ThemBanGhiPlayList";
+import TestNavbarAn from "./test/TestNavbarAn";
+import TestCheckBoxKichHoat from "./test/TestCheckBoxKichHoat";
 
 function App() {
   return (
@@ -238,6 +245,19 @@ function App() {
             element={<P13ThongTinTacPham />}
           ></Route>
           <Route path="/TaiApp" element={<TaiApp />}></Route>
+          <Route path="/Feedback" element={<Feedback />}></Route>
+          <Route path="/FeedbackAdmin" element={<FeedbackAdmin />}></Route>
+          <Route path="/FeedbackThu" element={<FeedbackThu />}></Route>
+          <Route path="/HuongDanSuDung" element={<HuongDanSuDung />}></Route>
+          <Route
+            path="/ThemBanGhiPlayList"
+            element={<ThemBanGhiPlayList />}
+          ></Route>
+          <Route path="/TestNavbarAn" element={<TestNavbarAn />}></Route>
+          <Route
+            path="/TestCheckBoxKichHoat"
+            element={<TestCheckBoxKichHoat />}
+          ></Route>
         </Routes>
       </div>
     </div>
