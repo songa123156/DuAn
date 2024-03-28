@@ -26,7 +26,7 @@ const Trang1: React.FC = () => {
             }}
           >
             <img
-              src="images/admin.jpg"
+              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/admin.jpg?alt=media&token=9647fd08-067e-4a3f-a69b-d4c93c10c29f"
               alt=""
               style={{
                 width: "273px",
@@ -35,7 +35,11 @@ const Trang1: React.FC = () => {
                 borderRadius: "200px",
               }}
             />
-            <img src="images/camera.png" alt="" className="avt" />
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/camera.png?alt=media&token=983655b9-2630-4561-a9c5-d72be90cefb3"
+              alt=""
+              className="avt"
+            />
             <p className="ten">Tuyết Nguyễn</p>
           </div>
           <div
@@ -153,7 +157,11 @@ const Trang1: React.FC = () => {
         <div className="khung2">
           <div className="khung1">
             <a href="/suathongtin" style={{ textDecoration: "none" }}>
-              <img src="images/sua.png" alt="sua" className="icon" />
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/sua.png?alt=media&token=26ad60e6-30e9-4c8d-b4a4-76777c548920"
+                alt="sua"
+                className="icon"
+              />
               <div className="textt">
                 Sửa thông <br /> tin
               </div>
@@ -161,7 +169,11 @@ const Trang1: React.FC = () => {
           </div>
           <div className="khung1">
             <div data-bs-toggle="modal" data-bs-target="#exampleModal">
-              <img src="images/doimk.png" alt="doimk" className="icon" />
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/doimk.png?alt=media&token=533ea983-0039-43a9-a007-265d1fb8417f"
+                alt="doimk"
+                className="icon"
+              />
               <div className="textt">
                 Đổi <br /> mật khẩu
               </div>
@@ -178,7 +190,7 @@ const Trang1: React.FC = () => {
             <a href="/">
               {" "}
               <img
-                src="images/dangxuat.png"
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/dangxuat.png?alt=media&token=bdfa50b9-04ba-44c8-84f8-c519aabdb72a"
                 alt="dangxuat"
                 className="icon"
                 style={{ marginLeft: "15px" }}

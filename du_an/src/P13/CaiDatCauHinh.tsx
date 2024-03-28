@@ -240,7 +240,10 @@ const CaiDatCauHinh = () => {
               borderRadius: "16px",
             }}
           >
-            <img src="/images/hinhduocchon.png" alt="hinhduocchon" />
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/hinhduocchon.png?alt=media&token=cae6ab85-38b6-4796-b516-5f79ebbd2b8f"
+              alt="hinhduocchon"
+            />
           </div>
 
           <div
@@ -255,10 +258,16 @@ const CaiDatCauHinh = () => {
             }}
           >
             <div style={{ display: "inline-block", marginRight: 53 }}>
-              <img src="/images/Group.png" alt="Group" />
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/Group.png?alt=media&token=46bf70bf-f53b-4ad2-8fa6-5d4e04db6423"
+                alt="Group"
+              />
             </div>
             <div style={{ display: "inline-block" }}>
-              <img src="/images/Rectangle7.png" alt="Rectangle 7" />
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/Rectangle7.png?alt=media&token=8c03d7fd-37c7-4d69-a3c4-6c65764ed6b8"
+                alt="Rectangle 7"
+              />
             </div>
             <div
               style={{
@@ -267,13 +276,22 @@ const CaiDatCauHinh = () => {
                 marginRight: 24,
               }}
             >
-              <img src="/images/Rectangle8.png" alt="Rectangle 8" />
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/Rectangle8.png?alt=media&token=02a3d8e1-3c6b-48d9-ac9b-39abc753f306"
+                alt="Rectangle 8"
+              />
             </div>
             <div style={{ display: "inline-block" }}>
-              <img src="/images/Rectangle9.png" alt="Rectangle 9" />
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/Rectangle9.png?alt=media&token=571e0bf6-0f55-46bd-8cf6-cb2a7e8680c9"
+                alt="Rectangle 9"
+              />
             </div>
             <div style={{ display: "inline-block", marginLeft: 51 }}>
-              <img src="/images/ChevronRight.png" alt="Chevron Right" />
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/ChevronRight.png?alt=media&token=d7c17d09-29e8-4d10-a6f5-a0bf11e7673d"
+                alt="Chevron Right"
+              />
             </div>
           </div>
           <div

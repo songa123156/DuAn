@@ -7,7 +7,6 @@ import "../p8/DropDown.css";
 const TestCheckBoxKichHoat = () => {
   const [checkbox1, setCheckbox1] = useState(false);
 
-  // const [abc, setabc] = useState("Đang kích hoạt | Đang hoạt động");
   const [abc, setabc] = useState("Đang kích hoạt | Đang hoạt động");
 
   const [test, settest] = useState(
@@ -48,14 +47,12 @@ const TestCheckBoxKichHoat = () => {
             kich hoat <br /> thiet bi{" "}
           </>
         );
-        // setabc("Ngung kich hoat");
       } else {
         settest(
           <>
             Kich hoat <br /> thiet bi{" "}
           </>
         );
-        // setabc("Đang kích hoạt | Đang hoạt động");
       }
     }
     setCheckbox1(!checkbox1);
@@ -116,7 +113,11 @@ const TestCheckBoxKichHoat = () => {
                         width: "8px",
                         height: "8px",
                         borderRadius: "50%",
-                        background: "#18E306",
+                        background: `#${
+                          abc === "Đang kích hoạt | Đang hoạt động"
+                            ? "18E306"
+                            : "FF4747"
+                        }`,
                         marginRight: "5px",
                         display: "inline-block",
                         marginBottom: "1.5px",

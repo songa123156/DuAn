@@ -387,7 +387,10 @@ const LoaiHopDong3 = () => {
           >
             <div className="khung1">
               <a href="/ChinhSuaTTNguoiDung" style={{ textDecoration: "none" }}>
-                <img src="images/cong.png" alt="cong" />
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/cong.png?alt=media&token=24f52e64-0a63-4ba4-83d6-3ef79985125c"
+                  alt="cong"
+                />
                 <div className="textt">
                   Thêm lịch <br /> áp dụng
                 </div>
@@ -396,7 +399,10 @@ const LoaiHopDong3 = () => {
 
             <div className="khung1">
               <a href="/ChinhSuaTTNguoiDung" style={{ textDecoration: "none" }}>
-                <img src="images/rac.png" alt="rac" />
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/rac.png?alt=media&token=d2d84743-3bc9-4186-8a75-871d5365cf06"
+                  alt="rac"
+                />
                 <div className="textt">Xóa</div>
               </a>
             </div>

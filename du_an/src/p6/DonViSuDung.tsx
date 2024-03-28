@@ -347,7 +347,7 @@ const DonViSuDung = () => {
                         marginTop: 6,
                         marginLeft: 5,
                       }}
-                      src="/images/donwn.png"
+                      src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/donwn.png?alt=media&token=5dc6bd53-daf5-4567-8b30-b2db9d89106d"
                       alt="donwn"
                     />
                   </th>
@@ -1122,7 +1122,7 @@ const DonViSuDung = () => {
               <a href="/ThemHopDongMoi" style={{ textDecoration: "none" }}>
                 <img
                   style={{ height: 52, width: 52, padding: 0 }}
-                  src="images/huy2.png"
+                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/huy2.png?alt=media&token=74120a7e-d421-4bd0-9587-0b93be7acb4e"
                   alt="cong"
                   className="icon"
                 />

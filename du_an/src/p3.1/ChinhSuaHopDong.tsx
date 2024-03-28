@@ -89,7 +89,7 @@ const ChinhSuaHopDong = () => {
           >
             <a href="/trang1" style={{ textDecoration: "none" }}>
               <img
-                src="images/admin.jpg"
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/admin.jpg?alt=media&token=9647fd08-067e-4a3f-a69b-d4c93c10c29f"
                 alt="mdo"
                 style={{
                   width: 40,
@@ -465,7 +465,7 @@ const ChinhSuaHopDong = () => {
               }}
             >
               <img
-                src="./images/tailen.png"
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/tailen.png?alt=media&token=1b54c9ca-ea7f-4f07-b2ce-9a6467da29d5"
                 alt="tailen"
                 style={{
                   width: "24px",
@@ -484,14 +484,20 @@ const ChinhSuaHopDong = () => {
           <br />
           <i style={{ marginRight: 8 }} className="fa-solid fa-file-word"></i>
           hetthuongcannho.doc
-          <img src="/images/x.png" alt="x" />
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/x.png?alt=media&token=3fdb0879-1852-49cd-a855-73ca63088308"
+            alt="x"
+          />
           <br />
           <i
             style={{ marginRight: 8, marginTop: 12 }}
             className="fa-solid fa-file-word"
           ></i>
           hetthuongcannho.doc
-          <img src="/images/x.png" alt="x" />
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/x.png?alt=media&token=3fdb0879-1852-49cd-a855-73ca63088308"
+            alt="x"
+          />
         </div>
         <div
           style={{

@@ -4,9 +4,9 @@ import { useNavigate, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import "../p3/style.css";
 import Navbar from "../BackGround/navbar";
-import "./DropDown.css";
+import "../p8/DropDown.css";
 
-const DanhSachThietBi = () => {
+const DropDown = () => {
   const location = useLocation();
   const navigate = useNavigate();
   let user = location.state && location.state.user;
@@ -311,9 +311,25 @@ const DanhSachThietBi = () => {
                   borderRadius: "8px",
                 }}
                 className="anchor"
-                onClick={toggleCheckList}
               >
-                <div style={{ margin: "8px 12px 8px 16px" }}>Ẩn hiện cột</div>
+                <div
+                  style={{
+                    margin: "8px 12px 8px 16px",
+                    display: "inline-block",
+                  }}
+                >
+                  Ẩn hiện cột
+                </div>
+                <div
+                  style={{
+                    textAlign: "right",
+                    display: "inline-block",
+                    // position: "absolute",
+                  }}
+                  onClick={toggleCheckList}
+                >
+                  <i className="fa-solid fa-ellipsis-vertical"></i>
+                </div>
               </span>
               <ul className="items">
                 <li>
@@ -1112,10 +1128,7 @@ const DanhSachThietBi = () => {
           <div className="khung2" style={{ height: 520 }}>
             <div className="khung1">
               <a href="/suathongtin" style={{ textDecoration: "none" }}>
-                <img
-                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/cong.png?alt=media&token=24f52e64-0a63-4ba4-83d6-3ef79985125c"
-                  alt="cong"
-                />
+                <img src="images/cong.png" alt="cong" />
                 <div className="textt">
                   Thêm <br /> thiết bị
                 </div>
@@ -1123,10 +1136,7 @@ const DanhSachThietBi = () => {
             </div>
             <div className="khung1">
               <div data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <img
-                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/kichhoat.png?alt=media&token=6b935fbb-6650-471f-a289-4916177019ef"
-                  alt="kichhoat"
-                />
+                <img src="images/kichhoat.png" alt="kichhoat" />
                 <div className="textt">
                   Kích hoạt
                   <br /> thiết bị
@@ -1135,10 +1145,7 @@ const DanhSachThietBi = () => {
             </div>
             <div className="khung1">
               <div data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <img
-                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/khoa.png?alt=media&token=2f9e24e9-3c59-4b9f-90a5-3ce6ea6a5ad5"
-                  alt="khoa"
-                />
+                <img src="images/khoa.png" alt="khoa" />
                 <div className="textt">
                   Khóa <br /> thiết bị
                 </div>
@@ -1146,10 +1153,7 @@ const DanhSachThietBi = () => {
             </div>
             <div className="khung1">
               <div data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <img
-                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/rac.png?alt=media&token=d2d84743-3bc9-4186-8a75-871d5365cf06"
-                  alt="rac"
-                />
+                <img src="images/rac.png" alt="rac" />
                 <div className="textt">
                   Xóa
                   <br /> thiết bị
@@ -1263,4 +1267,4 @@ const DanhSachThietBi = () => {
   );
 };
 
-export default DanhSachThietBi;
+export default DropDown;

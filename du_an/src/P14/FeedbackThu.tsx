@@ -260,7 +260,10 @@ const FeedbackThu = () => {
                   position: "absolute",
                 }}
               >
-                <img src="/images/depgai.png" alt="depgai" />
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/depgai.png?alt=media&token=5f4913f0-e1d2-4aca-8b9a-001292db2761"
+                  alt="depgai"
+                />
               </div>
               <div
                 style={{
@@ -375,7 +378,10 @@ const FeedbackThu = () => {
                   position: "absolute",
                 }}
               >
-                <img src="/images/depgai.png" alt="depgai" />
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/depgai.png?alt=media&token=5f4913f0-e1d2-4aca-8b9a-001292db2761"
+                  alt="depgai"
+                />
               </div>
               <div
                 style={{
@@ -480,7 +486,10 @@ const FeedbackThu = () => {
                   position: "absolute",
                 }}
               >
-                <img src="/images/depgai.png" alt="depgai" />
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/depgai.png?alt=media&token=5f4913f0-e1d2-4aca-8b9a-001292db2761"
+                  alt="depgai"
+                />
               </div>
               <div
                 style={{
@@ -585,7 +594,10 @@ const FeedbackThu = () => {
                   position: "absolute",
                 }}
               >
-                <img src="/images/depgai.png" alt="depgai" />
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/depgai.png?alt=media&token=5f4913f0-e1d2-4aca-8b9a-001292db2761"
+                  alt="depgai"
+                />
               </div>
               <div
                 style={{
@@ -690,7 +702,10 @@ const FeedbackThu = () => {
                   position: "absolute",
                 }}
               >
-                <img src="/images/depgai.png" alt="depgai" />
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/depgai.png?alt=media&token=5f4913f0-e1d2-4aca-8b9a-001292db2761"
+                  alt="depgai"
+                />
               </div>
               <div
                 style={{
@@ -795,7 +810,10 @@ const FeedbackThu = () => {
                   position: "absolute",
                 }}
               >
-                <img src="/images/depgai.png" alt="depgai" />
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/depgai.png?alt=media&token=5f4913f0-e1d2-4aca-8b9a-001292db2761"
+                  alt="depgai"
+                />
               </div>
               <div
                 style={{
@@ -900,7 +918,10 @@ const FeedbackThu = () => {
                   position: "absolute",
                 }}
               >
-                <img src="/images/depgai.png" alt="depgai" />
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/depgai.png?alt=media&token=5f4913f0-e1d2-4aca-8b9a-001292db2761"
+                  alt="depgai"
+                />
               </div>
               <div
                 style={{
@@ -1005,7 +1026,10 @@ const FeedbackThu = () => {
                   position: "absolute",
                 }}
               >
-                <img src="/images/depgai.png" alt="depgai" />
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/depgai.png?alt=media&token=5f4913f0-e1d2-4aca-8b9a-001292db2761"
+                  alt="depgai"
+                />
               </div>
               <div
                 style={{
@@ -1110,7 +1134,10 @@ const FeedbackThu = () => {
                   position: "absolute",
                 }}
               >
-                <img src="/images/depgai.png" alt="depgai" />
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/depgai.png?alt=media&token=5f4913f0-e1d2-4aca-8b9a-001292db2761"
+                  alt="depgai"
+                />
               </div>
               <div
                 style={{
@@ -1265,7 +1292,10 @@ const FeedbackThu = () => {
                 position: "absolute",
               }}
             >
-              <img src="/images/depgai.png" alt="depgai" />
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/depgai.png?alt=media&token=5f4913f0-e1d2-4aca-8b9a-001292db2761"
+                alt="depgai"
+              />
             </div>
             <div
               style={{

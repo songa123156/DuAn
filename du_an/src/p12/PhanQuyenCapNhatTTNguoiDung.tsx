@@ -89,7 +89,7 @@ const PhanQuyenCapNhatTTNguoiDung = () => {
           >
             <a href="/trang1" style={{ textDecoration: "none" }}>
               <img
-                src="images/admin.jpg"
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/admin.jpg?alt=media&token=9647fd08-067e-4a3f-a69b-d4c93c10c29f"
                 alt="mdo"
                 style={{
                   width: 40,
@@ -697,14 +697,20 @@ const PhanQuyenCapNhatTTNguoiDung = () => {
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
           >
-            <img src="images/xoanguoidung.png" alt="xoanguoidung" />
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/xoanguoidung.png?alt=media&token=eed84f1a-d126-41b9-85af-31f72ee4473b"
+              alt="xoanguoidung"
+            />
             <div className="textt">
               Xóa người
               <br /> dùng
             </div>
           </div>
           <div className="khung1">
-            <img src="images/khoiphucnguoidung.png" alt="khoiphucnguoidung" />
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/khoiphucnguoidung.png?alt=media&token=32911631-e64d-4db6-9b6a-12ed668ff690"
+              alt="khoiphucnguoidung"
+            />
             <div className="textt">
               khôi phục <br /> người dùng
             </div>

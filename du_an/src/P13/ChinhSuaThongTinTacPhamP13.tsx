@@ -495,7 +495,10 @@ const ChinhSuaThongTinTacPhamP13 = () => {
           >
             <div className="khung1">
               <a href="/ChinhSuaTTNguoiDung" style={{ textDecoration: "none" }}>
-                <img src="images/cong.png" alt="cong" />
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/cong.png?alt=media&token=24f52e64-0a63-4ba4-83d6-3ef79985125c"
+                  alt="cong"
+                />
                 <div className="textt">Thêm mới</div>
               </a>
             </div>

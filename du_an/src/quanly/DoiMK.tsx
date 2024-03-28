@@ -72,7 +72,10 @@ const DoiMK = () => {
       <div style={{ width: "100%", display: "flex" }}>
         <div className="sidebar">
           <div className="logo">
-            <img src="/img/logo.png" alt="Logo navbar" />
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/logo.png?alt=media&token=e0a3187d-50ee-4e26-840f-b32c4ddf0cb4"
+              alt="Logo navbar"
+            />
           </div>
           <ul>
             <li>
@@ -208,7 +211,7 @@ const DoiMK = () => {
             </select>
             <div className="logo">
               <img
-                src="/img/logo.png"
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/logo.png?alt=media&token=e0a3187d-50ee-4e26-840f-b32c4ddf0cb4"
                 alt="Icon"
                 style={{ marginTop: "300%" }}
               />

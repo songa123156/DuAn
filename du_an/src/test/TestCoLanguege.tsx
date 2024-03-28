@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
+import "./css.css";
+import Flag from "./Flag";
 
-function Navbar() {
+function TestCoLanguege() {
   const [language, setLanguage] = useState("vi");
   const location = useLocation();
   let user = location.state && location.state.user;
@@ -21,7 +23,7 @@ function Navbar() {
           }}
         >
           <img
-            src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/logo.png?alt=media&token=e0a3187d-50ee-4e26-840f-b32c4ddf0cb4"
+            src="images/logo.png"
             alt=""
             style={{
               width: "96px",
@@ -37,7 +39,7 @@ function Navbar() {
             }}
           >
             <img
-              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/banghi.png?alt=media&token=c8cc11e3-853c-4d19-bac3-456f43ebd116"
+              src="images/banghi.png"
               alt=""
               style={{
                 width: "32px",
@@ -69,7 +71,7 @@ function Navbar() {
             }}
           >
             <img
-              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/Playlist.png?alt=media&token=51ffa887-e936-45ec-bab8-1edfb4d0a673"
+              src="images/Playlist.png"
               alt=""
               style={{
                 width: "32px",
@@ -101,7 +103,7 @@ function Navbar() {
             }}
           >
             <img
-              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/calendar.png?alt=media&token=5a999305-7a02-466e-b327-b70e9a4828e1"
+              src="images/calendar.png"
               alt=""
               style={{
                 width: "32px",
@@ -133,7 +135,7 @@ function Navbar() {
             }}
           >
             <img
-              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/quanly.png?alt=media&token=ab2cf916-75e8-43ea-a350-a1da16a2dfef/quanly.png"
+              src="images/quanly.png"
               alt=""
               style={{
                 width: "32px",
@@ -165,7 +167,7 @@ function Navbar() {
             }}
           >
             <img
-              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/doanhthu.png?alt=media&token=bced9cb1-2c04-4ba4-b4ce-1f7a7cf478c8"
+              src="images/doanhthu.png"
               alt=""
               style={{
                 width: "32px",
@@ -197,7 +199,7 @@ function Navbar() {
             }}
           >
             <img
-              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/Setting.png?alt=media&token=5db85ee8-3aa0-4b5d-adaf-9d2c7f112c8a"
+              src="images/Setting.png"
               alt=""
               style={{
                 width: "32px",
@@ -229,7 +231,7 @@ function Navbar() {
             }}
           >
             <img
-              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/Support.png?alt=media&token=79f5fada-37ac-41c8-9be3-8621b82113d0"
+              src="images/Support.png"
               alt=""
               style={{
                 width: "32px",
@@ -254,131 +256,95 @@ function Navbar() {
             </p>
           </div>
         </div>
-        <div
+
+        {/* <div
           style={{
-            width: "1749px",
-            height: "80px",
-            left: "171px",
-            position: "fixed",
-            top: "10px",
-            right: "10px",
-            zIndex: "9999",
+            width: "143px",
+            height: "40px",
+            top: "100px",
+            left: "1375px",
+            border: "1px solid white",
+            position: "absolute",
+            justifyItems: "center",
           }}
         >
-          <div>
-            <select
-              id="language"
-              value={language}
-              onChange={(e) => setLanguage(e.target.value)}
-              style={{
-                width: "143px",
-                height: "40px",
-                top: "24px",
-                left: "1375px",
-                padding: "8px 4px 8px 8px",
-                borderRadius: "4px",
-                border: "1px solid #C8C8DB",
-                gap: "8px",
-                color: "#C8C8DB",
-                backgroundColor: "transparent",
-                position: "relative",
-                background: "#1E1E2E",
-              }}
-            >
-              <option
-                style={{
-                  // backgroundImage: "url(images/Frame.png)",
-                  // backgroundRepeat: "no-repeat",
-                  // backgroundPosition: "left center",
-                  // paddingLeft: "30px",
-                  background: "#1E1E2E",
-                }}
-                value="vi"
-              >
-                Tiếng Việt
-              </option>
-              <option
-                style={{
-                  // backgroundImage: "url('images/ENG.svg')",
-                  // backgroundRepeat: "no-repeat",
-                  // backgroundPosition: "left center",
-                  // paddingLeft: "30px",
-                  background: "#1E1E2E",
-                }}
-                value="en"
-              >
-                English
-              </option>
-              <option style={{ background: "#1E1E2E" }} value="fr">
-                French
-              </option>
-            </select>
-          </div>
           <div
             style={{
-              width: "132px",
-              height: "40px",
-              top: "24px",
-              left: "1542px",
-              gap: "8px",
-              marginRight: "24px",
+              width: 73,
+              height: "100%",
+              color: "white",
+              display: "inline",
               position: "absolute",
             }}
           >
-            <a href="/trang1" style={{ textDecoration: "none" }}>
-              <img
-                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/admin.jpg?alt=media&token=9647fd08-067e-4a3f-a69b-d4c93c10c29f"
-                alt="mdo"
-                style={{
-                  width: "40px",
-                  height: "40.58px",
-                  borderRadius: "200px",
-                  position: "absolute",
-                  margin: "0px !important;",
-                }}
-              />
-              <div
-                style={{
-                  width: "74px",
-                  height: "24px",
-                  left: "5px",
-                  fontFamily: "Montserrat",
-                  fontSize: "16px",
-                  fontWeight: 600,
-                  letterSpacing: "-0.002em",
-                  textAlign: "center",
-                  color: "#F5F5FF",
-                  marginLeft: "35px",
-                  position: "relative",
-                  textDecoration: "none",
-                }}
-              >
-                {user}
-              </div>
-              <div
-                style={{
-                  width: "49px",
-                  height: "17px",
-                  left: "6px",
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  letterSpacing: "0.015em",
-                  textAlign: "center",
-                  color: "#B65100",
-                  marginLeft: "35px",
-                  position: "relative",
-                  textDecoration: "none",
-                }}
-              >
-                Admin
-              </div>
-            </a>
+            Tiếng việt
           </div>
+          <select
+            id="country-select"
+            value={language}
+            onChange={(e) => setLanguage(e.target.value)}
+            style={{
+              height: "100%",
+              width: 143,
+              color: "transparent",
+              display: "inline",
+            }}
+          >
+            <option value="vn">Tieeg Việt</option>
+            <option value="us">Tiếng Anh</option>
+            <option value="fr">Tieegns Phpas</option>
+          </select>
+        </div> */}
+        {/* <select
+          style={{ position: "absolute", top: 30, left: 1000 }}
+          name=""
+          id=""
+        >
+          <option value="">
+            tiếng việt <i className="flag flag-vietnam"></i>
+          </option>
+          <option value="">
+            tiếng anh <i className="flag flag-england"></i>
+          </option>
+        </select> */}
+
+        <div
+          style={{
+            position: "absolute",
+            top: 80,
+            left: 1000,
+            background: "red",
+          }}
+        >
+          <Flag countryCode="fr" />
+        </div>
+
+        <select
+          style={{ position: "absolute", top: 30, left: 1000 }}
+          name=""
+          id=""
+        >
+          <option value="">
+            tiếng việt <Flag countryCode="vn" />
+          </option>
+          <option value="">
+            tiếng anh <Flag countryCode="us" />
+          </option>
+        </select>
+        <div
+          style={{
+            position: "absolute",
+            top: 10,
+            left: 300,
+            width: 50,
+            height: 50,
+          }}
+        >
+          <i className="flag flag-vietnam"></i>
         </div>
       </div>
     </>
   );
 }
 
-export default Navbar;
+export default TestCoLanguege;

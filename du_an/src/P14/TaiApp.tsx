@@ -235,7 +235,10 @@ const TaiApp = () => {
               left: 464.02,
             }}
           >
-            <img src="/images/Vector.png" alt="Vector" />
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/Vector.png?alt=media&token=e68c6920-7ddf-4e0b-a005-6515fe0a9096"
+              alt="Vector"
+            />
           </div>
 
           <div
@@ -336,7 +339,10 @@ const TaiApp = () => {
                 position: "absolute",
               }}
             >
-              <img src="/images/may.png" alt="may" />
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/may.png?alt=media&token=8cd42b39-a606-471f-bbde-f52f1270ad85"
+                alt="may"
+              />
             </div>
             <div
               style={{
@@ -386,7 +392,10 @@ const TaiApp = () => {
                 position: "absolute",
               }}
             >
-              <img src="/images/so.png" alt="so" />
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/so.png?alt=media&token=af0bba73-f70a-4e85-8c83-fe1a5779a63d"
+                alt="so"
+              />
             </div>
             <div
               style={{
@@ -436,7 +445,10 @@ const TaiApp = () => {
                 position: "absolute",
               }}
             >
-              <img src="/images/xanh.png" alt="xanh" />
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/xanh.png?alt=media&token=c7a10fa9-56b1-43b5-b0ac-f09a20668f60"
+                alt="xanh"
+              />
             </div>
             <div
               style={{
@@ -473,7 +485,10 @@ const TaiApp = () => {
             position: "absolute",
           }}
         >
-          <img src="/images/Group75.png" alt="Group75" />
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/Group75.png?alt=media&token=0dd520b8-1316-41eb-8d78-88fd2527950c"
+            alt="Group75"
+          />
         </div>
       </div>
     </>

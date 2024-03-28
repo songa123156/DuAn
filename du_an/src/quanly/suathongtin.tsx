@@ -33,7 +33,7 @@ const SuaThongTin: React.FC = () => {
             }}
           >
             <img
-              src="images/admin.jpg"
+              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/admin.jpg?alt=media&token=9647fd08-067e-4a3f-a69b-d4c93c10c29f"
               alt=""
               style={{
                 width: "273px",
@@ -42,7 +42,11 @@ const SuaThongTin: React.FC = () => {
                 borderRadius: "200px",
               }}
             />
-            <img src="images/camera.png" alt="" className="avt" />
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/camera.png?alt=media&token=983655b9-2630-4561-a9c5-d72be90cefb3"
+              alt=""
+              className="avt"
+            />
             <p className="ten">Tuyết Nguyễn</p>
           </div>
           <div

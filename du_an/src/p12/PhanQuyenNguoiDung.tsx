@@ -1017,7 +1017,10 @@ const PhanQuyenNguoiDung = () => {
         >
           <div className="khung1">
             <a href="/ChinhSuaTTNguoiDung" style={{ textDecoration: "none" }}>
-              <img src="images/themnguoidung.png" alt="themnguoidung" />
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/themnguoidung.png?alt=media&token=d2e008a5-7ae3-496c-910d-0ba830e2c935"
+                alt="themnguoidung"
+              />
               <div className="textt">
                 Thêm người
                 <br /> dùng

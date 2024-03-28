@@ -460,7 +460,10 @@ const CaiDatCauHinhThongTinTacPham = () => {
           >
             <div className="khung1">
               <a href="/ChinhSuaTTNguoiDung" style={{ textDecoration: "none" }}>
-                <img src="images/sua.png" alt="chinhsua" />
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/sua.png?alt=media&token=26ad60e6-30e9-4c8d-b4a4-76777c548920"
+                  alt="chinhsua"
+                />
                 <div className="textt">Chỉnh sửa</div>
               </a>
             </div>

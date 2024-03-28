@@ -89,7 +89,7 @@ const ThemBanGhi = () => {
           >
             <a href="/trang1" style={{ textDecoration: "none" }}>
               <img
-                src="images/admin.jpg"
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/admin.jpg?alt=media&token=9647fd08-067e-4a3f-a69b-d4c93c10c29f"
                 alt="mdo"
                 style={{
                   width: 40,
@@ -334,7 +334,11 @@ const ThemBanGhi = () => {
               color: "#FFFFFF",
             }}
           >
-            <img style={{}} src="images/check.png" alt="check" />
+            <img
+              style={{}}
+              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/check.png?alt=media&token=32a1f7fa-a70e-47fe-bab2-9fce3dd96225"
+              alt="check"
+            />
             <span
               style={{
                 marginLeft: 5,
@@ -828,7 +832,7 @@ const ThemBanGhi = () => {
                         }}
                       >
                         <img
-                          src="./images/tailen.png"
+                          src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/tailen.png?alt=media&token=1b54c9ca-ea7f-4f07-b2ce-9a6467da29d5"
                           alt="tailen"
                           style={{
                             width: "24px",
@@ -897,7 +901,7 @@ const ThemBanGhi = () => {
                         }}
                       >
                         <img
-                          src="./images/tailen.png"
+                          src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/tailen.png?alt=media&token=1b54c9ca-ea7f-4f07-b2ce-9a6467da29d5"
                           alt="tailen"
                           style={{
                             width: "24px",

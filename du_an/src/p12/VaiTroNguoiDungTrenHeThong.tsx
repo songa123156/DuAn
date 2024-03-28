@@ -552,7 +552,7 @@ const VaiTroNguoiDungTrenHeThong = () => {
               <a href="/ThemHopDongMoi" style={{ textDecoration: "none" }}>
                 <img
                   style={{ height: 52, width: 52, padding: 0 }}
-                  src="images/haiconnguoi.png"
+                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/haiconnguoi.png?alt=media&token=cf5e5f18-8d02-4c8a-8ef4-d3495aaab319"
                   alt="haiconnguoi"
                 />
                 <div className="textt">Thêm vai trò</div>

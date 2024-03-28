@@ -81,7 +81,7 @@ const ThemBanGhiPlayList = () => {
           >
             <a href="/trang1" style={{ textDecoration: "none" }}>
               <img
-                src="images/admin.jpg"
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/admin.jpg?alt=media&token=9647fd08-067e-4a3f-a69b-d4c93c10c29f"
                 alt="mdo"
                 style={{
                   width: 40,

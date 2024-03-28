@@ -116,6 +116,7 @@ const Log = () => {
             color: "white",
           }}
         >
+          <option value="">spaceRef</option>
           <option value="vi" data-icon="VN">
             Tiếng Việt
           </option>
@@ -132,7 +133,7 @@ const Log = () => {
       </div>
       <Square>
         <img
-          src="/img/logo.png"
+          src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/logo.png?alt=media&token=e0a3187d-50ee-4e26-840f-b32c4ddf0cb4"
           alt="Logo"
           style={{
             width: "100%",

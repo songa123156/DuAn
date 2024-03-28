@@ -22,7 +22,7 @@ const LoiLink: React.FC = () => {
               top: "116px",
               left: "840px",
             }}
-            src="images/logo.png"
+            src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/logo.png?alt=media&token=e0a3187d-50ee-4e26-840f-b32c4ddf0cb4"
             alt=""
           />
 

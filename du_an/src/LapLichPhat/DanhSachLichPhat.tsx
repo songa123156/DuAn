@@ -283,7 +283,7 @@ const DanhSachLichPhat: React.FC = () => {
           <div className="khung1">
             <a href="/ThemLichPhatMoi" style={{ textDecoration: "none" }}>
               <img
-                src="images/ThemLichPhat.png"
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/ThemLichPhat.png?alt=media&token=8cbcdca6-d33e-48aa-86a5-109d3ab89f69"
                 alt="ThemLichPhat"
                 className="icon"
               />

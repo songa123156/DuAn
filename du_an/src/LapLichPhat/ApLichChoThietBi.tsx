@@ -103,7 +103,7 @@ const ApLichChoThietBi = () => {
           >
             <a href="/trang1" style={{ textDecoration: "none" }}>
               <img
-                src="images/admin.jpg"
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/admin.jpg?alt=media&token=9647fd08-067e-4a3f-a69b-d4c93c10c29f"
                 alt="mdo"
                 style={{
                   width: 40,
@@ -584,7 +584,7 @@ const ApLichChoThietBi = () => {
             <div className="khung1">
               <a href="/suathongtin" style={{ textDecoration: "none" }}>
                 <img
-                  src="images/checkcam.png"
+                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/checkcam.png?alt=media&token=646215b7-f59c-45c0-9f2a-27c7bd213043"
                   style={{ height: 52, width: 52, padding: 0 }}
                   alt="sua"
                   className="icon"
@@ -597,7 +597,7 @@ const ApLichChoThietBi = () => {
               <div data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <img
                   style={{ height: 52, width: 52, padding: 0 }}
-                  src="images/huycam.png"
+                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/huycam.png?alt=media&token=5f036337-7133-457c-a883-69be1669f593"
                   alt="huy2"
                   className="icon"
                 />

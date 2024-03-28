@@ -125,7 +125,7 @@ const ChiTietP6 = () => {
           >
             <a href="/trang1" style={{ textDecoration: "none" }}>
               <img
-                src="images/admin.jpg"
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/admin.jpg?alt=media&token=9647fd08-067e-4a3f-a69b-d4c93c10c29f"
                 alt="mdo"
                 style={{
                   width: 40,
@@ -1150,7 +1150,11 @@ const ChiTietP6 = () => {
         <div className="khung2">
           <div className="khung1">
             <a href="/ThemNguoiDung" style={{ textDecoration: "none" }}>
-              <img src="images/cong.png" alt="cong" className="icon" />
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/cong.png?alt=media&token=24f52e64-0a63-4ba4-83d6-3ef79985125c"
+                alt="cong"
+                className="icon"
+              />
               <div className="textt">
                 Thêm <br /> người dùng
               </div>
@@ -1158,13 +1162,21 @@ const ChiTietP6 = () => {
           </div>
           <div className="khung1">
             <div data-bs-toggle="modal" data-bs-target="#exampleModal">
-              <img src="images/rac.png" alt="rac" className="icon" />
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/rac.png?alt=media&token=d2d84743-3bc9-4186-8a75-871d5365cf06"
+                alt="rac"
+                className="icon"
+              />
               <div className="textt"> Xóa</div>
             </div>
           </div>
           <div className="khung1">
             <div data-bs-toggle="modal" data-bs-target="#exampleModal">
-              <img src="images/tro.png" alt="tro" className="icon" />
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/tro.png?alt=media&token=cf660026-712d-48d8-b5ec-cea677248220"
+                alt="tro"
+                className="icon"
+              />
               <div className="textt"> Vai trò</div>
             </div>
           </div>

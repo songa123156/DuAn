@@ -367,7 +367,7 @@ const CanhBaoHetHanTacPham = () => {
             <div className="khung1">
               <a href="/ChinhSuaTTNguoiDung" style={{ textDecoration: "none" }}>
                 <img
-                  src="images/chinhsualoaihopdong.png"
+                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/chinhsualoaihopdong.png?alt=media&token=4619ef50-abe6-4f28-b9ce-82d1faf9a86d"
                   alt="chinhsualoaihopdong"
                 />
                 <div className="textt">
@@ -379,7 +379,7 @@ const CanhBaoHetHanTacPham = () => {
             <div className="khung1">
               <a href="/ChinhSuaTTNguoiDung" style={{ textDecoration: "none" }}>
                 <img
-                  src="images/chinhsuacanhbaohethan.png"
+                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/chinhsuacanhbaohethan.png?alt=media&token=9c177634-a46b-43ac-895d-bdd3835fe6ca"
                   alt="chinhsuacanhbaohethan"
                 />
                 <div className="textt">

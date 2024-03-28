@@ -483,7 +483,10 @@ const ChartBaoCaoDoanhThu = () => {
               position: "absolute",
             }}
           >
-            <img src="/images/chartdoanhthu.png" alt="chartdoanhthu" />
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/chartdoanhthu.png?alt=media&token=b2c2369e-78bf-40bd-ade5-e706b5cced85"
+              alt="chartdoanhthu"
+            />
           </div>
 
           <div className="khung2" style={{ height: 110 }}>
@@ -491,7 +494,7 @@ const ChartBaoCaoDoanhThu = () => {
               <a href="/ThemHopDongMoi" style={{ textDecoration: "none" }}>
                 <img
                   style={{ height: 52, width: 52, padding: 0 }}
-                  src="images/huy2.png"
+                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/huy2.png?alt=media&token=74120a7e-d421-4bd0-9587-0b93be7acb4e"
                   alt="cong"
                   className="icon"
                 />
@@ -511,7 +514,7 @@ const ChartBaoCaoDoanhThu = () => {
           <div className="khung1">
             <a href="/ChinhSuaTTNguoiDung" style={{ textDecoration: "none" }}>
               <img
-                src="images/baocaochitiet.png"
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/baocaochitiet.png?alt=media&token=e1b66112-805b-4c6f-af7c-1ae4e0b0959b"
                 alt="baocaochitiet"
                 className="icon"
               />

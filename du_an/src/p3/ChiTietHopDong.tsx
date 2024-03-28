@@ -81,7 +81,7 @@ const ChiTietHopDong = () => {
           >
             <a href="/trang1" style={{ textDecoration: "none" }}>
               <img
-                src="images/admin.jpg"
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/admin.jpg?alt=media&token=9647fd08-067e-4a3f-a69b-d4c93c10c29f"
                 alt="mdo"
                 style={{
                   width: 40,
@@ -634,7 +634,11 @@ const ChiTietHopDong = () => {
           <div className="khung2">
             <div className="khung1">
               <a href="/ChinhSuaThongTin" style={{ textDecoration: "none" }}>
-                <img src="images/sua.png" alt="sua" className="icon" />
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/sua.png?alt=media&token=26ad60e6-30e9-4c8d-b4a4-76777c548920"
+                  alt="sua"
+                  className="icon"
+                />
                 <div className="textt">
                   Chỉnh sửa <br /> hợp đồng
                 </div>
@@ -642,7 +646,11 @@ const ChiTietHopDong = () => {
             </div>
             <div className="khung1">
               <div data-bs-toggle="modal" data-bs-target="#giahanModal">
-                <img src="images/giahan.png" alt="doimk" className="icon" />
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/giahan.png?alt=media&token=49876234-2a08-4777-a97a-496e248404a5"
+                  alt="doimk"
+                  className="icon"
+                />
                 <div className="textt">
                   Gia hạn <br /> hợp đồng
                 </div>
@@ -650,7 +658,11 @@ const ChiTietHopDong = () => {
             </div>
             <div className="khung1">
               <div data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <img src="images/huy2.png" alt="doimk" className="icon" />
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/huy2.png?alt=media&token=74120a7e-d421-4bd0-9587-0b93be7acb4e"
+                  alt="doimk"
+                  className="icon"
+                />
                 <div className="textt">
                   Hủy hợp <br />
                   đồng
@@ -1113,7 +1125,7 @@ const ChiTietHopDong = () => {
                         }}
                       >
                         <img
-                          src="./images/tailen.png"
+                          src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/tailen.png?alt=media&token=1b54c9ca-ea7f-4f07-b2ce-9a6467da29d5"
                           alt="tailen"
                           style={{
                             width: "24px",

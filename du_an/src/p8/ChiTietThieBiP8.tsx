@@ -89,7 +89,7 @@ const ChiTietThieBiP8 = () => {
           >
             <a href="/trang1" style={{ textDecoration: "none" }}>
               <img
-                src="images/admin.jpg"
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/admin.jpg?alt=media&token=9647fd08-067e-4a3f-a69b-d4c93c10c29f"
                 alt="mdo"
                 style={{
                   width: 40,
@@ -346,7 +346,10 @@ const ChiTietThieBiP8 = () => {
                 // Các thuộc tính CSS khác
               }}
             >
-              <img src="/images/hinh1.png" alt="hinh1" />
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/hinh1.png?alt=media&token=c1d81e82-3fe4-4a14-9ddd-8fdd713856a1"
+                alt="hinh1"
+              />
             </div>
             <div style={{ position: "absolute", top: 272, color: "white" }}>
               <div
@@ -710,13 +713,21 @@ const ChiTietThieBiP8 = () => {
         <div className="khung2">
           <div className="khung1">
             <div data-bs-toggle="modal" data-bs-target="#exampleModal">
-              <img src="images/sua.png" alt="sua" className="icon" />
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/sua.png?alt=media&token=26ad60e6-30e9-4c8d-b4a4-76777c548920"
+                alt="sua"
+                className="icon"
+              />
               <div className="textt">Chỉnh sửa</div>
             </div>
           </div>
           <div className="khung1">
             <div data-bs-toggle="modal" data-bs-target="#exampleModal">
-              <img src="images/doimk.png" alt="doimk" className="icon" />
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/doimk.png?alt=media&token=533ea983-0039-43a9-a007-265d1fb8417f"
+                alt="doimk"
+                className="icon"
+              />
               <div className="textt">
                 Khôi phục <br /> mật khẩu
               </div>
@@ -724,7 +735,11 @@ const ChiTietThieBiP8 = () => {
           </div>
           <div className="khung1">
             <div data-bs-toggle="modal" data-bs-target="#exampleModal">
-              <img src="images/quay.png" alt="quay" className="icon" />
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/quay.png?alt=media&token=2a317aca-041a-49dc-bf4c-1a1a52239a56"
+                alt="quay"
+                className="icon"
+              />
               <div className="textt">
                 Khôi phục <br /> bộ nhớ
               </div>

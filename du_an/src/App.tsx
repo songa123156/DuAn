@@ -72,6 +72,8 @@ import HuongDanSuDung from "./P14/HuongDanSuDung";
 import ThemBanGhiPlayList from "./P5/ThemBanGhiPlayList";
 import TestNavbarAn from "./test/TestNavbarAn";
 import TestCheckBoxKichHoat from "./test/TestCheckBoxKichHoat";
+import DropDown from "./test/DropDown";
+import TestCoLanguege from "./test/TestCoLanguege";
 
 function App() {
   return (
@@ -258,6 +260,8 @@ function App() {
             path="/TestCheckBoxKichHoat"
             element={<TestCheckBoxKichHoat />}
           ></Route>
+          <Route path="/DropDown" element={<DropDown />}></Route>
+          <Route path="/TestCoLanguege" element={<TestCoLanguege />}></Route>
         </Routes>
       </div>
     </div>
