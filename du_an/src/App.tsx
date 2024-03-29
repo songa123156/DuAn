@@ -74,6 +74,16 @@ import TestNavbarAn from "./test/TestNavbarAn";
 import TestCheckBoxKichHoat from "./test/TestCheckBoxKichHoat";
 import DropDown from "./test/DropDown";
 import TestCoLanguege from "./test/TestCoLanguege";
+import CTBangGhi from "./P4/CTBangGhi";
+import KhoBangGhi from "./P4/KhoBangGhi";
+import KhoBangGhi1 from "./P4/KhoBangGhi1";
+import PheDuyetBG from "./P4/PheDuyetBG";
+import PheDuyetBG1 from "./P4/PheDuyetBG2";
+import DSPlayList from "./P5/DSPlaylist";
+import DSPlayList1 from "./P5/DSPlaylist1";
+import PlayListTop from "./P5/PlaylistTop";
+import SuaPlayList from "./P5/SuaPlaylist";
+import ThemPlayList from "./P5/ThemPlaylist";
 
 function App() {
   return (
@@ -262,6 +272,16 @@ function App() {
           ></Route>
           <Route path="/DropDown" element={<DropDown />}></Route>
           <Route path="/TestCoLanguege" element={<TestCoLanguege />}></Route>
+          <Route path="/CTBangGhi" element={<CTBangGhi />}></Route>
+          <Route path="/KhoBangGhi" element={<KhoBangGhi />}></Route>
+          <Route path="/KhoBangGhi1" element={<KhoBangGhi1 />}></Route>
+          <Route path="/PheDuyetBG" element={<PheDuyetBG />}></Route>
+          <Route path="/PheDuyetBG1" element={<PheDuyetBG1 />}></Route>
+          <Route path="/DSPlaylist" element={<DSPlayList />}></Route>
+          <Route path="/DSPlaylist1" element={<DSPlayList1 />}></Route>
+          <Route path="/PlaylistTop" element={<PlayListTop />}></Route>
+          <Route path="/SuaPlaylist" element={<SuaPlayList />}></Route>
+          <Route path="/ThemPlaylist" element={<ThemPlayList />}></Route>
         </Routes>
       </div>
     </div>
