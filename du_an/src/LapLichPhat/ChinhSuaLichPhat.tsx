@@ -1,11 +1,8 @@
-import "../quanly/Navbar.css"; // Import file CSS cho navbar
+import "../quanly/Navbar.css";
 import { useLocation } from "react-router-dom";
-// import { useNavigate, Link } from "react-router-dom";
-// import { useEffect, useState } from "react";
 import "../p3/style2.css";
 import "./LichPhat.css";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
 
 const ChinhSuaLichPhat = () => {
   // const [password, setPassword] = useState("");
@@ -26,6 +23,12 @@ const ChinhSuaLichPhat = () => {
   //   useEffect(() => {
   //     if (user === null) navigate("/");
   //   }, []);
+
+  const [checkNavbar, setcheckNavbar] = useState(false);
+
+  const handleNavbar = () => {
+    setcheckNavbar(!checkNavbar);
+  };
 
   return (
     <>
@@ -133,104 +136,12 @@ const ChinhSuaLichPhat = () => {
 
         <div
           className="sidebar"
-          style={{ width: 40, borderRadius: "0px 24px 24px 0px" }}
+          style={{
+            width: 40,
+            borderRadius: "0px 24px 24px 0px",
+            display: !checkNavbar ? "flex" : "none",
+          }}
         >
-          {/* <div className="logo">
-            <img src="/img/logo.png" alt="Logo navbar" />
-          </div>
-          <ul>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Kho bản ghi
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Playlist
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Lập lịch phát
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Quản lý doanh thu
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Cài đặt
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Hỗ trợ
-              </a>
-            </li>
-          </ul>
-          <div className="toggle-arrow">&gt;</div> */}
           <div
             style={{
               width: "40px",
@@ -238,12 +149,281 @@ const ChinhSuaLichPhat = () => {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              color: "#B65100",
+
               fontSize: 24,
             }}
           >
-            &gt;
+            <button
+              onClick={handleNavbar}
+              style={{ background: "transparent", border: 0, color: "#B65100" }}
+            >
+              &gt;
+            </button>
           </div>
+        </div>
+        <div style={{ display: checkNavbar ? "flex" : "none" }}>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              width: "170px",
+              height: "1080px",
+              background: "#020220",
+              color: "white",
+              zIndex: "1",
+              position: "fixed",
+              opacity: "0.8",
+            }}
+          >
+            <img
+              src="images/logo.png"
+              alt=""
+              style={{
+                width: "96px",
+                height: "96px",
+                margin: "39px 21px 0px 34px",
+              }}
+            />
+            <div
+              style={{
+                width: "170px",
+                height: "72px",
+                marginTop: "110px",
+              }}
+            >
+              <img
+                src="images/banghi.png"
+                alt=""
+                style={{
+                  width: "32px",
+                  height: "32px",
+                  margin: "12px 69px 0px 69px",
+                }}
+              />
+              <p
+                style={{
+                  width: "84px",
+                  height: "17px",
+                  left: "41px",
+                  fontFamily: "Montserrat",
+                  fontSize: "14px",
+                  letterSpacing: "0.015em",
+                  textAlign: "center",
+                  marginTop: "2px",
+                  position: "absolute",
+                }}
+              >
+                Kho bài hát
+              </p>
+            </div>
+            <div
+              style={{
+                width: "170px",
+                height: "72px",
+                marginTop: "24px",
+              }}
+            >
+              <img
+                src="images/Playlist.png"
+                alt=""
+                style={{
+                  width: "32px",
+                  height: "32px",
+                  margin: "12px 69px 0px 69px",
+                }}
+              />
+              <p
+                style={{
+                  width: "84px",
+                  height: "17px",
+                  left: "41px",
+                  fontFamily: "Montserrat",
+                  fontSize: "14px",
+                  letterSpacing: "0.015em",
+                  textAlign: "center",
+                  marginTop: "2px",
+                  position: "absolute",
+                }}
+              >
+                Playlist
+              </p>
+            </div>
+            <div
+              style={{
+                width: "170px",
+                height: "72px",
+                marginTop: "24px",
+              }}
+            >
+              <img
+                src="images/calendar.png"
+                alt=""
+                style={{
+                  width: "32px",
+                  height: "32px",
+                  margin: "12px 69px 0px 69px",
+                }}
+              />
+              <p
+                style={{
+                  width: "84px",
+                  height: "17px",
+                  left: "41px",
+                  fontFamily: "Montserrat",
+                  fontSize: "14px",
+                  letterSpacing: "0.015em",
+                  textAlign: "center",
+                  marginTop: "2px",
+                  position: "absolute",
+                }}
+              >
+                Lập lịch phát
+              </p>
+            </div>
+            <div
+              style={{
+                width: "170px",
+                height: "72px",
+                marginTop: "24px",
+              }}
+            >
+              <img
+                src="images/quanly.png"
+                alt=""
+                style={{
+                  width: "32px",
+                  height: "32px",
+                  margin: "12px 69px 0px 69px",
+                }}
+              />
+              <p
+                style={{
+                  width: "84px",
+                  height: "17px",
+                  left: "41px",
+                  fontFamily: "Montserrat",
+                  fontSize: "14px",
+                  letterSpacing: "0.015em",
+                  textAlign: "center",
+                  marginTop: "2px",
+                  position: "absolute",
+                }}
+              >
+                Quản lý
+              </p>
+            </div>
+            <div
+              style={{
+                width: "170px",
+                height: "72px",
+                marginTop: "24px",
+              }}
+            >
+              <img
+                src="images/doanhthu.png"
+                alt=""
+                style={{
+                  width: "32px",
+                  height: "32px",
+                  margin: "12px 69px 0px 69px",
+                }}
+              />
+              <p
+                style={{
+                  width: "84px",
+                  height: "17px",
+                  left: "41px",
+                  fontFamily: "Montserrat",
+                  fontSize: "14px",
+                  letterSpacing: "0.015em",
+                  textAlign: "center",
+                  marginTop: "2px",
+                  position: "absolute",
+                }}
+              >
+                Doanh thu
+              </p>
+            </div>
+            <div
+              style={{
+                width: "170px",
+                height: "72px",
+                marginTop: "24px",
+              }}
+            >
+              <img
+                src="images/Setting.png"
+                alt=""
+                style={{
+                  width: "32px",
+                  height: "32px",
+                  margin: "12px 69px 0px 69px",
+                }}
+              />
+              <p
+                style={{
+                  width: "84px",
+                  height: "17px",
+                  left: "41px",
+                  fontFamily: "Montserrat",
+                  fontSize: "14px",
+                  letterSpacing: "0.015em",
+                  textAlign: "center",
+                  marginTop: "2px",
+                  position: "absolute",
+                }}
+              >
+                Cài đặt
+              </p>
+            </div>
+            <div
+              style={{
+                width: "170px",
+                height: "72px",
+                marginTop: "24px",
+              }}
+            >
+              <img
+                src="images/Support.png"
+                alt=""
+                style={{
+                  width: "32px",
+                  height: "32px",
+                  margin: "12px 69px 0px 69px",
+                }}
+              />
+              <p
+                style={{
+                  width: "84px",
+                  height: "17px",
+                  left: "41px",
+                  fontFamily: "Montserrat",
+                  fontSize: "14px",
+                  letterSpacing: "0.015em",
+                  textAlign: "center",
+                  marginTop: "2px",
+                  position: "absolute",
+                }}
+              >
+                Hỗ trợ
+              </p>
+            </div>
+          </div>
+
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              width: "100%",
+              height: "1080px",
+              background: "transparent",
+              color: "white",
+              zIndex: 9999,
+              marginLeft: 170,
+              position: "fixed",
+            }}
+            onClick={handleNavbar}
+          ></div>
         </div>
 
         <div>
@@ -748,7 +928,6 @@ const ChinhSuaLichPhat = () => {
                 background: "#33334D",
                 marginTop: 12,
                 marginBottom: 12,
-                /* Các thuộc tính khác có thể thêm vào ở đây */
               }}
             >
               <div
@@ -762,13 +941,10 @@ const ChinhSuaLichPhat = () => {
                   letterSpacing: "-0.002em",
                   textAlign: "left",
                   color: "#FFAC69",
-
-                  /* Các thuộc tính khác có thể thêm vào ở đây */
                 }}
               >
                 Top USUK 2021
               </div>
-              {/* Nội dung của div */}
               <div style={{ width: 208, height: 20 }}>
                 <span
                   style={{
@@ -782,7 +958,6 @@ const ChinhSuaLichPhat = () => {
                     textAlign: "left",
                     color: "#FFFFFF",
                     marginRight: 80,
-                    /* Các thuộc tính khác có thể thêm vào ở đây */
                   }}
                 >
                   Thời lượng
@@ -798,7 +973,6 @@ const ChinhSuaLichPhat = () => {
                     letterSpacing: "0.015em",
                     textAlign: "right",
                     color: "#AEAEAE",
-                    /* Các thuộc tính khác có thể thêm vào ở đây */
                   }}
                 >
                   02:08:00
@@ -982,13 +1156,10 @@ const ChinhSuaLichPhat = () => {
                   letterSpacing: "-0.002em",
                   textAlign: "left",
                   color: "#FFAC69",
-
-                  /* Các thuộc tính khác có thể thêm vào ở đây */
                 }}
               >
                 Top USUK 2021
               </div>
-              {/* Nội dung của div */}
               <div style={{ width: 208, height: 20 }}>
                 <span
                   style={{
@@ -1002,7 +1173,6 @@ const ChinhSuaLichPhat = () => {
                     textAlign: "left",
                     color: "#FFFFFF",
                     marginRight: 80,
-                    /* Các thuộc tính khác có thể thêm vào ở đây */
                   }}
                 >
                   Thời lượng
@@ -1318,7 +1488,11 @@ const ChinhSuaLichPhat = () => {
                   <td
                     className="thanh"
                     rowSpan={2}
-                    style={{ width: "180px", border: "1px solid #aeaeae" }}
+                    style={{
+                      width: "180px",
+                      border: "1px solid #aeaeae",
+                      cursor: "pointer",
+                    }}
                     data-bs-toggle="modal"
                     data-bs-target="#laplichphatModal"
                   >
@@ -1380,7 +1554,11 @@ const ChinhSuaLichPhat = () => {
                   <td
                     className="thanh"
                     rowSpan={2}
-                    style={{ width: "180px", border: "1px solid #aeaeae" }}
+                    style={{
+                      width: "180px",
+                      border: "1px solid #aeaeae",
+                      cursor: "pointer",
+                    }}
                     data-bs-toggle="modal"
                     data-bs-target="#laplichphatModal"
                   >
@@ -1441,7 +1619,11 @@ const ChinhSuaLichPhat = () => {
                   <td
                     className="thanh"
                     rowSpan={2}
-                    style={{ width: "180px", border: "1px solid #aeaeae" }}
+                    style={{
+                      width: "180px",
+                      border: "1px solid #aeaeae",
+                      cursor: "pointer",
+                    }}
                     data-bs-toggle="modal"
                     data-bs-target="#laplichphatModal"
                   >
@@ -1629,7 +1811,11 @@ const ChinhSuaLichPhat = () => {
                   <td
                     className="thanh"
                     rowSpan={2}
-                    style={{ width: "180px", border: "1px solid #aeaeae" }}
+                    style={{
+                      width: "180px",
+                      border: "1px solid #aeaeae",
+                      cursor: "pointer",
+                    }}
                     data-bs-toggle="modal"
                     data-bs-target="#laplichphatModal"
                   >
@@ -1692,7 +1878,11 @@ const ChinhSuaLichPhat = () => {
                   <td
                     className="thanh"
                     rowSpan={2}
-                    style={{ width: "180px", border: "1px solid #aeaeae" }}
+                    style={{
+                      width: "180px",
+                      border: "1px solid #aeaeae",
+                      cursor: "pointer",
+                    }}
                     data-bs-toggle="modal"
                     data-bs-target="#laplichphatModal"
                   >
@@ -1771,7 +1961,11 @@ const ChinhSuaLichPhat = () => {
                   <td
                     className="thanh"
                     rowSpan={2}
-                    style={{ width: "180px", border: "1px solid #aeaeae" }}
+                    style={{
+                      width: "180px",
+                      border: "1px solid #aeaeae",
+                      cursor: "pointer",
+                    }}
                     data-bs-toggle="modal"
                     data-bs-target="#laplichphatModal"
                   >

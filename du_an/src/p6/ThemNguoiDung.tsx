@@ -15,6 +15,11 @@ const ThemNguoiDung = () => {
   // const toggleShowPassword = () => {
   //   setShowPassword(!showPassword);
   // };
+  const [checkNavbar, setcheckNavbar] = useState(false);
+
+  const handleNavbar = () => {
+    setcheckNavbar(!checkNavbar);
+  };
 
   const [showPassword, setShowPassword] = useState(false);
 
@@ -137,104 +142,12 @@ const ThemNguoiDung = () => {
         </div>
         <div
           className="sidebar"
-          style={{ width: 40, borderRadius: "0px 24px 24px 0px" }}
+          style={{
+            width: 40,
+            borderRadius: "0px 24px 24px 0px",
+            display: !checkNavbar ? "flex" : "none",
+          }}
         >
-          {/* <div className="logo">
-            <img src="/img/logo.png" alt="Logo navbar" />
-          </div>
-          <ul>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Kho bản ghi
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Playlist
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Lập lịch phát
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Quản lý doanh thu
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Cài đặt
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Hỗ trợ
-              </a>
-            </li>
-          </ul>
-          <div className="toggle-arrow">&gt;</div> */}
           <div
             style={{
               width: "40px",
@@ -242,12 +155,281 @@ const ThemNguoiDung = () => {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              color: "#B65100",
+
               fontSize: 24,
             }}
           >
-            &gt;
+            <button
+              onClick={handleNavbar}
+              style={{ background: "transparent", border: 0, color: "#B65100" }}
+            >
+              &gt;
+            </button>
           </div>
+        </div>
+        <div style={{ display: checkNavbar ? "flex" : "none" }}>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              width: "170px",
+              height: "1080px",
+              background: "#020220",
+              color: "white",
+              zIndex: "1",
+              position: "fixed",
+              opacity: "0.8",
+            }}
+          >
+            <img
+              src="images/logo.png"
+              alt=""
+              style={{
+                width: "96px",
+                height: "96px",
+                margin: "39px 21px 0px 34px",
+              }}
+            />
+            <div
+              style={{
+                width: "170px",
+                height: "72px",
+                marginTop: "110px",
+              }}
+            >
+              <img
+                src="images/banghi.png"
+                alt=""
+                style={{
+                  width: "32px",
+                  height: "32px",
+                  margin: "12px 69px 0px 69px",
+                }}
+              />
+              <p
+                style={{
+                  width: "84px",
+                  height: "17px",
+                  left: "41px",
+                  fontFamily: "Montserrat",
+                  fontSize: "14px",
+                  letterSpacing: "0.015em",
+                  textAlign: "center",
+                  marginTop: "2px",
+                  position: "absolute",
+                }}
+              >
+                Kho bài hát
+              </p>
+            </div>
+            <div
+              style={{
+                width: "170px",
+                height: "72px",
+                marginTop: "24px",
+              }}
+            >
+              <img
+                src="images/Playlist.png"
+                alt=""
+                style={{
+                  width: "32px",
+                  height: "32px",
+                  margin: "12px 69px 0px 69px",
+                }}
+              />
+              <p
+                style={{
+                  width: "84px",
+                  height: "17px",
+                  left: "41px",
+                  fontFamily: "Montserrat",
+                  fontSize: "14px",
+                  letterSpacing: "0.015em",
+                  textAlign: "center",
+                  marginTop: "2px",
+                  position: "absolute",
+                }}
+              >
+                Playlist
+              </p>
+            </div>
+            <div
+              style={{
+                width: "170px",
+                height: "72px",
+                marginTop: "24px",
+              }}
+            >
+              <img
+                src="images/calendar.png"
+                alt=""
+                style={{
+                  width: "32px",
+                  height: "32px",
+                  margin: "12px 69px 0px 69px",
+                }}
+              />
+              <p
+                style={{
+                  width: "84px",
+                  height: "17px",
+                  left: "41px",
+                  fontFamily: "Montserrat",
+                  fontSize: "14px",
+                  letterSpacing: "0.015em",
+                  textAlign: "center",
+                  marginTop: "2px",
+                  position: "absolute",
+                }}
+              >
+                Lập lịch phát
+              </p>
+            </div>
+            <div
+              style={{
+                width: "170px",
+                height: "72px",
+                marginTop: "24px",
+              }}
+            >
+              <img
+                src="images/quanly.png"
+                alt=""
+                style={{
+                  width: "32px",
+                  height: "32px",
+                  margin: "12px 69px 0px 69px",
+                }}
+              />
+              <p
+                style={{
+                  width: "84px",
+                  height: "17px",
+                  left: "41px",
+                  fontFamily: "Montserrat",
+                  fontSize: "14px",
+                  letterSpacing: "0.015em",
+                  textAlign: "center",
+                  marginTop: "2px",
+                  position: "absolute",
+                }}
+              >
+                Quản lý
+              </p>
+            </div>
+            <div
+              style={{
+                width: "170px",
+                height: "72px",
+                marginTop: "24px",
+              }}
+            >
+              <img
+                src="images/doanhthu.png"
+                alt=""
+                style={{
+                  width: "32px",
+                  height: "32px",
+                  margin: "12px 69px 0px 69px",
+                }}
+              />
+              <p
+                style={{
+                  width: "84px",
+                  height: "17px",
+                  left: "41px",
+                  fontFamily: "Montserrat",
+                  fontSize: "14px",
+                  letterSpacing: "0.015em",
+                  textAlign: "center",
+                  marginTop: "2px",
+                  position: "absolute",
+                }}
+              >
+                Doanh thu
+              </p>
+            </div>
+            <div
+              style={{
+                width: "170px",
+                height: "72px",
+                marginTop: "24px",
+              }}
+            >
+              <img
+                src="images/Setting.png"
+                alt=""
+                style={{
+                  width: "32px",
+                  height: "32px",
+                  margin: "12px 69px 0px 69px",
+                }}
+              />
+              <p
+                style={{
+                  width: "84px",
+                  height: "17px",
+                  left: "41px",
+                  fontFamily: "Montserrat",
+                  fontSize: "14px",
+                  letterSpacing: "0.015em",
+                  textAlign: "center",
+                  marginTop: "2px",
+                  position: "absolute",
+                }}
+              >
+                Cài đặt
+              </p>
+            </div>
+            <div
+              style={{
+                width: "170px",
+                height: "72px",
+                marginTop: "24px",
+              }}
+            >
+              <img
+                src="images/Support.png"
+                alt=""
+                style={{
+                  width: "32px",
+                  height: "32px",
+                  margin: "12px 69px 0px 69px",
+                }}
+              />
+              <p
+                style={{
+                  width: "84px",
+                  height: "17px",
+                  left: "41px",
+                  fontFamily: "Montserrat",
+                  fontSize: "14px",
+                  letterSpacing: "0.015em",
+                  textAlign: "center",
+                  marginTop: "2px",
+                  position: "absolute",
+                }}
+              >
+                Hỗ trợ
+              </p>
+            </div>
+          </div>
+
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              width: "100%",
+              height: "1080px",
+              background: "transparent",
+              color: "white",
+              zIndex: 9999,
+              marginLeft: 170,
+              position: "fixed",
+            }}
+            onClick={handleNavbar}
+          ></div>
         </div>
         <div>
           <div

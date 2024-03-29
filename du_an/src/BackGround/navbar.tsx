@@ -133,7 +133,7 @@ function Navbar() {
             }}
           >
             <img
-              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/quanly.png?alt=media&token=ab2cf916-75e8-43ea-a350-a1da16a2dfef/quanly.png"
+              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/quanly.png?alt=media&token=ab2cf916-75e8-43ea-a350-a1da16a2dfef"
               alt=""
               style={{
                 width: "32px",
