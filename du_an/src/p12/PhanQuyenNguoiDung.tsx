@@ -1,7 +1,6 @@
-import "../quanly/Navbar.css"; // Import file CSS cho navbar
 import { useLocation } from "react-router-dom";
-import { useNavigate, Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 import "../p3/style.css";
 import Navbar from "../BackGround/navbar";
 
@@ -22,164 +21,12 @@ const PhanQuyenNguoiDung = () => {
     navigate("/");
   };
 
-  //   useEffect(() => {
-  //     if (user === null) navigate("/");
-  //   }, []);
-
   return (
     <>
       <div style={{ width: "100%", display: "flex" }}>
-        {/* <div className="sidebar">
-          <div className="logo">
-            <img src="/img/logo.png" alt="Logo navbar" />
-          </div>
-          <ul>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Kho bản ghi
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Playlist
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Lập lịch phát
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Quản lý doanh thu
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Cài đặt
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Hỗ trợ
-              </a>
-            </li>
-          </ul>
-        </div> */}
         <Navbar></Navbar>
-
         <div>
-          {/* <nav
-            className="navbar"
-            style={{
-              width: "100%",
-              justifyContent: "flex-end",
-              marginRight: "75px",
-              marginBottom: "16px",
-              marginTop: "24px",
-
-              height: "80px",
-              // backgroundColor: "#1e1e2e",
-              display: "inline-flex",
-              alignItems: "center",
-              padding: "0 20px",
-            }}
-          >
-            <select
-              style={{
-                backgroundColor: "transparent",
-                border: 0,
-                color: "white",
-                marginRight: 24,
-              }}
-            >
-              <option value="vi" data-icon="VN">
-                Tiếng Việt
-              </option>
-              <option value="en" data-icon="🇺🇸">
-                English
-              </option>
-              <option value="ja" data-icon="🇯🇵">
-                日本語
-              </option>
-              <option value="ko" data-icon="🇰🇷">
-                한국어
-              </option>
-            </select>
-            <div className="logo">
-              <img
-                src="/img/logo.png"
-                alt="Icon"
-                style={{ marginTop: "300%" }}
-              />
-            </div>
-            <div className="login" style={{ color: "white" }}>
-              <span>Welcome, {user}</span>
-            </div>
-          </nav> */}
-
           <div
-            // className="container"
             style={{
               top: 86,
               marginTop: "10px",
@@ -246,7 +93,6 @@ const PhanQuyenNguoiDung = () => {
               style={{
                 width: 211,
                 height: 40,
-                // padding: "8px 24px",
                 borderRadius: 24,
                 gap: 10,
                 backgroundColor: "#B65100",
@@ -273,10 +119,8 @@ const PhanQuyenNguoiDung = () => {
               style={{
                 width: 207,
                 height: 40,
-                // padding: "8px 24px",
                 borderRadius: 24,
                 gap: 10,
-                // backgroundColor: "#B65100",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
@@ -359,7 +203,6 @@ const PhanQuyenNguoiDung = () => {
               backgroundColor: "#2F2F41B2",
             }}
           >
-            {/* Nội dung thẻ div */}
             <table
               style={{
                 width: 1541,
@@ -932,7 +775,6 @@ const PhanQuyenNguoiDung = () => {
                 maxWidth: "1485px",
                 display: "flex",
                 gap: "8px",
-
                 marginLeft: 24,
                 marginBottom: 10,
               }}
@@ -1018,7 +860,7 @@ const PhanQuyenNguoiDung = () => {
           <div className="khung1">
             <a href="/ChinhSuaTTNguoiDung" style={{ textDecoration: "none" }}>
               <img
-                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/themnguoidung.png?alt=media&token=d2e008a5-7ae3-496c-910d-0ba830e2c935"
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/themnguoidung.png?alt=media&token=d5aba05c-c8b7-4bfb-906e-0e4f58294dbf"
                 alt="themnguoidung"
               />
               <div className="textt">

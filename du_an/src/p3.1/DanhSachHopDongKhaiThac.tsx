@@ -1,7 +1,6 @@
-import "../quanly/Navbar.css"; // Import file CSS cho navbar
+import "../quanly/Navbar.css";
 import { useLocation } from "react-router-dom";
-import { useNavigate, Link } from "react-router-dom";
-import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import "../p3/style.css";
 import Navbar from "../BackGround/navbar";
 
@@ -14,164 +13,13 @@ const DanhSachHopDongKhaiThac = () => {
     navigate("/");
   };
 
-  //   useEffect(() => {
-  //     if (user === null) navigate("/");
-  //   }, []);
-
   return (
     <>
       <div style={{ width: "100%", display: "flex" }}>
-        {/* <div className="sidebar">
-          <div className="logo">
-            <img src="/img/logo.png" alt="Logo navbar" />
-          </div>
-          <ul>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Kho bản ghi
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Playlist
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Lập lịch phát
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Quản lý doanh thu
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Cài đặt
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Hỗ trợ
-              </a>
-            </li>
-          </ul>
-        </div> */}
         <Navbar></Navbar>
 
         <div>
-          {/* <nav
-            className="navbar"
-            style={{
-              width: "100%",
-              justifyContent: "flex-end",
-              marginRight: "75px",
-              marginBottom: "16px",
-              marginTop: "24px",
-
-              height: "80px",
-              // backgroundColor: "#1e1e2e",
-              display: "inline-flex",
-              alignItems: "center",
-              padding: "0 20px",
-            }}
-          >
-            <select
-              style={{
-                backgroundColor: "transparent",
-                border: 0,
-                color: "white",
-                marginRight: 24,
-              }}
-            >
-              <option value="vi" data-icon="VN">
-                Tiếng Việt
-              </option>
-              <option value="en" data-icon="🇺🇸">
-                English
-              </option>
-              <option value="ja" data-icon="🇯🇵">
-                日本語
-              </option>
-              <option value="ko" data-icon="🇰🇷">
-                한국어
-              </option>
-            </select>
-            <div className="logo">
-              <img
-                src="/img/logo.png"
-                alt="Icon"
-                style={{ marginTop: "300%" }}
-              />
-            </div>
-            <div className="login" style={{ color: "white" }}>
-              <span>Welcome, {user}</span>
-            </div>
-          </nav> */}
-
           <div
-            // className="container"
             style={{
               top: 86,
               marginTop: "10px",
@@ -240,7 +88,6 @@ const DanhSachHopDongKhaiThac = () => {
                 height: 40,
                 borderRadius: 24,
                 gap: 10,
-                // backgroundColor: "#B65100",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
@@ -295,7 +142,6 @@ const DanhSachHopDongKhaiThac = () => {
               position: "absolute",
               top: "250px",
               left: "229px",
-              // padding: "12px 24px 12px 24px",
               borderRadius: "8px",
               display: "flex",
               justifyContent: "space-between",
@@ -330,7 +176,7 @@ const DanhSachHopDongKhaiThac = () => {
                 marginRight: 10,
               }}
             >
-              <a href="/anhson">
+              <a href="/#">
                 <i
                   style={{ color: "white" }}
                   className="fa-solid fa-magnifying-glass"
@@ -353,7 +199,6 @@ const DanhSachHopDongKhaiThac = () => {
               backgroundColor: "#2F2F41B2",
             }}
           >
-            {/* Nội dung thẻ div */}
             <table style={{ height: "fit-content" }}>
               <thead style={{ color: "#FFAC69" }}>
                 <tr style={{ textAlign: "left", height: 48 }}>
@@ -370,12 +215,12 @@ const DanhSachHopDongKhaiThac = () => {
               </thead>
               <tbody style={{ color: "#FFFFFF" }}>
                 <tr style={{ height: 47 }}>
-                  <td style={{ width: "99px" }}>1</td>
-                  <td style={{ width: "158px" }}>HD123</td>
-                  <td style={{ width: "309px" }}>Hợp đồng kinh doanh 1</td>
-                  <td style={{ width: "219px" }}>01/04/2021 15:53:13</td>
-                  <td style={{ width: "207px" }}>02/12/2021</td>
-                  <td style={{ width: "152px" }}>02/12/2022</td>
+                  <td>1</td>
+                  <td>HD123</td>
+                  <td>Hợp đồng kinh doanh 1</td>
+                  <td>01/04/2021 15:53:13</td>
+                  <td>02/12/2021</td>
+                  <td>02/12/2022</td>
 
                   <td style={{ width: "159px" }}>
                     <div style={{ display: "flex", alignItems: "center" }}>
@@ -406,12 +251,12 @@ const DanhSachHopDongKhaiThac = () => {
                   </td>
                 </tr>
                 <tr style={{ height: 47 }}>
-                  <td style={{ width: "99px" }}>2</td>
-                  <td style={{ width: "158px" }}>HD123</td>
-                  <td style={{ width: "309px" }}>Hợp đồng kinh doanh 1</td>
-                  <td style={{ width: "219px" }}>01/04/2021 15:53:13</td>
-                  <td style={{ width: "207px" }}>02/12/2021</td>
-                  <td style={{ width: "152px" }}>02/12/2022</td>
+                  <td>2</td>
+                  <td>HD123</td>
+                  <td>Hợp đồng kinh doanh 1</td>
+                  <td>01/04/2021 15:53:13</td>
+                  <td>02/12/2021</td>
+                  <td>02/12/2022</td>
 
                   <td style={{ width: "159px" }}>
                     <div style={{ display: "flex", alignItems: "center" }}>
@@ -442,12 +287,12 @@ const DanhSachHopDongKhaiThac = () => {
                   </td>
                 </tr>
                 <tr style={{ height: 47 }}>
-                  <td style={{ width: "99px" }}>3</td>
-                  <td style={{ width: "158px" }}>HD123</td>
-                  <td style={{ width: "309px" }}>Hợp đồng kinh doanh 1</td>
-                  <td style={{ width: "219px" }}>01/04/2021 15:53:13</td>
-                  <td style={{ width: "207px" }}>02/12/2021</td>
-                  <td style={{ width: "152px" }}>02/12/2022</td>
+                  <td>3</td>
+                  <td>HD123</td>
+                  <td>Hợp đồng kinh doanh 1</td>
+                  <td>01/04/2021 15:53:13</td>
+                  <td>02/12/2021</td>
+                  <td>02/12/2022</td>
 
                   <td style={{ width: "159px" }}>
                     <div style={{ display: "flex", alignItems: "center" }}>
@@ -479,12 +324,12 @@ const DanhSachHopDongKhaiThac = () => {
                 </tr>
 
                 <tr style={{ height: 47 }}>
-                  <td style={{ width: "99px" }}>4</td>
-                  <td style={{ width: "158px" }}>HD123</td>
-                  <td style={{ width: "309px" }}>Hợp đồng kinh doanh 1</td>
-                  <td style={{ width: "219px" }}>01/04/2021 15:53:13</td>
-                  <td style={{ width: "207px" }}>02/12/2021</td>
-                  <td style={{ width: "152px" }}>02/12/2022</td>
+                  <td>4</td>
+                  <td>HD123</td>
+                  <td>Hợp đồng kinh doanh 1</td>
+                  <td>01/04/2021 15:53:13</td>
+                  <td>02/12/2021</td>
+                  <td>02/12/2022</td>
 
                   <td style={{ width: "159px" }}>
                     <div style={{ display: "flex", alignItems: "center" }}>
@@ -515,12 +360,12 @@ const DanhSachHopDongKhaiThac = () => {
                   </td>
                 </tr>
                 <tr style={{ height: 47 }}>
-                  <td style={{ width: "99px" }}>5</td>
-                  <td style={{ width: "158px" }}>HD123</td>
-                  <td style={{ width: "309px" }}>Hợp đồng kinh doanh 1</td>
-                  <td style={{ width: "219px" }}>01/04/2021 15:53:13</td>
-                  <td style={{ width: "207px" }}>02/12/2021</td>
-                  <td style={{ width: "152px" }}>02/12/2022</td>
+                  <td>5</td>
+                  <td>HD123</td>
+                  <td>Hợp đồng kinh doanh 1</td>
+                  <td>01/04/2021 15:53:13</td>
+                  <td>02/12/2021</td>
+                  <td>02/12/2022</td>
 
                   <td style={{ width: "159px" }}>
                     <div style={{ display: "flex", alignItems: "center" }}>
@@ -551,12 +396,12 @@ const DanhSachHopDongKhaiThac = () => {
                   </td>
                 </tr>
                 <tr style={{ height: 47 }}>
-                  <td style={{ width: "99px" }}>6</td>
-                  <td style={{ width: "158px" }}>HD123</td>
-                  <td style={{ width: "309px" }}>Hợp đồng kinh doanh 1</td>
-                  <td style={{ width: "219px" }}>01/04/2021 15:53:13</td>
-                  <td style={{ width: "207px" }}>02/12/2021</td>
-                  <td style={{ width: "152px" }}>02/12/2022</td>
+                  <td>6</td>
+                  <td>HD123</td>
+                  <td>Hợp đồng kinh doanh 1</td>
+                  <td>01/04/2021 15:53:13</td>
+                  <td>02/12/2021</td>
+                  <td>02/12/2022</td>
 
                   <td style={{ width: "159px" }}>
                     <div style={{ display: "flex", alignItems: "center" }}>
@@ -587,12 +432,12 @@ const DanhSachHopDongKhaiThac = () => {
                   </td>
                 </tr>
                 <tr style={{ height: 47 }}>
-                  <td style={{ width: "99px" }}>7</td>
-                  <td style={{ width: "158px" }}>HD123</td>
-                  <td style={{ width: "309px" }}>Hợp đồng kinh doanh 1</td>
-                  <td style={{ width: "219px" }}>01/04/2021 15:53:13</td>
-                  <td style={{ width: "207px" }}>02/12/2021</td>
-                  <td style={{ width: "152px" }}>02/12/2022</td>
+                  <td>7</td>
+                  <td>HD123</td>
+                  <td>Hợp đồng kinh doanh 1</td>
+                  <td>01/04/2021 15:53:13</td>
+                  <td>02/12/2021</td>
+                  <td>02/12/2022</td>
 
                   <td style={{ width: "159px" }}>
                     <div style={{ display: "flex", alignItems: "center" }}>
@@ -623,12 +468,12 @@ const DanhSachHopDongKhaiThac = () => {
                   </td>
                 </tr>
                 <tr style={{ height: 47 }}>
-                  <td style={{ width: "99px" }}>8</td>
-                  <td style={{ width: "158px" }}>HD123</td>
-                  <td style={{ width: "309px" }}>Hợp đồng kinh doanh 1</td>
-                  <td style={{ width: "219px" }}>01/04/2021 15:53:13</td>
-                  <td style={{ width: "207px" }}>02/12/2021</td>
-                  <td style={{ width: "152px" }}>02/12/2022</td>
+                  <td>8</td>
+                  <td>HD123</td>
+                  <td>Hợp đồng kinh doanh 1</td>
+                  <td>01/04/2021 15:53:13</td>
+                  <td>02/12/2021</td>
+                  <td>02/12/2022</td>
 
                   <td style={{ width: "159px" }}>
                     <div style={{ display: "flex", alignItems: "center" }}>
@@ -659,12 +504,12 @@ const DanhSachHopDongKhaiThac = () => {
                   </td>
                 </tr>
                 <tr style={{ height: 47 }}>
-                  <td style={{ width: "99px" }}>9</td>
-                  <td style={{ width: "158px" }}>HD123</td>
-                  <td style={{ width: "309px" }}>Hợp đồng kinh doanh 1</td>
-                  <td style={{ width: "219px" }}>01/04/2021 15:53:13</td>
-                  <td style={{ width: "207px" }}>02/12/2021</td>
-                  <td style={{ width: "152px" }}>02/12/2022</td>
+                  <td>9</td>
+                  <td>HD123</td>
+                  <td>Hợp đồng kinh doanh 1</td>
+                  <td>01/04/2021 15:53:13</td>
+                  <td>02/12/2021</td>
+                  <td>02/12/2022</td>
 
                   <td style={{ width: "159px" }}>
                     <div style={{ display: "flex", alignItems: "center" }}>
@@ -695,12 +540,12 @@ const DanhSachHopDongKhaiThac = () => {
                   </td>
                 </tr>
                 <tr style={{ height: 47 }}>
-                  <td style={{ width: "99px" }}>10</td>
-                  <td style={{ width: "158px" }}>HD123</td>
-                  <td style={{ width: "309px" }}>Hợp đồng kinh doanh 1</td>
-                  <td style={{ width: "219px" }}>01/04/2021 15:53:13</td>
-                  <td style={{ width: "207px" }}>02/12/2021</td>
-                  <td style={{ width: "152px" }}>02/12/2022</td>
+                  <td>10</td>
+                  <td>HD123</td>
+                  <td>Hợp đồng kinh doanh 1</td>
+                  <td>01/04/2021 15:53:13</td>
+                  <td>02/12/2021</td>
+                  <td>02/12/2022</td>
 
                   <td style={{ width: "159px" }}>
                     <div style={{ display: "flex", alignItems: "center" }}>
@@ -731,12 +576,12 @@ const DanhSachHopDongKhaiThac = () => {
                   </td>
                 </tr>
                 <tr style={{ height: 47 }}>
-                  <td style={{ width: "99px" }}>11</td>
-                  <td style={{ width: "158px" }}>HD123</td>
-                  <td style={{ width: "309px" }}>Hợp đồng kinh doanh 1</td>
-                  <td style={{ width: "219px" }}>01/04/2021 15:53:13</td>
-                  <td style={{ width: "207px" }}>02/12/2021</td>
-                  <td style={{ width: "152px" }}>02/12/2022</td>
+                  <td>11</td>
+                  <td>HD123</td>
+                  <td>Hợp đồng kinh doanh 1</td>
+                  <td>01/04/2021 15:53:13</td>
+                  <td>02/12/2021</td>
+                  <td>02/12/2022</td>
 
                   <td style={{ width: "159px" }}>
                     <div style={{ display: "flex", alignItems: "center" }}>
@@ -767,12 +612,12 @@ const DanhSachHopDongKhaiThac = () => {
                   </td>
                 </tr>
                 <tr style={{ height: 47 }}>
-                  <td style={{ width: "99px" }}>13</td>
-                  <td style={{ width: "158px" }}>HD123</td>
-                  <td style={{ width: "309px" }}>Hợp đồng kinh doanh 1</td>
-                  <td style={{ width: "219px" }}>01/04/2021 15:53:13</td>
-                  <td style={{ width: "207px" }}>02/12/2021</td>
-                  <td style={{ width: "152px" }}>02/12/2022</td>
+                  <td>13</td>
+                  <td>HD123</td>
+                  <td>Hợp đồng kinh doanh 1</td>
+                  <td>01/04/2021 15:53:13</td>
+                  <td>02/12/2021</td>
+                  <td>02/12/2022</td>
 
                   <td style={{ width: "159px" }}>
                     <div style={{ display: "flex", alignItems: "center" }}>
@@ -891,10 +736,8 @@ const DanhSachHopDongKhaiThac = () => {
             <div className="khung1">
               <a href="/ThemHopDongMoi" style={{ textDecoration: "none" }}>
                 <img
-                  style={{ height: 52, width: 52, padding: 0 }}
-                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/cong.png?alt=media&token=24f52e64-0a63-4ba4-83d6-3ef79985125c"
+                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/cong.png?alt=media&token=30da3562-77bc-4dab-850b-d87505acdc9f"
                   alt="cong"
-                  className="icon"
                 />
                 <div className="textt">
                   Thêm <br /> hợp đồng

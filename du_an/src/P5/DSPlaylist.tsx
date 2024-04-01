@@ -213,9 +213,6 @@ const DSPlayList: React.FC = () => {
       nguoitao: "Cindy Cường",
     },
   ]);
-
-  const urlImage = `/images/`;
-
   return (
     <>
       <div className="thedau">
@@ -229,8 +226,11 @@ const DSPlayList: React.FC = () => {
             onChange={handleInputChange}
             className="input4"
           />
-          <a type="submit" style={{ background: "#2B2B3F" }}>
-            <img src="images/search.png" alt="" />
+          <a href="/#" type="submit" style={{ background: "#2B2B3F" }}>
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/Search.png?alt=media&token=fa67623b-8b52-48ae-8e06-11debd3f5d01"
+              alt=""
+            />
           </a>
         </form>
 
@@ -243,7 +243,11 @@ const DSPlayList: React.FC = () => {
           }}
         >
           <a href="/dsplaylist">
-            <img src="images/List.png" className="icon4" alt="" />
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/List.png?alt=media&token=e4bfde7d-d6a7-4b37-b1c9-002c643fdc4d"
+              className="icon4"
+              alt=""
+            />
           </a>
         </div>
 
@@ -255,7 +259,11 @@ const DSPlayList: React.FC = () => {
           }}
         >
           <a href="/dsplaylist1">
-            <img src="images/tab.png" className="icon4" alt="" />
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/tab.png?alt=media&token=19348d31-a86d-43ca-9283-965e581eee9f"
+              className="icon4"
+              alt=""
+            />
           </a>
         </div>
         {/* icon menu */}
@@ -263,7 +271,11 @@ const DSPlayList: React.FC = () => {
         <div className="khungt">
           <div className="khugne">
             <a href="/suatt" style={{ textDecoration: "none" }}>
-              <img src="images/ThemLichPhat.png" alt="sua" className="icon1" />
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/ThemLichPhat.png?alt=media&token=e30480c7-b6c1-47bd-b462-e944d5f1e023"
+                alt="sua"
+                className="icon1"
+              />
               <div className="texttt">
                 Thêm <br /> Playlist
               </div>
@@ -330,7 +342,7 @@ const DSPlayList: React.FC = () => {
                   <td>{danhsach.ngaytao}</td>
                   <td>{danhsach.nguoitao}</td>
                   <td>
-                    <a href="" style={{ color: "#FF7506" }}>
+                    <a href="/#" style={{ color: "#FF7506" }}>
                       Chi tiết
                     </a>
                   </td>
@@ -419,7 +431,6 @@ const DSPlayList: React.FC = () => {
             </div>
           </div>
         </div>
-        {/* showModal */}
       </div>
     </>
   );

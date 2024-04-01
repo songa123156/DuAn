@@ -70,7 +70,7 @@ const Forget = () => {
       </div>
       <Square>
         <img
-          src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/logo.png?alt=media&token=e0a3187d-50ee-4e26-840f-b32c4ddf0cb4"
+          src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/logo.png?alt=media&token=86eb9fbc-d239-46f4-963e-092d0a26fd33"
           alt="Logo"
           style={{
             width: "100%",

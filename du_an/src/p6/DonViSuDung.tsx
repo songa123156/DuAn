@@ -1,7 +1,6 @@
-import "../quanly/Navbar.css"; // Import file CSS cho navbar
 import { useLocation } from "react-router-dom";
-import { useNavigate, Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 import "../p3/style.css";
 import Navbar from "../BackGround/navbar";
 
@@ -12,7 +11,6 @@ const DonViSuDung = () => {
   const [checkbox3, setCheckbox3] = useState(false);
   const [checkbox4, setCheckbox4] = useState(false);
   const [checkbox5, setCheckbox5] = useState(false);
-
   const [checkbox6, setCheckbox6] = useState(false);
   const [checkbox7, setCheckbox7] = useState(false);
   const [checkbox8, setCheckbox8] = useState(false);
@@ -38,175 +36,16 @@ const DonViSuDung = () => {
     setCheckbox11(checked);
     setCheckbox12(checked);
     setCheckbox13(checked);
-
-    // Update other checkboxes as needed
   };
   const location = useLocation();
   const navigate = useNavigate();
   let user = location.state && location.state.user;
-
-  const handleDangXuat = () => {
-    navigate("/");
-  };
-
-  //   useEffect(() => {
-  //     if (user === null) navigate("/");
-  //   }, []);
-
   return (
     <>
       <div style={{ width: "100%", display: "flex" }}>
-        {/* <div className="sidebar">
-          <div className="logo">
-            <img src="/img/logo.png" alt="Logo navbar" />
-          </div>
-          <ul>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Kho bản ghi
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Playlist
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Lập lịch phát
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Quản lý doanh thu
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Cài đặt
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Hỗ trợ
-              </a>
-            </li>
-          </ul>
-        </div> */}
         <Navbar></Navbar>
-
         <div>
-          {/* <nav
-            className="navbar"
-            style={{
-              width: "100%",
-              justifyContent: "flex-end",
-              marginRight: "75px",
-              marginBottom: "16px",
-              marginTop: "24px",
-
-              height: "80px",
-              // backgroundColor: "#1e1e2e",
-              display: "inline-flex",
-              alignItems: "center",
-              padding: "0 20px",
-            }}
-          >
-            <select
-              style={{
-                backgroundColor: "transparent",
-                border: 0,
-                color: "white",
-                marginRight: 24,
-              }}
-            >
-              <option value="vi" data-icon="VN">
-                Tiếng Việt
-              </option>
-              <option value="en" data-icon="🇺🇸">
-                English
-              </option>
-              <option value="ja" data-icon="🇯🇵">
-                日本語
-              </option>
-              <option value="ko" data-icon="🇰🇷">
-                한국어
-              </option>
-            </select>
-            <div className="logo">
-              <img
-                src="/img/logo.png"
-                alt="Icon"
-                style={{ marginTop: "300%" }}
-              />
-            </div>
-            <div className="login" style={{ color: "white" }}>
-              <span>Welcome, {user}</span>
-            </div>
-          </nav> */}
-
           <div
-            // className="container"
             style={{
               top: 86,
               marginTop: "10px",
@@ -310,17 +149,14 @@ const DonViSuDung = () => {
           <div
             style={{
               width: 1541,
-              //   height: "fit-content",
               position: "absolute",
               top: 258,
               left: 229,
-              //   padding: "16px 24px",
               borderRadius: 16,
               gap: 56,
               backgroundColor: "#2F2F41B2",
             }}
           >
-            {/* Nội dung thẻ div */}
             <table
               style={{
                 width: 1541,
@@ -347,7 +183,7 @@ const DonViSuDung = () => {
                         marginTop: 6,
                         marginLeft: 5,
                       }}
-                      src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/donwn.png?alt=media&token=5dc6bd53-daf5-4567-8b30-b2db9d89106d"
+                      src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/donwn.png?alt=media&token=6f70f5a8-dc51-414b-a221-24164aff434d"
                       alt="donwn"
                     />
                   </th>
@@ -1042,7 +878,6 @@ const DonViSuDung = () => {
                 maxWidth: "1485px",
                 display: "flex",
                 gap: "8px",
-
                 marginLeft: 24,
                 marginBottom: 10,
               }}
@@ -1122,7 +957,7 @@ const DonViSuDung = () => {
               <a href="/ThemHopDongMoi" style={{ textDecoration: "none" }}>
                 <img
                   style={{ height: 52, width: 52, padding: 0 }}
-                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/huy2.png?alt=media&token=74120a7e-d421-4bd0-9587-0b93be7acb4e"
+                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/huy2.png?alt=media&token=d683aa76-b6d8-4f7e-aa42-d037a28ba850"
                   alt="cong"
                   className="icon"
                 />

@@ -1,7 +1,6 @@
-import "../quanly/Navbar.css"; // Import file CSS cho navbar
 import { useLocation } from "react-router-dom";
-import { useNavigate, Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 import "../p3/style.css";
 import Navbar from "../BackGround/navbar";
 
@@ -22,164 +21,13 @@ const CaiDatCauHinh = () => {
     navigate("/");
   };
 
-  //   useEffect(() => {
-  //     if (user === null) navigate("/");
-  //   }, []);
-
   return (
     <>
       <div style={{ width: "100%", display: "flex" }}>
-        {/* <div className="sidebar">
-          <div className="logo">
-            <img src="/img/logo.png" alt="Logo navbar" />
-          </div>
-          <ul>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Kho bản ghi
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Playlist
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Lập lịch phát
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Quản lý doanh thu
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Cài đặt
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Hỗ trợ
-              </a>
-            </li>
-          </ul>
-        </div> */}
         <Navbar></Navbar>
 
         <div>
-          {/* <nav
-            className="navbar"
-            style={{
-              width: "100%",
-              justifyContent: "flex-end",
-              marginRight: "75px",
-              marginBottom: "16px",
-              marginTop: "24px",
-
-              height: "80px",
-              // backgroundColor: "#1e1e2e",
-              display: "inline-flex",
-              alignItems: "center",
-              padding: "0 20px",
-            }}
-          >
-            <select
-              style={{
-                backgroundColor: "transparent",
-                border: 0,
-                color: "white",
-                marginRight: 24,
-              }}
-            >
-              <option value="vi" data-icon="VN">
-                Tiếng Việt
-              </option>
-              <option value="en" data-icon="🇺🇸">
-                English
-              </option>
-              <option value="ja" data-icon="🇯🇵">
-                日本語
-              </option>
-              <option value="ko" data-icon="🇰🇷">
-                한국어
-              </option>
-            </select>
-            <div className="logo">
-              <img
-                src="/img/logo.png"
-                alt="Icon"
-                style={{ marginTop: "300%" }}
-              />
-            </div>
-            <div className="login" style={{ color: "white" }}>
-              <span>Welcome, {user}</span>
-            </div>
-          </nav> */}
-
           <div
-            // className="container"
             style={{
               top: 86,
               marginTop: "10px",
@@ -241,7 +89,7 @@ const CaiDatCauHinh = () => {
             }}
           >
             <img
-              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/hinhduocchon.png?alt=media&token=cae6ab85-38b6-4796-b516-5f79ebbd2b8f"
+              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/hinhduocchon.png?alt=media&token=9ba80154-930f-4cfe-95ad-7d50531dccad"
               alt="hinhduocchon"
             />
           </div>
@@ -259,13 +107,13 @@ const CaiDatCauHinh = () => {
           >
             <div style={{ display: "inline-block", marginRight: 53 }}>
               <img
-                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/Group.png?alt=media&token=46bf70bf-f53b-4ad2-8fa6-5d4e04db6423"
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/Group.png?alt=media&token=dbd91d47-b3b4-49ae-a6df-f75c00d7b78e"
                 alt="Group"
               />
             </div>
             <div style={{ display: "inline-block" }}>
               <img
-                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/Rectangle7.png?alt=media&token=8c03d7fd-37c7-4d69-a3c4-6c65764ed6b8"
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/Rectangle7.png?alt=media&token=098b7f03-2377-4a72-9122-77f70e93f49a"
                 alt="Rectangle 7"
               />
             </div>
@@ -277,19 +125,19 @@ const CaiDatCauHinh = () => {
               }}
             >
               <img
-                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/Rectangle8.png?alt=media&token=02a3d8e1-3c6b-48d9-ac9b-39abc753f306"
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/Rectangle8.png?alt=media&token=e647af68-e2e2-4e8b-b528-b713518dfa0b"
                 alt="Rectangle 8"
               />
             </div>
             <div style={{ display: "inline-block" }}>
               <img
-                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/Rectangle9.png?alt=media&token=571e0bf6-0f55-46bd-8cf6-cb2a7e8680c9"
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/Rectangle9.png?alt=media&token=88eb3ec2-cc0a-4745-83e3-fb9be8b52d6c"
                 alt="Rectangle 9"
               />
             </div>
             <div style={{ display: "inline-block", marginLeft: 51 }}>
               <img
-                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/ChevronRight.png?alt=media&token=d7c17d09-29e8-4d10-a6f5-a0bf11e7673d"
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/ChevronRight.png?alt=media&token=976fa099-a872-4c1d-9e50-f4be775dca08"
                 alt="Chevron Right"
               />
             </div>

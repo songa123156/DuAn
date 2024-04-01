@@ -1,7 +1,5 @@
-import "../quanly/Navbar.css"; // Import file CSS cho navbar
 import { useLocation } from "react-router-dom";
-import { useNavigate, Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../p3/style.css";
 import Navbar from "../BackGround/navbar";
 
@@ -14,164 +12,12 @@ const VaiTroNguoiDungTrenHeThong = () => {
     navigate("/");
   };
 
-  //   useEffect(() => {
-  //     if (user === null) navigate("/");
-  //   }, []);
-
   return (
     <>
       <div style={{ width: "100%", display: "flex" }}>
-        {/* <div className="sidebar">
-          <div className="logo">
-            <img src="/img/logo.png" alt="Logo navbar" />
-          </div>
-          <ul>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Kho bản ghi
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Playlist
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Lập lịch phát
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Quản lý doanh thu
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Cài đặt
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Hỗ trợ
-              </a>
-            </li>
-          </ul>
-        </div> */}
         <Navbar></Navbar>
-
         <div>
-          {/* <nav
-            className="navbar"
-            style={{
-              width: "100%",
-              justifyContent: "flex-end",
-              marginRight: "75px",
-              marginBottom: "16px",
-              marginTop: "24px",
-
-              height: "80px",
-              // backgroundColor: "#1e1e2e",
-              display: "inline-flex",
-              alignItems: "center",
-              padding: "0 20px",
-            }}
-          >
-            <select
-              style={{
-                backgroundColor: "transparent",
-                border: 0,
-                color: "white",
-                marginRight: 24,
-              }}
-            >
-              <option value="vi" data-icon="VN">
-                Tiếng Việt
-              </option>
-              <option value="en" data-icon="🇺🇸">
-                English
-              </option>
-              <option value="ja" data-icon="🇯🇵">
-                日本語
-              </option>
-              <option value="ko" data-icon="🇰🇷">
-                한국어
-              </option>
-            </select>
-            <div className="logo">
-              <img
-                src="/img/logo.png"
-                alt="Icon"
-                style={{ marginTop: "300%" }}
-              />
-            </div>
-            <div className="login" style={{ color: "white" }}>
-              <span>Welcome, {user}</span>
-            </div>
-          </nav> */}
-
           <div
-            // className="container"
             style={{
               top: 86,
               marginTop: "10px",
@@ -200,7 +46,6 @@ const VaiTroNguoiDungTrenHeThong = () => {
 
           <div
             style={{
-              width: 489,
               height: 48,
               top: 114,
               left: 229,
@@ -238,7 +83,6 @@ const VaiTroNguoiDungTrenHeThong = () => {
               style={{
                 width: 211,
                 height: 40,
-                // padding: "8px 24px",
                 borderRadius: 24,
                 gap: 10,
                 backgroundColor: "#B65100",
@@ -265,10 +109,8 @@ const VaiTroNguoiDungTrenHeThong = () => {
               style={{
                 width: 207,
                 height: 40,
-                // padding: "8px 24px",
                 borderRadius: 24,
                 gap: 10,
-                // backgroundColor: "#B65100",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
@@ -352,11 +194,9 @@ const VaiTroNguoiDungTrenHeThong = () => {
               backgroundColor: "#2F2F41B2",
             }}
           >
-            {/* Nội dung thẻ div */}
             <table
               style={{
                 width: 1541,
-                height: 766,
                 margin: "16px 24px 104px 24px",
               }}
             >
@@ -552,7 +392,7 @@ const VaiTroNguoiDungTrenHeThong = () => {
               <a href="/ThemHopDongMoi" style={{ textDecoration: "none" }}>
                 <img
                   style={{ height: 52, width: 52, padding: 0 }}
-                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/haiconnguoi.png?alt=media&token=cf5e5f18-8d02-4c8a-8ef4-d3495aaab319"
+                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/haiconnguoi.png?alt=media&token=dcae2c2e-0645-416f-8331-56b897050d0c"
                   alt="haiconnguoi"
                 />
                 <div className="textt">Thêm vai trò</div>

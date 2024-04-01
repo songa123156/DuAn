@@ -1,7 +1,6 @@
-import "../quanly/Navbar.css"; // Import file CSS cho navbar
 import { useLocation } from "react-router-dom";
-import { useNavigate, Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 import "../p3/style.css";
 import Navbar from "../BackGround/navbar";
 
@@ -22,164 +21,12 @@ const LoaiHopDong3 = () => {
     navigate("/");
   };
 
-  //   useEffect(() => {
-  //     if (user === null) navigate("/");
-  //   }, []);
-
   return (
     <>
       <div style={{ width: "100%", display: "flex" }}>
-        {/* <div className="sidebar">
-          <div className="logo">
-            <img src="/img/logo.png" alt="Logo navbar" />
-          </div>
-          <ul>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Kho bản ghi
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Playlist
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Lập lịch phát
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Quản lý doanh thu
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Cài đặt
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Hỗ trợ
-              </a>
-            </li>
-          </ul>
-        </div> */}
         <Navbar></Navbar>
-
         <div>
-          {/* <nav
-            className="navbar"
-            style={{
-              width: "100%",
-              justifyContent: "flex-end",
-              marginRight: "75px",
-              marginBottom: "16px",
-              marginTop: "24px",
-
-              height: "80px",
-              // backgroundColor: "#1e1e2e",
-              display: "inline-flex",
-              alignItems: "center",
-              padding: "0 20px",
-            }}
-          >
-            <select
-              style={{
-                backgroundColor: "transparent",
-                border: 0,
-                color: "white",
-                marginRight: 24,
-              }}
-            >
-              <option value="vi" data-icon="VN">
-                Tiếng Việt
-              </option>
-              <option value="en" data-icon="🇺🇸">
-                English
-              </option>
-              <option value="ja" data-icon="🇯🇵">
-                日本語
-              </option>
-              <option value="ko" data-icon="🇰🇷">
-                한국어
-              </option>
-            </select>
-            <div className="logo">
-              <img
-                src="/img/logo.png"
-                alt="Icon"
-                style={{ marginTop: "300%" }}
-              />
-            </div>
-            <div className="login" style={{ color: "white" }}>
-              <span>Welcome, {user}</span>
-            </div>
-          </nav> */}
-
           <div
-            // className="container"
             style={{
               top: 86,
               marginTop: "10px",
@@ -241,11 +88,9 @@ const LoaiHopDong3 = () => {
               backgroundColor: "#2F2F41B2",
             }}
           >
-            {/* Nội dung thẻ div */}
             <table
               style={{
                 width: 1057,
-                // height: 412,
                 margin: "16px 24px 104px 24px",
               }}
             >
@@ -308,7 +153,6 @@ const LoaiHopDong3 = () => {
                       defaultValue={"21/07/2021 13:00:00"}
                       style={{
                         color: "white",
-
                         width: "160px",
                         height: "36px",
                         gap: "0",
@@ -329,7 +173,6 @@ const LoaiHopDong3 = () => {
                       defaultValue={"Giá trị bài hát/ lượt phát"}
                       style={{
                         color: "white",
-
                         width: "216px",
                         height: "36px",
                         gap: "0",
@@ -345,7 +188,6 @@ const LoaiHopDong3 = () => {
                       defaultValue={"20%"}
                       style={{
                         color: "white",
-
                         width: "70px",
                         height: "36px",
                         gap: "0",
@@ -361,7 +203,6 @@ const LoaiHopDong3 = () => {
                       defaultValue={"21/07/2021 13:00:00"}
                       style={{
                         color: "white",
-
                         width: "160px",
                         height: "36px",
                         gap: "0",
@@ -388,7 +229,7 @@ const LoaiHopDong3 = () => {
             <div className="khung1">
               <a href="/ChinhSuaTTNguoiDung" style={{ textDecoration: "none" }}>
                 <img
-                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/cong.png?alt=media&token=24f52e64-0a63-4ba4-83d6-3ef79985125c"
+                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/cong.png?alt=media&token=30da3562-77bc-4dab-850b-d87505acdc9f"
                   alt="cong"
                 />
                 <div className="textt">
@@ -400,7 +241,7 @@ const LoaiHopDong3 = () => {
             <div className="khung1">
               <a href="/ChinhSuaTTNguoiDung" style={{ textDecoration: "none" }}>
                 <img
-                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/rac.png?alt=media&token=d2d84743-3bc9-4186-8a75-871d5365cf06"
+                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/rac.png?alt=media&token=9472a6a0-9eb5-4dad-b4e8-3e76c1c9f735"
                   alt="rac"
                 />
                 <div className="textt">Xóa</div>

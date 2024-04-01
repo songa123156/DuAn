@@ -1,7 +1,5 @@
-import "../quanly/Navbar.css"; // Import file CSS cho navbar
 import { useLocation } from "react-router-dom";
-import { useNavigate, Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../p3/style.css";
 import Navbar from "../BackGround/navbar";
 
@@ -14,164 +12,13 @@ const ChartBaoCaoDoanhThu = () => {
     navigate("/");
   };
 
-  //   useEffect(() => {
-  //     if (user === null) navigate("/");
-  //   }, []);
-
   return (
     <>
       <div style={{ width: "100%", display: "flex" }}>
-        {/* <div className="sidebar">
-          <div className="logo">
-            <img src="/img/logo.png" alt="Logo navbar" />
-          </div>
-          <ul>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Kho bản ghi
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Playlist
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Lập lịch phát
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Quản lý doanh thu
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Cài đặt
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Hỗ trợ
-              </a>
-            </li>
-          </ul>
-        </div> */}
         <Navbar></Navbar>
 
         <div>
-          {/* <nav
-            className="navbar"
-            style={{
-              width: "100%",
-              justifyContent: "flex-end",
-              marginRight: "75px",
-              marginBottom: "16px",
-              marginTop: "24px",
-
-              height: "80px",
-              // backgroundColor: "#1e1e2e",
-              display: "inline-flex",
-              alignItems: "center",
-              padding: "0 20px",
-            }}
-          >
-            <select
-              style={{
-                backgroundColor: "transparent",
-                border: 0,
-                color: "white",
-                marginRight: 24,
-              }}
-            >
-              <option value="vi" data-icon="VN">
-                Tiếng Việt
-              </option>
-              <option value="en" data-icon="🇺🇸">
-                English
-              </option>
-              <option value="ja" data-icon="🇯🇵">
-                日本語
-              </option>
-              <option value="ko" data-icon="🇰🇷">
-                한국어
-              </option>
-            </select>
-            <div className="logo">
-              <img
-                src="/img/logo.png"
-                alt="Icon"
-                style={{ marginTop: "300%" }}
-              />
-            </div>
-            <div className="login" style={{ color: "white" }}>
-              <span>Welcome, {user}</span>
-            </div>
-          </nav> */}
-
           <div
-            // className="container"
             style={{
               top: 86,
               marginTop: "10px",
@@ -484,23 +331,9 @@ const ChartBaoCaoDoanhThu = () => {
             }}
           >
             <img
-              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/chartdoanhthu.png?alt=media&token=b2c2369e-78bf-40bd-ade5-e706b5cced85"
+              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/chartdoanhthu.png?alt=media&token=2e32fa86-dadc-4989-9820-3ec22d49f44d"
               alt="chartdoanhthu"
             />
-          </div>
-
-          <div className="khung2" style={{ height: 110 }}>
-            <div className="khung1">
-              <a href="/ThemHopDongMoi" style={{ textDecoration: "none" }}>
-                <img
-                  style={{ height: 52, width: 52, padding: 0 }}
-                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/huy2.png?alt=media&token=74120a7e-d421-4bd0-9587-0b93be7acb4e"
-                  alt="cong"
-                  className="icon"
-                />
-                <div className="textt">Xóa</div>
-              </a>
-            </div>
           </div>
         </div>
         <div
@@ -514,9 +347,8 @@ const ChartBaoCaoDoanhThu = () => {
           <div className="khung1">
             <a href="/ChinhSuaTTNguoiDung" style={{ textDecoration: "none" }}>
               <img
-                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/baocaochitiet.png?alt=media&token=e1b66112-805b-4c6f-af7c-1ae4e0b0959b"
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/baocaochitiet.png?alt=media&token=fcb2f502-039f-4678-9133-dca97cb28aee"
                 alt="baocaochitiet"
-                className="icon"
               />
               <div className="textt">
                 Báo cáo <br /> chi tiết

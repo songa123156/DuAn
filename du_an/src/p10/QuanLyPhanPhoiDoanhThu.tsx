@@ -1,7 +1,5 @@
-import "../quanly/Navbar.css"; // Import file CSS cho navbar
 import { useLocation } from "react-router-dom";
-import { useNavigate, Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../p3/style.css";
 import Navbar from "../BackGround/navbar";
 
@@ -14,67 +12,13 @@ const QuanLyPhanPhoiDoanhThu = () => {
     navigate("/");
   };
 
-  //   useEffect(() => {
-  //     if (user === null) navigate("/");
-  //   }, []);
-
   return (
     <>
       <div style={{ width: "100%", display: "flex" }}>
         <Navbar></Navbar>
 
         <div>
-          {/* <nav
-            className="navbar"
-            style={{
-              width: "100%",
-              justifyContent: "flex-end",
-              marginRight: "75px",
-              marginBottom: "16px",
-              marginTop: "24px",
-
-              height: "80px",
-              // backgroundColor: "#1e1e2e",
-              display: "inline-flex",
-              alignItems: "center",
-              padding: "0 20px",
-            }}
-          >
-            <select
-              style={{
-                backgroundColor: "transparent",
-                border: 0,
-                color: "white",
-                marginRight: 24,
-              }}
-            >
-              <option value="vi" data-icon="VN">
-                Tiếng Việt
-              </option>
-              <option value="en" data-icon="🇺🇸">
-                English
-              </option>
-              <option value="ja" data-icon="🇯🇵">
-                日本語
-              </option>
-              <option value="ko" data-icon="🇰🇷">
-                한국어
-              </option>
-            </select>
-            <div className="logo">
-              <img
-                src="/img/logo.png"
-                alt="Icon"
-                style={{ marginTop: "300%" }}
-              />
-            </div>
-            <div className="login" style={{ color: "white" }}>
-              <span>Welcome, {user}</span>
-            </div>
-          </nav> */}
-
           <div
-            // className="container"
             style={{
               top: 86,
               marginTop: "10px",
@@ -226,17 +170,14 @@ const QuanLyPhanPhoiDoanhThu = () => {
           <div
             style={{
               width: 1540,
-              //   height: "fit-content",
               position: "absolute",
               top: 306,
               left: 230,
-              //   padding: "16px 24px",
               borderRadius: 16,
               gap: 56,
               backgroundColor: "#2F2F41B2",
             }}
           >
-            {/* Nội dung thẻ div */}
             <table
               style={{
                 width: 1540,
@@ -575,7 +516,6 @@ const QuanLyPhanPhoiDoanhThu = () => {
                 maxWidth: "1485px",
                 display: "flex",
                 gap: "8px",
-
                 marginLeft: 24,
                 marginBottom: 10,
               }}
@@ -649,20 +589,6 @@ const QuanLyPhanPhoiDoanhThu = () => {
               </div>
             </div>
           </div>
-
-          <div className="khung2" style={{ height: 110 }}>
-            <div className="khung1">
-              <a href="/ThemHopDongMoi" style={{ textDecoration: "none" }}>
-                <img
-                  style={{ height: 52, width: 52, padding: 0 }}
-                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/huy2.png?alt=media&token=74120a7e-d421-4bd0-9587-0b93be7acb4e"
-                  alt="cong"
-                  className="icon"
-                />
-                <div className="textt">Xóa</div>
-              </a>
-            </div>
-          </div>
         </div>
         <div
           className="khung2"
@@ -675,9 +601,8 @@ const QuanLyPhanPhoiDoanhThu = () => {
           <div className="khung1">
             <a href="/ChinhSuaTTNguoiDung" style={{ textDecoration: "none" }}>
               <img
-                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/xuatdulieu.png?alt=media&token=03a82574-6936-4c2c-8038-246af7c2534e"
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/xuatdulieu.png?alt=media&token=f03fe258-ca6e-4209-bd84-92041f1e392f"
                 alt="xuatdulieu"
-                className="icon"
               />
               <div className="textt">
                 Xuất <br />

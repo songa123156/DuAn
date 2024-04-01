@@ -26,7 +26,7 @@ const PheDuyetBG: React.FC = () => {
   const [danhsachs, setdanhsachs] = useState<DSNhac[]>([
     {
       id: 1,
-      hinh: "hoa.png",
+      hinh: "https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/hoa.png?alt=media&token=93a11fd5-06ab-47b2-ba99-4ec74f1877f8",
       title: "Handcrafted Fresh Bacon Multy",
       casi: "Ca sĩ: Bella Poarch",
       sangtac: "Sáng tác: Leilani Zulauf",
@@ -35,7 +35,7 @@ const PheDuyetBG: React.FC = () => {
     },
     {
       id: 2,
-      hinh: "hoa1.png",
+      hinh: "https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/hoa1.png?alt=media&token=0274095c-873a-436f-b179-f4ae77153150",
       title: "Handcrafted Fresh Bacon Multy",
       casi: "Ca sĩ: Bella Poarch",
       sangtac: "Sáng tác: Leilani Zulauf",
@@ -44,7 +44,7 @@ const PheDuyetBG: React.FC = () => {
     },
     {
       id: 3,
-      hinh: "hoa2.png",
+      hinh: "https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/hoa2.png?alt=media&token=9b63b01a-a9d5-4314-a59c-ca0887910211",
       title: "Handcrafted Fresh Bacon Multy",
       casi: "Ca sĩ: Bella Poarch",
       sangtac: "Sáng tác: Leilani Zulauf",
@@ -53,7 +53,7 @@ const PheDuyetBG: React.FC = () => {
     },
     {
       id: 4,
-      hinh: "hoa3.png",
+      hinh: "https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/hoa3.png?alt=media&token=cb15324d-9d32-4be7-b620-05592e6fbdf3",
       title: "Handcrafted Fresh Bacon Multy",
       casi: "Ca sĩ: Bella Poarch",
       sangtac: "Sáng tác: Leilani Zulauf",
@@ -62,7 +62,7 @@ const PheDuyetBG: React.FC = () => {
     },
     {
       id: 5,
-      hinh: "hoa4.png",
+      hinh: "https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/hoa4.png?alt=media&token=fe22ce03-f4fb-4880-8d2c-d6e8c665294a",
       title: "Handcrafted Fresh Bacon Multy",
       casi: "Ca sĩ: Bella Poarch",
       sangtac: "Sáng tác: Leilani Zulauf",
@@ -71,7 +71,7 @@ const PheDuyetBG: React.FC = () => {
     },
     {
       id: 6,
-      hinh: "hoa5.png",
+      hinh: "https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/hoa5.png?alt=media&token=87b32890-5ab2-4259-b137-4a4d7c2a2cc8",
       title: "Handcrafted Fresh Bacon Multy",
       casi: "Ca sĩ: Bella Poarch",
       sangtac: "Sáng tác: Leilani Zulauf",
@@ -80,7 +80,7 @@ const PheDuyetBG: React.FC = () => {
     },
     {
       id: 7,
-      hinh: "hoa6.png",
+      hinh: "https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/hoa6.png?alt=media&token=d83fb0b4-221a-48aa-84df-3197104c8bdc",
       title: "Handcrafted Fresh Bacon Multy",
       casi: "Ca sĩ: Bella Poarch",
       sangtac: "Sáng tác: Leilani Zulauf",
@@ -89,14 +89,13 @@ const PheDuyetBG: React.FC = () => {
     },
     {
       id: 8,
-      hinh: "hoa7.png",
+      hinh: "https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/hoa7.png?alt=media&token=eac95274-1b2c-4413-9d0a-ffefa69ab958",
       title: "Handcrafted Fresh Bacon Multy",
       casi: "Ca sĩ: Bella Poarch",
       sangtac: "Sáng tác: Leilani Zulauf",
       sohopdong: "Số hợp đồng: HD395738503",
       isChecked: false,
     },
-    // Thêm các học sinh khác vào đây
   ]);
   const handleCheckAll = (event: React.ChangeEvent<HTMLInputElement>) => {
     const checked = event.target.checked;
@@ -118,7 +117,6 @@ const PheDuyetBG: React.FC = () => {
     });
     setdanhsachs(updatedDanhsach);
   };
-  const urlImage = `/images/`;
 
   return (
     <>
@@ -133,8 +131,11 @@ const PheDuyetBG: React.FC = () => {
             onChange={handleInputChange}
             className="input4"
           />
-          <a type="submit" style={{ background: "#2B2B3F" }}>
-            <img src="images/search.png" alt="" />
+          <a href="/#" type="submit" style={{ background: "#2B2B3F" }}>
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/Search.png?alt=media&token=fa67623b-8b52-48ae-8e06-11debd3f5d01"
+              alt=""
+            />
           </a>
         </form>
         {/* danh sach dropdown */}
@@ -227,7 +228,11 @@ const PheDuyetBG: React.FC = () => {
           }}
         >
           <a href="/pheduyetbg1">
-            <img src="images/List.png" className="icon4" alt="" />
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/List.png?alt=media&token=e4bfde7d-d6a7-4b37-b1c9-002c643fdc4d"
+              className="icon4"
+              alt=""
+            />
           </a>
         </div>
 
@@ -239,7 +244,11 @@ const PheDuyetBG: React.FC = () => {
           }}
         >
           <a href="/pheduyetbg">
-            <img src="images/tab.png" className="icon4" alt="" />
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/tab.png?alt=media&token=19348d31-a86d-43ca-9283-965e581eee9f"
+              className="icon4"
+              alt=""
+            />
           </a>
         </div>
         {/* icon menu */}
@@ -247,7 +256,11 @@ const PheDuyetBG: React.FC = () => {
         <div className="khungt" style={{ height: 224 }}>
           <div className="khugne">
             <a href="/suatt" style={{ textDecoration: "none" }}>
-              <img src="images/ok.png" alt="sua" className="icon1" />
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/ok.png?alt=media&token=a9394f4f-75c0-457d-a833-2bc357596b74"
+                alt="sua"
+                className="icon1"
+              />
               <div className="texttt">Phê duyệt</div>
             </a>
           </div>
@@ -258,7 +271,11 @@ const PheDuyetBG: React.FC = () => {
               data-bs-target="#exampleModal"
               style={{ textDecoration: "none" }}
             >
-              <img src="images/huy2.png" alt="sua" className="icon1" />
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/huy2.png?alt=media&token=d683aa76-b6d8-4f7e-aa42-d037a28ba850"
+                alt="sua"
+                className="icon1"
+              />
               <div className="texttt">Từ chối</div>
             </a>
           </div>
@@ -284,11 +301,7 @@ const PheDuyetBG: React.FC = () => {
           >
             {danhsachs.map((danhsach) => (
               <div className="formtong4 col" key={danhsach.id}>
-                <img
-                  src={urlImage + danhsach.hinh}
-                  alt=""
-                  className="hinhanh4"
-                />
+                <img src={danhsach.hinh} alt="" className="hinhanh4" />
                 <div style={{ width: 342, height: 156 }}>
                   <div className="text4">
                     <div className="tieude4">{danhsach.title}</div>
@@ -390,107 +403,6 @@ const PheDuyetBG: React.FC = () => {
           <div
             className="modal-dialog"
             style={{
-              width: "720px",
-              height: "432px",
-            }}
-          >
-            <div
-              className="modal-content"
-              style={{
-                backgroundColor: "#3E3E5B",
-                width: "720px",
-                height: "432px",
-                borderRadius: "16px",
-              }}
-            >
-              <div className="modal-body">
-                <h5
-                  className="modal-title m-0"
-                  id="exampleModalLabel"
-                  style={{
-                    width: "100%",
-                    height: "24px",
-                    top: "32px",
-                    left: "159px",
-                    fontFamily: "Montserrat",
-                    fontSize: "24px",
-                    fontWeight: 700,
-                    lineHeight: "24px",
-                    letterSpacing: "-0.002em",
-                    textAlign: "center",
-                    color: "#F5F5FF",
-                  }}
-                >
-                  Lý do từ chối phê duyệt
-                </h5>
-
-                <textarea
-                  placeholder="Cho chúng tôi biết lý do bạn muốn từ chối phê duyệt bản ghi này..."
-                  style={{
-                    position: "absolute",
-                    top: "96px",
-                    left: "40px",
-                    width: "640px",
-                    height: "208px",
-                    padding: "12px 24px 12px 16px",
-                    borderRadius: "8px",
-                    border: " 1px solid #727288",
-                    backgroundColor: "#2B2B3F",
-                    color: "white",
-                  }}
-                />
-
-                <div>
-                  <div
-                    style={{
-                      width: "368px",
-                      height: "48px",
-                      top: "344px",
-                      left: "176px",
-                      gap: "32px",
-                      position: "absolute",
-                    }}
-                  >
-                    <button
-                      className="butoon"
-                      style={{
-                        color: "#FF7506",
-                        backgroundColor: "transparent",
-                      }}
-                      data-bs-dismiss="modal"
-                    >
-                      Hủy
-                    </button>
-                    <button
-                      className="butoon"
-                      style={{
-                        color: "white",
-                        background: "#FF7506",
-                        marginLeft: "32px",
-                      }}
-                      data-bs-dismiss="modal"
-                    >
-                      Từ chối
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* showModal */}
-        {/* showModal */}
-        <div
-          className="modal fade"
-          id="exampleModal"
-          tabIndex={-1}
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-        >
-          <div
-            className="modal-dialog"
-            style={{
-              // display: "flex",
               width: "720px",
               height: "432px",
             }}

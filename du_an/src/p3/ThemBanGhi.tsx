@@ -1,27 +1,10 @@
-import "../quanly/Navbar.css"; // Import file CSS cho navbar
+import "../quanly/Navbar.css";
 import { useLocation } from "react-router-dom";
-// import { useNavigate, Link } from "react-router-dom";
-// import { useEffect, useState } from "react";
 import "./style2.css";
 import "./ChinhSuaThongTin.css";
 import { useState } from "react";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
-
+import NavBarHidden from "../BackGround/NavBarHidden";
 const ThemBanGhi = () => {
-  // const [password, setPassword] = useState("");
-  // const [confirmPassword, setConfirmPassword] = useState("");
-  // const [showPassword, setShowPassword] = useState(false);
-  // const toggleShowPassword = () => {
-  //   setShowPassword(!showPassword);
-  // };
-
-  const [checkNavbar, setcheckNavbar] = useState(false);
-
-  const handleNavbar = () => {
-    setcheckNavbar(!checkNavbar);
-  };
-
   const [showPassword, setShowPassword] = useState(false);
 
   const handleTogglePassword = () => {
@@ -29,416 +12,15 @@ const ThemBanGhi = () => {
   };
 
   const location = useLocation();
-  // const navigate = useNavigate();
   let user = location.state && location.state.user;
-
-  // const handleDangXuat = () => {
-  //   navigate("/");
-  // };
-
-  //   useEffect(() => {
-  //     if (user === null) navigate("/");
-  //   }, []);
-
   return (
     <>
       <div style={{ width: "100%", display: "flex" }}>
-        <div
-          style={{
-            width: 1749,
-            height: 80,
-            left: 171,
-            position: "fixed",
-            top: 10,
-            right: 10,
-            zIndex: 9999,
-          }}
-        >
-          <div>
-            <select
-              id="language"
-              style={{
-                width: 143,
-                height: 40,
-                top: 24,
-                left: 1375,
-                padding: "8px 4px 8px 8px",
-                borderRadius: 4,
-                border: "1px solid rgb(200, 200, 219)",
-                gap: 8,
-                color: "rgb(200, 200, 219)",
-                background: "rgb(30, 30, 46)",
-                position: "relative",
-              }}
-            >
-              <option value="vi" style={{ background: "rgb(30, 30, 46)" }}>
-                Tiếng Việt
-              </option>
-              <option value="en" style={{ background: "rgb(30, 30, 46)" }}>
-                English
-              </option>
-              <option value="fr" style={{ background: "rgb(30, 30, 46)" }}>
-                French
-              </option>
-            </select>
-          </div>
-          <div
-            style={{
-              width: 132,
-              height: 40,
-              top: 24,
-              left: 1542,
-              gap: 8,
-              marginRight: 24,
-              position: "absolute",
-            }}
-          >
-            <a href="/trang1" style={{ textDecoration: "none" }}>
-              <img
-                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/admin.jpg?alt=media&token=9647fd08-067e-4a3f-a69b-d4c93c10c29f"
-                alt="mdo"
-                style={{
-                  width: 40,
-                  height: "40.58px",
-                  borderRadius: 200,
-                  position: "absolute",
-                }}
-              />
-              <div
-                style={{
-                  width: 74,
-                  height: 24,
-                  left: 5,
-                  fontFamily: "Montserrat",
-                  fontSize: 16,
-                  fontWeight: 600,
-                  letterSpacing: "-0.002em",
-                  textAlign: "center",
-                  color: "rgb(245, 245, 255)",
-                  marginLeft: 35,
-                  position: "relative",
-                  textDecoration: "none",
-                }}
-              />
-              <div
-                style={{
-                  width: 49,
-                  height: 17,
-                  left: 6,
-                  fontFamily: "Montserrat",
-                  fontSize: 14,
-                  fontWeight: 500,
-                  letterSpacing: "0.015em",
-                  textAlign: "center",
-                  color: "rgb(182, 81, 0)",
-                  marginLeft: 35,
-                  position: "relative",
-                  textDecoration: "none",
-                }}
-              >
-                Admin
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div
-          className="sidebar"
-          style={{
-            width: 40,
-            borderRadius: "0px 24px 24px 0px",
-            display: !checkNavbar ? "flex" : "none",
-          }}
-        >
-          <div
-            style={{
-              width: "40px",
-              height: "1080px",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-
-              fontSize: 24,
-            }}
-          >
-            <button
-              onClick={handleNavbar}
-              style={{ background: "transparent", border: 0, color: "#B65100" }}
-            >
-              &gt;
-            </button>
-          </div>
-        </div>
-        <div style={{ display: checkNavbar ? "flex" : "none" }}>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              width: "170px",
-              height: "1080px",
-              background: "#020220",
-              color: "white",
-              zIndex: "1",
-              position: "fixed",
-              opacity: "0.8",
-            }}
-          >
-            <img
-              src="images/logo.png"
-              alt=""
-              style={{
-                width: "96px",
-                height: "96px",
-                margin: "39px 21px 0px 34px",
-              }}
-            />
-            <div
-              style={{
-                width: "170px",
-                height: "72px",
-                marginTop: "110px",
-              }}
-            >
-              <img
-                src="images/banghi.png"
-                alt=""
-                style={{
-                  width: "32px",
-                  height: "32px",
-                  margin: "12px 69px 0px 69px",
-                }}
-              />
-              <p
-                style={{
-                  width: "84px",
-                  height: "17px",
-                  left: "41px",
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  letterSpacing: "0.015em",
-                  textAlign: "center",
-                  marginTop: "2px",
-                  position: "absolute",
-                }}
-              >
-                Kho bài hát
-              </p>
-            </div>
-            <div
-              style={{
-                width: "170px",
-                height: "72px",
-                marginTop: "24px",
-              }}
-            >
-              <img
-                src="images/Playlist.png"
-                alt=""
-                style={{
-                  width: "32px",
-                  height: "32px",
-                  margin: "12px 69px 0px 69px",
-                }}
-              />
-              <p
-                style={{
-                  width: "84px",
-                  height: "17px",
-                  left: "41px",
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  letterSpacing: "0.015em",
-                  textAlign: "center",
-                  marginTop: "2px",
-                  position: "absolute",
-                }}
-              >
-                Playlist
-              </p>
-            </div>
-            <div
-              style={{
-                width: "170px",
-                height: "72px",
-                marginTop: "24px",
-              }}
-            >
-              <img
-                src="images/calendar.png"
-                alt=""
-                style={{
-                  width: "32px",
-                  height: "32px",
-                  margin: "12px 69px 0px 69px",
-                }}
-              />
-              <p
-                style={{
-                  width: "84px",
-                  height: "17px",
-                  left: "41px",
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  letterSpacing: "0.015em",
-                  textAlign: "center",
-                  marginTop: "2px",
-                  position: "absolute",
-                }}
-              >
-                Lập lịch phát
-              </p>
-            </div>
-            <div
-              style={{
-                width: "170px",
-                height: "72px",
-                marginTop: "24px",
-              }}
-            >
-              <img
-                src="images/quanly.png"
-                alt=""
-                style={{
-                  width: "32px",
-                  height: "32px",
-                  margin: "12px 69px 0px 69px",
-                }}
-              />
-              <p
-                style={{
-                  width: "84px",
-                  height: "17px",
-                  left: "41px",
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  letterSpacing: "0.015em",
-                  textAlign: "center",
-                  marginTop: "2px",
-                  position: "absolute",
-                }}
-              >
-                Quản lý
-              </p>
-            </div>
-            <div
-              style={{
-                width: "170px",
-                height: "72px",
-                marginTop: "24px",
-              }}
-            >
-              <img
-                src="images/doanhthu.png"
-                alt=""
-                style={{
-                  width: "32px",
-                  height: "32px",
-                  margin: "12px 69px 0px 69px",
-                }}
-              />
-              <p
-                style={{
-                  width: "84px",
-                  height: "17px",
-                  left: "41px",
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  letterSpacing: "0.015em",
-                  textAlign: "center",
-                  marginTop: "2px",
-                  position: "absolute",
-                }}
-              >
-                Doanh thu
-              </p>
-            </div>
-            <div
-              style={{
-                width: "170px",
-                height: "72px",
-                marginTop: "24px",
-              }}
-            >
-              <img
-                src="images/Setting.png"
-                alt=""
-                style={{
-                  width: "32px",
-                  height: "32px",
-                  margin: "12px 69px 0px 69px",
-                }}
-              />
-              <p
-                style={{
-                  width: "84px",
-                  height: "17px",
-                  left: "41px",
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  letterSpacing: "0.015em",
-                  textAlign: "center",
-                  marginTop: "2px",
-                  position: "absolute",
-                }}
-              >
-                Cài đặt
-              </p>
-            </div>
-            <div
-              style={{
-                width: "170px",
-                height: "72px",
-                marginTop: "24px",
-              }}
-            >
-              <img
-                src="images/Support.png"
-                alt=""
-                style={{
-                  width: "32px",
-                  height: "32px",
-                  margin: "12px 69px 0px 69px",
-                }}
-              />
-              <p
-                style={{
-                  width: "84px",
-                  height: "17px",
-                  left: "41px",
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  letterSpacing: "0.015em",
-                  textAlign: "center",
-                  marginTop: "2px",
-                  position: "absolute",
-                }}
-              >
-                Hỗ trợ
-              </p>
-            </div>
-          </div>
-
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              width: "100%",
-              height: "1080px",
-              background: "transparent",
-              color: "white",
-              zIndex: 9999,
-              marginLeft: 170,
-              position: "fixed",
-            }}
-            onClick={handleNavbar}
-          ></div>
-        </div>
-
+        <NavBarHidden />
         <div>
           <div
             style={{
               top: 86,
-
               left: 78,
               position: "absolute",
             }}
@@ -475,7 +57,6 @@ const ThemBanGhi = () => {
             style={{
               width: 800,
               height: 48,
-
               top: 114,
               left: 78,
               position: "absolute",
@@ -519,7 +100,7 @@ const ThemBanGhi = () => {
           >
             <img
               style={{}}
-              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/check.png?alt=media&token=32a1f7fa-a70e-47fe-bab2-9fce3dd96225"
+              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/check.png?alt=media&token=bfb6b6f7-d5ac-4fee-9124-4ddd740a32f6"
               alt="check"
             />
             <span
@@ -548,7 +129,6 @@ const ThemBanGhi = () => {
               position: "absolute",
             }}
           />
-
           <div
             style={{
               width: "210px",
@@ -586,11 +166,9 @@ const ThemBanGhi = () => {
           >
             Cách 1:
           </div>
-
           <div
             style={{
               position: "absolute",
-
               top: "158px",
               left: "115px",
               fontFamily: "Montserrat",
@@ -604,7 +182,6 @@ const ThemBanGhi = () => {
           >
             Upload bản ghi trực tiếp
           </div>
-
           <div
             style={{
               width: "386px",
@@ -624,7 +201,6 @@ const ThemBanGhi = () => {
           >
             Bạn có thể thực hiện thêm bản ghi ngay trên website
           </div>
-
           <div
             style={{
               width: "237px",
@@ -651,7 +227,6 @@ const ThemBanGhi = () => {
               Thêm bản ghi trực tiếp
             </button>
           </div>
-
           <div
             style={{
               position: "absolute",
@@ -670,11 +245,9 @@ const ThemBanGhi = () => {
           >
             Cách 2:
           </div>
-
           <div
             style={{
               position: "absolute",
-
               top: "331px",
               left: "115px",
               fontFamily: "Montserrat",
@@ -688,7 +261,6 @@ const ThemBanGhi = () => {
           >
             Upload bản ghi qua phần mềm
           </div>
-
           <div
             style={{
               width: "386px",
@@ -708,7 +280,6 @@ const ThemBanGhi = () => {
           >
             Bạn có thể thêm bản ghi bằng tool
           </div>
-
           <div
             style={{
               width: "237px",
@@ -734,7 +305,6 @@ const ThemBanGhi = () => {
               Thêm bản ghi bằng tool
             </button>
           </div>
-
           <div
             style={{
               width: "493px",
@@ -754,7 +324,6 @@ const ThemBanGhi = () => {
             Lưu ý: Hợp đồng chỉ có hiệu lực khi thêm bản ghi thành công.
           </div>
         </div>
-
         <div
           className="modal fade"
           id="exampleModal"
@@ -797,7 +366,6 @@ const ThemBanGhi = () => {
                 >
                   Thêm bản ghi mới
                 </h5>
-
                 <div
                   style={{
                     width: "720px",
@@ -822,7 +390,6 @@ const ThemBanGhi = () => {
                     />{" "}
                   </div>
                 </div>
-
                 <div
                   style={{
                     width: "720px",
@@ -847,7 +414,6 @@ const ThemBanGhi = () => {
                     />{" "}
                   </div>
                 </div>
-
                 <div
                   style={{
                     width: "720px",
@@ -872,7 +438,6 @@ const ThemBanGhi = () => {
                     />{" "}
                   </div>
                 </div>
-
                 <div
                   style={{
                     width: "720px",
@@ -897,7 +462,6 @@ const ThemBanGhi = () => {
                     />{" "}
                   </div>
                 </div>
-
                 <div
                   style={{
                     width: "347px",
@@ -934,7 +498,6 @@ const ThemBanGhi = () => {
                     </select>
                   </div>
                 </div>
-
                 <div
                   style={{
                     width: "347px",
@@ -961,7 +524,6 @@ const ThemBanGhi = () => {
                     />{" "}
                   </div>
                 </div>
-
                 <div
                   style={{
                     width: "681px",
@@ -1015,7 +577,7 @@ const ThemBanGhi = () => {
                         }}
                       >
                         <img
-                          src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/tailen.png?alt=media&token=1b54c9ca-ea7f-4f07-b2ce-9a6467da29d5"
+                          src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/tailen.png?alt=media&token=a56f0719-52ef-40a4-ab89-20eeaa2489a6"
                           alt="tailen"
                           style={{
                             width: "24px",
@@ -1084,7 +646,7 @@ const ThemBanGhi = () => {
                         }}
                       >
                         <img
-                          src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/tailen.png?alt=media&token=1b54c9ca-ea7f-4f07-b2ce-9a6467da29d5"
+                          src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/tailen.png?alt=media&token=a56f0719-52ef-40a4-ab89-20eeaa2489a6"
                           alt="tailen"
                           style={{
                             width: "24px",
@@ -1106,7 +668,6 @@ const ThemBanGhi = () => {
                     </div>
                   </div>
                 </div>
-
                 <div>
                   <div
                     style={{
@@ -1114,109 +675,6 @@ const ThemBanGhi = () => {
                       height: "48px",
                       top: "736px",
                       left: "220px",
-                      gap: "32px",
-                      position: "absolute",
-                    }}
-                  >
-                    <button
-                      className="butoon"
-                      style={{
-                        color: "#FF7506",
-                      }}
-                      data-bs-dismiss="modal"
-                    >
-                      Hủy
-                    </button>
-                    <button
-                      className="butoon"
-                      style={{
-                        color: "white",
-                        background: "#FF7506",
-                        marginLeft: "32px",
-                      }}
-                      data-bs-dismiss="modal"
-                    >
-                      Lưu
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* show model hủy */}
-        <div
-          className="modal fade"
-          id="huyModal"
-          tabIndex={-1}
-          aria-labelledby="huyModalLabel"
-          aria-hidden="true"
-        >
-          <div
-            className="modal-dialog"
-            style={{
-              display: "flex",
-            }}
-          >
-            <div
-              className="modal-content"
-              style={{
-                backgroundColor: "#3E3E5B",
-                width: "552px",
-                height: "512px",
-                borderRadius: "16px",
-              }}
-            >
-              <div className="modal-body">
-                <h5
-                  className="modal-title m-0"
-                  id="exampleModalLabel"
-                  style={{
-                    width: "100%",
-                    height: "24px",
-                    top: "32px",
-                    left: "159px",
-                    fontFamily: "Montserrat",
-                    fontSize: "24px",
-                    fontWeight: 700,
-                    lineHeight: "24px",
-                    letterSpacing: "-0.002em",
-                    textAlign: "center",
-                    color: "#F5F5FF",
-                  }}
-                >
-                  Thay đổi mật khẩu
-                </h5>
-                <div>
-                  <div className="matkhau">Mật khẩu hiện tại:</div>
-                  <div
-                    className="password-input-wrapper"
-                    style={{ position: "relative" }}
-                  ></div>
-                </div>
-
-                <div>
-                  <div className="matkhau">Mật khẩu mới:</div>
-                  <div
-                    className="password-input-wrapper"
-                    style={{ position: "relative" }}
-                  ></div>
-                </div>
-                <div>
-                  <div className="matkhau">Nhập lại mật khẩu mới:</div>
-                  <div
-                    className="password-input-wrapper"
-                    style={{ position: "relative" }}
-                  ></div>
-                </div>
-                <div>
-                  <div
-                    style={{
-                      width: "368px",
-                      height: "48px",
-                      top: "424px",
-                      left: "92px",
                       gap: "32px",
                       position: "absolute",
                     }}

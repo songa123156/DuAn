@@ -27,7 +27,7 @@ const KhoBangGhi1: React.FC = () => {
   const [danhsachs, setdanhsachs] = useState<DSNhac[]>([
     {
       id: 1,
-      hinh: "hoa.png",
+      hinh: "https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/hoa.png?alt=media&token=93a11fd5-06ab-47b2-ba99-4ec74f1877f8",
       title: "Handcrafted Fresh Bacon Multy",
       casi: "Ca sĩ: Bella Poarch",
       sangtac: "Sáng tác: Leilani Zulauf",
@@ -36,7 +36,7 @@ const KhoBangGhi1: React.FC = () => {
     },
     {
       id: 2,
-      hinh: "hoa1.png",
+      hinh: "https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/hoa1.png?alt=media&token=0274095c-873a-436f-b179-f4ae77153150",
       title: "Handcrafted Fresh Bacon Multy",
       casi: "Ca sĩ: Bella Poarch",
       sangtac: "Sáng tác: Leilani Zulauf",
@@ -45,7 +45,7 @@ const KhoBangGhi1: React.FC = () => {
     },
     {
       id: 3,
-      hinh: "hoa2.png",
+      hinh: "https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/hoa2.png?alt=media&token=9b63b01a-a9d5-4314-a59c-ca0887910211",
       title: "Handcrafted Fresh Bacon Multy",
       casi: "Ca sĩ: Bella Poarch",
       sangtac: "Sáng tác: Leilani Zulauf",
@@ -54,7 +54,7 @@ const KhoBangGhi1: React.FC = () => {
     },
     {
       id: 4,
-      hinh: "hoa3.png",
+      hinh: "https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/hoa3.png?alt=media&token=cb15324d-9d32-4be7-b620-05592e6fbdf3",
       title: "Handcrafted Fresh Bacon Multy",
       casi: "Ca sĩ: Bella Poarch",
       sangtac: "Sáng tác: Leilani Zulauf",
@@ -63,7 +63,7 @@ const KhoBangGhi1: React.FC = () => {
     },
     {
       id: 5,
-      hinh: "hoa4.png",
+      hinh: "https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/hoa4.png?alt=media&token=fe22ce03-f4fb-4880-8d2c-d6e8c665294a",
       title: "Handcrafted Fresh Bacon Multy",
       casi: "Ca sĩ: Bella Poarch",
       sangtac: "Sáng tác: Leilani Zulauf",
@@ -72,7 +72,7 @@ const KhoBangGhi1: React.FC = () => {
     },
     {
       id: 6,
-      hinh: "hoa5.png",
+      hinh: "https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/hoa5.png?alt=media&token=87b32890-5ab2-4259-b137-4a4d7c2a2cc8",
       title: "Handcrafted Fresh Bacon Multy",
       casi: "Ca sĩ: Bella Poarch",
       sangtac: "Sáng tác: Leilani Zulauf",
@@ -81,7 +81,7 @@ const KhoBangGhi1: React.FC = () => {
     },
     {
       id: 7,
-      hinh: "hoa6.png",
+      hinh: "https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/hoa6.png?alt=media&token=d83fb0b4-221a-48aa-84df-3197104c8bdc",
       title: "Handcrafted Fresh Bacon Multy",
       casi: "Ca sĩ: Bella Poarch",
       sangtac: "Sáng tác: Leilani Zulauf",
@@ -90,16 +90,14 @@ const KhoBangGhi1: React.FC = () => {
     },
     {
       id: 8,
-      hinh: "hoa7.png",
+      hinh: "https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/hoa7.png?alt=media&token=eac95274-1b2c-4413-9d0a-ffefa69ab958",
       title: "Handcrafted Fresh Bacon Multy",
       casi: "Ca sĩ: Bella Poarch",
       sangtac: "Sáng tác: Leilani Zulauf",
       sohopdong: "Số hợp đồng: HD395738503",
       isChecked: false,
     },
-    // Thêm các học sinh khác vào đây
   ]);
-  const urlImage = `/images/`;
 
   return (
     <>
@@ -115,7 +113,10 @@ const KhoBangGhi1: React.FC = () => {
             className="input4"
           />
           <a href="/#" type="submit" style={{ background: "#2B2B3F" }}>
-            <img src="images/search.png" alt="" />
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/Search.png?alt=media&token=fa67623b-8b52-48ae-8e06-11debd3f5d01"
+              alt=""
+            />
           </a>
         </form>
         {/* danh sach dropdown */}
@@ -219,7 +220,11 @@ const KhoBangGhi1: React.FC = () => {
           }}
         >
           <a href="/KhoBangGhi1">
-            <img src="images/List.png" className="icon4" alt="" />
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/List.png?alt=media&token=e4bfde7d-d6a7-4b37-b1c9-002c643fdc4d"
+              className="icon4"
+              alt=""
+            />
           </a>
         </div>
 
@@ -231,7 +236,11 @@ const KhoBangGhi1: React.FC = () => {
           }}
         >
           <a href="/pheduyetbg">
-            <img src="images/tab.png" className="icon4" alt="" />
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/tab.png?alt=media&token=19348d31-a86d-43ca-9283-965e581eee9f"
+              className="icon4"
+              alt=""
+            />
           </a>
         </div>
         {/* icon menu */}
@@ -239,7 +248,11 @@ const KhoBangGhi1: React.FC = () => {
         <div className="khungt">
           <div className="khugne">
             <a href="/suatt" style={{ textDecoration: "none" }}>
-              <img src="images/sua.png" alt="sua" className="icon1" />
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/sua.png?alt=media&token=07d2553b-bef0-4a7d-a19e-ecf50f43bdaa"
+                alt="sua"
+                className="icon1"
+              />
               <div className="texttt">Quản lý phê duyệt</div>
             </a>
           </div>
@@ -265,7 +278,7 @@ const KhoBangGhi1: React.FC = () => {
           >
             {danhsachs.map((item) => (
               <div className="formtong4 col" key={item.id}>
-                <img src={urlImage + item.hinh} alt="" className="hinhanh4" />
+                <img src={item.hinh} alt="" className="hinhanh4" />
                 <div style={{ width: 342, height: 156 }}>
                   <div className="text4">
                     <div className="tieude4">{item.title}</div>
@@ -292,7 +305,7 @@ const KhoBangGhi1: React.FC = () => {
                     </div>
                     <div className="sua4">
                       <img
-                        src="images/sua.png"
+                        src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/sua.png?alt=media&token=07d2553b-bef0-4a7d-a19e-ecf50f43bdaa"
                         alt=""
                         style={{ width: "100%", height: "100%" }}
                       />

@@ -1,317 +1,19 @@
 import { useLocation } from "react-router-dom";
 import "../cssne/khobangi.css";
-import { useState } from "react";
+import NavBarHidden from "../BackGround/NavBarHidden";
 
 const CTBangGhi = () => {
   const location = useLocation();
   let user = location.state && location.state.user;
-
-  const [checkNavbar, setcheckNavbar] = useState(false);
-
-  const handleNavbar = () => {
-    setcheckNavbar(!checkNavbar);
-  };
-
   return (
     <>
       <div style={{ width: "100%", display: "flex" }}>
-        <div
-          className="sidebar"
-          style={{
-            width: 40,
-            borderRadius: "0px 24px 24px 0px",
-            display: !checkNavbar ? "flex" : "none",
-          }}
-        >
-          <div
-            style={{
-              width: "40px",
-              height: "1080px",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-
-              fontSize: 24,
-            }}
-          >
-            <button
-              onClick={handleNavbar}
-              style={{ background: "transparent", border: 0, color: "#B65100" }}
-            >
-              &gt;
-            </button>
-          </div>
-        </div>
-        <div style={{ display: checkNavbar ? "flex" : "none" }}>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              width: "170px",
-              height: "1080px",
-              background: "#020220",
-              color: "white",
-              zIndex: "1",
-              position: "fixed",
-              opacity: "0.8",
-            }}
-          >
-            <img
-              src="images/logo.png"
-              alt=""
-              style={{
-                width: "96px",
-                height: "96px",
-                margin: "39px 21px 0px 34px",
-              }}
-            />
-            <div
-              style={{
-                width: "170px",
-                height: "72px",
-                marginTop: "110px",
-              }}
-            >
-              <img
-                src="images/banghi.png"
-                alt=""
-                style={{
-                  width: "32px",
-                  height: "32px",
-                  margin: "12px 69px 0px 69px",
-                }}
-              />
-              <p
-                style={{
-                  width: "84px",
-                  height: "17px",
-                  left: "41px",
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  letterSpacing: "0.015em",
-                  textAlign: "center",
-                  marginTop: "2px",
-                  position: "absolute",
-                }}
-              >
-                Kho bài hát
-              </p>
-            </div>
-            <div
-              style={{
-                width: "170px",
-                height: "72px",
-                marginTop: "24px",
-              }}
-            >
-              <img
-                src="images/Playlist.png"
-                alt=""
-                style={{
-                  width: "32px",
-                  height: "32px",
-                  margin: "12px 69px 0px 69px",
-                }}
-              />
-              <p
-                style={{
-                  width: "84px",
-                  height: "17px",
-                  left: "41px",
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  letterSpacing: "0.015em",
-                  textAlign: "center",
-                  marginTop: "2px",
-                  position: "absolute",
-                }}
-              >
-                Playlist
-              </p>
-            </div>
-            <div
-              style={{
-                width: "170px",
-                height: "72px",
-                marginTop: "24px",
-              }}
-            >
-              <img
-                src="images/calendar.png"
-                alt=""
-                style={{
-                  width: "32px",
-                  height: "32px",
-                  margin: "12px 69px 0px 69px",
-                }}
-              />
-              <p
-                style={{
-                  width: "84px",
-                  height: "17px",
-                  left: "41px",
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  letterSpacing: "0.015em",
-                  textAlign: "center",
-                  marginTop: "2px",
-                  position: "absolute",
-                }}
-              >
-                Lập lịch phát
-              </p>
-            </div>
-            <div
-              style={{
-                width: "170px",
-                height: "72px",
-                marginTop: "24px",
-              }}
-            >
-              <img
-                src="images/quanly.png"
-                alt=""
-                style={{
-                  width: "32px",
-                  height: "32px",
-                  margin: "12px 69px 0px 69px",
-                }}
-              />
-              <p
-                style={{
-                  width: "84px",
-                  height: "17px",
-                  left: "41px",
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  letterSpacing: "0.015em",
-                  textAlign: "center",
-                  marginTop: "2px",
-                  position: "absolute",
-                }}
-              >
-                Quản lý
-              </p>
-            </div>
-            <div
-              style={{
-                width: "170px",
-                height: "72px",
-                marginTop: "24px",
-              }}
-            >
-              <img
-                src="images/doanhthu.png"
-                alt=""
-                style={{
-                  width: "32px",
-                  height: "32px",
-                  margin: "12px 69px 0px 69px",
-                }}
-              />
-              <p
-                style={{
-                  width: "84px",
-                  height: "17px",
-                  left: "41px",
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  letterSpacing: "0.015em",
-                  textAlign: "center",
-                  marginTop: "2px",
-                  position: "absolute",
-                }}
-              >
-                Doanh thu
-              </p>
-            </div>
-            <div
-              style={{
-                width: "170px",
-                height: "72px",
-                marginTop: "24px",
-              }}
-            >
-              <img
-                src="images/Setting.png"
-                alt=""
-                style={{
-                  width: "32px",
-                  height: "32px",
-                  margin: "12px 69px 0px 69px",
-                }}
-              />
-              <p
-                style={{
-                  width: "84px",
-                  height: "17px",
-                  left: "41px",
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  letterSpacing: "0.015em",
-                  textAlign: "center",
-                  marginTop: "2px",
-                  position: "absolute",
-                }}
-              >
-                Cài đặt
-              </p>
-            </div>
-            <div
-              style={{
-                width: "170px",
-                height: "72px",
-                marginTop: "24px",
-              }}
-            >
-              <img
-                src="images/Support.png"
-                alt=""
-                style={{
-                  width: "32px",
-                  height: "32px",
-                  margin: "12px 69px 0px 69px",
-                }}
-              />
-              <p
-                style={{
-                  width: "84px",
-                  height: "17px",
-                  left: "41px",
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  letterSpacing: "0.015em",
-                  textAlign: "center",
-                  marginTop: "2px",
-                  position: "absolute",
-                }}
-              >
-                Hỗ trợ
-              </p>
-            </div>
-          </div>
-
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              width: "100%",
-              height: "1080px",
-              background: "transparent",
-              color: "white",
-              zIndex: 9999,
-              marginLeft: 170,
-              position: "fixed",
-            }}
-            onClick={handleNavbar}
-          ></div>
-        </div>
+        <NavBarHidden />
 
         <div>
           <div
             style={{
               top: 86,
-
               left: 78,
               position: "absolute",
             }}
@@ -338,7 +40,6 @@ const CTBangGhi = () => {
             style={{
               width: 800,
               height: 48,
-
               top: 114,
               left: 78,
               position: "absolute",
@@ -360,8 +61,12 @@ const CTBangGhi = () => {
 
           <div className="khungt">
             <div className="khugne">
-              <a href="/suatt" style={{ textDecoration: "none" }}>
-                <img src="images/huy2.png" alt="sua" className="icon1" />
+              <a href="/#" style={{ textDecoration: "none" }}>
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/huy2.png?alt=media&token=d683aa76-b6d8-4f7e-aa42-d037a28ba850"
+                  alt="sua"
+                  className="icon1"
+                />
                 <div className="texttt">Xóa bản ghi</div>
               </a>
             </div>
@@ -380,13 +85,20 @@ const CTBangGhi = () => {
           >
             <p className="ttbg4">Thông tin bản ghi</p>
             <div className="khunghinh4">
-              <img src="images/hoa8.png" alt="" className="hoa84" />
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/hoa8.png?alt=media&token=ccb43c52-33e5-45e1-8033-fdf39be5be67"
+                alt=""
+                className="hoa84"
+              />
               <div className="mayanh84">
-                <img src="images/mayanh.png" alt="" />
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/mayanh.png?alt=media&token=1d6d62ec-3221-4aa9-ae27-7a81330344e0"
+                  alt=""
+                />
               </div>
             </div>
             <img
-              src="images/nhacne.png"
+              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/nhacne.png?alt=media&token=b4e30f76-6b52-4748-9c9c-8e83b0ee9ffa"
               alt=""
               style={{
                 width: "32px",

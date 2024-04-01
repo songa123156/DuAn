@@ -1,7 +1,6 @@
-import "../quanly/Navbar.css"; // Import file CSS cho navbar
 import { useLocation } from "react-router-dom";
-import { useNavigate, Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 import "../p3/style.css";
 import Navbar from "../BackGround/navbar";
 import "./DropDown.css";
@@ -17,7 +16,6 @@ const DanhSachThietBi = () => {
   const [checkbox3, setCheckbox3] = useState(false);
   const [checkbox4, setCheckbox4] = useState(false);
   const [checkbox5, setCheckbox5] = useState(false);
-
   const [checkbox6, setCheckbox6] = useState(false);
   const [checkbox7, setCheckbox7] = useState(false);
   const [checkbox8, setCheckbox8] = useState(false);
@@ -43,8 +41,6 @@ const DanhSachThietBi = () => {
     setCheckbox11(checked);
     setCheckbox12(checked);
     setCheckbox13(checked);
-
-    // Update other checkboxes as needed
   };
 
   const [isCheckListVisible, setCheckListVisible] = useState(false);
@@ -63,166 +59,11 @@ const DanhSachThietBi = () => {
       setSelectedFruits([...selectedFruits, value]);
     }
   };
-  const handleDangXuat = () => {
-    navigate("/");
-  };
-
-  //   useEffect(() => {
-  //     if (user === null) navigate("/");
-  //   }, []);
-
   return (
     <>
       <div style={{ width: "100%", display: "flex" }}>
-        {/* <div className="sidebar">
-          <div className="logo">
-            <img src="/img/logo.png" alt="Logo navbar" />
-          </div>
-          <ul>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Kho bản ghi
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Playlist
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Lập lịch phát
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Quản lý doanh thu
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Cài đặt
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Hỗ trợ
-              </a>
-            </li>
-          </ul>
-        </div> */}
         <Navbar></Navbar>
-
         <div>
-          {/* <nav
-            className="navbar"
-            style={{
-              width: "100%",
-              justifyContent: "flex-end",
-              marginRight: "75px",
-              marginBottom: "16px",
-              marginTop: "24px",
-
-              height: "80px",
-              // backgroundColor: "#1e1e2e",
-              display: "inline-flex",
-              alignItems: "center",
-              padding: "0 20px",
-            }}
-          >
-            <select
-              style={{
-                backgroundColor: "transparent",
-                border: 0,
-                color: "white",
-                marginRight: 24,
-              }}
-            >
-              <option value="vi" data-icon="VN">
-                Tiếng Việt
-              </option>
-              <option value="en" data-icon="🇺🇸">
-                English
-              </option>
-              <option value="ja" data-icon="🇯🇵">
-                日本語
-              </option>
-              <option value="ko" data-icon="🇰🇷">
-                한국어
-              </option>
-            </select>
-            <div className="logo">
-              <img
-                src="/img/logo.png"
-                alt="Icon"
-                style={{ marginTop: "300%" }}
-              />
-            </div>
-            <div className="login" style={{ color: "white" }}>
-              <span>Welcome, {user}</span>
-            </div>
-          </nav> */}
-
           <div
             style={{
               width: 345,
@@ -439,34 +280,6 @@ const DanhSachThietBi = () => {
               </ul>
             </div>
           </div>
-
-          {/* <select
-            style={{
-              width: "274px",
-              height: "40px",
-              position: "absolute",
-              top: "158px",
-              left: 527,
-              padding: "8px 12px 8px 16px",
-              borderRadius: "8px",
-              border: "1px solid #FF7506",
-              display: "flex",
-              justifyContent: "space-between",
-              background: "#1E1E2E",
-              color: "#FFFFFF",
-              fontFamily: "Montserrat",
-              fontSize: "16px",
-              fontWeight: "600",
-              letterSpacing: "-0.002em",
-            }}
-          >
-            <option value="all">Tất cả</option>
-            <option value="1">Mới</option>
-            <option value="2">Còn thời hạn</option>
-            <option value="3">Hết hạn</option>
-            <option value="4">Hủy</option>
-          </select> */}
-
           <div
             style={{
               width: "665px",
@@ -529,7 +342,6 @@ const DanhSachThietBi = () => {
               backgroundColor: "#2F2F41B2",
             }}
           >
-            {/* Nội dung thẻ div */}
             <table
               style={{
                 width: 1541,
@@ -1034,7 +846,6 @@ const DanhSachThietBi = () => {
                 maxWidth: "1485px",
                 display: "flex",
                 gap: "8px",
-
                 marginLeft: 24,
                 marginBottom: 10,
               }}
@@ -1113,7 +924,7 @@ const DanhSachThietBi = () => {
             <div className="khung1">
               <a href="/suathongtin" style={{ textDecoration: "none" }}>
                 <img
-                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/cong.png?alt=media&token=24f52e64-0a63-4ba4-83d6-3ef79985125c"
+                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/cong.png?alt=media&token=30da3562-77bc-4dab-850b-d87505acdc9f"
                   alt="cong"
                 />
                 <div className="textt">
@@ -1124,7 +935,7 @@ const DanhSachThietBi = () => {
             <div className="khung1">
               <div data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <img
-                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/kichhoat.png?alt=media&token=6b935fbb-6650-471f-a289-4916177019ef"
+                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/kichhoat.png?alt=media&token=95a625a1-ee48-47c6-b552-3f6b14eb2025"
                   alt="kichhoat"
                 />
                 <div className="textt">
@@ -1136,7 +947,7 @@ const DanhSachThietBi = () => {
             <div className="khung1">
               <div data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <img
-                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/khoa.png?alt=media&token=2f9e24e9-3c59-4b9f-90a5-3ce6ea6a5ad5"
+                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/khoa.png?alt=media&token=150753e6-5ca9-4340-aafb-a7c2c6699e65"
                   alt="khoa"
                 />
                 <div className="textt">
@@ -1147,7 +958,7 @@ const DanhSachThietBi = () => {
             <div className="khung1">
               <div data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <img
-                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/rac.png?alt=media&token=d2d84743-3bc9-4186-8a75-871d5365cf06"
+                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/rac.png?alt=media&token=9472a6a0-9eb5-4dad-b4e8-3e76c1c9f735"
                   alt="rac"
                 />
                 <div className="textt">

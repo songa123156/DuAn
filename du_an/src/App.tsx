@@ -1,12 +1,9 @@
 import React from "react";
 import "./App.css";
 import Log from "./login/Log";
-
 import { Routes, Route } from "react-router-dom";
 import Forget from "./login/Foget";
 import DaMK from "./login/DatlaiMK";
-// import Navbar from "./quanly/Navbar";
-import DoiMK from "./quanly/DoiMK";
 import DanhSachHopDong from "./p3/DanhSachHopDong";
 import ChiTietHopDong from "./p3/ChiTietHopDong";
 import Trang1 from "./quanly/Navbar";
@@ -111,7 +108,6 @@ function App() {
           <Route path="/loilink" element={<LoiLink />}></Route>
           <Route path="/Datlaimatkhau" element={<DaMK />}></Route>
           <Route path="/navbar" element={<Trang1 />}></Route>
-          <Route path="/navbar/DoiMK" element={<DoiMK />}></Route>
           <Route path="/DShopdong" element={<DanhSachHopDong />}></Route>
           <Route path="/suathongtin" element={<SuaThongTin />}></Route>
           <Route path="/ChiTietHopDong" element={<ChiTietHopDong />}></Route>

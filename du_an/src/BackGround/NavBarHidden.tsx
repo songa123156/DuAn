@@ -1,13 +1,141 @@
 import React, { useState } from "react";
-import { useLocation } from "react-router-dom";
 
-function Navbar() {
-  const [language, setLanguage] = useState("vi");
-  const location = useLocation();
-  let user = location.state && location.state.user;
+const NavBarHidden = () => {
+  const [checkNavbar, setcheckNavbar] = useState(false);
+
+  const handleNavbar = () => {
+    setcheckNavbar(!checkNavbar);
+  };
+
   return (
     <>
-      <div>
+      <div
+        style={{
+          width: 1749,
+          height: 80,
+          left: 171,
+          position: "absolute",
+          top: 10,
+          right: 10,
+          zIndex: 0,
+        }}
+      >
+        <div>
+          <select
+            id="language"
+            style={{
+              width: 143,
+              height: 40,
+              top: 24,
+              left: 1375,
+              padding: "8px 4px 8px 8px",
+              borderRadius: 4,
+              border: "1px solid rgb(200, 200, 219)",
+              gap: 8,
+              color: "rgb(200, 200, 219)",
+              background: "rgb(30, 30, 46)",
+              position: "relative",
+            }}
+          >
+            <option value="vi" style={{ background: "rgb(30, 30, 46)" }}>
+              Tiếng Việt
+            </option>
+            <option value="en" style={{ background: "rgb(30, 30, 46)" }}>
+              English
+            </option>
+            <option value="fr" style={{ background: "rgb(30, 30, 46)" }}>
+              French
+            </option>
+          </select>
+        </div>
+        <div
+          style={{
+            width: 132,
+            height: 40,
+            top: 24,
+            left: 1542,
+            gap: 8,
+            marginRight: 24,
+            position: "absolute",
+          }}
+        >
+          <a href="/trang1" style={{ textDecoration: "none" }}>
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/admin.jpg?alt=media&token=9a625f88-689d-48e4-82fb-d19827df0ae2"
+              alt="mdo"
+              style={{
+                width: 40,
+                height: "40.58px",
+                borderRadius: 200,
+                position: "absolute",
+              }}
+            />
+            <div
+              style={{
+                width: 74,
+                height: 24,
+                left: 5,
+                fontFamily: "Montserrat",
+                fontSize: 16,
+                fontWeight: 600,
+                letterSpacing: "-0.002em",
+                textAlign: "center",
+                color: "rgb(245, 245, 255)",
+                marginLeft: 35,
+                position: "relative",
+                textDecoration: "none",
+              }}
+            />
+            <div
+              style={{
+                width: 49,
+                height: 17,
+                left: 6,
+                fontFamily: "Montserrat",
+                fontSize: 14,
+                fontWeight: 500,
+                letterSpacing: "0.015em",
+                textAlign: "center",
+                color: "rgb(182, 81, 0)",
+                marginLeft: 35,
+                position: "relative",
+                textDecoration: "none",
+              }}
+            >
+              Admin
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div
+        className="sidebar"
+        style={{
+          width: 40,
+          borderRadius: "0px 24px 24px 0px",
+          display: !checkNavbar ? "flex" : "none",
+        }}
+      >
+        <div
+          style={{
+            width: "40px",
+            height: "1080px",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+
+            fontSize: 24,
+          }}
+        >
+          <button
+            onClick={handleNavbar}
+            style={{ background: "transparent", border: 0, color: "#B65100" }}
+          >
+            &gt;
+          </button>
+        </div>
+      </div>
+      <div style={{ display: checkNavbar ? "flex" : "none" }}>
         <div
           style={{
             display: "flex",
@@ -16,12 +144,13 @@ function Navbar() {
             height: "1080px",
             background: "#020220",
             color: "white",
-            top: "-8251px",
-            left: "-3190px",
+            zIndex: "1",
+            position: "fixed",
+            opacity: "0.8",
           }}
         >
           <img
-            src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/logo.png?alt=media&token=b5b2e74f-9265-4a15-9815-393dbc233dce"
+            src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/logo.png?alt=media&token=86eb9fbc-d239-46f4-963e-092d0a26fd33"
             alt=""
             style={{
               width: "96px",
@@ -254,131 +383,23 @@ function Navbar() {
             </p>
           </div>
         </div>
+
         <div
           style={{
-            width: "1749px",
-            height: "80px",
-            left: "171px",
-            position: "absolute",
-            top: "10px",
-            right: "10px",
-            zIndex: "0",
+            display: "flex",
+            flexDirection: "column",
+            width: "100%",
+            height: "1080px",
+            background: "transparent",
+            color: "white",
+            zIndex: 9999,
+            marginLeft: 170,
+            position: "fixed",
           }}
-        >
-          <div>
-            <select
-              id="language"
-              value={language}
-              onChange={(e) => setLanguage(e.target.value)}
-              style={{
-                width: "143px",
-                height: "40px",
-                top: "24px",
-                left: "1375px",
-                padding: "8px 4px 8px 8px",
-                borderRadius: "4px",
-                border: "1px solid #C8C8DB",
-                gap: "8px",
-                color: "#C8C8DB",
-                backgroundColor: "transparent",
-                position: "relative",
-                background: "#1E1E2E",
-              }}
-            >
-              <option
-                style={{
-                  // backgroundImage: "url(images/Frame.png)",
-                  // backgroundRepeat: "no-repeat",
-                  // backgroundPosition: "left center",
-                  // paddingLeft: "30px",
-                  background: "#1E1E2E",
-                }}
-                value="vi"
-              >
-                Tiếng Việt
-              </option>
-              <option
-                style={{
-                  // backgroundImage: "url('images/ENG.svg')",
-                  // backgroundRepeat: "no-repeat",
-                  // backgroundPosition: "left center",
-                  // paddingLeft: "30px",
-                  background: "#1E1E2E",
-                }}
-                value="en"
-              >
-                English
-              </option>
-              <option style={{ background: "#1E1E2E" }} value="fr">
-                French
-              </option>
-            </select>
-          </div>
-          <div
-            style={{
-              width: "132px",
-              height: "40px",
-              top: "24px",
-              left: "1542px",
-              gap: "8px",
-              marginRight: "24px",
-              position: "absolute",
-            }}
-          >
-            <a href="/trang1" style={{ textDecoration: "none" }}>
-              <img
-                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/admin.jpg?alt=media&token=9a625f88-689d-48e4-82fb-d19827df0ae2"
-                alt="mdo"
-                style={{
-                  width: "40px",
-                  height: "40.58px",
-                  borderRadius: "200px",
-                  position: "absolute",
-                  margin: "0px !important;",
-                }}
-              />
-              <div
-                style={{
-                  width: "74px",
-                  height: "24px",
-                  left: "5px",
-                  fontFamily: "Montserrat",
-                  fontSize: "16px",
-                  fontWeight: 600,
-                  letterSpacing: "-0.002em",
-                  textAlign: "center",
-                  color: "#F5F5FF",
-                  marginLeft: "35px",
-                  position: "relative",
-                  textDecoration: "none",
-                }}
-              >
-                {user}
-              </div>
-              <div
-                style={{
-                  width: "49px",
-                  height: "17px",
-                  left: "6px",
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  letterSpacing: "0.015em",
-                  textAlign: "center",
-                  color: "#B65100",
-                  marginLeft: "35px",
-                  position: "relative",
-                  textDecoration: "none",
-                }}
-              >
-                Admin
-              </div>
-            </a>
-          </div>
-        </div>
+          onClick={handleNavbar}
+        ></div>
       </div>
     </>
   );
-}
-
-export default Navbar;
+};
+export default NavBarHidden;

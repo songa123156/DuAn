@@ -1,314 +1,17 @@
-import React, { useState } from "react";
-
 import "../cssne/khobangi.css";
 import "../cssne/playlist.css";
+import NavBarHidden from "../BackGround/NavBarHidden";
 
 const ThemPlayList = () => {
-  const [checkNavbar, setcheckNavbar] = useState(false);
-
-  const handleNavbar = () => {
-    setcheckNavbar(!checkNavbar);
-  };
   return (
     <>
       <div style={{ width: "100%", display: "flex" }}>
-        <div
-          className="sidebar"
-          style={{
-            width: 40,
-            borderRadius: "0px 24px 24px 0px",
-            display: !checkNavbar ? "flex" : "none",
-          }}
-        >
-          <div
-            style={{
-              width: "40px",
-              height: "1080px",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-
-              fontSize: 24,
-            }}
-          >
-            <button
-              onClick={handleNavbar}
-              style={{ background: "transparent", border: 0, color: "#B65100" }}
-            >
-              &gt;
-            </button>
-          </div>
-        </div>
-        <div style={{ display: checkNavbar ? "flex" : "none" }}>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              width: "170px",
-              height: "1080px",
-              background: "#020220",
-              color: "white",
-              zIndex: "1",
-              position: "fixed",
-              opacity: "0.8",
-            }}
-          >
-            <img
-              src="images/logo.png"
-              alt=""
-              style={{
-                width: "96px",
-                height: "96px",
-                margin: "39px 21px 0px 34px",
-              }}
-            />
-            <div
-              style={{
-                width: "170px",
-                height: "72px",
-                marginTop: "110px",
-              }}
-            >
-              <img
-                src="images/banghi.png"
-                alt=""
-                style={{
-                  width: "32px",
-                  height: "32px",
-                  margin: "12px 69px 0px 69px",
-                }}
-              />
-              <p
-                style={{
-                  width: "84px",
-                  height: "17px",
-                  left: "41px",
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  letterSpacing: "0.015em",
-                  textAlign: "center",
-                  marginTop: "2px",
-                  position: "absolute",
-                }}
-              >
-                Kho bài hát
-              </p>
-            </div>
-            <div
-              style={{
-                width: "170px",
-                height: "72px",
-                marginTop: "24px",
-              }}
-            >
-              <img
-                src="images/Playlist.png"
-                alt=""
-                style={{
-                  width: "32px",
-                  height: "32px",
-                  margin: "12px 69px 0px 69px",
-                }}
-              />
-              <p
-                style={{
-                  width: "84px",
-                  height: "17px",
-                  left: "41px",
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  letterSpacing: "0.015em",
-                  textAlign: "center",
-                  marginTop: "2px",
-                  position: "absolute",
-                }}
-              >
-                Playlist
-              </p>
-            </div>
-            <div
-              style={{
-                width: "170px",
-                height: "72px",
-                marginTop: "24px",
-              }}
-            >
-              <img
-                src="images/calendar.png"
-                alt=""
-                style={{
-                  width: "32px",
-                  height: "32px",
-                  margin: "12px 69px 0px 69px",
-                }}
-              />
-              <p
-                style={{
-                  width: "84px",
-                  height: "17px",
-                  left: "41px",
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  letterSpacing: "0.015em",
-                  textAlign: "center",
-                  marginTop: "2px",
-                  position: "absolute",
-                }}
-              >
-                Lập lịch phát
-              </p>
-            </div>
-            <div
-              style={{
-                width: "170px",
-                height: "72px",
-                marginTop: "24px",
-              }}
-            >
-              <img
-                src="images/quanly.png"
-                alt=""
-                style={{
-                  width: "32px",
-                  height: "32px",
-                  margin: "12px 69px 0px 69px",
-                }}
-              />
-              <p
-                style={{
-                  width: "84px",
-                  height: "17px",
-                  left: "41px",
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  letterSpacing: "0.015em",
-                  textAlign: "center",
-                  marginTop: "2px",
-                  position: "absolute",
-                }}
-              >
-                Quản lý
-              </p>
-            </div>
-            <div
-              style={{
-                width: "170px",
-                height: "72px",
-                marginTop: "24px",
-              }}
-            >
-              <img
-                src="images/doanhthu.png"
-                alt=""
-                style={{
-                  width: "32px",
-                  height: "32px",
-                  margin: "12px 69px 0px 69px",
-                }}
-              />
-              <p
-                style={{
-                  width: "84px",
-                  height: "17px",
-                  left: "41px",
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  letterSpacing: "0.015em",
-                  textAlign: "center",
-                  marginTop: "2px",
-                  position: "absolute",
-                }}
-              >
-                Doanh thu
-              </p>
-            </div>
-            <div
-              style={{
-                width: "170px",
-                height: "72px",
-                marginTop: "24px",
-              }}
-            >
-              <img
-                src="images/Setting.png"
-                alt=""
-                style={{
-                  width: "32px",
-                  height: "32px",
-                  margin: "12px 69px 0px 69px",
-                }}
-              />
-              <p
-                style={{
-                  width: "84px",
-                  height: "17px",
-                  left: "41px",
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  letterSpacing: "0.015em",
-                  textAlign: "center",
-                  marginTop: "2px",
-                  position: "absolute",
-                }}
-              >
-                Cài đặt
-              </p>
-            </div>
-            <div
-              style={{
-                width: "170px",
-                height: "72px",
-                marginTop: "24px",
-              }}
-            >
-              <img
-                src="images/Support.png"
-                alt=""
-                style={{
-                  width: "32px",
-                  height: "32px",
-                  margin: "12px 69px 0px 69px",
-                }}
-              />
-              <p
-                style={{
-                  width: "84px",
-                  height: "17px",
-                  left: "41px",
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  letterSpacing: "0.015em",
-                  textAlign: "center",
-                  marginTop: "2px",
-                  position: "absolute",
-                }}
-              >
-                Hỗ trợ
-              </p>
-            </div>
-          </div>
-
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              width: "100%",
-              height: "1080px",
-              background: "transparent",
-              color: "white",
-              zIndex: 9999,
-              marginLeft: 170,
-              position: "fixed",
-            }}
-            onClick={handleNavbar}
-          ></div>
-        </div>
+        <NavBarHidden />
 
         <div>
           <div
             style={{
               top: 86,
-
               left: 78,
               position: "absolute",
             }}
@@ -330,7 +33,6 @@ const ThemPlayList = () => {
             style={{
               width: 800,
               height: 48,
-
               top: 114,
               left: 78,
               position: "absolute",
@@ -353,13 +55,21 @@ const ThemPlayList = () => {
           <div className="khungt" style={{ height: 224 }}>
             <div className="khugne">
               <a href="/suaplaylist" style={{ textDecoration: "none" }}>
-                <img src="images/sua.png" alt="sua" className="icon1" />
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/sua.png?alt=media&token=07d2553b-bef0-4a7d-a19e-ecf50f43bdaa"
+                  alt="sua"
+                  className="icon1"
+                />
                 <div className="texttt">Chỉnh sủa</div>
               </a>
             </div>
             <div className="khugne">
               <a href="/#" style={{ textDecoration: "none" }}>
-                <img src="images/rac.png" alt="sua" className="icon1" />
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/rac.png?alt=media&token=9472a6a0-9eb5-4dad-b4e8-3e76c1c9f735"
+                  alt="sua"
+                  className="icon1"
+                />
                 <div className="texttt">Xóa Playlist</div>
               </a>
             </div>
@@ -375,7 +85,11 @@ const ThemPlayList = () => {
             }}
           >
             <div className="text6">Ảnh bìa:</div>
-            <img src="images/file.png" alt="" style={{ marginTop: 16 }} />
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/file.png?alt=media&token=b2aac25e-8a69-4627-9d5b-89aa13a423c7"
+              alt=""
+              style={{ marginTop: 16 }}
+            />
             <input
               type="file"
               style={{
@@ -517,7 +231,6 @@ const ThemPlayList = () => {
             <table
               style={{
                 width: "1344px",
-                // height: "604px",
                 height: "690px",
               }}
             >

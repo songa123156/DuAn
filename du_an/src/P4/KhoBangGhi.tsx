@@ -56,7 +56,10 @@ const KhoBangGhi: React.FC = () => {
             }}
           />
           <a href="/#" type="submit" style={{ background: "#2B2B3F" }}>
-            <img src="images/search.png" alt="" />
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/Search.png?alt=media&token=fa67623b-8b52-48ae-8e06-11debd3f5d01"
+              alt=""
+            />
           </a>
         </form>
         <div
@@ -164,7 +167,11 @@ const KhoBangGhi: React.FC = () => {
           }}
         >
           <a href="/#">
-            <img src="images/List.png" className="icon4" alt="" />
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/List.png?alt=media&token=e4bfde7d-d6a7-4b37-b1c9-002c643fdc4d"
+              className="icon4"
+              alt=""
+            />
           </a>
         </div>
 
@@ -176,7 +183,11 @@ const KhoBangGhi: React.FC = () => {
           }}
         >
           <a href="/#">
-            <img src="images/tab.png" className="icon4" alt="" />
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/tab.png?alt=media&token=19348d31-a86d-43ca-9283-965e581eee9f"
+              className="icon4"
+              alt=""
+            />
           </a>
         </div>
         {/* icon menu */}
@@ -184,7 +195,11 @@ const KhoBangGhi: React.FC = () => {
         <div className="khungt">
           <div className="khugne">
             <a href="/suatt" style={{ textDecoration: "none" }}>
-              <img src="images/sua.png" alt="sua" className="icon1" />
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/sua.png?alt=media&token=07d2553b-bef0-4a7d-a19e-ecf50f43bdaa"
+                alt="sua"
+                className="icon1"
+              />
               <div className="texttt">Quản lý phê duyệt</div>
             </a>
           </div>
@@ -205,7 +220,6 @@ const KhoBangGhi: React.FC = () => {
           <table
             style={{
               width: "1485px",
-              // height: "604px",
               height: "fit-content",
             }}
           >
@@ -246,12 +260,12 @@ const KhoBangGhi: React.FC = () => {
                   02/10/2019
                 </td>
                 <td>
-                  <a href="" style={{ color: "#FF7506" }}>
+                  <a href="/#" style={{ color: "#FF7506" }}>
                     Cập nhật
                   </a>
                 </td>
                 <td>
-                  <a href="" style={{ color: "#FF7506" }}>
+                  <a href="/#" style={{ color: "#FF7506" }}>
                     Nghe
                   </a>
                 </td>
@@ -276,12 +290,12 @@ const KhoBangGhi: React.FC = () => {
                   02/10/2019
                 </td>
                 <td>
-                  <a href="" style={{ color: "#FF7506" }}>
+                  <a href="/#" style={{ color: "#FF7506" }}>
                     Cập nhật
                   </a>
                 </td>
                 <td>
-                  <a href="" style={{ color: "#FF7506" }}>
+                  <a href="/#" style={{ color: "#FF7506" }}>
                     Nghe
                   </a>
                 </td>
@@ -305,12 +319,12 @@ const KhoBangGhi: React.FC = () => {
                   02/10/2019
                 </td>
                 <td>
-                  <a href="" style={{ color: "#FF7506" }}>
+                  <a href="/#" style={{ color: "#FF7506" }}>
                     Cập nhật
                   </a>
                 </td>
                 <td>
-                  <a href="" style={{ color: "#FF7506" }}>
+                  <a href="/#" style={{ color: "#FF7506" }}>
                     Nghe
                   </a>
                 </td>
@@ -334,12 +348,12 @@ const KhoBangGhi: React.FC = () => {
                   02/10/2019
                 </td>
                 <td>
-                  <a href="" style={{ color: "#FF7506" }}>
+                  <a href="/#" style={{ color: "#FF7506" }}>
                     Cập nhật
                   </a>
                 </td>
                 <td>
-                  <a href="" style={{ color: "#FF7506" }}>
+                  <a href="/#" style={{ color: "#FF7506" }}>
                     Nghe
                   </a>
                 </td>
@@ -364,12 +378,12 @@ const KhoBangGhi: React.FC = () => {
                   02/10/2019
                 </td>
                 <td>
-                  <a href="" style={{ color: "#FF7506" }}>
+                  <a href="/#" style={{ color: "#FF7506" }}>
                     Cập nhật
                   </a>
                 </td>
                 <td>
-                  <a href="" style={{ color: "#FF7506" }}>
+                  <a href="/#" style={{ color: "#FF7506" }}>
                     Nghe
                   </a>
                 </td>
@@ -394,12 +408,12 @@ const KhoBangGhi: React.FC = () => {
                   02/10/2019
                 </td>
                 <td>
-                  <a href="" style={{ color: "#FF7506" }}>
+                  <a href="/#" style={{ color: "#FF7506" }}>
                     Cập nhật
                   </a>
                 </td>
                 <td>
-                  <a href="" style={{ color: "#FF7506" }}>
+                  <a href="/#" style={{ color: "#FF7506" }}>
                     Nghe
                   </a>
                 </td>
@@ -424,12 +438,12 @@ const KhoBangGhi: React.FC = () => {
                   02/10/2019
                 </td>
                 <td>
-                  <a href="" style={{ color: "#FF7506" }}>
+                  <a href="/#" style={{ color: "#FF7506" }}>
                     Cập nhật
                   </a>
                 </td>
                 <td>
-                  <a href="" style={{ color: "#FF7506" }}>
+                  <a href="/#" style={{ color: "#FF7506" }}>
                     Nghe
                   </a>
                 </td>
@@ -454,12 +468,12 @@ const KhoBangGhi: React.FC = () => {
                   02/10/2019
                 </td>
                 <td>
-                  <a href="" style={{ color: "#FF7506" }}>
+                  <a href="/#" style={{ color: "#FF7506" }}>
                     Cập nhật
                   </a>
                 </td>
                 <td>
-                  <a href="" style={{ color: "#FF7506" }}>
+                  <a href="/#" style={{ color: "#FF7506" }}>
                     Nghe
                   </a>
                 </td>
@@ -484,12 +498,12 @@ const KhoBangGhi: React.FC = () => {
                   02/10/2019
                 </td>
                 <td>
-                  <a href="" style={{ color: "#FF7506" }}>
+                  <a href="/#" style={{ color: "#FF7506" }}>
                     Cập nhật
                   </a>
                 </td>
                 <td>
-                  <a href="" style={{ color: "#FF7506" }}>
+                  <a href="/#" style={{ color: "#FF7506" }}>
                     Nghe
                   </a>
                 </td>
@@ -514,12 +528,12 @@ const KhoBangGhi: React.FC = () => {
                   02/10/2019
                 </td>
                 <td>
-                  <a href="" style={{ color: "#FF7506" }}>
+                  <a href="/#" style={{ color: "#FF7506" }}>
                     Cập nhật
                   </a>
                 </td>
                 <td>
-                  <a href="" style={{ color: "#FF7506" }}>
+                  <a href="/#" style={{ color: "#FF7506" }}>
                     Nghe
                   </a>
                 </td>
@@ -544,12 +558,12 @@ const KhoBangGhi: React.FC = () => {
                   02/10/2019
                 </td>
                 <td>
-                  <a href="" style={{ color: "#FF7506" }}>
+                  <a href="/#" style={{ color: "#FF7506" }}>
                     Cập nhật
                   </a>
                 </td>
                 <td>
-                  <a href="" style={{ color: "#FF7506" }}>
+                  <a href="/#" style={{ color: "#FF7506" }}>
                     Nghe
                   </a>
                 </td>
@@ -574,12 +588,12 @@ const KhoBangGhi: React.FC = () => {
                   02/10/2019
                 </td>
                 <td>
-                  <a href="" style={{ color: "#FF7506" }}>
+                  <a href="/#" style={{ color: "#FF7506" }}>
                     Cập nhật
                   </a>
                 </td>
                 <td>
-                  <a href="" style={{ color: "#FF7506" }}>
+                  <a href="/#" style={{ color: "#FF7506" }}>
                     Nghe
                   </a>
                 </td>

@@ -1,7 +1,6 @@
-import "../quanly/Navbar.css"; // Import file CSS cho navbar
 import { useLocation } from "react-router-dom";
-import { useNavigate, Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 import "../p3/style.css";
 import Navbar from "../BackGround/navbar";
 
@@ -22,164 +21,12 @@ const FeedbackAdmin = () => {
     navigate("/");
   };
 
-  //   useEffect(() => {
-  //     if (user === null) navigate("/");
-  //   }, []);
-
   return (
     <>
       <div style={{ width: "100%", display: "flex" }}>
-        {/* <div className="sidebar">
-          <div className="logo">
-            <img src="/img/logo.png" alt="Logo navbar" />
-          </div>
-          <ul>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Kho bản ghi
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Playlist
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Lập lịch phát
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Quản lý doanh thu
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Cài đặt
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Hỗ trợ
-              </a>
-            </li>
-          </ul>
-        </div> */}
         <Navbar></Navbar>
-
         <div>
-          {/* <nav
-            className="navbar"
-            style={{
-              width: "100%",
-              justifyContent: "flex-end",
-              marginRight: "75px",
-              marginBottom: "16px",
-              marginTop: "24px",
-
-              height: "80px",
-              // backgroundColor: "#1e1e2e",
-              display: "inline-flex",
-              alignItems: "center",
-              padding: "0 20px",
-            }}
-          >
-            <select
-              style={{
-                backgroundColor: "transparent",
-                border: 0,
-                color: "white",
-                marginRight: 24,
-              }}
-            >
-              <option value="vi" data-icon="VN">
-                Tiếng Việt
-              </option>
-              <option value="en" data-icon="🇺🇸">
-                English
-              </option>
-              <option value="ja" data-icon="🇯🇵">
-                日本語
-              </option>
-              <option value="ko" data-icon="🇰🇷">
-                한국어
-              </option>
-            </select>
-            <div className="logo">
-              <img
-                src="/img/logo.png"
-                alt="Icon"
-                style={{ marginTop: "300%" }}
-              />
-            </div>
-            <div className="login" style={{ color: "white" }}>
-              <span>Welcome, {user}</span>
-            </div>
-          </nav> */}
-
           <div
-            // className="container"
             style={{
               top: 86,
               marginTop: "10px",
@@ -261,7 +108,7 @@ const FeedbackAdmin = () => {
                 }}
               >
                 <img
-                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/depgai.png?alt=media&token=5f4913f0-e1d2-4aca-8b9a-001292db2761"
+                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/depgai.png?alt=media&token=7f91a520-3471-404f-843a-5de390aeab85"
                   alt="depgai"
                 />
               </div>
@@ -290,7 +137,6 @@ const FeedbackAdmin = () => {
                   height: "24px",
                   top: "43px",
                   left: "86px",
-
                   gap: "0px",
                   position: "absolute",
                   fontFamily: "Montserrat",
@@ -379,7 +225,7 @@ const FeedbackAdmin = () => {
                 }}
               >
                 <img
-                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/depgai.png?alt=media&token=5f4913f0-e1d2-4aca-8b9a-001292db2761"
+                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/depgai.png?alt=media&token=7f91a520-3471-404f-843a-5de390aeab85"
                   alt="depgai"
                 />
               </div>
@@ -408,7 +254,6 @@ const FeedbackAdmin = () => {
                   height: "24px",
                   top: "43px",
                   left: "86px",
-
                   gap: "0px",
                   position: "absolute",
                   fontFamily: "Montserrat",
@@ -487,7 +332,7 @@ const FeedbackAdmin = () => {
                 }}
               >
                 <img
-                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/depgai.png?alt=media&token=5f4913f0-e1d2-4aca-8b9a-001292db2761"
+                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/depgai.png?alt=media&token=7f91a520-3471-404f-843a-5de390aeab85"
                   alt="depgai"
                 />
               </div>
@@ -516,7 +361,6 @@ const FeedbackAdmin = () => {
                   height: "24px",
                   top: "43px",
                   left: "86px",
-
                   gap: "0px",
                   position: "absolute",
                   fontFamily: "Montserrat",
@@ -595,7 +439,7 @@ const FeedbackAdmin = () => {
                 }}
               >
                 <img
-                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/depgai.png?alt=media&token=5f4913f0-e1d2-4aca-8b9a-001292db2761"
+                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/depgai.png?alt=media&token=7f91a520-3471-404f-843a-5de390aeab85"
                   alt="depgai"
                 />
               </div>
@@ -624,7 +468,6 @@ const FeedbackAdmin = () => {
                   height: "24px",
                   top: "43px",
                   left: "86px",
-
                   gap: "0px",
                   position: "absolute",
                   fontFamily: "Montserrat",
@@ -703,7 +546,7 @@ const FeedbackAdmin = () => {
                 }}
               >
                 <img
-                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/depgai.png?alt=media&token=5f4913f0-e1d2-4aca-8b9a-001292db2761"
+                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/depgai.png?alt=media&token=7f91a520-3471-404f-843a-5de390aeab85"
                   alt="depgai"
                 />
               </div>
@@ -732,7 +575,6 @@ const FeedbackAdmin = () => {
                   height: "24px",
                   top: "43px",
                   left: "86px",
-
                   gap: "0px",
                   position: "absolute",
                   fontFamily: "Montserrat",
@@ -811,7 +653,7 @@ const FeedbackAdmin = () => {
                 }}
               >
                 <img
-                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/depgai.png?alt=media&token=5f4913f0-e1d2-4aca-8b9a-001292db2761"
+                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/depgai.png?alt=media&token=7f91a520-3471-404f-843a-5de390aeab85"
                   alt="depgai"
                 />
               </div>
@@ -840,7 +682,6 @@ const FeedbackAdmin = () => {
                   height: "24px",
                   top: "43px",
                   left: "86px",
-
                   gap: "0px",
                   position: "absolute",
                   fontFamily: "Montserrat",
@@ -919,7 +760,7 @@ const FeedbackAdmin = () => {
                 }}
               >
                 <img
-                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/depgai.png?alt=media&token=5f4913f0-e1d2-4aca-8b9a-001292db2761"
+                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/depgai.png?alt=media&token=7f91a520-3471-404f-843a-5de390aeab85"
                   alt="depgai"
                 />
               </div>
@@ -948,7 +789,6 @@ const FeedbackAdmin = () => {
                   height: "24px",
                   top: "43px",
                   left: "86px",
-
                   gap: "0px",
                   position: "absolute",
                   fontFamily: "Montserrat",
@@ -1027,7 +867,7 @@ const FeedbackAdmin = () => {
                 }}
               >
                 <img
-                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/depgai.png?alt=media&token=5f4913f0-e1d2-4aca-8b9a-001292db2761"
+                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/depgai.png?alt=media&token=7f91a520-3471-404f-843a-5de390aeab85"
                   alt="depgai"
                 />
               </div>
@@ -1056,7 +896,6 @@ const FeedbackAdmin = () => {
                   height: "24px",
                   top: "43px",
                   left: "86px",
-
                   gap: "0px",
                   position: "absolute",
                   fontFamily: "Montserrat",
@@ -1135,7 +974,7 @@ const FeedbackAdmin = () => {
                 }}
               >
                 <img
-                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/depgai.png?alt=media&token=5f4913f0-e1d2-4aca-8b9a-001292db2761"
+                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/depgai.png?alt=media&token=7f91a520-3471-404f-843a-5de390aeab85"
                   alt="depgai"
                 />
               </div>
@@ -1164,7 +1003,6 @@ const FeedbackAdmin = () => {
                   height: "24px",
                   top: "43px",
                   left: "86px",
-
                   gap: "0px",
                   position: "absolute",
                   fontFamily: "Montserrat",
@@ -1293,7 +1131,7 @@ const FeedbackAdmin = () => {
               }}
             >
               <img
-                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/tamthu.png?alt=media&token=9341a962-a80f-48fb-835e-2c32b6781f1f"
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/tamthu.png?alt=media&token=c3064bbf-b9c7-4299-aa5c-c6f0b98653d2"
                 alt="tamthu"
               />
             </div>

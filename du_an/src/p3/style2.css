@@ -10,15 +10,6 @@
 .sidebar.open {
   left: 0;
 }
-
-.logo {
-  /* CSS cho logo */
-}
-
-ul {
-  /* CSS cho danh sách menu */
-}
-
 .toggle-arrow {
   width: 40px;
   height: 1080px;
@@ -30,6 +21,9 @@ ul {
   left: 180px;
   cursor: pointer;
   transition: transform 0.3s ease;
+}
+tr {
+  height: 47px;
 }
 
 .toggle-arrow.open {

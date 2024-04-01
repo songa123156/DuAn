@@ -205,7 +205,6 @@ const PheDuyetBG1: React.FC = () => {
     });
     setdanhsachs(updatedDanhsach);
   };
-  const urlImage = `/images/`;
 
   return (
     <>
@@ -220,8 +219,11 @@ const PheDuyetBG1: React.FC = () => {
             onChange={handleInputChange}
             className="input4"
           />
-          <a type="submit" style={{ background: "#2B2B3F" }}>
-            <img src="images/search.png" alt="" />
+          <a href="/#" type="submit" style={{ background: "#2B2B3F" }}>
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/Search.png?alt=media&token=fa67623b-8b52-48ae-8e06-11debd3f5d01"
+              alt=""
+            />
           </a>
         </form>
         {/* danh sach dropdown */}
@@ -282,7 +284,11 @@ const PheDuyetBG1: React.FC = () => {
           }}
         >
           <a href="/pheduyetbg1">
-            <img src="images/List.png" className="icon4" alt="" />
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/List.png?alt=media&token=e4bfde7d-d6a7-4b37-b1c9-002c643fdc4d"
+              className="icon4"
+              alt=""
+            />
           </a>
         </div>
 
@@ -294,7 +300,11 @@ const PheDuyetBG1: React.FC = () => {
           }}
         >
           <a href="/pheduyetbg">
-            <img src="images/tab.png" className="icon4" alt="" />
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/tab.png?alt=media&token=19348d31-a86d-43ca-9283-965e581eee9f"
+              className="icon4"
+              alt=""
+            />
           </a>
         </div>
         {/* icon menu */}
@@ -302,7 +312,11 @@ const PheDuyetBG1: React.FC = () => {
         <div className="khungt" style={{ height: 224 }}>
           <div className="khugne">
             <a href="/suatt" style={{ textDecoration: "none" }}>
-              <img src="images/ok.png" alt="sua" className="icon1" />
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/ok.png?alt=media&token=a9394f4f-75c0-457d-a833-2bc357596b74"
+                alt="sua"
+                className="icon1"
+              />
               <div className="texttt">Phê duyệt</div>
             </a>
           </div>
@@ -313,7 +327,11 @@ const PheDuyetBG1: React.FC = () => {
               data-bs-target="#exampleModal"
               style={{ textDecoration: "none" }}
             >
-              <img src="images/huy2.png" alt="sua" className="icon1" />
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/huy2.png?alt=media&token=d683aa76-b6d8-4f7e-aa42-d037a28ba850"
+                alt="sua"
+                className="icon1"
+              />
               <div className="texttt">Từ chối</div>
             </a>
           </div>
@@ -334,7 +352,6 @@ const PheDuyetBG1: React.FC = () => {
           <table
             style={{
               width: "1485px",
-              // height: "604px",
               height: "fit-content",
             }}
           >
@@ -423,7 +440,7 @@ const PheDuyetBG1: React.FC = () => {
                   <td>{danhsach.sohopdong}</td>
                   <td>12/05/2021 16:46:12</td>
                   <td>
-                    <a href="" style={{ color: "#FF7506" }}>
+                    <a href="/#" style={{ color: "#FF7506" }}>
                       Nghe
                     </a>
                   </td>
@@ -523,7 +540,6 @@ const PheDuyetBG1: React.FC = () => {
           <div
             className="modal-dialog"
             style={{
-              // display: "flex",
               width: "720px",
               height: "432px",
             }}

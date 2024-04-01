@@ -5,7 +5,6 @@ import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const DanhSachLichPhat: React.FC = () => {
-  // const [showModal, setShowModal] = useState(false);
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
@@ -31,7 +30,6 @@ const DanhSachLichPhat: React.FC = () => {
             backgroundColor: "#2F2F41B2",
           }}
         >
-          {/* Nội dung thẻ div */}
           <table style={{ height: "fit-content" }}>
             <thead style={{ color: "#FFAC69" }}>
               <tr style={{ textAlign: "left", height: 48 }}>
@@ -44,11 +42,11 @@ const DanhSachLichPhat: React.FC = () => {
             </thead>
             <tbody style={{ color: "#FFFFFF" }}>
               <tr style={{ height: 47 }}>
-                <td style={{ width: "99px" }}>1</td>
-                <td style={{ width: "158px" }}>Lịch phát số 1</td>
-                <td style={{ width: "309px" }}>22/05/2021 - 30/05/2021</td>
+                <td>1</td>
+                <td>Lịch phát số 1</td>
+                <td>22/05/2021 - 30/05/2021</td>
 
-                <td style={{ width: "182px", textAlign: "center" }}>
+                <td style={{ width: "130px", textAlign: "center" }}>
                   <a
                     style={{ color: "#FF7506" }}
                     href="/ChiTiepHopDongKhaiThac"
@@ -56,18 +54,18 @@ const DanhSachLichPhat: React.FC = () => {
                     Xem chi tiết
                   </a>
                 </td>
-                <td style={{ width: "182px", textAlign: "center" }}>
+                <td style={{ width: "126px", textAlign: "center" }}>
                   <a style={{ color: "#FF4747" }} href="/SaoChepHopDong">
                     Xóa
                   </a>
                 </td>
               </tr>
               <tr style={{ height: 47 }}>
-                <td style={{ width: "99px" }}>2</td>
-                <td style={{ width: "158px" }}>Lịch phát số 2</td>
-                <td style={{ width: "309px" }}>22/05/2021 - 30/05/2021</td>
+                <td>2</td>
+                <td>Lịch phát số 2</td>
+                <td>22/05/2021 - 30/05/2021</td>
 
-                <td style={{ width: "182px", textAlign: "center" }}>
+                <td style={{ width: "130px", textAlign: "center" }}>
                   <a
                     style={{ color: "#FF7506" }}
                     href="/ChiTiepHopDongKhaiThac"
@@ -75,18 +73,18 @@ const DanhSachLichPhat: React.FC = () => {
                     Xem chi tiết
                   </a>
                 </td>
-                <td style={{ width: "182px", textAlign: "center" }}>
+                <td style={{ width: "126px", textAlign: "center" }}>
                   <a style={{ color: "#FF4747" }} href="/SaoChepHopDong">
                     Xóa
                   </a>
                 </td>
               </tr>
               <tr style={{ height: 47 }}>
-                <td style={{ width: "99px" }}>3</td>
-                <td style={{ width: "158px" }}>Lịch phát số 3</td>
-                <td style={{ width: "309px" }}>22/05/2021 - 30/05/2021</td>
+                <td>3</td>
+                <td>Lịch phát số 3</td>
+                <td>22/05/2021 - 30/05/2021</td>
 
-                <td style={{ width: "182px", textAlign: "center" }}>
+                <td style={{ width: "130px", textAlign: "center" }}>
                   <a
                     style={{ color: "#FF7506" }}
                     href="/ChiTiepHopDongKhaiThac"
@@ -94,18 +92,18 @@ const DanhSachLichPhat: React.FC = () => {
                     Xem chi tiết
                   </a>
                 </td>
-                <td style={{ width: "182px", textAlign: "center" }}>
+                <td style={{ width: "126px", textAlign: "center" }}>
                   <a style={{ color: "#FF4747" }} href="/SaoChepHopDong">
                     Xóa
                   </a>
                 </td>
               </tr>
               <tr style={{ height: 47 }}>
-                <td style={{ width: "99px" }}>4</td>
-                <td style={{ width: "158px" }}>Lịch phát số 4</td>
-                <td style={{ width: "309px" }}>22/05/2021 - 30/05/2021</td>
+                <td>4</td>
+                <td>Lịch phát số 4</td>
+                <td>22/05/2021 - 30/05/2021</td>
 
-                <td style={{ width: "182px", textAlign: "center" }}>
+                <td style={{ width: "130px", textAlign: "center" }}>
                   <a
                     style={{ color: "#FF7506" }}
                     href="/ChiTiepHopDongKhaiThac"
@@ -113,18 +111,18 @@ const DanhSachLichPhat: React.FC = () => {
                     Xem chi tiết
                   </a>
                 </td>
-                <td style={{ width: "182px", textAlign: "center" }}>
+                <td style={{ width: "126px", textAlign: "center" }}>
                   <a style={{ color: "#FF4747" }} href="/SaoChepHopDong">
                     Xóa
                   </a>
                 </td>
               </tr>
               <tr style={{ height: 47 }}>
-                <td style={{ width: "99px" }}>5</td>
-                <td style={{ width: "158px" }}>Lịch phát số 5</td>
-                <td style={{ width: "309px" }}>22/05/2021 - 30/05/2021</td>
+                <td>5</td>
+                <td>Lịch phát số 5</td>
+                <td>22/05/2021 - 30/05/2021</td>
 
-                <td style={{ width: "182px", textAlign: "center" }}>
+                <td style={{ width: "130px", textAlign: "center" }}>
                   <a
                     style={{ color: "#FF7506" }}
                     href="/ChiTiepHopDongKhaiThac"
@@ -132,18 +130,18 @@ const DanhSachLichPhat: React.FC = () => {
                     Xem chi tiết
                   </a>
                 </td>
-                <td style={{ width: "182px", textAlign: "center" }}>
+                <td style={{ width: "126px", textAlign: "center" }}>
                   <a style={{ color: "#FF4747" }} href="/SaoChepHopDong">
                     Xóa
                   </a>
                 </td>
               </tr>
               <tr style={{ height: 47 }}>
-                <td style={{ width: "99px" }}>6</td>
-                <td style={{ width: "158px" }}>Lịch phát số 6</td>
-                <td style={{ width: "309px" }}>22/05/2021 - 30/05/2021</td>
+                <td>6</td>
+                <td>Lịch phát số 6</td>
+                <td>22/05/2021 - 30/05/2021</td>
 
-                <td style={{ width: "182px", textAlign: "center" }}>
+                <td style={{ width: "130px", textAlign: "center" }}>
                   <a
                     style={{ color: "#FF7506" }}
                     href="/ChiTiepHopDongKhaiThac"
@@ -151,18 +149,18 @@ const DanhSachLichPhat: React.FC = () => {
                     Xem chi tiết
                   </a>
                 </td>
-                <td style={{ width: "182px", textAlign: "center" }}>
+                <td style={{ width: "126px", textAlign: "center" }}>
                   <a style={{ color: "#FF4747" }} href="/SaoChepHopDong">
                     Xóa
                   </a>
                 </td>
               </tr>
               <tr style={{ height: 47 }}>
-                <td style={{ width: "99px" }}>7</td>
-                <td style={{ width: "158px" }}>Lịch phát số 7</td>
-                <td style={{ width: "309px" }}>22/05/2021 - 30/05/2021</td>
+                <td>7</td>
+                <td>Lịch phát số 7</td>
+                <td>22/05/2021 - 30/05/2021</td>
 
-                <td style={{ width: "182px", textAlign: "center" }}>
+                <td style={{ width: "130px", textAlign: "center" }}>
                   <a
                     style={{ color: "#FF7506" }}
                     href="/ChiTiepHopDongKhaiThac"
@@ -170,18 +168,18 @@ const DanhSachLichPhat: React.FC = () => {
                     Xem chi tiết
                   </a>
                 </td>
-                <td style={{ width: "182px", textAlign: "center" }}>
+                <td style={{ width: "126px", textAlign: "center" }}>
                   <a style={{ color: "#FF4747" }} href="/SaoChepHopDong">
                     Xóa
                   </a>
                 </td>
               </tr>
               <tr style={{ height: 47 }}>
-                <td style={{ width: "99px" }}>8</td>
-                <td style={{ width: "158px" }}>Lịch phát số 8</td>
-                <td style={{ width: "309px" }}>22/05/2021 - 30/05/2021</td>
+                <td>8</td>
+                <td>Lịch phát số 8</td>
+                <td>22/05/2021 - 30/05/2021</td>
 
-                <td style={{ width: "182px", textAlign: "center" }}>
+                <td style={{ width: "130px", textAlign: "center" }}>
                   <a
                     style={{ color: "#FF7506" }}
                     href="/ChiTiepHopDongKhaiThac"
@@ -189,7 +187,7 @@ const DanhSachLichPhat: React.FC = () => {
                     Xem chi tiết
                   </a>
                 </td>
-                <td style={{ width: "182px", textAlign: "center" }}>
+                <td style={{ width: "126px", textAlign: "center" }}>
                   <a style={{ color: "#FF4747" }} href="/SaoChepHopDong">
                     Xóa
                   </a>
@@ -283,158 +281,13 @@ const DanhSachLichPhat: React.FC = () => {
           <div className="khung1">
             <a href="/ThemLichPhatMoi" style={{ textDecoration: "none" }}>
               <img
-                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/ThemLichPhat.png?alt=media&token=8cbcdca6-d33e-48aa-86a5-109d3ab89f69"
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/ThemLichPhat.png?alt=media&token=e30480c7-b6c1-47bd-b462-e944d5f1e023"
                 alt="ThemLichPhat"
-                className="icon"
               />
               <div className="textt">
                 Thêm lịch <br /> phát
               </div>
             </a>
-          </div>
-        </div>
-        {/* showModal     */}
-        <div
-          className="modal fade"
-          id="exampleModal"
-          tabIndex={-1}
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-        >
-          <div
-            className="modal-dialog"
-            style={{
-              display: "flex",
-            }}
-          >
-            <div
-              className="modal-content"
-              style={{
-                backgroundColor: "#3E3E5B",
-                width: "552px",
-                height: "512px",
-                borderRadius: "16px",
-              }}
-            >
-              <div className="modal-body">
-                <h5
-                  className="modal-title m-0"
-                  id="exampleModalLabel"
-                  style={{
-                    width: "100%",
-                    height: "24px",
-                    top: "32px",
-                    left: "159px",
-                    fontFamily: "Montserrat",
-                    fontSize: "24px",
-                    fontWeight: 700,
-                    lineHeight: "24px",
-                    letterSpacing: "-0.002em",
-                    textAlign: "center",
-                    color: "#F5F5FF",
-                  }}
-                >
-                  Thay đổi mật khẩu
-                </h5>
-                <div>
-                  <div className="matkhau">Mật khẩu hiện tại:</div>
-                  <div
-                    className="password-input-wrapper"
-                    style={{ position: "relative" }}
-                  >
-                    <input
-                      className="inputmk"
-                      type={showPassword ? "text" : "password"}
-                      id="password"
-                      value={password}
-                      onChange={(e) => setPassword(e.target.value)}
-                    />
-
-                    <FontAwesomeIcon
-                      className="faEyee"
-                      icon={showPassword ? faEyeSlash : faEye}
-                      onClick={toggleShowPassword}
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <div className="matkhau">Mật khẩu mới:</div>
-                  <div
-                    className="password-input-wrapper"
-                    style={{ position: "relative" }}
-                  >
-                    <input
-                      className="inputmk"
-                      type={showPassword ? "text" : "password"}
-                      id="password"
-                      value={confirmPassword}
-                      onChange={(e) => setConfirmPassword(e.target.value)}
-                    />
-
-                    <FontAwesomeIcon
-                      className="faEyee"
-                      icon={showPassword ? faEyeSlash : faEye}
-                      onClick={toggleShowPassword}
-                    />
-                  </div>
-                </div>
-                <div>
-                  <div className="matkhau">Nhập lại mật khẩu mới:</div>
-                  <div
-                    className="password-input-wrapper"
-                    style={{ position: "relative" }}
-                  >
-                    <input
-                      className="inputmk"
-                      type={showPassword ? "text" : "password"}
-                      id="password"
-                      value={confirmPassword}
-                      onChange={(e) => setConfirmPassword(e.target.value)}
-                    />
-
-                    <FontAwesomeIcon
-                      className="faEyee"
-                      icon={showPassword ? faEyeSlash : faEye}
-                      onClick={toggleShowPassword}
-                    />
-                  </div>
-                </div>
-                <div>
-                  <div
-                    style={{
-                      width: "368px",
-                      height: "48px",
-                      top: "424px",
-                      left: "92px",
-                      gap: "32px",
-                      position: "absolute",
-                    }}
-                  >
-                    <button
-                      className="butoon"
-                      style={{
-                        color: "#FF7506",
-                      }}
-                      data-bs-dismiss="modal"
-                    >
-                      Hủy
-                    </button>
-                    <button
-                      className="butoon"
-                      style={{
-                        color: "white",
-                        background: "#FF7506",
-                        marginLeft: "32px",
-                      }}
-                      data-bs-dismiss="modal"
-                    >
-                      Lưu
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

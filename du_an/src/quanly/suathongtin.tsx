@@ -16,9 +16,7 @@ const SuaThongTin: React.FC = () => {
           display: "flex",
           position: "absolute",
           width: "100%",
-
           height: "100%",
-          top: "10px",
           right: "10px",
           zIndex: "9999",
         }}
@@ -33,8 +31,8 @@ const SuaThongTin: React.FC = () => {
             }}
           >
             <img
-              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/admin.jpg?alt=media&token=9647fd08-067e-4a3f-a69b-d4c93c10c29f"
-              alt=""
+              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/admin.jpg?alt=media&token=9a625f88-689d-48e4-82fb-d19827df0ae2"
+              alt="admin"
               style={{
                 width: "273px",
                 height: "280px",
@@ -43,8 +41,8 @@ const SuaThongTin: React.FC = () => {
               }}
             />
             <img
-              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/camera.png?alt=media&token=983655b9-2630-4561-a9c5-d72be90cefb3"
-              alt=""
+              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/camera.png?alt=media&token=df988c9c-0d25-4916-bfdf-53a5c6e4b39d"
+              alt="camera"
               className="avt"
             />
             <p className="ten">Tuyết Nguyễn</p>

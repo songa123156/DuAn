@@ -1,7 +1,6 @@
-import "../quanly/Navbar.css"; // Import file CSS cho navbar
 import { useLocation } from "react-router-dom";
-import { useNavigate, Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 import "../p3/style.css";
 import Navbar from "../BackGround/navbar";
 
@@ -22,164 +21,12 @@ const TaiApp = () => {
     navigate("/");
   };
 
-  //   useEffect(() => {
-  //     if (user === null) navigate("/");
-  //   }, []);
-
   return (
     <>
       <div style={{ width: "100%", display: "flex" }}>
-        {/* <div className="sidebar">
-          <div className="logo">
-            <img src="/img/logo.png" alt="Logo navbar" />
-          </div>
-          <ul>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Kho bản ghi
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Playlist
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Lập lịch phát
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Quản lý doanh thu
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Cài đặt
-              </a>
-            </li>
-            <li>
-              <a
-                href="/#"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  fontWeight: 500,
-                  lineHeight: "17px",
-                  letterSpacing: "0.015em",
-                  textAlign: "left",
-                }}
-              >
-                Hỗ trợ
-              </a>
-            </li>
-          </ul>
-        </div> */}
         <Navbar></Navbar>
-
         <div>
-          {/* <nav
-            className="navbar"
-            style={{
-              width: "100%",
-              justifyContent: "flex-end",
-              marginRight: "75px",
-              marginBottom: "16px",
-              marginTop: "24px",
-
-              height: "80px",
-              // backgroundColor: "#1e1e2e",
-              display: "inline-flex",
-              alignItems: "center",
-              padding: "0 20px",
-            }}
-          >
-            <select
-              style={{
-                backgroundColor: "transparent",
-                border: 0,
-                color: "white",
-                marginRight: 24,
-              }}
-            >
-              <option value="vi" data-icon="VN">
-                Tiếng Việt
-              </option>
-              <option value="en" data-icon="🇺🇸">
-                English
-              </option>
-              <option value="ja" data-icon="🇯🇵">
-                日本語
-              </option>
-              <option value="ko" data-icon="🇰🇷">
-                한국어
-              </option>
-            </select>
-            <div className="logo">
-              <img
-                src="/img/logo.png"
-                alt="Icon"
-                style={{ marginTop: "300%" }}
-              />
-            </div>
-            <div className="login" style={{ color: "white" }}>
-              <span>Welcome, {user}</span>
-            </div>
-          </nav> */}
-
           <div
-            // className="container"
             style={{
               top: 86,
               marginTop: "10px",
@@ -236,7 +83,7 @@ const TaiApp = () => {
             }}
           >
             <img
-              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/Vector.png?alt=media&token=e68c6920-7ddf-4e0b-a005-6515fe0a9096"
+              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/Vector.png?alt=media&token=9168052e-4239-4e98-b1f2-e0c177e48816"
               alt="Vector"
             />
           </div>
@@ -255,7 +102,6 @@ const TaiApp = () => {
               style={{
                 width: "639px",
                 height: "78px",
-
                 fontFamily: "Montserrat",
                 fontSize: "64px",
                 fontWeight: "600",
@@ -340,7 +186,7 @@ const TaiApp = () => {
               }}
             >
               <img
-                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/may.png?alt=media&token=8cd42b39-a606-471f-bbde-f52f1270ad85"
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/may.png?alt=media&token=953e7557-6102-4643-b7e3-e84b4727e371"
                 alt="may"
               />
             </div>
@@ -393,7 +239,7 @@ const TaiApp = () => {
               }}
             >
               <img
-                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/so.png?alt=media&token=af0bba73-f70a-4e85-8c83-fe1a5779a63d"
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/so.png?alt=media&token=f3ca43f5-0fa9-4ca1-9e0e-9ed10f6cd59b"
                 alt="so"
               />
             </div>
@@ -446,7 +292,7 @@ const TaiApp = () => {
               }}
             >
               <img
-                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/xanh.png?alt=media&token=c7a10fa9-56b1-43b5-b0ac-f09a20668f60"
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/xanh.png?alt=media&token=30b905e8-3002-4c13-80ac-f67a76fa980c"
                 alt="xanh"
               />
             </div>
@@ -486,7 +332,7 @@ const TaiApp = () => {
           }}
         >
           <img
-            src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/Group75.png?alt=media&token=0dd520b8-1316-41eb-8d78-88fd2527950c"
+            src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/Group75.png?alt=media&token=10db7200-c68c-4e5d-af2a-61a0d4530897"
             alt="Group75"
           />
         </div>

@@ -1,440 +1,20 @@
 import "../quanly/Navbar.css"; // Import file CSS cho navbar
 import { useLocation } from "react-router-dom";
-// import { useNavigate, Link } from "react-router-dom";
-// import { useEffect, useState } from "react";
 import "../p3/style2.css";
 import "./LichPhat.css";
-import { useState } from "react";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
+import NavBarHidden from "../BackGround/NavBarHidden";
 
 const ThemLichPhatMoi = () => {
-  // const [password, setPassword] = useState("");
-  // const [confirmPassword, setConfirmPassword] = useState("");
-  // const [showPassword, setShowPassword] = useState(false);
-  // const toggleShowPassword = () => {
-  //   setShowPassword(!showPassword);
-  // };
-
-  const [checkNavbar, setcheckNavbar] = useState(false);
-
-  const handleNavbar = () => {
-    setcheckNavbar(!checkNavbar);
-  };
-
   const location = useLocation();
-  // const navigate = useNavigate();
   let user = location.state && location.state.user;
-
-  // const handleDangXuat = () => {
-  //   navigate("/");
-  // };
-
-  //   useEffect(() => {
-  //     if (user === null) navigate("/");
-  //   }, []);
-
   return (
     <>
       <div style={{ width: "100%", display: "flex" }}>
-        <div
-          style={{
-            width: 1749,
-            height: 80,
-            left: 171,
-            position: "fixed",
-            top: 10,
-            right: 10,
-            zIndex: 9999,
-          }}
-        >
-          <div>
-            <select
-              id="language"
-              style={{
-                width: 143,
-                height: 40,
-                top: 24,
-                left: 1375,
-                padding: "8px 4px 8px 8px",
-                borderRadius: 4,
-                border: "1px solid rgb(200, 200, 219)",
-                gap: 8,
-                color: "rgb(200, 200, 219)",
-                background: "rgb(30, 30, 46)",
-                position: "relative",
-              }}
-            >
-              <option value="vi" style={{ background: "rgb(30, 30, 46)" }}>
-                Tiếng Việt
-              </option>
-              <option value="en" style={{ background: "rgb(30, 30, 46)" }}>
-                English
-              </option>
-              <option value="fr" style={{ background: "rgb(30, 30, 46)" }}>
-                French
-              </option>
-            </select>
-          </div>
-          <div
-            style={{
-              width: 132,
-              height: 40,
-              top: 24,
-              left: 1542,
-              gap: 8,
-              marginRight: 24,
-              position: "absolute",
-            }}
-          >
-            <a href="/trang1" style={{ textDecoration: "none" }}>
-              <img
-                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/admin.jpg?alt=media&token=9647fd08-067e-4a3f-a69b-d4c93c10c29f"
-                alt="mdo"
-                style={{
-                  width: 40,
-                  height: "40.58px",
-                  borderRadius: 200,
-                  position: "absolute",
-                }}
-              />
-              <div
-                style={{
-                  width: 74,
-                  height: 24,
-                  left: 5,
-                  fontFamily: "Montserrat",
-                  fontSize: 16,
-                  fontWeight: 600,
-                  letterSpacing: "-0.002em",
-                  textAlign: "center",
-                  color: "rgb(245, 245, 255)",
-                  marginLeft: 35,
-                  position: "relative",
-                  textDecoration: "none",
-                }}
-              >
-                {user}
-              </div>
-              <div
-                style={{
-                  width: 49,
-                  height: 17,
-                  left: 6,
-                  fontFamily: "Montserrat",
-                  fontSize: 14,
-                  fontWeight: 500,
-                  letterSpacing: "0.015em",
-                  textAlign: "center",
-                  color: "rgb(182, 81, 0)",
-                  marginLeft: 35,
-                  position: "relative",
-                  textDecoration: "none",
-                }}
-              >
-                Admin
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div
-          className="sidebar"
-          style={{
-            width: 40,
-            borderRadius: "0px 24px 24px 0px",
-            display: !checkNavbar ? "flex" : "none",
-          }}
-        >
-          <div
-            style={{
-              width: "40px",
-              height: "1080px",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-
-              fontSize: 24,
-            }}
-          >
-            <button
-              onClick={handleNavbar}
-              style={{ background: "transparent", border: 0, color: "#B65100" }}
-            >
-              &gt;
-            </button>
-          </div>
-        </div>
-        <div style={{ display: checkNavbar ? "flex" : "none" }}>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              width: "170px",
-              height: "1080px",
-              background: "#020220",
-              color: "white",
-              zIndex: "1",
-              position: "fixed",
-              opacity: "0.8",
-            }}
-          >
-            <img
-              src="images/logo.png"
-              alt=""
-              style={{
-                width: "96px",
-                height: "96px",
-                margin: "39px 21px 0px 34px",
-              }}
-            />
-            <div
-              style={{
-                width: "170px",
-                height: "72px",
-                marginTop: "110px",
-              }}
-            >
-              <img
-                src="images/banghi.png"
-                alt=""
-                style={{
-                  width: "32px",
-                  height: "32px",
-                  margin: "12px 69px 0px 69px",
-                }}
-              />
-              <p
-                style={{
-                  width: "84px",
-                  height: "17px",
-                  left: "41px",
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  letterSpacing: "0.015em",
-                  textAlign: "center",
-                  marginTop: "2px",
-                  position: "absolute",
-                }}
-              >
-                Kho bài hát
-              </p>
-            </div>
-            <div
-              style={{
-                width: "170px",
-                height: "72px",
-                marginTop: "24px",
-              }}
-            >
-              <img
-                src="images/Playlist.png"
-                alt=""
-                style={{
-                  width: "32px",
-                  height: "32px",
-                  margin: "12px 69px 0px 69px",
-                }}
-              />
-              <p
-                style={{
-                  width: "84px",
-                  height: "17px",
-                  left: "41px",
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  letterSpacing: "0.015em",
-                  textAlign: "center",
-                  marginTop: "2px",
-                  position: "absolute",
-                }}
-              >
-                Playlist
-              </p>
-            </div>
-            <div
-              style={{
-                width: "170px",
-                height: "72px",
-                marginTop: "24px",
-              }}
-            >
-              <img
-                src="images/calendar.png"
-                alt=""
-                style={{
-                  width: "32px",
-                  height: "32px",
-                  margin: "12px 69px 0px 69px",
-                }}
-              />
-              <p
-                style={{
-                  width: "84px",
-                  height: "17px",
-                  left: "41px",
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  letterSpacing: "0.015em",
-                  textAlign: "center",
-                  marginTop: "2px",
-                  position: "absolute",
-                }}
-              >
-                Lập lịch phát
-              </p>
-            </div>
-            <div
-              style={{
-                width: "170px",
-                height: "72px",
-                marginTop: "24px",
-              }}
-            >
-              <img
-                src="images/quanly.png"
-                alt=""
-                style={{
-                  width: "32px",
-                  height: "32px",
-                  margin: "12px 69px 0px 69px",
-                }}
-              />
-              <p
-                style={{
-                  width: "84px",
-                  height: "17px",
-                  left: "41px",
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  letterSpacing: "0.015em",
-                  textAlign: "center",
-                  marginTop: "2px",
-                  position: "absolute",
-                }}
-              >
-                Quản lý
-              </p>
-            </div>
-            <div
-              style={{
-                width: "170px",
-                height: "72px",
-                marginTop: "24px",
-              }}
-            >
-              <img
-                src="images/doanhthu.png"
-                alt=""
-                style={{
-                  width: "32px",
-                  height: "32px",
-                  margin: "12px 69px 0px 69px",
-                }}
-              />
-              <p
-                style={{
-                  width: "84px",
-                  height: "17px",
-                  left: "41px",
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  letterSpacing: "0.015em",
-                  textAlign: "center",
-                  marginTop: "2px",
-                  position: "absolute",
-                }}
-              >
-                Doanh thu
-              </p>
-            </div>
-            <div
-              style={{
-                width: "170px",
-                height: "72px",
-                marginTop: "24px",
-              }}
-            >
-              <img
-                src="images/Setting.png"
-                alt=""
-                style={{
-                  width: "32px",
-                  height: "32px",
-                  margin: "12px 69px 0px 69px",
-                }}
-              />
-              <p
-                style={{
-                  width: "84px",
-                  height: "17px",
-                  left: "41px",
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  letterSpacing: "0.015em",
-                  textAlign: "center",
-                  marginTop: "2px",
-                  position: "absolute",
-                }}
-              >
-                Cài đặt
-              </p>
-            </div>
-            <div
-              style={{
-                width: "170px",
-                height: "72px",
-                marginTop: "24px",
-              }}
-            >
-              <img
-                src="images/Support.png"
-                alt=""
-                style={{
-                  width: "32px",
-                  height: "32px",
-                  margin: "12px 69px 0px 69px",
-                }}
-              />
-              <p
-                style={{
-                  width: "84px",
-                  height: "17px",
-                  left: "41px",
-                  fontFamily: "Montserrat",
-                  fontSize: "14px",
-                  letterSpacing: "0.015em",
-                  textAlign: "center",
-                  marginTop: "2px",
-                  position: "absolute",
-                }}
-              >
-                Hỗ trợ
-              </p>
-            </div>
-          </div>
-
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              width: "100%",
-              height: "1080px",
-              background: "transparent",
-              color: "white",
-              zIndex: 9999,
-              marginLeft: 170,
-              position: "fixed",
-            }}
-            onClick={handleNavbar}
-          ></div>
-        </div>
-
+        <NavBarHidden />
         <div>
           <div
             style={{
               top: 86,
-
               left: 78,
               position: "absolute",
             }}
@@ -462,7 +42,6 @@ const ThemLichPhatMoi = () => {
             style={{
               width: 800,
               height: 48,
-
               top: 114,
               left: 78,
               position: "absolute",
@@ -495,7 +74,6 @@ const ThemLichPhatMoi = () => {
               position: "absolute",
             }}
           >
-            {/* Nội dung của div */}
             <div
               style={{
                 width: "179px",
@@ -507,7 +85,6 @@ const ThemLichPhatMoi = () => {
                 letterSpacing: "-0.002em",
                 textAlign: "left",
                 color: "#FFF9F4",
-                /* Các thuộc tính khác có thể thêm vào ở đây */
               }}
             >
               Thông tin lịch phát
@@ -517,10 +94,8 @@ const ThemLichPhatMoi = () => {
                 width: "241px",
                 height: "76px",
                 borderRadius: "8px",
-                // border: "1px solid #727288",
                 color: "#727288",
                 marginTop: 12,
-                /* Các thuộc tính khác có thể thêm vào ở đây */
               }}
             >
               <label htmlFor="">Tên lịch phát:</label>
@@ -535,7 +110,6 @@ const ThemLichPhatMoi = () => {
                   borderRadius: "8px",
                   border: "1px solid #727288",
                   background: "#2B2B3F",
-                  /* Các thuộc tính khác có thể thêm vào ở đây */
                 }}
               />
             </div>
@@ -609,7 +183,6 @@ const ThemLichPhatMoi = () => {
               position: "absolute",
             }}
           >
-            {/* Nội dung của div */}
             <div
               style={{
                 width: "173px",
@@ -622,7 +195,6 @@ const ThemLichPhatMoi = () => {
                 textAlign: "left",
                 color: "#FFF9F4",
                 marginBottom: 12,
-                /* Các thuộc tính khác có thể thêm vào ở đây */
               }}
             >
               Danh sách Playlist
@@ -635,12 +207,10 @@ const ThemLichPhatMoi = () => {
                 borderRadius: "8px",
                 gap: "8px",
                 background: "#33334D",
-                /* Các thuộc tính khác có thể thêm vào ở đây */
               }}
             >
               <div
                 style={{
-                  width: "82px",
                   height: "24px",
                   fontFamily: "Montserrat",
                   fontSize: "16px",
@@ -649,12 +219,10 @@ const ThemLichPhatMoi = () => {
                   letterSpacing: "-0.002em",
                   textAlign: "left",
                   color: "#FFAC69",
-                  /* Các thuộc tính khác có thể thêm vào ở đây */
                 }}
               >
                 Top USUK
               </div>
-              {/* Nội dung của div */}
               <div style={{ width: 208, height: 20 }}>
                 <span
                   style={{
@@ -668,7 +236,6 @@ const ThemLichPhatMoi = () => {
                     textAlign: "left",
                     color: "#FFFFFF",
                     marginRight: 80,
-                    /* Các thuộc tính khác có thể thêm vào ở đây */
                   }}
                 >
                   Thời lượng
@@ -684,7 +251,6 @@ const ThemLichPhatMoi = () => {
                     letterSpacing: "0.015em",
                     textAlign: "right",
                     color: "#AEAEAE",
-                    /* Các thuộc tính khác có thể thêm vào ở đây */
                   }}
                 >
                   02:00:00
@@ -701,12 +267,10 @@ const ThemLichPhatMoi = () => {
                 background: "#33334D",
                 marginTop: 12,
                 marginBottom: 12,
-                /* Các thuộc tính khác có thể thêm vào ở đây */
               }}
             >
               <div
                 style={{
-                  width: "82px",
                   height: "24px",
                   fontFamily: "Montserrat",
                   fontSize: "16px",
@@ -715,13 +279,10 @@ const ThemLichPhatMoi = () => {
                   letterSpacing: "-0.002em",
                   textAlign: "left",
                   color: "#FFAC69",
-
-                  /* Các thuộc tính khác có thể thêm vào ở đây */
                 }}
               >
                 Love Songs
               </div>
-              {/* Nội dung của div */}
               <div style={{ width: 208, height: 20 }}>
                 <span
                   style={{
@@ -735,7 +296,6 @@ const ThemLichPhatMoi = () => {
                     textAlign: "left",
                     color: "#FFFFFF",
                     marginRight: 80,
-                    /* Các thuộc tính khác có thể thêm vào ở đây */
                   }}
                 >
                   Thời lượng
@@ -751,7 +311,6 @@ const ThemLichPhatMoi = () => {
                     letterSpacing: "0.015em",
                     textAlign: "right",
                     color: "#AEAEAE",
-                    /* Các thuộc tính khác có thể thêm vào ở đây */
                   }}
                 >
                   02:08:00
@@ -766,12 +325,10 @@ const ThemLichPhatMoi = () => {
                 borderRadius: "8px",
                 gap: "8px",
                 background: "#33334D",
-                /* Các thuộc tính khác có thể thêm vào ở đây */
               }}
             >
               <div
                 style={{
-                  width: "82px",
                   height: "24px",
                   fontFamily: "Montserrat",
                   fontSize: "16px",
@@ -780,12 +337,10 @@ const ThemLichPhatMoi = () => {
                   letterSpacing: "-0.002em",
                   textAlign: "left",
                   color: "#FFAC69",
-                  /* Các thuộc tính khác có thể thêm vào ở đây */
                 }}
               >
                 Loving You
               </div>
-              {/* Nội dung của div */}
               <div style={{ width: 208, height: 20 }}>
                 <span
                   style={{
@@ -799,7 +354,6 @@ const ThemLichPhatMoi = () => {
                     textAlign: "left",
                     color: "#FFFFFF",
                     marginRight: 80,
-                    /* Các thuộc tính khác có thể thêm vào ở đây */
                   }}
                 >
                   Thời lượng
@@ -815,7 +369,6 @@ const ThemLichPhatMoi = () => {
                     letterSpacing: "0.015em",
                     textAlign: "right",
                     color: "#AEAEAE",
-                    /* Các thuộc tính khác có thể thêm vào ở đây */
                   }}
                 >
                   02:15:03
@@ -826,13 +379,11 @@ const ThemLichPhatMoi = () => {
               style={{
                 width: "241px",
                 border: "1px solid #C8C8DB",
-                /* Các thuộc tính khác có thể thêm vào ở đây */
               }}
             />
 
             <div
               style={{
-                width: "173px",
                 height: "24px",
                 fontFamily: "Montserrat",
                 fontSize: "18px",
@@ -842,7 +393,6 @@ const ThemLichPhatMoi = () => {
                 textAlign: "left",
                 color: "#FFF9F4",
                 marginBottom: 12,
-                /* Các thuộc tính khác có thể thêm vào ở đây */
               }}
             >
               Playlist mới
@@ -855,12 +405,10 @@ const ThemLichPhatMoi = () => {
                 borderRadius: "8px",
                 gap: "8px",
                 background: "#33334D",
-                /* Các thuộc tính khác có thể thêm vào ở đây */
               }}
             >
               <div
                 style={{
-                  width: "120px",
                   height: "24px",
                   fontFamily: "Montserrat",
                   fontSize: "16px",
@@ -869,12 +417,10 @@ const ThemLichPhatMoi = () => {
                   letterSpacing: "-0.002em",
                   textAlign: "left",
                   color: "#FFAC69",
-                  /* Các thuộc tính khác có thể thêm vào ở đây */
                 }}
               >
                 Summer Party
               </div>
-              {/* Nội dung của div */}
               <div style={{ width: 208, height: 20 }}>
                 <span
                   style={{
@@ -888,7 +434,6 @@ const ThemLichPhatMoi = () => {
                     textAlign: "left",
                     color: "#FFFFFF",
                     marginRight: 80,
-                    /* Các thuộc tính khác có thể thêm vào ở đây */
                   }}
                 >
                   Thời lượng
@@ -904,7 +449,6 @@ const ThemLichPhatMoi = () => {
                     letterSpacing: "0.015em",
                     textAlign: "right",
                     color: "#AEAEAE",
-                    /* Các thuộc tính khác có thể thêm vào ở đây */
                   }}
                 >
                   02:10:11
@@ -921,12 +465,10 @@ const ThemLichPhatMoi = () => {
                 background: "#33334D",
                 marginTop: 12,
                 marginBottom: 12,
-                /* Các thuộc tính khác có thể thêm vào ở đây */
               }}
             >
               <div
                 style={{
-                  width: "82px",
                   height: "24px",
                   fontFamily: "Montserrat",
                   fontSize: "16px",
@@ -935,13 +477,10 @@ const ThemLichPhatMoi = () => {
                   letterSpacing: "-0.002em",
                   textAlign: "left",
                   color: "#FFAC69",
-
-                  /* Các thuộc tính khác có thể thêm vào ở đây */
                 }}
               >
                 Top USUK 2021
               </div>
-              {/* Nội dung của div */}
               <div style={{ width: 208, height: 20 }}>
                 <span
                   style={{
@@ -955,7 +494,6 @@ const ThemLichPhatMoi = () => {
                     textAlign: "left",
                     color: "#FFFFFF",
                     marginRight: 80,
-                    /* Các thuộc tính khác có thể thêm vào ở đây */
                   }}
                 >
                   Thời lượng
@@ -971,7 +509,6 @@ const ThemLichPhatMoi = () => {
                     letterSpacing: "0.015em",
                     textAlign: "right",
                     color: "#AEAEAE",
-                    /* Các thuộc tính khác có thể thêm vào ở đây */
                   }}
                 >
                   02:08:00
@@ -986,12 +523,10 @@ const ThemLichPhatMoi = () => {
                 borderRadius: "8px",
                 gap: "8px",
                 background: "#33334D",
-                /* Các thuộc tính khác có thể thêm vào ở đây */
               }}
             >
               <div
                 style={{
-                  width: "82px",
                   height: "24px",
                   fontFamily: "Montserrat",
                   fontSize: "16px",
@@ -1000,12 +535,10 @@ const ThemLichPhatMoi = () => {
                   letterSpacing: "-0.002em",
                   textAlign: "left",
                   color: "#FFAC69",
-                  /* Các thuộc tính khác có thể thêm vào ở đây */
                 }}
               >
                 Lofi music
               </div>
-              {/* Nội dung của div */}
               <div style={{ width: 208, height: 20 }}>
                 <span
                   style={{
@@ -1019,7 +552,6 @@ const ThemLichPhatMoi = () => {
                     textAlign: "left",
                     color: "#FFFFFF",
                     marginRight: 80,
-                    /* Các thuộc tính khác có thể thêm vào ở đây */
                   }}
                 >
                   Thời lượng
@@ -1035,7 +567,6 @@ const ThemLichPhatMoi = () => {
                     letterSpacing: "0.015em",
                     textAlign: "right",
                     color: "#AEAEAE",
-                    /* Các thuộc tính khác có thể thêm vào ở đây */
                   }}
                 >
                   02:15:03
@@ -1046,13 +577,11 @@ const ThemLichPhatMoi = () => {
               style={{
                 width: "241px",
                 border: "1px solid #C8C8DB",
-                /* Các thuộc tính khác có thể thêm vào ở đây */
               }}
             />
 
             <div
               style={{
-                width: "173px",
                 height: "24px",
                 fontFamily: "Montserrat",
                 fontSize: "18px",
@@ -1062,7 +591,6 @@ const ThemLichPhatMoi = () => {
                 textAlign: "left",
                 color: "#FFF9F4",
                 marginBottom: 12,
-                /* Các thuộc tính khác có thể thêm vào ở đây */
               }}
             >
               Playlist đề xuất
@@ -1075,12 +603,10 @@ const ThemLichPhatMoi = () => {
                 borderRadius: "8px",
                 gap: "8px",
                 background: "#33334D",
-                /* Các thuộc tính khác có thể thêm vào ở đây */
               }}
             >
               <div
                 style={{
-                  width: "82px",
                   height: "24px",
                   fontFamily: "Montserrat",
                   fontSize: "16px",
@@ -1089,12 +615,10 @@ const ThemLichPhatMoi = () => {
                   letterSpacing: "-0.002em",
                   textAlign: "left",
                   color: "#FFAC69",
-                  /* Các thuộc tính khác có thể thêm vào ở đây */
                 }}
               >
                 Summer Party
               </div>
-              {/* Nội dung của div */}
               <div style={{ width: 208, height: 20 }}>
                 <span
                   style={{
@@ -1108,7 +632,6 @@ const ThemLichPhatMoi = () => {
                     textAlign: "left",
                     color: "#FFFFFF",
                     marginRight: 80,
-                    /* Các thuộc tính khác có thể thêm vào ở đây */
                   }}
                 >
                   Thời lượng
@@ -1124,7 +647,6 @@ const ThemLichPhatMoi = () => {
                     letterSpacing: "0.015em",
                     textAlign: "right",
                     color: "#AEAEAE",
-                    /* Các thuộc tính khác có thể thêm vào ở đây */
                   }}
                 >
                   02:10:11
@@ -1141,12 +663,10 @@ const ThemLichPhatMoi = () => {
                 background: "#33334D",
                 marginTop: 12,
                 marginBottom: 12,
-                /* Các thuộc tính khác có thể thêm vào ở đây */
               }}
             >
               <div
                 style={{
-                  width: "82px",
                   height: "24px",
                   fontFamily: "Montserrat",
                   fontSize: "16px",
@@ -1155,13 +675,10 @@ const ThemLichPhatMoi = () => {
                   letterSpacing: "-0.002em",
                   textAlign: "left",
                   color: "#FFAC69",
-
-                  /* Các thuộc tính khác có thể thêm vào ở đây */
                 }}
               >
                 Top USUK 2021
               </div>
-              {/* Nội dung của div */}
               <div style={{ width: 208, height: 20 }}>
                 <span
                   style={{
@@ -1175,7 +692,6 @@ const ThemLichPhatMoi = () => {
                     textAlign: "left",
                     color: "#FFFFFF",
                     marginRight: 80,
-                    /* Các thuộc tính khác có thể thêm vào ở đây */
                   }}
                 >
                   Thời lượng
@@ -1191,7 +707,6 @@ const ThemLichPhatMoi = () => {
                     letterSpacing: "0.015em",
                     textAlign: "right",
                     color: "#AEAEAE",
-                    /* Các thuộc tính khác có thể thêm vào ở đây */
                   }}
                 >
                   02:08:00
@@ -1206,12 +721,10 @@ const ThemLichPhatMoi = () => {
                 borderRadius: "8px",
                 gap: "8px",
                 background: "#33334D",
-                /* Các thuộc tính khác có thể thêm vào ở đây */
               }}
             >
               <div
                 style={{
-                  width: "82px",
                   height: "24px",
                   fontFamily: "Montserrat",
                   fontSize: "16px",
@@ -1220,12 +733,10 @@ const ThemLichPhatMoi = () => {
                   letterSpacing: "-0.002em",
                   textAlign: "left",
                   color: "#FFAC69",
-                  /* Các thuộc tính khác có thể thêm vào ở đây */
                 }}
               >
                 Lofi music
               </div>
-              {/* Nội dung của div */}
               <div style={{ width: 208, height: 20 }}>
                 <span
                   style={{
@@ -1239,7 +750,6 @@ const ThemLichPhatMoi = () => {
                     textAlign: "left",
                     color: "#FFFFFF",
                     marginRight: 80,
-                    /* Các thuộc tính khác có thể thêm vào ở đây */
                   }}
                 >
                   Thời lượng
@@ -1255,7 +765,6 @@ const ThemLichPhatMoi = () => {
                     letterSpacing: "0.015em",
                     textAlign: "right",
                     color: "#AEAEAE",
-                    /* Các thuộc tính khác có thể thêm vào ở đây */
                   }}
                 >
                   02:15:03
@@ -1279,7 +788,6 @@ const ThemLichPhatMoi = () => {
               backgroundColor: "#2F2F41B2",
             }}
           >
-            {/* Nội dung thẻ div */}
             <table style={{ height: "fit-content" }}>
               <thead style={{ color: "#FFAC69" }}>
                 <tr
@@ -1646,9 +1154,8 @@ const ThemLichPhatMoi = () => {
             <div className="khung1">
               <a href="/ApLichChoThietBi" style={{ textDecoration: "none" }}>
                 <img
-                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/thietbi2.png?alt=media&token=155c1bbc-6acb-4f6c-a5f6-d49d642b970e"
+                  src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/thietbi2.png?alt=media&token=00f2bfe6-f3e8-4a77-b1be-49f50b35e2f8"
                   alt="thietbi2"
-                  className="icon"
                 />
                 <div className="textt">
                   Áp lịch
@@ -1657,105 +1164,6 @@ const ThemLichPhatMoi = () => {
               </a>
             </div>
           </div>
-          {/* showModal     */}
-          <div
-            className="modal fade"
-            id="exampleModal"
-            tabIndex={-1}
-            aria-labelledby="exampleModalLabel"
-            aria-hidden="true"
-          >
-            <div
-              className="modal-dialog"
-              style={{
-                // display: "flex",
-                width: "720px",
-                height: "432px",
-              }}
-            >
-              <div
-                className="modal-content"
-                style={{
-                  backgroundColor: "#3E3E5B",
-                  width: "720px",
-                  height: "432px",
-                  borderRadius: "16px",
-                }}
-              >
-                <div className="modal-body">
-                  <h5
-                    className="modal-title m-0"
-                    id="exampleModalLabel"
-                    style={{
-                      width: "100%",
-                      height: "24px",
-                      top: "32px",
-                      left: "159px",
-                      fontFamily: "Montserrat",
-                      fontSize: "24px",
-                      fontWeight: 700,
-                      lineHeight: "24px",
-                      letterSpacing: "-0.002em",
-                      textAlign: "center",
-                      color: "#F5F5FF",
-                    }}
-                  >
-                    Hủy hợp đồng uỷ quyền
-                  </h5>
-                  <textarea
-                    placeholder="Cho chúng tôi biết lý do bạn muốn huỷ hợp đồng uỷ quyền này..."
-                    style={{
-                      position: "absolute",
-                      top: "96px",
-                      left: "40px",
-                      width: "640px",
-                      height: "208px",
-                      padding: "12px 24px 12px 16px",
-                      borderRadius: "8px",
-                      border: " 1px solid #727288",
-                      backgroundColor: "#2B2B3F",
-                    }}
-                  />
-
-                  <div>
-                    <div
-                      style={{
-                        width: "368px",
-                        height: "48px",
-                        top: "344px",
-                        left: "176px",
-                        gap: "32px",
-                        position: "absolute",
-                      }}
-                    >
-                      <button
-                        className="butoon"
-                        style={{
-                          color: "#FF7506",
-                          backgroundColor: "transparent",
-                        }}
-                        data-bs-dismiss="modal"
-                      >
-                        Quay lại
-                      </button>
-                      <button
-                        className="butoon"
-                        style={{
-                          color: "white",
-                          background: "#FF7506",
-                          marginLeft: "32px",
-                        }}
-                        data-bs-dismiss="modal"
-                      >
-                        Hủy hợp đồng
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
           <div
             style={{
               position: "absolute",
