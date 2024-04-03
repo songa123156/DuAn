@@ -100,185 +100,214 @@ function App() {
           backgroundColor: "#1E1E2E",
         }}
       >
-        <Routes>
-          <Route path="/" element={<Log />}></Route>
-          <Route path="/login" element={<Log></Log>}></Route>
-          <Route path="/foget" element={<Forget />}></Route>
-          <Route path="/KPMK" element={<KhoiPhucMK />}></Route>
-          <Route path="/loilink" element={<LoiLink />}></Route>
-          <Route path="/Datlaimatkhau" element={<DaMK />}></Route>
-          <Route path="/navbar" element={<Trang1 />}></Route>
-          <Route path="/DShopdong" element={<DanhSachHopDong />}></Route>
-          <Route path="/suathongtin" element={<SuaThongTin />}></Route>
-          <Route path="/ChiTietHopDong" element={<ChiTietHopDong />}></Route>
-          <Route path="/TacPhamUyQuyen" element={<TacPhamUyQuyen />}></Route>
-          <Route path="/ChinhSuaTacPham" element={<ChinhSuaTacPham />}></Route>
-          <Route
-            path="/ChinhSuaThongTin"
-            element={<ChinhSuaThongTin></ChinhSuaThongTin>}
-          ></Route>
-          <Route path="/ChiTietHopDong2" element={<ChiTietHopDong2 />}></Route>
-          <Route
-            path="/ThemHopDongUyQuyen"
-            element={<ThemHopDongUyQuyen />}
-          ></Route>
-          <Route
-            path="/ThemHopDongUyQuyen2"
-            element={<ThemHopDongUyQuyen2 />}
-          ></Route>
-          <Route path="/ThemBanGhi" element={<ThemBanGhi />}></Route>
-          <Route
-            path="/DanhSachHopDongKhaiThac"
-            element={<DanhSachHopDongKhaiThac />}
-          ></Route>
-          <Route
-            path="/ChiTiepHopDongKhaiThac"
-            element={<ChiTiepHopDongKhaiThac />}
-          ></Route>
-          <Route path="/SaoChepHopDong" element={<SaoChepHopDong />}></Route>
-          <Route path="/ChinhSuaHopDong" element={<ChinhSuaHopDong />}></Route>
-          <Route path="/ThemHopDongMoi" element={<ThemHopDongMoi />}></Route>
-          <Route
-            path="/DanhSachLichPhat"
-            element={<DanhSachLichPhat />}
-          ></Route>
-          <Route path="/ChiTietLichPhat" element={<ChiTietLichPhat />}></Route>
-          <Route
-            path="/ChinhSuaLichPhat"
-            element={<ChinhSuaLichPhat />}
-          ></Route>
-          <Route
-            path="/ApLichChoThietBi"
-            element={<ApLichChoThietBi />}
-          ></Route>
-          <Route path="/ThemLichPhatMoi" element={<ThemLichPhatMoi />}></Route>
-          <Route path="/DonViSuDung" element={<DonViSuDung />}></Route>
-          <Route path="/ChiTietP6" element={<ChiTietP6 />}></Route>
-          <Route path="/ThemNguoiDung" element={<ThemNguoiDung />}></Route>
-          <Route
-            path="/ThongTinNguoiDung"
-            element={<ThongTinNguoiDung />}
-          ></Route>
-          <Route
-            path="/ChinhSuaTTNguoiDung"
-            element={<ChinhSuaTTNguoiDung />}
-          ></Route>
-          <Route path="/DanhSachThietBi" element={<DanhSachThietBi />}></Route>
-          <Route
-            path="/P8ThemThietBiMoi"
-            element={<P8ThemThietBiMoi />}
-          ></Route>
-          <Route path="/ChiTietThieBiP8" element={<ChiTietThieBiP8 />}></Route>
-          <Route
-            path="/DanhSachDoiTacUyQuyen"
-            element={<DanhSachDoiTacUyQuyen />}
-          ></Route>
-          <Route path="/CapNhatThongTin" element={<CapNhatThongTin />}></Route>
-          <Route
-            path="/QuanLyPhanPhoiDoanhThu"
-            element={<QuanLyPhanPhoiDoanhThu />}
-          ></Route>
-          <Route path="/ChiTietDoanhThu" element={<ChiTietDoanhThu />}></Route>
-          <Route
-            path="/LichSuDoiSoatDoanhThu"
-            element={<LichSuDoiSoatDoanhThu />}
-          ></Route>
-          <Route
-            path="/P11ChiTietDoanhThu"
-            element={<P11ChiTietDoanhThu />}
-          ></Route>
-          <Route path="/DaChotDoiSoat" element={<DaChotDoiSoat />}></Route>
-          <Route
-            path="/DoanhThuHopDongKhaiThac"
-            element={<DoanhThuHopDongKhaiThac />}
-          ></Route>
-          <Route path="/BaoCaoChiTiet" element={<BaoCaoChiTiet />}></Route>
-          <Route path="/Thang3BaoCao" element={<Thang3BaoCao />}></Route>
-          <Route
-            path="/LichSuDongBoThietBi"
-            element={<LichSuDongBoThietBi />}
-          ></Route>
-          <Route
-            path="/ChartBaoCaoDoanhThu"
-            element={<ChartBaoCaoDoanhThu />}
-          ></Route>
-          <Route
-            path="/PhanQuyenNguoiDung"
-            element={<PhanQuyenNguoiDung />}
-          ></Route>
-          <Route
-            path="/PhanQuyenCapNhatTTNguoiDung"
-            element={<PhanQuyenCapNhatTTNguoiDung />}
-          ></Route>
-          <Route
-            path="/P12ThemNguoiDungMoi"
-            element={<P12ThemNguoiDungMoi />}
-          ></Route>
-          <Route
-            path="/VaiTroNguoiDungTrenHeThong"
-            element={<VaiTroNguoiDungTrenHeThong />}
-          ></Route>
-          <Route
-            path="/PhanQuyenNguoiDungCapNhat"
-            element={<PhanQuyenNguoiDungCapNhat />}
-          ></Route>
-          <Route
-            path="/ThemVaiTroNguoiDung"
-            element={<ThemVaiTroNguoiDung />}
-          ></Route>
-          <Route path="/CaiDatCauHinh" element={<CaiDatCauHinh />}></Route>
-          <Route
-            path="/CaiDatCauHinhThongTinTacPham"
-            element={<CaiDatCauHinhThongTinTacPham />}
-          ></Route>
-          <Route
-            path="/ChinhSuaThongTinTacPhamP13"
-            element={<ChinhSuaThongTinTacPhamP13 />}
-          ></Route>
-          <Route
-            path="/QuanLyLoaiHopDong"
-            element={<QuanLyLoaiHopDong />}
-          ></Route>
-          <Route
-            path="/CanhBaoHetHanTacPham"
-            element={<CanhBaoHetHanTacPham />}
-          ></Route>
-          <Route path="/LoaiHopDong3" element={<LoaiHopDong3 />}></Route>
-          <Route
-            path="/DoiSoatTheoThang"
-            element={<DoiSoatTheoThang />}
-          ></Route>
-          <Route
-            path="/P13ThongTinTacPham"
-            element={<P13ThongTinTacPham />}
-          ></Route>
-          <Route path="/TaiApp" element={<TaiApp />}></Route>
-          <Route path="/Feedback" element={<Feedback />}></Route>
-          <Route path="/FeedbackAdmin" element={<FeedbackAdmin />}></Route>
-          <Route path="/FeedbackThu" element={<FeedbackThu />}></Route>
-          <Route path="/HuongDanSuDung" element={<HuongDanSuDung />}></Route>
-          <Route
-            path="/ThemBanGhiPlayList"
-            element={<ThemBanGhiPlayList />}
-          ></Route>
-          <Route path="/TestNavbarAn" element={<TestNavbarAn />}></Route>
-          <Route
-            path="/TestCheckBoxKichHoat"
-            element={<TestCheckBoxKichHoat />}
-          ></Route>
-          <Route path="/DropDown" element={<DropDown />}></Route>
-          <Route path="/TestCoLanguege" element={<TestCoLanguege />}></Route>
-          <Route path="/CTBangGhi" element={<CTBangGhi />}></Route>
-          <Route path="/KhoBangGhi" element={<KhoBangGhi />}></Route>
-          <Route path="/KhoBangGhi1" element={<KhoBangGhi1 />}></Route>
-          <Route path="/PheDuyetBG" element={<PheDuyetBG />}></Route>
-          <Route path="/PheDuyetBG1" element={<PheDuyetBG1 />}></Route>
-          <Route path="/DSPlaylist" element={<DSPlayList />}></Route>
-          <Route path="/DSPlaylist1" element={<DSPlayList1 />}></Route>
-          <Route path="/PlaylistTop" element={<PlayListTop />}></Route>
-          <Route path="/SuaPlaylist" element={<SuaPlayList />}></Route>
-          <Route path="/ThemPlaylist" element={<ThemPlayList />}></Route>
-        </Routes>
+        <div style={{ width: "100%", display: "flex" }}>
+          <Routes>
+            <Route path="/" element={<Log />}></Route>
+            <Route path="/login" element={<Log></Log>}></Route>
+            <Route path="/foget" element={<Forget />}></Route>
+            <Route path="/KPMK" element={<KhoiPhucMK />}></Route>
+            <Route path="/loilink" element={<LoiLink />}></Route>
+            <Route path="/Datlaimatkhau" element={<DaMK />}></Route>
+            <Route path="/navbar" element={<Trang1 />}></Route>
+            <Route path="/DShopdong" element={<DanhSachHopDong />}></Route>
+            <Route path="/suathongtin" element={<SuaThongTin />}></Route>
+            <Route path="/ChiTietHopDong" element={<ChiTietHopDong />}></Route>
+            <Route path="/TacPhamUyQuyen" element={<TacPhamUyQuyen />}></Route>
+            <Route
+              path="/ChinhSuaTacPham"
+              element={<ChinhSuaTacPham />}
+            ></Route>
+            <Route
+              path="/ChinhSuaThongTin"
+              element={<ChinhSuaThongTin></ChinhSuaThongTin>}
+            ></Route>
+            <Route
+              path="/ChiTietHopDong2"
+              element={<ChiTietHopDong2 />}
+            ></Route>
+            <Route
+              path="/ThemHopDongUyQuyen"
+              element={<ThemHopDongUyQuyen />}
+            ></Route>
+            <Route
+              path="/ThemHopDongUyQuyen2"
+              element={<ThemHopDongUyQuyen2 />}
+            ></Route>
+            <Route path="/ThemBanGhi" element={<ThemBanGhi />}></Route>
+            <Route
+              path="/DanhSachHopDongKhaiThac"
+              element={<DanhSachHopDongKhaiThac />}
+            ></Route>
+            <Route
+              path="/ChiTiepHopDongKhaiThac"
+              element={<ChiTiepHopDongKhaiThac />}
+            ></Route>
+            <Route path="/SaoChepHopDong" element={<SaoChepHopDong />}></Route>
+            <Route
+              path="/ChinhSuaHopDong"
+              element={<ChinhSuaHopDong />}
+            ></Route>
+            <Route path="/ThemHopDongMoi" element={<ThemHopDongMoi />}></Route>
+            <Route
+              path="/DanhSachLichPhat"
+              element={<DanhSachLichPhat />}
+            ></Route>
+            <Route
+              path="/ChiTietLichPhat"
+              element={<ChiTietLichPhat />}
+            ></Route>
+            <Route
+              path="/ChinhSuaLichPhat"
+              element={<ChinhSuaLichPhat />}
+            ></Route>
+            <Route
+              path="/ApLichChoThietBi"
+              element={<ApLichChoThietBi />}
+            ></Route>
+            <Route
+              path="/ThemLichPhatMoi"
+              element={<ThemLichPhatMoi />}
+            ></Route>
+            <Route path="/DonViSuDung" element={<DonViSuDung />}></Route>
+            <Route path="/ChiTietP6" element={<ChiTietP6 />}></Route>
+            <Route path="/ThemNguoiDung" element={<ThemNguoiDung />}></Route>
+            <Route
+              path="/ThongTinNguoiDung"
+              element={<ThongTinNguoiDung />}
+            ></Route>
+            <Route
+              path="/ChinhSuaTTNguoiDung"
+              element={<ChinhSuaTTNguoiDung />}
+            ></Route>
+            <Route
+              path="/DanhSachThietBi"
+              element={<DanhSachThietBi />}
+            ></Route>
+            <Route
+              path="/P8ThemThietBiMoi"
+              element={<P8ThemThietBiMoi />}
+            ></Route>
+            <Route
+              path="/ChiTietThieBiP8"
+              element={<ChiTietThieBiP8 />}
+            ></Route>
+            <Route
+              path="/DanhSachDoiTacUyQuyen"
+              element={<DanhSachDoiTacUyQuyen />}
+            ></Route>
+            <Route
+              path="/CapNhatThongTin"
+              element={<CapNhatThongTin />}
+            ></Route>
+            <Route
+              path="/QuanLyPhanPhoiDoanhThu"
+              element={<QuanLyPhanPhoiDoanhThu />}
+            ></Route>
+            <Route
+              path="/ChiTietDoanhThu"
+              element={<ChiTietDoanhThu />}
+            ></Route>
+            <Route
+              path="/LichSuDoiSoatDoanhThu"
+              element={<LichSuDoiSoatDoanhThu />}
+            ></Route>
+            <Route
+              path="/P11ChiTietDoanhThu"
+              element={<P11ChiTietDoanhThu />}
+            ></Route>
+            <Route path="/DaChotDoiSoat" element={<DaChotDoiSoat />}></Route>
+            <Route
+              path="/DoanhThuHopDongKhaiThac"
+              element={<DoanhThuHopDongKhaiThac />}
+            ></Route>
+            <Route path="/BaoCaoChiTiet" element={<BaoCaoChiTiet />}></Route>
+            <Route path="/Thang3BaoCao" element={<Thang3BaoCao />}></Route>
+            <Route
+              path="/LichSuDongBoThietBi"
+              element={<LichSuDongBoThietBi />}
+            ></Route>
+            <Route
+              path="/ChartBaoCaoDoanhThu"
+              element={<ChartBaoCaoDoanhThu />}
+            ></Route>
+            <Route
+              path="/PhanQuyenNguoiDung"
+              element={<PhanQuyenNguoiDung />}
+            ></Route>
+            <Route
+              path="/PhanQuyenCapNhatTTNguoiDung"
+              element={<PhanQuyenCapNhatTTNguoiDung />}
+            ></Route>
+            <Route
+              path="/P12ThemNguoiDungMoi"
+              element={<P12ThemNguoiDungMoi />}
+            ></Route>
+            <Route
+              path="/VaiTroNguoiDungTrenHeThong"
+              element={<VaiTroNguoiDungTrenHeThong />}
+            ></Route>
+            <Route
+              path="/PhanQuyenNguoiDungCapNhat"
+              element={<PhanQuyenNguoiDungCapNhat />}
+            ></Route>
+            <Route
+              path="/ThemVaiTroNguoiDung"
+              element={<ThemVaiTroNguoiDung />}
+            ></Route>
+            <Route path="/CaiDatCauHinh" element={<CaiDatCauHinh />}></Route>
+            <Route
+              path="/CaiDatCauHinhThongTinTacPham"
+              element={<CaiDatCauHinhThongTinTacPham />}
+            ></Route>
+            <Route
+              path="/ChinhSuaThongTinTacPhamP13"
+              element={<ChinhSuaThongTinTacPhamP13 />}
+            ></Route>
+            <Route
+              path="/QuanLyLoaiHopDong"
+              element={<QuanLyLoaiHopDong />}
+            ></Route>
+            <Route
+              path="/CanhBaoHetHanTacPham"
+              element={<CanhBaoHetHanTacPham />}
+            ></Route>
+            <Route path="/LoaiHopDong3" element={<LoaiHopDong3 />}></Route>
+            <Route
+              path="/DoiSoatTheoThang"
+              element={<DoiSoatTheoThang />}
+            ></Route>
+            <Route
+              path="/P13ThongTinTacPham"
+              element={<P13ThongTinTacPham />}
+            ></Route>
+            <Route path="/TaiApp" element={<TaiApp />}></Route>
+            <Route path="/Feedback" element={<Feedback />}></Route>
+            <Route path="/FeedbackAdmin" element={<FeedbackAdmin />}></Route>
+            <Route path="/FeedbackThu" element={<FeedbackThu />}></Route>
+            <Route path="/HuongDanSuDung" element={<HuongDanSuDung />}></Route>
+            <Route
+              path="/ThemBanGhiPlayList"
+              element={<ThemBanGhiPlayList />}
+            ></Route>
+            <Route path="/TestNavbarAn" element={<TestNavbarAn />}></Route>
+            <Route
+              path="/TestCheckBoxKichHoat"
+              element={<TestCheckBoxKichHoat />}
+            ></Route>
+            <Route path="/DropDown" element={<DropDown />}></Route>
+            <Route path="/TestCoLanguege" element={<TestCoLanguege />}></Route>
+            <Route path="/CTBangGhi" element={<CTBangGhi />}></Route>
+            <Route path="/KhoBangGhi" element={<KhoBangGhi />}></Route>
+            <Route path="/KhoBangGhi1" element={<KhoBangGhi1 />}></Route>
+            <Route path="/PheDuyetBG" element={<PheDuyetBG />}></Route>
+            <Route path="/PheDuyetBG1" element={<PheDuyetBG1 />}></Route>
+            <Route path="/DSPlaylist" element={<DSPlayList />}></Route>
+            <Route path="/DSPlaylist1" element={<DSPlayList1 />}></Route>
+            <Route path="/PlaylistTop" element={<PlayListTop />}></Route>
+            <Route path="/SuaPlaylist" element={<SuaPlayList />}></Route>
+            <Route path="/ThemPlaylist" element={<ThemPlayList />}></Route>
+          </Routes>
+        </div>
       </div>
     </div>
   );

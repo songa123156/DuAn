@@ -6,6 +6,8 @@ import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 import { getAuth } from "firebase/auth";
 import { signInWithEmailAndPassword } from "firebase/auth";
+import "./css/Log.css";
+import LanguageAndLogoImage from "../BackGround/Phan1/LanguageAndLogoImage";
 
 export const Square = styled.div`
   width: 240px;
@@ -25,8 +27,6 @@ const config = {
 firebase.initializeApp(config);
 
 const Log = () => {
-  // const history = useHistory();
-  // const navigate = useNavigate();
   const [errorMessage, setErrorMessage] = useState("");
   const history = createBrowserHistory();
   const dangnhap = async (event: any) => {
@@ -94,139 +94,20 @@ const Log = () => {
   };
   return (
     <>
-      <div
-        style={{
-          position: "absolute",
-          width: 143,
-          height: 40,
-          top: 24,
-          left: 1697,
-          padding: "8px 4px 8px 8px",
-          borderRadius: 4,
-          border: "1px solid white",
-          gap: 8,
-        }}
-      >
-        <select
-          style={{
-            width: "100%",
-            height: "100%",
-            backgroundColor: "transparent",
-            border: 0,
-            color: "white",
-          }}
-        >
-          <option value="">spaceRef</option>
-          <option value="vi" data-icon="VN">
-            Tiếng Việt
-          </option>
-          <option value="en" data-icon="🇺🇸">
-            English
-          </option>
-          <option value="ja" data-icon="🇯🇵">
-            日本語
-          </option>
-          <option value="ko" data-icon="🇰🇷">
-            한국어
-          </option>
-        </select>
-      </div>
-      <Square>
-        <img
-          src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/logo.png?alt=media&token=86eb9fbc-d239-46f4-963e-092d0a26fd33"
-          alt="Logo"
-          style={{
-            width: "100%",
-            paddingTop: -100,
-            position: "absolute",
-            borderRadius: "122px",
-            border: "1px solid black",
-            left: 0,
-            height: "100%",
-            objectFit: "cover", // Đảm bảo hình ảnh điền đầy khung mà không bị biến dạng
-          }}
-        />
-      </Square>
+      <LanguageAndLogoImage />
+
       <form action="" onSubmit={validateForm}>
-        <div
-          style={{
-            position: "absolute",
-            width: "210px",
-            height: "48px",
-            top: "396px",
-            fontFamily: "Montserrat",
-            fontSize: "36px",
-            fontWeight: "700",
-            lineHeight: "48px",
-            letterSpacing: "-0.002em",
-            textAlign: "center",
-            color: "#FFFFFF",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            left: "50%",
-            transform: "translateX(-50%)",
-          }}
-        >
-          Đăng Nhập
-        </div>
-        <div
-          style={{
-            position: "absolute",
-            width: 471,
-            height: 80,
-            top: 472,
-            left: "50%",
-            transform: "translateX(-50%)",
-          }}
-        >
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            <div
-              style={{
-                textAlign: "left",
-                marginLeft: 18,
-                color: "#FFFFFF",
-                fontFamily: "Montserrat",
-                fontSize: 16,
-                fontWeight: 600,
-                letterSpacing: "-0.002em",
-              }}
-            >
-              Tên đăng nhập
-            </div>
-            <div
-              style={{
-                width: 471,
-                height: 48,
-                padding: "11px 24px 13px 16px",
-                display: "flex",
-              }}
-            >
+        <div className="textTitle">Đăng Nhập</div>
+
+        <div className="textDangNhap">
+          <div className="textMotCot">
+            <div className="textTaiKhoanMK">Tên đăng nhập</div>
+            <div className="BoxInputTaiKhoanMK">
               <input
                 name="username"
                 id="email"
                 type="text"
-                // style={{
-                //   backgroundColor: "#2B2B3F",
-                //   flex: 1,
-                //   width: "100%",
-                //   height: "100%",
-                //   borderRadius: 8,
-                // }}
-                style={{
-                  width: "471px",
-                  height: "48px",
-                  padding: "11px 24px 13px 16px",
-                  borderRadius: "8px",
-                  background: "#2B2B3F",
-                  fontFamily: "Arial",
-                  fontSize: "16px",
-                  fontWeight: "400",
-                  lineHeight: "24px",
-                  letterSpacing: "normal",
-                  textAlign: "left",
-                  color: "#FFFFFF",
-                }}
+                className="InputTaiKhoanMK"
               />
             </div>
           </div>
@@ -234,77 +115,18 @@ const Log = () => {
 
         {/* password */}
 
-        <div
-          style={{
-            position: "absolute",
-            width: 471,
-            height: 80,
-            top: 572,
-            left: "50%",
-            transform: "translateX(-50%)",
-          }}
-        >
-          <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+        <div className="textDangNhap textPassword">
+          <div className="textMotCot">
             <div>
-              <div
-                style={{
-                  textAlign: "left",
-                  marginLeft: 18,
-                  color: "#FFFFFF",
-                  fontFamily: "Montserrat",
-                  fontSize: 16,
-                  fontWeight: 600,
-                  letterSpacing: "-0.002em",
-                }}
-              >
-                Password
-              </div>
-              <div
-                style={{
-                  width: 471,
-                  height: 48,
-                  padding: "11px 24px 13px 16px",
-                  display: "flex",
-                  alignItems: "center",
-                  position: "relative",
-                }}
-              >
+              <div className="textTaiKhoanMK">Password</div>
+              <div className="BoxInputTaiKhoanMK">
                 <input
                   id="password"
                   type={showPassword ? "text" : "password"}
                   name="password"
-                  // style={{
-                  //   backgroundColor: "#2B2B3F",
-                  //   flex: 1,
-                  //   width: "100%",
-                  //   height: "100%",
-                  //   borderRadius: 8,
-                  // }}
-                  style={{
-                    width: "471px",
-                    height: "48px",
-                    padding: "11px 24px 13px 16px",
-                    borderRadius: "8px",
-                    background: "#2B2B3F",
-                    fontFamily: "Arial",
-                    fontSize: "16px",
-                    fontWeight: "400",
-                    lineHeight: "24px",
-                    letterSpacing: "normal",
-                    textAlign: "left",
-                    color: "#FFFFFF",
-                  }}
+                  className="InputTaiKhoanMK"
                 />
-                <div
-                  style={{
-                    marginRight: 20,
-                    cursor: "pointer",
-                    position: "absolute",
-                    // top: "50%",
-                    right: 10,
-                  }}
-                  onClick={handleTogglePassword}
-                >
+                <div className="BoxEyePassword" onClick={handleTogglePassword}>
                   {showPassword ? (
                     <i className="far fa-eye-slash"></i>
                   ) : (
@@ -313,69 +135,16 @@ const Log = () => {
                 </div>
               </div>
             </div>
-            <div
-              style={{
-                color: "#FF0000",
-                fontFamily: "Montserrat",
-                fontSize: 16,
-                fontWeight: 400,
-                marginLeft: 18,
-                letterSpacing: "-0.002em",
-                textAlign: "left",
-              }}
-              id="error-message"
-            >
+            <div className="textError" id="error-message">
               {errorMessage}
             </div>
-            <div
-              style={{
-                textAlign: "left",
-                marginLeft: 18,
-                color: "#FFFFFF",
-                fontFamily: "Montserrat",
-                fontSize: 16,
-                fontWeight: 400,
-                letterSpacing: "-0.002em",
-              }}
-            >
+            <div className="BoxCheckBox">
               <input type="checkbox" name="GhiNhoMatKhau" id="GhiNhoMKID" />
-              <span
-                style={{
-                  fontFamily: "Montserrat",
-                  fontSize: 16,
-                  fontWeight: 400,
-                  letterSpacing: "-0.002em",
-                }}
-              >
-                Ghi nhớ mật khẩu
-              </span>
+              <span className="TextCheckBox">Ghi nhớ mật khẩu</span>
             </div>
-            <div
-              style={{
-                color: "#FFFFFF",
-                fontFamily: "Montserrat",
-                fontSize: 16,
-                fontWeight: 400,
-                letterSpacing: "-0.002em",
-                textAlign: "center",
-              }}
-            >
+            <div className="BoxBtnDangNhap">
               <button
-                style={{
-                  backgroundColor: "#FF7506",
-                  width: 208,
-                  height: 56,
-                  top: 744,
-                  left: 856,
-                  padding: "16px 24px",
-                  borderRadius: 8,
-                  gap: 8,
-                  fontFamily: "Montserrat",
-                  fontSize: 18,
-                  fontWeight: 500,
-                  letterSpacing: "-0.002em",
-                  color: "#FFFFFF",
-                }}
+                className="Button-DangNhap"
                 onClick={(event) => dangnhap(event)}
                 type="submit"
               >
@@ -385,29 +154,8 @@ const Log = () => {
           </div>
         </div>
       </form>
-      <div
-        style={{
-          position: "absolute",
-          width: 139,
-          height: 24,
-          top: 1005,
-          left: "50%",
-          textAlign: "center",
-          transform: "translateX(-50%)",
-        }}
-      >
-        <Link
-          to="/Foget"
-          style={{
-            fontFamily: "Montserrat",
-            fontSize: 16,
-            fontWeight: 600,
-            letterSpacing: "0em",
-            textAlign: "center",
-            textDecoration: "underline",
-            color: "#FF7506",
-          }}
-        >
+      <div className="BoxQuenMK">
+        <Link to="/Foget" className="QuenMK">
           Quên mật khẩu
         </Link>
       </div>

@@ -1,0 +1,172 @@
+.language {
+  position: absolute;
+  width: 143px;
+  height: 40px;
+  top: 24px;
+  left: 1697px;
+  padding: 8px 4px 8px 8px;
+  border-radius: 4px;
+  border: 1px solid white;
+  gap: 8px;
+}
+.languageSelect {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: 0;
+  color: white;
+  outline: none;
+}
+.languageSelect:active {
+  border: 0;
+  outline: none;
+}
+.BoxLogoImage {
+  width: 240px;
+  height: 240px;
+  position: absolute;
+  top: 116px;
+  left: 840px;
+}
+.LogoImage {
+  width: 100%;
+  padding-top: -100px;
+  position: absolute;
+  border-radius: 122px;
+  border: 1px solid black;
+  left: 0;
+  height: 100%;
+}
+.textTitle {
+  position: absolute;
+  height: 48px;
+  top: 396px;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.002em;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 769px;
+}
+.textDangNhap {
+  position: absolute;
+  width: 471px;
+  height: 80px;
+  top: 472px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.textDangNhap {
+  display: flex;
+  flex-direction: column;
+}
+.textTaiKhoanMK {
+  text-align: left;
+  margin-left: 18px;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.002em;
+}
+.BoxInputTaiKhoanMK {
+  width: 471px;
+  height: 48px;
+  padding: 11px 24px 13px 16px;
+  display: flex;
+}
+.InputTaiKhoanMK {
+  width: 471px;
+  height: 48px;
+  padding: 11px 24px 13px 16px;
+  border-radius: 8px;
+  background: #2b2b3f;
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+.BoxEyePassword {
+  margin-right: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  color: red;
+}
+.textPassword {
+  top: 572px;
+}
+.textError {
+  color: #ff0000;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 18px;
+  margin-top: 10px;
+  letter-spacing: -0.002em;
+  text-align: left;
+}
+.BoxCheckBox {
+  text-align: left;
+  margin-left: 18px;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.002em;
+}
+.TextCheckBox {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.002em;
+}
+.BoxBtnDangNhap {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.002em;
+  text-align: center;
+}
+.Button-DangNhap {
+  background-color: #ff7506;
+  width: 208px;
+  height: 56px;
+  top: 744px;
+  left: 856px;
+  padding: 16px 24px;
+  border-radius: 8px;
+  gap: 8px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.002em;
+  color: #ffffff;
+}
+.BoxQuenMK {
+  position: absolute;
+  width: 139px;
+  height: 24px;
+  top: 1005px;
+  left: 890px;
+  text-align: center;
+}
+.QuenMK {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0em;
+  text-align: center;
+  text-decoration: underline;
+  color: #ff7506;
+}

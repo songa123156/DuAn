@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "../BackGround/navbar";
 import "../cssne/Trang1.css";
 import { useNavigate } from "react-router-dom";
+import SideBar from "../BackGround/SideBar";
 
 const SuaThongTin: React.FC = () => {
   const navigate = useNavigate();
@@ -21,7 +21,7 @@ const SuaThongTin: React.FC = () => {
           zIndex: "9999",
         }}
       >
-        <Navbar />
+        <SideBar value={1} />
         <div className="ttcb">Thông tin cơ bản</div>
         <div className="khung">
           <div

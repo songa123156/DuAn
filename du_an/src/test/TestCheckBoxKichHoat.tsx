@@ -1,8 +1,8 @@
 import "../quanly/Navbar.css";
 import { useState } from "react";
 import "../p3/style.css";
-import Navbar from "../BackGround/navbar";
 import "../p8/DropDown.css";
+import SideBar from "../BackGround/SideBar";
 
 const TestCheckBoxKichHoat = () => {
   const [checkbox1, setCheckbox1] = useState(false);
@@ -61,7 +61,7 @@ const TestCheckBoxKichHoat = () => {
   return (
     <>
       <div style={{ width: "100%", display: "flex" }}>
-        <Navbar></Navbar>
+        <SideBar value={1} />
         <div>
           <div
             style={{

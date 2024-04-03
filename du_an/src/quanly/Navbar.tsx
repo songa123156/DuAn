@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Navbar from "../BackGround/navbar";
 import "../cssne/Trang1.css";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import SideBar from "../BackGround/SideBar";
 
 const Trang1: React.FC = () => {
   const [password, setPassword] = useState("");
@@ -15,7 +15,7 @@ const Trang1: React.FC = () => {
   return (
     <>
       <div className="thedau">
-        <Navbar />
+        <SideBar value={1} />
         <div className="ttcb">Thông tin cơ bản</div>
         <div className="khung">
           <div
@@ -25,8 +25,8 @@ const Trang1: React.FC = () => {
             }}
           >
             <img
-              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/admin.jpg?alt=media&token=9647fd08-067e-4a3f-a69b-d4c93c10c29f"
-              alt=""
+              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/admin.jpg?alt=media&token=9a625f88-689d-48e4-82fb-d19827df0ae2"
+              alt="admin"
               style={{
                 width: "273px",
                 height: "280px",
@@ -35,8 +35,8 @@ const Trang1: React.FC = () => {
               }}
             />
             <img
-              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/camera.png?alt=media&token=983655b9-2630-4561-a9c5-d72be90cefb3"
-              alt=""
+              src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/camera.png?alt=media&token=df988c9c-0d25-4916-bfdf-53a5c6e4b39d"
+              alt="camera"
               className="avt"
             />
             <p className="ten">Tuyết Nguyễn</p>
@@ -157,9 +157,8 @@ const Trang1: React.FC = () => {
           <div className="khung1">
             <a href="/suathongtin" style={{ textDecoration: "none" }}>
               <img
-                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/sua.png?alt=media&token=26ad60e6-30e9-4c8d-b4a4-76777c548920"
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/sua.png?alt=media&token=07d2553b-bef0-4a7d-a19e-ecf50f43bdaa"
                 alt="sua"
-                className="icon"
               />
               <div className="textt">
                 Sửa thông <br /> tin
@@ -169,9 +168,8 @@ const Trang1: React.FC = () => {
           <div className="khung1">
             <div data-bs-toggle="modal" data-bs-target="#exampleModal">
               <img
-                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/doimk.png?alt=media&token=533ea983-0039-43a9-a007-265d1fb8417f"
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/doimk.png?alt=media&token=850b2fa5-39a9-4626-8df0-2168fa5de47a"
                 alt="doimk"
-                className="icon"
               />
               <div className="textt">
                 Đổi <br /> mật khẩu
@@ -189,9 +187,8 @@ const Trang1: React.FC = () => {
             <a href="/">
               {" "}
               <img
-                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/dangxuat.png?alt=media&token=bdfa50b9-04ba-44c8-84f8-c519aabdb72a"
+                src="https://firebasestorage.googleapis.com/v0/b/duan-ede31.appspot.com/o/dangxuat.png?alt=media&token=70f23a93-e521-4866-ac18-f5aac92d49c4"
                 alt="dangxuat"
-                className="icon"
                 style={{ marginLeft: "15px" }}
               />
               <div className="dangxuat">Đăng xuất</div>
