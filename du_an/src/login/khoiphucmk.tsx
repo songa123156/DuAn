@@ -4,7 +4,9 @@ const KhoiPhucMK: React.FC = () => {
   return (
     <>
       <LanguageAndLogoImage />
-      <div className="textTitle">Khôi phục mật khẩu</div>
+      <div className="textTitle" style={{ left: 769 }}>
+        Khôi phục mật khẩu
+      </div>
       <div className="textKhoiPhuc">
         Link khôi phục mật khẩu đã được gửi vào mail của bạn. Vui lòng kiểm tra
         mail.

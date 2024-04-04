@@ -4,6 +4,7 @@ interface TypeProps {
 const PagePaginist = (props: TypeProps) => {
   return (
     <>
+      <div style={{ height: 30 }}></div>
       <div
         style={{
           width: "fit-content",

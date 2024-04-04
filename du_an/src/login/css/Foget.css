@@ -3,8 +3,7 @@
   width: 598px;
   height: 80px;
   top: 472px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 662px;
 }
 .ThongBao {
   text-align: left;
@@ -59,9 +58,8 @@
   font-size: 16px;
   font-weight: 400;
   position: absolute;
-  top: 648px;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 744px;
+  left: 856px;
   letter-spacing: -0.002em;
   text-align: center;
 }

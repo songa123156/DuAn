@@ -142,7 +142,7 @@ const Log = () => {
               <input type="checkbox" name="GhiNhoMatKhau" id="GhiNhoMKID" />
               <span className="TextCheckBox">Ghi nhớ mật khẩu</span>
             </div>
-            <div className="BoxBtnDangNhap">
+            <div className="BoxBtnDangNhap1">
               <button
                 className="Button-DangNhap"
                 onClick={(event) => dangnhap(event)}

@@ -100,7 +100,7 @@ const DaMK = () => {
               {errorMessage}
             </div>
 
-            <div className="BoxBtnDangNhap mt-5">
+            <div className="text-center mt-5">
               <button className="Button-DangNhap" type="submit">
                 Lưu mật khẩu
               </button>
